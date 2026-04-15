@@ -1,0 +1,9 @@
+data/*.db
+logs/
+__pycache__/
+*.pyc
+.env
+.venv/
+node_modules/
+web/dist/
+.DS_Store

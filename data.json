@@ -1,0 +1,256 @@
+{
+  "generated_at": "2026-04-15T23:26:27.538266",
+  "sector_trends": [
+    {
+      "month": "2026-04",
+      "sector": "AI/機械学習",
+      "count": 4,
+      "total_amount_jpy": 240300
+    },
+    {
+      "month": "2026-04",
+      "sector": "量子コンピュータ",
+      "count": 1,
+      "total_amount_jpy": 0
+    },
+    {
+      "month": "2026-04",
+      "sector": "建設テック",
+      "count": 1,
+      "total_amount_jpy": 91000
+    },
+    {
+      "month": "2026-04",
+      "sector": "宇宙技術/推進システム",
+      "count": 1,
+      "total_amount_jpy": 75000
+    },
+    {
+      "month": "2026-04",
+      "sector": "半導体/チップ設計",
+      "count": 1,
+      "total_amount_jpy": 60000
+    },
+    {
+      "month": "2026-04",
+      "sector": "不動産テック/シェアリングエコノミー",
+      "count": 1,
+      "total_amount_jpy": 150000
+    },
+    {
+      "month": "2026-04",
+      "sector": "不動産テック / シェアリングエコノミー",
+      "count": 1,
+      "total_amount_jpy": 0
+    },
+    {
+      "month": "2026-04",
+      "sector": "ロボティクス/AI",
+      "count": 1,
+      "total_amount_jpy": 60000
+    },
+    {
+      "month": "2026-04",
+      "sector": "マーケティング/クリエイターエコノミー",
+      "count": 1,
+      "total_amount_jpy": 100000
+    },
+    {
+      "month": "2026-04",
+      "sector": "エンターテイメント/ファンプラットフォーム",
+      "count": 1,
+      "total_amount_jpy": 0
+    },
+    {
+      "month": "2026-04",
+      "sector": "unknown",
+      "count": 1,
+      "total_amount_jpy": 0
+    },
+    {
+      "month": "2026-04",
+      "sector": "EV・電動車両",
+      "count": 1,
+      "total_amount_jpy": 97500
+    },
+    {
+      "month": "2026-04",
+      "sector": "AI/機械学習、ロボティクス、デジタルツイン",
+      "count": 1,
+      "total_amount_jpy": 30000
+    }
+  ],
+  "round_distribution": [
+    {
+      "round_type": "a",
+      "count": 4,
+      "total_amount_jpy": 304000
+    },
+    {
+      "round_type": "unknown",
+      "count": 4,
+      "total_amount_jpy": 181000
+    },
+    {
+      "round_type": "pre-a",
+      "count": 2,
+      "total_amount_jpy": 165300
+    },
+    {
+      "round_type": "strategic",
+      "count": 2,
+      "total_amount_jpy": 0
+    },
+    {
+      "round_type": "angel",
+      "count": 1,
+      "total_amount_jpy": 60000
+    },
+    {
+      "round_type": "c",
+      "count": 1,
+      "total_amount_jpy": 97500
+    },
+    {
+      "round_type": "debt",
+      "count": 1,
+      "total_amount_jpy": 96000
+    },
+    {
+      "round_type": "seed",
+      "count": 1,
+      "total_amount_jpy": 0
+    }
+  ],
+  "top_investors": [
+    {
+      "investor_name": "JAL",
+      "investor_type": "corporate",
+      "deal_count": 1,
+      "lead_count": 1
+    },
+    {
+      "investor_name": "Coupang",
+      "investor_type": "corporate",
+      "deal_count": 1,
+      "lead_count": 0
+    },
+    {
+      "investor_name": "DNX Ventures",
+      "investor_type": "vc",
+      "deal_count": 1,
+      "lead_count": 1
+    },
+    {
+      "investor_name": "Quantonation",
+      "investor_type": "vc",
+      "deal_count": 1,
+      "lead_count": 1
+    },
+    {
+      "investor_name": "Nvidia",
+      "investor_type": "corporate",
+      "deal_count": 1,
+      "lead_count": 0
+    },
+    {
+      "investor_name": "Apollo Global Management",
+      "investor_type": "vc",
+      "deal_count": 1,
+      "lead_count": 0
+    },
+    {
+      "investor_name": "Atreides Management",
+      "investor_type": "vc",
+      "deal_count": 1,
+      "lead_count": 1
+    },
+    {
+      "investor_name": "三菱UFJキャピタル",
+      "investor_type": "cvc",
+      "deal_count": 1,
+      "lead_count": 1
+    },
+    {
+      "investor_name": "Booz Allen Venture",
+      "investor_type": "cvc",
+      "deal_count": 1,
+      "lead_count": 0
+    },
+    {
+      "investor_name": "Mach33",
+      "investor_type": "vc",
+      "deal_count": 1,
+      "lead_count": 1
+    },
+    {
+      "investor_name": "Geodesic Capital",
+      "investor_type": "vc",
+      "deal_count": 1,
+      "lead_count": 1
+    },
+    {
+      "investor_name": "The Raine Group",
+      "investor_type": "vc",
+      "deal_count": 1,
+      "lead_count": 0
+    },
+    {
+      "investor_name": "Altos Ventures",
+      "investor_type": "vc",
+      "deal_count": 1,
+      "lead_count": 1
+    },
+    {
+      "investor_name": "ガイアックス",
+      "investor_type": "corporate",
+      "deal_count": 1,
+      "lead_count": 0
+    },
+    {
+      "investor_name": "ANA未来創造ファンド",
+      "investor_type": "cvc",
+      "deal_count": 1,
+      "lead_count": 1
+    },
+    {
+      "investor_name": "Linear Capital",
+      "investor_type": "vc",
+      "deal_count": 1,
+      "lead_count": 0
+    },
+    {
+      "investor_name": "CWB Capital",
+      "investor_type": "vc",
+      "deal_count": 1,
+      "lead_count": 0
+    },
+    {
+      "investor_name": "PKSHA Algorithm Fund",
+      "investor_type": "vc",
+      "deal_count": 1,
+      "lead_count": 1
+    },
+    {
+      "investor_name": "東宝",
+      "investor_type": "corporate",
+      "deal_count": 1,
+      "lead_count": 0
+    },
+    {
+      "investor_name": "東映アニメーション",
+      "investor_type": "corporate",
+      "deal_count": 1,
+      "lead_count": 0
+    }
+  ],
+  "co_investment_pairs": [],
+  "monthly_summary": [
+    {
+      "month": "2026-04",
+      "deal_count": 16,
+      "total_amount_jpy": 903800,
+      "unique_companies": 16
+    }
+  ]
+}
