@@ -1,14 +1,29 @@
 :root {
-  --bg: #fafafa;
+  /* Miratuku CI Colors */
+  --miratuku-golden-orange: #F0A671;
+  --miratuku-light-beige: #F2C792;
+  --miratuku-warm-beige: #F1C189;
+  --miratuku-camel: #CEA26F;
+  --miratuku-pale-peach: #F8CDAC;
+  --miratuku-sand-gold: #F0BE83;
+  --miratuku-soft-salmon: #EFC4A4;
+  --miratuku-rose-peach: #F7BEA2;
+  --miratuku-terracotta: #DC8766;
+  --miratuku-amber-brown: #B07256;
+  --miratuku-warm-brown: #966D5E;
+  --miratuku-deep-brown: #7A4033;
+
+  /* App standard */
+  --bg: #faf8f5;
   --surface: #fff;
   --text: #1a1a1a;
-  --text-secondary: #666;
-  --border: #e5e5e5;
-  --accent: #2563eb;
-  --accent-light: #dbeafe;
-  --success: #16a34a;
-  --warning: #d97706;
-  --danger: #dc2626;
+  --text-secondary: #966D5E;
+  --border: #e8ddd4;
+  --accent: #783c28;
+  --accent-light: #faf0eb;
+  --success: #CEA26F;
+  --warning: #DC8766;
+  --danger: #B07256;
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -121,13 +136,15 @@ tr:hover td {
   font-weight: 600;
 }
 
-.badge-seed { background: #fef3c7; color: #92400e; }
-.badge-a { background: #dbeafe; color: #1e40af; }
-.badge-b { background: #e0e7ff; color: #3730a3; }
-.badge-c { background: #ede9fe; color: #5b21b6; }
-.badge-debt { background: #fee2e2; color: #991b1b; }
-.badge-strategic { background: #d1fae5; color: #065f46; }
-.badge-unknown { background: #f3f4f6; color: #6b7280; }
+.badge-seed { background: #FDF5E6; color: #7A4033; }
+.badge-a { background: #FAE8D8; color: #7A4033; }
+.badge-b { background: #F0D8C4; color: #7A4033; }
+.badge-c { background: #E8CDB8; color: #7A4033; }
+.badge-debt { background: #F5E0D0; color: #B07256; }
+.badge-strategic { background: #F2E8D8; color: #966D5E; }
+.badge-unknown { background: #f3f0ed; color: #966D5E; }
+.badge-angel { background: #FAF0EB; color: #7A4033; }
+.badge-pre-a { background: #F8E4D4; color: #7A4033; }
 
 .tabs {
   display: flex;

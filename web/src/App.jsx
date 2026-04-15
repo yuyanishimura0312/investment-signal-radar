@@ -4,11 +4,12 @@ import {
   XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer,
 } from 'recharts'
 
-const COLORS = ['#2563eb', '#7c3aed', '#059669', '#d97706', '#dc2626', '#0891b2', '#4f46e5', '#be185d']
+// Miratuku CI 12-color palette for charts
+const COLORS = ['#F0A671', '#CEA26F', '#DC8766', '#B07256', '#7A4033', '#966D5E', '#F2C792', '#F0BE83']
 const ROUND_COLORS = {
-  seed: '#f59e0b', 'pre-a': '#fb923c', a: '#3b82f6', b: '#6366f1',
-  c: '#8b5cf6', d: '#a855f7', debt: '#ef4444', strategic: '#10b981',
-  angel: '#ec4899', unknown: '#9ca3af',
+  seed: '#F2C792', 'pre-a': '#F0A671', a: '#DC8766', b: '#B07256',
+  c: '#966D5E', d: '#7A4033', debt: '#CEA26F', strategic: '#F0BE83',
+  angel: '#F7BEA2', unknown: '#EFC4A4',
 }
 
 function formatAmount(val) {
@@ -101,7 +102,7 @@ function OverviewTab({ data }) {
               <XAxis dataKey="month" fontSize={12} />
               <YAxis fontSize={12} />
               <Tooltip />
-              <Bar dataKey="deal_count" fill="#2563eb" name="Deals" radius={[4,4,0,0]} />
+              <Bar dataKey="deal_count" fill="#DC8766" name="Deals" radius={[4,4,0,0]} />
             </BarChart>
           </ResponsiveContainer>
         </div>
@@ -185,7 +186,7 @@ function SectorsTab({ trends }) {
             <XAxis type="number" fontSize={12} />
             <YAxis dataKey="sector" type="category" fontSize={11} width={110} />
             <Tooltip />
-            <Bar dataKey="count" fill="#7c3aed" name="Deals" radius={[0,4,4,0]} />
+            <Bar dataKey="count" fill="#B07256" name="Deals" radius={[0,4,4,0]} />
           </BarChart>
         </ResponsiveContainer>
       </div>
