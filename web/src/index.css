@@ -188,3 +188,32 @@ tr:hover td {
   padding: 48px;
   color: var(--text-secondary);
 }
+
+/* About page */
+.about-section p {
+  line-height: 1.8;
+  margin-bottom: 12px;
+  color: var(--text);
+}
+
+.about-section h3 {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 20px 0 8px;
+  color: var(--accent);
+}
+
+.glossary {
+  margin-top: 8px;
+}
+
+.glossary dt {
+  font-weight: 600;
+  margin-top: 16px;
+  color: var(--accent);
+}
+
+.glossary dd {
+  margin: 4px 0 0 0;
+  line-height: 1.8;
+}
