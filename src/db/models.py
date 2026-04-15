@@ -150,6 +150,11 @@ def insert_investment(
     if round_type not in valid_rounds:
         round_type = 'unknown'
 
+    # Fallback announced_date to today if not provided
+    if not announced_date:
+        from datetime import date
+        announced_date = date.today().isoformat()
+
     # Validate confidence
     if confidence not in ('high', 'medium', 'low'):
         confidence = 'medium'

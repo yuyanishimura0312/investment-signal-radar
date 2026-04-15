@@ -1,11 +1,83 @@
 {
-  "generated_at": "2026-04-15T22:15:01.154653",
+  "generated_at": "2026-04-15T23:28:18.495166",
   "sector_trends": [
+    {
+      "month": "2026-04",
+      "sector": "AI/機械学習",
+      "count": 4,
+      "total_amount_jpy": 240300
+    },
+    {
+      "month": "2026-04",
+      "sector": "量子コンピュータ",
+      "count": 1,
+      "total_amount_jpy": 0
+    },
+    {
+      "month": "2026-04",
+      "sector": "建設テック",
+      "count": 1,
+      "total_amount_jpy": 91000
+    },
+    {
+      "month": "2026-04",
+      "sector": "宇宙技術/推進システム",
+      "count": 1,
+      "total_amount_jpy": 75000
+    },
+    {
+      "month": "2026-04",
+      "sector": "半導体/チップ設計",
+      "count": 1,
+      "total_amount_jpy": 60000
+    },
+    {
+      "month": "2026-04",
+      "sector": "不動産テック/シェアリングエコノミー",
+      "count": 1,
+      "total_amount_jpy": 150000
+    },
+    {
+      "month": "2026-04",
+      "sector": "不動産テック / シェアリングエコノミー",
+      "count": 1,
+      "total_amount_jpy": 0
+    },
+    {
+      "month": "2026-04",
+      "sector": "ロボティクス/AI",
+      "count": 1,
+      "total_amount_jpy": 60000
+    },
+    {
+      "month": "2026-04",
+      "sector": "マーケティング/クリエイターエコノミー",
+      "count": 1,
+      "total_amount_jpy": 100000
+    },
+    {
+      "month": "2026-04",
+      "sector": "エンターテイメント/ファンプラットフォーム",
+      "count": 1,
+      "total_amount_jpy": 0
+    },
     {
       "month": "2026-04",
       "sector": "unknown",
       "count": 1,
       "total_amount_jpy": 0
+    },
+    {
+      "month": "2026-04",
+      "sector": "EV・電動車両",
+      "count": 1,
+      "total_amount_jpy": 97500
+    },
+    {
+      "month": "2026-04",
+      "sector": "AI/機械学習、ロボティクス、デジタルツイン",
+      "count": 1,
+      "total_amount_jpy": 30000
     }
   ],
   "round_distribution": [
@@ -175,16 +247,10 @@
   "co_investment_pairs": [],
   "monthly_summary": [
     {
-      "month": null,
-      "deal_count": 15,
-      "total_amount_jpy": 903800,
-      "unique_companies": 15
-    },
-    {
       "month": "2026-04",
-      "deal_count": 1,
-      "total_amount_jpy": 0,
-      "unique_companies": 1
+      "deal_count": 16,
+      "total_amount_jpy": 903800,
+      "unique_companies": 16
     }
   ]
 }

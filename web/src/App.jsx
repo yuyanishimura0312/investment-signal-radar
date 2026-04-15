@@ -29,7 +29,7 @@ export default function App() {
   const [roundFilter, setRoundFilter] = useState('')
 
   useEffect(() => {
-    fetch('./data.json')
+    fetch(`./data.json?t=${Date.now()}`)
       .then(r => r.json())
       .then(setData)
       .catch(() => setData({ error: true }))
