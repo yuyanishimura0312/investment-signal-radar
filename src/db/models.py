@@ -187,10 +187,13 @@ def insert_investment(
     return investment_id
 
 
+_ALLOWED_TABLES = frozenset({"investments", "companies", "investors", "sectors", "signals"})
+
+
 def get_stats(conn: sqlite3.Connection) -> dict:
     """Get database statistics."""
     stats = {}
-    for table in ["investments", "companies", "investors", "sectors", "signals"]:
+    for table in _ALLOWED_TABLES:
         row = conn.execute(f"SELECT COUNT(*) as c FROM {table}").fetchone()
         stats[table] = row["c"]
     return stats

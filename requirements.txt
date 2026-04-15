@@ -1,2 +1,2 @@
-anthropic>=0.30.0
-feedparser>=6.0.0
+anthropic>=0.52.0,<1.0.0
+feedparser>=6.0.0,<7.0.0

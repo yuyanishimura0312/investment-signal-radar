@@ -81,8 +81,10 @@ def classify_investments(batch_size: int = 50):
                     "UPDATE investments SET pestle_category = ? WHERE id = ?",
                     (category, row["id"])
                 )
+                # Update company via the investment's company_id
                 conn.execute(
-                    "UPDATE companies SET pestle_category = ? WHERE id = ?",
+                    "UPDATE companies SET pestle_category = ? WHERE id = "
+                    "(SELECT company_id FROM investments WHERE id = ?)",
                     (category, row["id"])
                 )
                 classified += 1

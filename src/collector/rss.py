@@ -12,6 +12,7 @@ import logging
 from datetime import datetime
 from typing import Optional
 from dataclasses import dataclass, field
+from urllib.parse import urlparse
 
 logger = logging.getLogger(__name__)
 
@@ -93,6 +94,14 @@ def _fetch_rss(url: str, source_name: str) -> list[FeedArticle]:
             summary = summary[:2000]
 
         if not title or not link:
+            continue
+
+        # Validate URL scheme (security: only http/https)
+        try:
+            parsed = urlparse(link)
+            if parsed.scheme not in ("http", "https"):
+                continue
+        except Exception:
             continue
 
         article = FeedArticle(

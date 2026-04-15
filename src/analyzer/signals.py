@@ -114,34 +114,37 @@ def store_signals(signals: list[dict]):
         return
 
     conn = get_conn()
+    try:
+        for sig in signals:
+            row = conn.execute(
+                "SELECT id FROM sectors WHERE name = ?",
+                (sig["sector"],)
+            ).fetchone()
+            sector_id = row["id"] if row else None
 
-    for sig in signals:
-        # Find sector_id
-        row = conn.execute(
-            "SELECT id FROM sectors WHERE name = ?",
-            (sig["sector"],)
-        ).fetchone()
-        sector_id = row["id"] if row else None
+            conn.execute("""
+                INSERT INTO signals
+                (signal_type, sector_id, period_start, period_end,
+                 baseline_count, current_count, acceleration_ratio, description)
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+            """, (
+                sig["signal_type"],
+                sector_id,
+                sig["period_start"],
+                sig["period_end"],
+                int(sig["baseline_monthly_avg"]) if sig["baseline_monthly_avg"] else 0,
+                sig["recent_count"],
+                sig["acceleration_ratio"],
+                sig["description"],
+            ))
 
-        conn.execute("""
-            INSERT INTO signals
-            (signal_type, sector_id, period_start, period_end,
-             baseline_count, current_count, acceleration_ratio, description)
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?)
-        """, (
-            sig["signal_type"],
-            sector_id,
-            sig["period_start"],
-            sig["period_end"],
-            int(sig["baseline_monthly_avg"]) if sig["baseline_monthly_avg"] else 0,
-            sig["recent_count"],
-            sig["acceleration_ratio"],
-            sig["description"],
-        ))
-
-    conn.commit()
-    conn.close()
-    logger.info(f"Stored {len(signals)} signals")
+        conn.commit()
+        logger.info(f"Stored {len(signals)} signals")
+    except Exception as e:
+        logger.error(f"Failed to store signals: {e}")
+        conn.rollback()
+    finally:
+        conn.close()
 
 
 def report_to_dashboard(signals: list[dict]):

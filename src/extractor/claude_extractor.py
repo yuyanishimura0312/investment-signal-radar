@@ -9,7 +9,9 @@ import json
 import subprocess
 import logging
 import re
+import functools
 from typing import Optional
+from urllib.parse import urlparse
 
 logger = logging.getLogger(__name__)
 
@@ -46,8 +48,9 @@ __TEXT__
 """
 
 
+@functools.lru_cache(maxsize=1)
 def get_api_key() -> str:
-    """Retrieve Anthropic API key from macOS Keychain."""
+    """Retrieve Anthropic API key from macOS Keychain. Cached after first call."""
     try:
         result = subprocess.run(
             ["security", "find-generic-password", "-s", "ANTHROPIC_API_KEY", "-w"],
@@ -61,10 +64,49 @@ def get_api_key() -> str:
         )
 
 
+def validate_extracted_data(data: dict) -> dict:
+    """Validate and sanitize fields extracted by Claude API."""
+    # Truncate overly long strings
+    for field in ("company_name", "amount_raw", "sector"):
+        if field in data and isinstance(data[field], str):
+            data[field] = data[field][:500]
+
+    # Validate announced_date format
+    date_val = data.get("announced_date")
+    if date_val and not re.match(r"^\d{4}-\d{2}-\d{2}$", str(date_val)):
+        data["announced_date"] = None
+
+    # Validate confidence
+    if data.get("confidence") not in ("high", "medium", "low"):
+        data["confidence"] = "medium"
+
+    # Validate investors list
+    investors = data.get("investors")
+    if not isinstance(investors, list):
+        data["investors"] = []
+    else:
+        data["investors"] = [
+            inv for inv in investors
+            if isinstance(inv, dict) and inv.get("name")
+        ]
+
+    return data
+
+
+def validate_url(url: str) -> bool:
+    """Check that a URL uses http/https scheme."""
+    try:
+        parsed = urlparse(url)
+        return parsed.scheme in ("http", "https")
+    except Exception:
+        return False
+
+
 def extract_investment_info(
     title: str,
     text: str,
     model: str = MODEL_FAST,
+    _is_retry: bool = False,
 ) -> Optional[dict]:
     """
     Extract structured investment information from press release text.
@@ -96,16 +138,20 @@ def extract_investment_info(
         if data.get("is_funding") is False:
             return None
 
-        # Re-extract with accurate model if confidence is low
-        if data.get("confidence") == "low" and model == MODEL_FAST:
+        # Validate and sanitize extracted data
+        data = validate_extracted_data(data)
+
+        # Re-extract with accurate model if confidence is low (one retry only)
+        if data.get("confidence") == "low" and not _is_retry:
             logger.info(f"Low confidence, re-extracting with {MODEL_ACCURATE}")
-            return extract_investment_info(title, text, model=MODEL_ACCURATE)
+            return extract_investment_info(
+                title, text, model=MODEL_ACCURATE, _is_retry=True
+            )
 
         return data
 
     except json.JSONDecodeError as e:
         logger.warning(f"Failed to parse JSON from Claude response: {e}")
-        logger.debug(f"Raw response: {content[:500]}")
         return None
     except Exception as e:
         logger.error(f"Claude API error: {e}")
