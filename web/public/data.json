@@ -1,5 +1,18 @@
 {
-  "generated_at": "2026-04-16T05:57:41.221977",
+  "generated_at": "2026-04-17T01:46:32.933651",
+  "schema_version": "v2.0",
+  "stats": {
+    "organizations": 45,
+    "funding_rounds": 16,
+    "round_participants": 29,
+    "events": 16,
+    "sectors": 44,
+    "tags": 0,
+    "signals": 0,
+    "signal_scores": 0,
+    "companies": 16,
+    "investors": 29
+  },
   "sector_trends": [
     {
       "month": "2026-04",
@@ -82,19 +95,14 @@
   ],
   "round_distribution": [
     {
-      "round_type": "a",
-      "count": 4,
-      "total_amount_jpy": 304000
+      "round_type": "series_a",
+      "count": 6,
+      "total_amount_jpy": 469300
     },
     {
       "round_type": "unknown",
       "count": 4,
       "total_amount_jpy": 181000
-    },
-    {
-      "round_type": "pre-a",
-      "count": 2,
-      "total_amount_jpy": 165300
     },
     {
       "round_type": "strategic",
@@ -107,11 +115,6 @@
       "total_amount_jpy": 60000
     },
     {
-      "round_type": "c",
-      "count": 1,
-      "total_amount_jpy": 97500
-    },
-    {
       "round_type": "debt",
       "count": 1,
       "total_amount_jpy": 96000
@@ -120,65 +123,46 @@
       "round_type": "seed",
       "count": 1,
       "total_amount_jpy": 0
+    },
+    {
+      "round_type": "series_c",
+      "count": 1,
+      "total_amount_jpy": 97500
     }
   ],
   "top_investors": [
     {
-      "investor_name": "JAL",
-      "investor_type": "corporate",
+      "investor_name": "株式会社みなと銀行",
+      "investor_type": "bank",
       "deal_count": 1,
       "lead_count": 1
     },
     {
-      "investor_name": "Coupang",
-      "investor_type": "corporate",
-      "deal_count": 1,
-      "lead_count": 0
-    },
-    {
-      "investor_name": "DNX Ventures",
+      "investor_name": "TWG Global",
       "investor_type": "vc",
       "deal_count": 1,
       "lead_count": 1
     },
     {
-      "investor_name": "Quantonation",
+      "investor_name": "北國銀行",
+      "investor_type": "bank",
+      "deal_count": 1,
+      "lead_count": 1
+    },
+    {
+      "investor_name": "PKSHA Algorithm Fund",
       "investor_type": "vc",
       "deal_count": 1,
       "lead_count": 1
     },
     {
-      "investor_name": "Nvidia",
-      "investor_type": "corporate",
-      "deal_count": 1,
-      "lead_count": 0
-    },
-    {
-      "investor_name": "Apollo Global Management",
-      "investor_type": "vc",
-      "deal_count": 1,
-      "lead_count": 0
-    },
-    {
-      "investor_name": "Atreides Management",
-      "investor_type": "vc",
-      "deal_count": 1,
-      "lead_count": 1
-    },
-    {
-      "investor_name": "三菱UFJキャピタル",
+      "investor_name": "ANA未来創造ファンド",
       "investor_type": "cvc",
       "deal_count": 1,
       "lead_count": 1
     },
     {
-      "investor_name": "Booz Allen Venture",
-      "investor_type": "cvc",
-      "deal_count": 1,
-      "lead_count": 0
-    },
-    {
-      "investor_name": "Mach33",
+      "investor_name": "Altos Ventures",
       "investor_type": "vc",
       "deal_count": 1,
       "lead_count": 1
@@ -190,49 +174,73 @@
       "lead_count": 1
     },
     {
-      "investor_name": "The Raine Group",
-      "investor_type": "vc",
-      "deal_count": 1,
-      "lead_count": 0
-    },
-    {
-      "investor_name": "Altos Ventures",
+      "investor_name": "Mach33",
       "investor_type": "vc",
       "deal_count": 1,
       "lead_count": 1
     },
     {
-      "investor_name": "ガイアックス",
-      "investor_type": "corporate",
-      "deal_count": 1,
-      "lead_count": 0
-    },
-    {
-      "investor_name": "ANA未来創造ファンド",
+      "investor_name": "三菱UFJキャピタル",
       "investor_type": "cvc",
       "deal_count": 1,
       "lead_count": 1
     },
     {
-      "investor_name": "Linear Capital",
-      "investor_type": "vc",
-      "deal_count": 1,
-      "lead_count": 0
-    },
-    {
-      "investor_name": "CWB Capital",
-      "investor_type": "vc",
-      "deal_count": 1,
-      "lead_count": 0
-    },
-    {
-      "investor_name": "PKSHA Algorithm Fund",
+      "investor_name": "Atreides Management",
       "investor_type": "vc",
       "deal_count": 1,
       "lead_count": 1
     },
     {
-      "investor_name": "東宝",
+      "investor_name": "Quantonation",
+      "investor_type": "vc",
+      "deal_count": 1,
+      "lead_count": 1
+    },
+    {
+      "investor_name": "DNX Ventures",
+      "investor_type": "vc",
+      "deal_count": 1,
+      "lead_count": 1
+    },
+    {
+      "investor_name": "JAL",
+      "investor_type": "corporate",
+      "deal_count": 1,
+      "lead_count": 1
+    },
+    {
+      "investor_name": "りそなキャピタル株式会社",
+      "investor_type": "cvc",
+      "deal_count": 1,
+      "lead_count": 0
+    },
+    {
+      "investor_name": "みなとキャピタル株式会社",
+      "investor_type": "cvc",
+      "deal_count": 1,
+      "lead_count": 0
+    },
+    {
+      "investor_name": "Guggenheim Partners",
+      "investor_type": "corporate",
+      "deal_count": 1,
+      "lead_count": 0
+    },
+    {
+      "investor_name": "Jeff Bezos",
+      "investor_type": "angel",
+      "deal_count": 1,
+      "lead_count": 0
+    },
+    {
+      "investor_name": "あおぞら企業投資",
+      "investor_type": "corporate",
+      "deal_count": 1,
+      "lead_count": 0
+    },
+    {
+      "investor_name": "松竹",
       "investor_type": "corporate",
       "deal_count": 1,
       "lead_count": 0
@@ -252,5 +260,28 @@
       "total_amount_jpy": 903800,
       "unique_companies": 16
     }
-  ]
+  ],
+  "event_momentum": [
+    {
+      "event_type": "funding",
+      "count": 16,
+      "avg_significance": 0.675
+    }
+  ],
+  "tag_distribution": [],
+  "data_freshness": {
+    "total": 45,
+    "expired": 0,
+    "stale": 0,
+    "fresh": 45
+  },
+  "data_source_breakdown": [
+    {
+      "source": "migrated_v1",
+      "source_type": "manual",
+      "org_count": 45,
+      "round_count": 16
+    }
+  ],
+  "top_organizations_by_score": []
 }

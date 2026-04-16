@@ -137,11 +137,22 @@ tr:hover td {
 }
 
 .badge-seed { background: #FDF5E6; color: #7A4033; }
+.badge-pre-seed { background: #FEF8EE; color: #966D5E; }
 .badge-a { background: #FAE8D8; color: #7A4033; }
 .badge-b { background: #F0D8C4; color: #7A4033; }
 .badge-c { background: #E8CDB8; color: #7A4033; }
+.badge-d { background: #D8BFAB; color: #fff; }
+.badge-e { background: #C8AE98; color: #fff; }
+.badge-f { background: #B89E87; color: #fff; }
+.badge-g { background: #A88E77; color: #fff; }
+.badge-late { background: #7A4033; color: #fff; }
 .badge-debt { background: #F5E0D0; color: #B07256; }
 .badge-strategic { background: #F2E8D8; color: #966D5E; }
+.badge-grant { background: #F6EBD8; color: #966D5E; }
+.badge-j-kiss { background: #F8E4D4; color: #B07256; }
+.badge-convertible { background: #F5DFCE; color: #B07256; }
+.badge-ipo { background: #DC8766; color: #fff; }
+.badge-secondary { background: #E0B890; color: #7A4033; }
 .badge-unknown { background: #f3f0ed; color: #966D5E; }
 .badge-angel { background: #FAF0EB; color: #7A4033; }
 .badge-pre-a { background: #F8E4D4; color: #7A4033; }

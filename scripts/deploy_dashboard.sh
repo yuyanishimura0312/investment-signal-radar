@@ -7,12 +7,12 @@ set -e
 PROJECT_DIR="$(cd "$(dirname "$0")/.." && pwd)"
 cd "$PROJECT_DIR"
 
-echo "1. Generating dashboard data from DB..."
+echo "1. Generating dashboard data from DB (v2)..."
 python3 -c "
 import sys; sys.path.insert(0, 'src')
-from analyzer.trends import export_dashboard_data
+from analyzer.trends_v2 import export_dashboard_data
 data = export_dashboard_data('web/public/data.json')
-print(f'  Exported: {len(data[\"top_investors\"])} investors, {len(data[\"monthly_summary\"])} months')
+print(f'  Schema: {data[\"schema_version\"]} | {len(data[\"top_investors\"])} investors, {len(data[\"monthly_summary\"])} months')
 "
 
 echo "2. Building web dashboard..."

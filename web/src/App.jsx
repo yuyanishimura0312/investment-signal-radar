@@ -6,10 +6,41 @@ import {
 
 // Miratuku CI 12-color palette for charts
 const COLORS = ['#F0A671', '#CEA26F', '#DC8766', '#B07256', '#7A4033', '#966D5E', '#F2C792', '#F0BE83']
+
+// v2 schema uses round types like series_a/series_b; v1 used a/b.
+// Normalize to the short label used for CSS badges and display.
+function normalizeRoundType(t) {
+  if (!t) return 'unknown'
+  const map = {
+    pre_seed: 'pre-seed', 'pre-seed': 'pre-seed',
+    seed: 'seed',
+    series_a: 'a', 'series-a': 'a', 'pre-a': 'a', pre_a: 'a', a: 'a',
+    series_b: 'b', 'series-b': 'b', b: 'b',
+    series_c: 'c', 'series-c': 'c', c: 'c',
+    series_d: 'd', 'series-d': 'd', d: 'd',
+    series_e: 'e', 'series-e': 'e', e: 'e',
+    series_f: 'f', 'series-f': 'f', f: 'f',
+    series_g: 'g', 'series-g': 'g', g: 'g',
+    late_stage: 'late',
+    corporate_round: 'strategic',
+    convertible_note: 'convertible',
+    j_kiss: 'j-kiss', 'j-kiss': 'j-kiss',
+    strategic: 'strategic', debt: 'debt', grant: 'grant',
+    angel: 'angel', ipo: 'ipo', secondary: 'secondary',
+    unknown: 'unknown',
+  }
+  return map[t] || t
+}
+
 const ROUND_COLORS = {
-  seed: '#F2C792', 'pre-a': '#F0A671', a: '#DC8766', b: '#B07256',
-  c: '#966D5E', d: '#7A4033', debt: '#CEA26F', strategic: '#F0BE83',
-  angel: '#F7BEA2', unknown: '#EFC4A4',
+  seed: '#F2C792', 'pre-seed': '#F0BE83',
+  a: '#DC8766', b: '#B07256', c: '#966D5E', d: '#7A4033',
+  e: '#5F322A', f: '#4F2922', g: '#3F2019',
+  debt: '#CEA26F', strategic: '#F0BE83',
+  angel: '#F7BEA2', grant: '#D8B88E',
+  'j-kiss': '#E8C4A0', convertible: '#E0B090',
+  ipo: '#CE8766', secondary: '#B8956A',
+  late: '#7A4033', unknown: '#EFC4A4',
 }
 
 function formatAmount(val) {
@@ -19,8 +50,8 @@ function formatAmount(val) {
 }
 
 function RoundBadge({ type }) {
-  const cls = `badge badge-${type === 'pre-a' ? 'a' : type || 'unknown'}`
-  return <span className={cls}>{type || 'unknown'}</span>
+  const norm = normalizeRoundType(type)
+  return <span className={`badge badge-${norm}`}>{type || 'unknown'}</span>
 }
 
 export default function App() {

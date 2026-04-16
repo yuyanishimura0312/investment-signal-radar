@@ -19,10 +19,10 @@ cd "$PROJECT_DIR"
 
 echo "[$(date)] Starting Investment Signal Radar collection pipeline..." | tee -a "$LOG_FILE"
 
-# Initialize DB if needed
-python3 src/db/init_db.py 2>&1 | tee -a "$LOG_FILE"
+# Initialize v2 DB if needed (idempotent)
+python3 src/db/init_db_v2.py 2>&1 | tee -a "$LOG_FILE"
 
-# Run the pipeline
+# Run the v2 pipeline
 python3 -c "
 import sys, logging
 sys.path.insert(0, 'src')
@@ -34,10 +34,13 @@ logging.basicConfig(
         logging.StreamHandler(),
     ]
 )
-from collector.pipeline import run_pipeline
+from collector.pipeline_v2 import run_pipeline
 result = run_pipeline()
 print(f'Result: {result}')
 " 2>&1 | tee -a "$LOG_FILE"
+
+# Regenerate dashboard data
+python3 src/analyzer/trends_v2.py 2>&1 | tee -a "$LOG_FILE"
 
 echo "[$(date)] Pipeline complete. Log: $LOG_FILE" | tee -a "$LOG_FILE"
 
