@@ -125,7 +125,8 @@ CREATE TABLE IF NOT EXISTS funding_rounds (
     investor_count          INTEGER,
     -- Data provenance
     data_source_id          INTEGER REFERENCES data_sources(id),
-    confidence_score        REAL    DEFAULT 0.5,
+    confidence_score        REAL    DEFAULT 0.5
+        CHECK (confidence_score IS NULL OR (confidence_score BETWEEN 0.0 AND 1.0)),
     source_url              TEXT,
     source_title            TEXT,
     url_hash                TEXT    UNIQUE,
@@ -170,7 +171,8 @@ CREATE TABLE IF NOT EXISTS events (
     significance_score  REAL    DEFAULT 0.5 CHECK (significance_score BETWEEN 0.0 AND 1.0),
     -- Data provenance
     data_source_id      INTEGER REFERENCES data_sources(id),
-    confidence_score    REAL    DEFAULT 0.5,
+    confidence_score    REAL    DEFAULT 0.5
+        CHECK (confidence_score IS NULL OR (confidence_score BETWEEN 0.0 AND 1.0)),
     source_url          TEXT,
     collected_at        TEXT    NOT NULL DEFAULT (datetime('now')),
     created_at          TEXT    NOT NULL DEFAULT (datetime('now'))
@@ -210,7 +212,8 @@ CREATE TABLE IF NOT EXISTS tags (
 CREATE TABLE IF NOT EXISTS organization_tags (
     organization_id     INTEGER NOT NULL REFERENCES organizations(id),
     tag_id              INTEGER NOT NULL REFERENCES tags(id),
-    confidence_score    REAL    DEFAULT 1.0,
+    confidence_score    REAL    DEFAULT 1.0
+        CHECK (confidence_score IS NULL OR (confidence_score BETWEEN 0.0 AND 1.0)),
     assigned_by         TEXT    DEFAULT 'manual'
         CHECK (assigned_by IN ('manual', 'ml', 'rule', 'import')),
     PRIMARY KEY (organization_id, tag_id)

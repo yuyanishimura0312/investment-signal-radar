@@ -40,13 +40,19 @@ def url_hash(url: str) -> str:
 
 
 def slugify(name: str) -> str:
-    """Generate URL-safe slug from name."""
+    """Generate URL-safe slug from name.
+
+    Strictly ASCII-only (a-z0-9-). Japanese and other non-ASCII text falls back
+    to a deterministic md5-based slug so slugs can safely appear in URLs.
+    """
     if not name:
         return f"org-{int(datetime.now().timestamp() * 1000)}"
-    s = re.sub(r"[^\w\s-]", "", name.lower(), flags=re.UNICODE)
+    # ASCII-only: strip anything that is not a-z, 0-9, space, or hyphen
+    s = re.sub(r"[^a-z0-9\s-]", "", name.lower())
     s = re.sub(r"[\s_]+", "-", s).strip("-")
     if not s:
-        s = "org-" + hashlib.md5(name.encode()).hexdigest()[:10]
+        # Fallback: deterministic hash of the original name
+        s = "org-" + hashlib.md5(name.encode("utf-8")).hexdigest()[:12]
     return s[:80]
 
 

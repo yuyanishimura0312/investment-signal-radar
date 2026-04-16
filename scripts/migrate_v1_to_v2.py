@@ -55,15 +55,17 @@ ROUND_TYPE_MAP = {
 
 
 def slugify(name: str) -> str:
-    """Generate URL-safe slug from name."""
+    """Generate URL-safe slug from name (ASCII-only).
+
+    Non-ASCII names (Japanese etc.) fall back to a deterministic md5-based
+    slug so the result can safely appear in URLs and file paths.
+    """
     if not name:
         return f"org-{int(datetime.now().timestamp() * 1000)}"
-    # Lowercase, keep alphanumeric and hyphens, collapse spaces
-    s = re.sub(r"[^\w\s-]", "", name.lower(), flags=re.UNICODE)
+    s = re.sub(r"[^a-z0-9\s-]", "", name.lower())
     s = re.sub(r"[\s_]+", "-", s).strip("-")
     if not s:
-        # Fallback: hash the original name
-        s = "org-" + hashlib.md5(name.encode()).hexdigest()[:10]
+        s = "org-" + hashlib.md5(name.encode("utf-8")).hexdigest()[:12]
     return s[:80]
 
 
@@ -128,7 +130,7 @@ def migrate_sectors(conn_v1: sqlite3.Connection, conn_v2: sqlite3.Connection,
 def migrate_companies(conn_v1: sqlite3.Connection, conn_v2: sqlite3.Connection,
                       sector_map: dict[int, int], migrated_ds_id: int,
                       dry_run: bool = False) -> dict[int, int]:
-    """Migrate companies to organizations. Returns v1_company_id -> v2_org_id."""
+    """Migrate companies to organizations. Idempotent: reuses existing orgs by name."""
     rows = conn_v1.execute("""
         SELECT id, canonical_name, aliases, website_url, founded_year,
                description, sector_id, pestle_category, country,
@@ -137,21 +139,35 @@ def migrate_companies(conn_v1: sqlite3.Connection, conn_v2: sqlite3.Connection,
     """).fetchall()
 
     mapping: dict[int, int] = {}
+    reused = 0
+    created = 0
     for row in rows:
         v1_id = row["id"]
         name = row["canonical_name"] or "Unknown"
         aliases = row["aliases"] or "[]"
         founded_date = f"{row['founded_year']}-01-01" if row["founded_year"] else None
 
-        base_slug = slugify(name)
-        slug = base_slug
-        if not dry_run:
-            slug = ensure_unique_slug(conn_v2, base_slug)
-
-        if dry_run:
-            mapping[v1_id] = -v1_id  # placeholder
+        # Idempotency: reuse existing organization with same name
+        existing = conn_v2.execute(
+            "SELECT id FROM organizations WHERE LOWER(name) = LOWER(?)", (name,)
+        ).fetchone()
+        if existing:
+            mapping[v1_id] = existing[0]
+            if not dry_run:
+                # Ensure company role is marked
+                conn_v2.execute(
+                    "UPDATE organizations SET is_company = 1 WHERE id = ?",
+                    (existing[0],),
+                )
+            reused += 1
             continue
 
+        if dry_run:
+            mapping[v1_id] = -v1_id
+            created += 1
+            continue
+
+        slug = ensure_unique_slug(conn_v2, slugify(name))
         cur = conn_v2.execute(
             """INSERT INTO organizations (
                 slug, name, aliases, primary_role, is_company, is_investor,
@@ -166,6 +182,7 @@ def migrate_companies(conn_v1: sqlite3.Connection, conn_v2: sqlite3.Connection,
         )
         v2_id = cur.lastrowid
         mapping[v1_id] = v2_id
+        created += 1
 
         # Link to sector
         if row["sector_id"] and row["sector_id"] in sector_map:
@@ -175,7 +192,7 @@ def migrate_companies(conn_v1: sqlite3.Connection, conn_v2: sqlite3.Connection,
                 (v2_id, sector_map[row["sector_id"]]),
             )
 
-    print(f"  Companies -> Organizations: {len(mapping)}")
+    print(f"  Companies -> Organizations: created={created}, reused={reused}")
     return mapping
 
 
@@ -247,7 +264,12 @@ def migrate_investors(conn_v1: sqlite3.Connection, conn_v2: sqlite3.Connection,
 def migrate_investments(conn_v1: sqlite3.Connection, conn_v2: sqlite3.Connection,
                          company_map: dict[int, int], investor_map: dict[int, int],
                          migrated_ds_id: int, dry_run: bool = False) -> dict[int, int]:
-    """Migrate investments to funding_rounds + events(type=funding)."""
+    """Migrate investments to funding_rounds + events(type=funding).
+
+    Idempotent: skips rounds whose url_hash already exists in v2, and reuses
+    the existing round_id for the returned mapping so downstream steps stay
+    consistent on re-runs.
+    """
     rows = conn_v1.execute("""
         SELECT id, company_id, source_id, announced_date, amount_jpy, amount_raw,
                currency, round_type, confidence, source_url, source_title, url_hash,
@@ -256,9 +278,11 @@ def migrate_investments(conn_v1: sqlite3.Connection, conn_v2: sqlite3.Connection
     """).fetchall()
 
     confidence_score_map = {"high": 0.9, "medium": 0.6, "low": 0.3}
-
     round_mapping: dict[int, int] = {}
+    created = 0
+    reused = 0
     events_created = 0
+    events_reused = 0
 
     for row in rows:
         v1_id = row["id"]
@@ -271,12 +295,30 @@ def migrate_investments(conn_v1: sqlite3.Connection, conn_v2: sqlite3.Connection
             print(f"  WARN: investment {v1_id} has no company mapping, skipping")
             continue
 
+        # Idempotency: reuse existing funding round by url_hash
+        existing = conn_v2.execute(
+            "SELECT id FROM funding_rounds WHERE url_hash = ?",
+            (row["url_hash"],),
+        ).fetchone()
+        if existing:
+            round_mapping[v1_id] = existing[0]
+            reused += 1
+            # Check if corresponding funding event already exists
+            ev = conn_v2.execute(
+                """SELECT 1 FROM events
+                   WHERE organization_id = ? AND event_type = 'funding'
+                     AND source_url = ?""",
+                (org_id, row["source_url"]),
+            ).fetchone()
+            events_reused += 1 if ev else 0
+            continue
+
         if dry_run:
             round_mapping[v1_id] = -v1_id
+            created += 1
             events_created += 1
             continue
 
-        # Insert funding round
         cur = conn_v2.execute(
             """INSERT INTO funding_rounds (
                 organization_id, round_type, announced_date, amount_jpy, amount_raw,
@@ -294,8 +336,8 @@ def migrate_investments(conn_v1: sqlite3.Connection, conn_v2: sqlite3.Connection
         )
         round_id = cur.lastrowid
         round_mapping[v1_id] = round_id
+        created += 1
 
-        # Create corresponding event
         significance = min(1.0, max(0.3, conf_val))
         event_data = {
             "round_type": v2_round,
@@ -321,8 +363,8 @@ def migrate_investments(conn_v1: sqlite3.Connection, conn_v2: sqlite3.Connection
         )
         events_created += 1
 
-    print(f"  Investments -> Funding Rounds: {len(round_mapping)}")
-    print(f"  Funding Events created: {events_created}")
+    print(f"  Investments -> Funding Rounds: created={created}, reused={reused}")
+    print(f"  Funding Events: created={events_created}, already_present={events_reused}")
     return round_mapping
 
 
@@ -413,6 +455,8 @@ def main():
     conn_v1.row_factory = sqlite3.Row
     conn_v2 = sqlite3.connect(str(args.v2))
     conn_v2.execute("PRAGMA foreign_keys = ON")
+    # Explicit transaction boundary for the whole migration
+    conn_v2.execute("BEGIN IMMEDIATE")
 
     try:
         migrated_ds_id = get_data_source_id(conn_v2, "migrated_v1")
@@ -455,6 +499,10 @@ def main():
             count = conn_v2.execute(f"SELECT COUNT(*) FROM {table}").fetchone()[0]
             print(f"  {table}: {count}")
 
+    except Exception as e:
+        conn_v2.rollback()
+        print(f"\nERROR during migration: {e}", file=sys.stderr)
+        raise
     finally:
         conn_v1.close()
         conn_v2.close()
