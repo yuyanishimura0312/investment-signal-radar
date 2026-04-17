@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-17T17:56:50.521376",
+  "generated_at": "2026-04-17T23:12:44.189739",
   "schema_version": "v2.0",
   "stats": {
     "organizations": 45,
@@ -12,7 +12,7 @@
     "signal_scores": 0,
     "companies": 16,
     "investors": 29,
-    "press_releases": 10496
+    "press_releases": 10561
   },
   "sector_trends": [
     {
@@ -309,36 +309,36 @@
     ]
   },
   "press_releases": {
-    "total_count": 10496,
-    "funding_related_count": 1566,
+    "total_count": 10561,
+    "funding_related_count": 1583,
     "by_source": {
       "frontier_detector": 72,
       "prtimes": 200,
-      "prtimes_funding": 383,
+      "prtimes_funding": 436,
       "prtimes_historical": 2945,
       "prtimes_sangaku": 6581,
-      "startupdb": 295,
+      "startupdb": 307,
       "thebridge": 20
     },
     "by_category": {
-      "other": 8216,
-      "funding": 1459,
-      "partnership": 298,
+      "other": 8262,
+      "funding": 1470,
+      "partnership": 299,
       "hiring": 182,
       "product_launch": 124,
-      "accelerator": 110,
-      "exit": 107
+      "exit": 113,
+      "accelerator": 111
     },
     "by_month": [
       {
         "month": "2026-04",
-        "count": 727,
-        "funding_count": 96
+        "count": 745,
+        "funding_count": 101
       },
       {
         "month": "2026-03",
-        "count": 654,
-        "funding_count": 87
+        "count": 667,
+        "funding_count": 93
       },
       {
         "month": "2026-02",
@@ -352,13 +352,13 @@
       },
       {
         "month": "2025-12",
-        "count": 391,
-        "funding_count": 72
+        "count": 393,
+        "funding_count": 73
       },
       {
         "month": "2025-11",
-        "count": 392,
-        "funding_count": 93
+        "count": 395,
+        "funding_count": 96
       },
       {
         "month": "2025-10",
@@ -377,8 +377,8 @@
       },
       {
         "month": "2025-07",
-        "count": 271,
-        "funding_count": 54
+        "count": 272,
+        "funding_count": 55
       },
       {
         "month": "2025-06",
@@ -491,6 +491,22 @@
         "company_name": "小規模分散型水循環システム",
         "is_funding_related": 1,
         "source_url": "https://thebridge.jp/2026/04/wota-raises-series-c-extension-for-distributed-water-recycling-system"
+      },
+      {
+        "title": "【社長限定・参加費無料】上場企業・成長企業対象の経営者交流イベント「金成柱 43th生誕祭＆感謝祭－…",
+        "source": "prtimes_funding",
+        "published_at": "2026-04-16",
+        "company_name": "IR Robotics",
+        "is_funding_related": 1,
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000232.000054393.html"
+      },
+      {
+        "title": "メンタル休職者が出た企業の約8割で業務に支障、さらに約6社に1社がカバー社員の\"連鎖休職\"も離職・採…",
+        "source": "prtimes_funding",
+        "published_at": "2026-04-16",
+        "company_name": "株式会社ミツモア",
+        "is_funding_related": 0,
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000111.000026519.html"
       },
       {
         "title": "「生成AI実践会」運営者が自社のリアルなAI活用術を全公開！経営者コミュニティ「参謀」が5月12日(…",
@@ -835,48 +851,32 @@
         "company_name": "キヤノンMJ",
         "is_funding_related": 0,
         "source_url": "https://prtimes.jp/main/html/rd/p/000001405.000013943.html"
-      },
-      {
-        "title": "株式会社MakeCare、株式会社Bridgeと資本提携および業務連携を開始",
-        "source": "prtimes_funding",
-        "published_at": "2026-04-16",
-        "company_name": "Make Care",
-        "is_funding_related": 0,
-        "source_url": "https://prtimes.jp/main/html/rd/p/000000006.000133569.html"
-      },
-      {
-        "title": "株式会社Bridge、株式会社MakeCareと資本提携および業務連携を開始",
-        "source": "prtimes_funding",
-        "published_at": "2026-04-16",
-        "company_name": "株式会社Bridge",
-        "is_funding_related": 0,
-        "source_url": "https://prtimes.jp/main/html/rd/p/000000003.000180695.html"
       }
     ],
     "top_companies_by_pr_count": [
       {
         "company_name": "フォースタートアップス",
-        "count": 138
+        "count": 141
       },
       {
         "company_name": "株式会社ジェネシア・ベンチャーズ",
         "count": 73
       },
       {
+        "company_name": "STARTUP DB ENTERPRISE",
+        "count": 67
+      },
+      {
         "company_name": "グローバル・ブレイン株式会社",
         "count": 65
       },
       {
-        "company_name": "STARTUP DB ENTERPRISE",
-        "count": 65
+        "company_name": "PR TIMES",
+        "count": 41
       },
       {
         "company_name": "少数株ドットコム株式会社",
         "count": 39
-      },
-      {
-        "company_name": "PR TIMES",
-        "count": 37
       },
       {
         "company_name": "DuckDuckGo Trend Search",
@@ -903,11 +903,11 @@
         "count": 23
       },
       {
-        "company_name": "パナソニックグループ",
-        "count": 20
+        "company_name": "Z Venture Capital株式会社",
+        "count": 21
       },
       {
-        "company_name": "Z Venture Capital株式会社",
+        "company_name": "パナソニックグループ",
         "count": 20
       },
       {
@@ -919,15 +919,15 @@
         "count": 16
       },
       {
+        "company_name": "ReGACY Innovation Group株式会社",
+        "count": 16
+      },
+      {
         "company_name": "IVS",
         "count": 16
       },
       {
         "company_name": "アセンド株式会社",
-        "count": 15
-      },
-      {
-        "company_name": "ReGACY Innovation Group株式会社",
         "count": 15
       },
       {
