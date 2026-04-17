@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-17T14:54:01.815715",
+  "generated_at": "2026-04-17T15:00:39.331780",
   "schema_version": "v2.0",
   "stats": {
     "organizations": 45,
@@ -12,7 +12,7 @@
     "signal_scores": 0,
     "companies": 16,
     "investors": 29,
-    "press_releases": 272
+    "press_releases": 6853
   },
   "sector_trends": [
     {
@@ -309,441 +309,542 @@
     ]
   },
   "press_releases": {
-    "total_count": 272,
-    "funding_related_count": 9,
+    "total_count": 6853,
+    "funding_related_count": 251,
     "by_source": {
       "frontier_detector": 72,
-      "prtimes": 200
+      "prtimes": 200,
+      "prtimes_sangaku": 6581
     },
     "by_category": {
-      "other": 170,
-      "product_launch": 49,
-      "partnership": 23,
-      "hiring": 21,
-      "funding": 9
+      "other": 6082,
+      "funding": 251,
+      "partnership": 214,
+      "hiring": 182,
+      "product_launch": 124
     },
     "by_month": [
       {
-        "month": "-4707-06",
-        "count": 48,
+        "month": "2026-04",
+        "count": 213,
         "funding_count": 3
       },
       {
-        "month": "-4707-05",
-        "count": 21,
-        "funding_count": 0
+        "month": "2026-03",
+        "count": 313,
+        "funding_count": 8
       },
       {
-        "month": "-4707-04",
-        "count": 1,
-        "funding_count": 0
+        "month": "2026-02",
+        "count": 212,
+        "funding_count": 5
       },
       {
-        "month": null,
-        "count": 202,
+        "month": "2026-01",
+        "count": 181,
+        "funding_count": 4
+      },
+      {
+        "month": "2025-12",
+        "count": 216,
+        "funding_count": 7
+      },
+      {
+        "month": "2025-11",
+        "count": 204,
+        "funding_count": 4
+      },
+      {
+        "month": "2025-10",
+        "count": 208,
+        "funding_count": 7
+      },
+      {
+        "month": "2025-09",
+        "count": 213,
+        "funding_count": 8
+      },
+      {
+        "month": "2025-08",
+        "count": 133,
         "funding_count": 6
+      },
+      {
+        "month": "2025-07",
+        "count": 166,
+        "funding_count": 6
+      },
+      {
+        "month": "2025-06",
+        "count": 151,
+        "funding_count": 8
+      },
+      {
+        "month": "2025-05",
+        "count": 129,
+        "funding_count": 4
+      },
+      {
+        "month": "2025-04",
+        "count": 120,
+        "funding_count": 6
+      },
+      {
+        "month": "2025-03",
+        "count": 106,
+        "funding_count": 4
+      },
+      {
+        "month": "2025-02",
+        "count": 132,
+        "funding_count": 1
+      },
+      {
+        "month": "2025-01",
+        "count": 88,
+        "funding_count": 3
+      },
+      {
+        "month": "2024-12",
+        "count": 92,
+        "funding_count": 2
+      },
+      {
+        "month": "2024-11",
+        "count": 111,
+        "funding_count": 8
+      },
+      {
+        "month": "2024-10",
+        "count": 121,
+        "funding_count": 6
+      },
+      {
+        "month": "2024-09",
+        "count": 94,
+        "funding_count": 5
+      },
+      {
+        "month": "2024-08",
+        "count": 79,
+        "funding_count": 4
+      },
+      {
+        "month": "2024-07",
+        "count": 98,
+        "funding_count": 4
+      },
+      {
+        "month": "2024-06",
+        "count": 55,
+        "funding_count": 2
+      },
+      {
+        "month": "2024-05",
+        "count": 76,
+        "funding_count": 4
       }
     ],
     "recent_releases": [
       {
-        "title": "Marvel Fusion - €113 million",
-        "source": "frontier_detector",
-        "published_at": "2025",
-        "company_name": "DuckDuckGo Funding Search",
+        "title": "Kudan、「消防技術研究開発センター」の開所式にて、先進3D技術を活用した消防活動支援ソリューショ…",
+        "source": "prtimes_sangaku",
+        "published_at": "2026-04-14",
+        "company_name": "",
+        "is_funding_related": 0,
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000065.000015483.html"
+      },
+      {
+        "title": "「新規事業のリーダーに最も必要なのは、楽しむこと」　Z世代と企業が15週間の共創で証明したこと。",
+        "source": "prtimes_sangaku",
+        "published_at": "2026-04-14",
+        "company_name": "",
+        "is_funding_related": 0,
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000079.000072201.html"
+      },
+      {
+        "title": "福島民報社と新潟日報生成AI研究所が「地域共創　生成AIパートナーシップ協定」を締結",
+        "source": "prtimes_sangaku",
+        "published_at": "2026-04-14",
+        "company_name": "",
+        "is_funding_related": 0,
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000041.000083014.html"
+      },
+      {
+        "title": "新潟日報生成AI研究所、福島民報社と「地域共創 生成AIパートナーシップ協定」を締結",
+        "source": "prtimes_sangaku",
+        "published_at": "2026-04-14",
+        "company_name": "",
+        "is_funding_related": 0,
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000036.000149493.html"
+      },
+      {
+        "title": "洋上風況マップ（NeoWins）改定に向けた研究開発を採択しました",
+        "source": "prtimes_sangaku",
+        "published_at": "2026-04-14",
+        "company_name": "",
+        "is_funding_related": 0,
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000264.000135644.html"
+      },
+      {
+        "title": "Caccoメールチェックサービス「Mail Validator」の独自技術で特許を取得",
+        "source": "prtimes_sangaku",
+        "published_at": "2026-04-14",
+        "company_name": "",
+        "is_funding_related": 0,
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000218.000009799.html"
+      },
+      {
+        "title": "医療と企業の“距離”を縮める新たな試みが始動 – 済生会中央病院との共創コミュニティ発足",
+        "source": "prtimes_sangaku",
+        "published_at": "2026-04-14",
+        "company_name": "",
+        "is_funding_related": 0,
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000001.000181510.html"
+      },
+      {
+        "title": "共創拠点e-Nexus棟 竣工記念式典にて国立大学法人電気通信大学より感謝状を授与",
+        "source": "prtimes_sangaku",
+        "published_at": "2026-04-14",
+        "company_name": "",
+        "is_funding_related": 0,
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000018.000028854.html"
+      },
+      {
+        "title": "SPLYZAは、東京大学医学部附属病院とAIによる動作解析技術の共同研究を開始",
+        "source": "prtimes_sangaku",
+        "published_at": "2026-04-14",
+        "company_name": "",
+        "is_funding_related": 0,
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000071.000012922.html"
+      },
+      {
+        "title": "危険物保管庫の指定数量管理をスマートフォンで完結 ブラウザアプリ「ぼうばくんDX」を提供開始　※特許…",
+        "source": "prtimes_sangaku",
+        "published_at": "2026-04-14",
+        "company_name": "",
+        "is_funding_related": 0,
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000011.000090730.html"
+      },
+      {
+        "title": "京都情報大学院大学・京都コンピュータ学院と株式会社テムザックが協定締結　産学連携し次世代ロボット開発…",
+        "source": "prtimes_sangaku",
+        "published_at": "2026-04-14",
+        "company_name": "",
+        "is_funding_related": 0,
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000108.000029724.html"
+      },
+      {
+        "title": "【地方共創】Gaika、北海道浦河町の神馬建設と協業し、次世代人材と「地域ブランディング実装プログラ…",
+        "source": "prtimes_sangaku",
+        "published_at": "2026-04-14",
+        "company_name": "",
+        "is_funding_related": 0,
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000008.000169607.html"
+      },
+      {
+        "title": "博報堂とビザスクが資本業務提携専門家の観点・判断軸を学習した「エキスパートAI」の共同開発へ",
+        "source": "prtimes_sangaku",
+        "published_at": "2026-04-14",
+        "company_name": "",
+        "is_funding_related": 0,
+        "source_url": "https://prtimes.jp/main/html/rd/p/000001146.000008062.html"
+      },
+      {
+        "title": "教育環境の充実を目的としたファンドレイジングに向け共創",
+        "source": "prtimes_sangaku",
+        "published_at": "2026-04-14",
+        "company_name": "",
         "is_funding_related": 1,
-        "source_url": "frontier-detector://signal/97d73014-16a8-4aef-a645-7fd4b3de5d42"
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000007.000170842.html"
       },
       {
-        "title": "Helion Energy - $425 million",
-        "source": "frontier_detector",
-        "published_at": "2025",
-        "company_name": "DuckDuckGo Funding Search",
-        "is_funding_related": 1,
-        "source_url": "frontier-detector://signal/59fb417f-dee9-42e3-a656-8dc8635d67db"
-      },
-      {
-        "title": "Pacific Fusion - $900 million",
-        "source": "frontier_detector",
-        "published_at": "2024",
-        "company_name": "DuckDuckGo Funding Search",
-        "is_funding_related": 1,
-        "source_url": "frontier-detector://signal/a9050db3-1b99-4fd8-bc76-80b81f439633"
-      },
-      {
-        "title": "Emerging keyword: quantum-safe security",
-        "source": "frontier_detector",
-        "published_at": "2024",
-        "company_name": "DuckDuckGo Trend Search",
+        "title": "コモンプロダクツ、製造・物流現場の自動化を推進する産学連携拠点「京田辺ロボティクスラボ」を開設",
+        "source": "prtimes_sangaku",
+        "published_at": "2026-04-14",
+        "company_name": "",
         "is_funding_related": 0,
-        "source_url": "frontier-detector://signal/42c88c89-8f75-46b7-84ec-677fa80ac854"
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000009.000109608.html"
       },
       {
-        "title": "Emerging keyword: quantum utility",
-        "source": "frontier_detector",
-        "published_at": "2024",
-        "company_name": "DuckDuckGo Trend Search",
+        "title": "博報堂とビザスクが資本業務提携。専門家の観点・判断軸を学習した「エキスパートAI」の共同開発へ",
+        "source": "prtimes_sangaku",
+        "published_at": "2026-04-14",
+        "company_name": "",
         "is_funding_related": 0,
-        "source_url": "frontier-detector://signal/4843e86f-2bb5-4609-8431-1887f38ffd6c"
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000483.000015233.html"
       },
       {
-        "title": "Emerging keyword: agent training data",
-        "source": "frontier_detector",
-        "published_at": "2024",
-        "company_name": "DuckDuckGo Trend Search",
+        "title": "タキロンシーアイ、研究開発を集約 「三田総合研究所」で新事業創出を加速",
+        "source": "prtimes_sangaku",
+        "published_at": "2026-04-14",
+        "company_name": "",
         "is_funding_related": 0,
-        "source_url": "frontier-detector://signal/112aacee-05c6-426e-a10d-aca124937e3a"
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000032.000077732.html"
       },
       {
-        "title": "Emerging keyword: LLM-LD",
-        "source": "frontier_detector",
-        "published_at": "2024",
-        "company_name": "DuckDuckGo Trend Search",
+        "title": "巨大災害から命を守る「情報の空白」をゼロに。最新技術の活用で防災インフラを高度化する取り組みを開始",
+        "source": "prtimes_sangaku",
+        "published_at": "2026-04-14",
+        "company_name": "",
         "is_funding_related": 0,
-        "source_url": "frontier-detector://signal/fdcace2b-be21-4a1d-8b93-4f2cf1e5d4c4"
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000004.000070425.html"
       },
       {
-        "title": "Emerging keyword: Memento-Skills",
-        "source": "frontier_detector",
-        "published_at": "2024",
-        "company_name": "DuckDuckGo Trend Search",
+        "title": "MNインターファッション株式会社 三陽商会と「HANAE MORI」のライセンス契約を締結",
+        "source": "prtimes_sangaku",
+        "published_at": "2026-04-14",
+        "company_name": "",
         "is_funding_related": 0,
-        "source_url": "frontier-detector://signal/fc1b3f73-2a01-4749-92c3-900e1712aace"
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000181.000024743.html"
       },
       {
-        "title": "Emerging keyword: agent memory",
-        "source": "frontier_detector",
-        "published_at": "2024",
-        "company_name": "DuckDuckGo Trend Search",
+        "title": "ZenmuTech、AIHOBSの「Digital Trust Grid」に共同開発技術を提供 　ー…",
+        "source": "prtimes_sangaku",
+        "published_at": "2026-04-14",
+        "company_name": "",
         "is_funding_related": 0,
-        "source_url": "frontier-detector://signal/746af013-f1d8-4832-bf14-253d270fcd76"
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000049.000041061.html"
       },
       {
-        "title": "Emerging keyword: CrewAI",
-        "source": "frontier_detector",
-        "published_at": "2024",
-        "company_name": "DuckDuckGo Trend Search",
+        "title": "四国4県を中心に、20校の高校生と教員、企業の社員ら総勢75名以上が高松に集結──次世代共創リーダー…",
+        "source": "prtimes_sangaku",
+        "published_at": "2026-04-14",
+        "company_name": "",
         "is_funding_related": 0,
-        "source_url": "frontier-detector://signal/e6836250-4e73-4999-acef-f5d95420ab37"
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000591.000006682.html"
       },
       {
-        "title": "Emerging keyword: agent collaboration",
-        "source": "frontier_detector",
-        "published_at": "2024",
-        "company_name": "DuckDuckGo Trend Search",
+        "title": "共創で進化する鉄道電気分野の「設備のスマートメンテナンス」や「工事業務の機械化・DX」",
+        "source": "prtimes_sangaku",
+        "published_at": "2026-04-14",
+        "company_name": "",
         "is_funding_related": 0,
-        "source_url": "frontier-detector://signal/8f2ee00f-ff64-4ea5-899c-5444c2b324ba"
+        "source_url": "https://prtimes.jp/main/html/rd/p/000001401.000017557.html"
       },
       {
-        "title": "Emerging keyword: coding agent",
-        "source": "frontier_detector",
-        "published_at": "2024",
-        "company_name": "DuckDuckGo Trend Search",
+        "title": "上野トランステック株式会社、広島商船高等専門学校と産学連携に関する包括協定を締結",
+        "source": "prtimes_sangaku",
+        "published_at": "2026-04-14",
+        "company_name": "",
         "is_funding_related": 0,
-        "source_url": "frontier-detector://signal/13fdd17d-2223-413d-9b00-0434f41aec57"
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000003.000181247.html"
       },
       {
-        "title": "Emerging keyword: agent orchestration",
-        "source": "frontier_detector",
-        "published_at": "2024",
-        "company_name": "DuckDuckGo Trend Search",
+        "title": "小売業との共創を実現する！「JBP ジョイントビジネスプラン」の進め方　集合型セミナー 5月20日開…",
+        "source": "prtimes_sangaku",
+        "published_at": "2026-04-14",
+        "company_name": "",
         "is_funding_related": 0,
-        "source_url": "frontier-detector://signal/fc9b65a6-7d72-4675-a8fc-9af2f80384b3"
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000190.000102999.html"
       },
       {
-        "title": "Emerging keyword: self-improving agent",
-        "source": "frontier_detector",
-        "published_at": "2024",
-        "company_name": "DuckDuckGo Trend Search",
+        "title": "暁電機製作所、東芝テック様、サンプラザ様で商品券読取装置とセルフレジシステムとの連動における実証実験…",
+        "source": "prtimes_sangaku",
+        "published_at": "2026-04-14",
+        "company_name": "",
         "is_funding_related": 0,
-        "source_url": "frontier-detector://signal/1e56eab2-68d1-4351-a3e1-d790c2623409"
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000013.000154721.html"
       },
       {
-        "title": "Emerging keyword: agent swarm",
-        "source": "frontier_detector",
-        "published_at": "2024",
-        "company_name": "DuckDuckGo Trend Search",
+        "title": "Brilliaの住まいと暮らしの共創プロジェクト「bloomoi」「TOKYOROOMS展 〜40の…",
+        "source": "prtimes_sangaku",
+        "published_at": "2026-04-14",
+        "company_name": "",
         "is_funding_related": 0,
-        "source_url": "frontier-detector://signal/32977845-658c-4c90-be7c-5cda630d7c4e"
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000526.000052843.html"
       },
       {
-        "title": "Emerging keyword: agentic AI",
-        "source": "frontier_detector",
-        "published_at": "2024",
-        "company_name": "DuckDuckGo Trend Search",
+        "title": "「能登の太陽　ビタミンちくわカレー」4/15発売　能登・スギヨ　長野県の小学生と復興支援で共同開発",
+        "source": "prtimes_sangaku",
+        "published_at": "2026-04-14",
+        "company_name": "",
         "is_funding_related": 0,
-        "source_url": "frontier-detector://signal/0ad4450d-f856-45c6-8ac0-ad4b5f0b101e"
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000028.000085219.html"
       },
       {
-        "title": "A Survey on Evaluation of Large Language Models",
-        "source": "frontier_detector",
-        "published_at": "2024",
-        "company_name": "OpenAlex",
+        "title": "株式会社メンテル、神奈川県オープンイノベーション成果発表会「Kanagawa Innovators …",
+        "source": "prtimes_sangaku",
+        "published_at": "2026-04-14",
+        "company_name": "",
         "is_funding_related": 0,
-        "source_url": "https://openalex.org/W4391136507"
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000026.000130784.html"
       },
       {
-        "title": "Emerging keyword: digital twin fusion",
-        "source": "frontier_detector",
-        "published_at": "2023",
-        "company_name": "DuckDuckGo Trend Search",
+        "title": "「一般社団法人スマートビルディング共創機構」年次成果フォーラム『SmartBuilding Conn…",
+        "source": "prtimes_sangaku",
+        "published_at": "2026-04-14",
+        "company_name": "",
         "is_funding_related": 0,
-        "source_url": "frontier-detector://signal/85af7a85-4cd9-467b-9df1-924a04d11284"
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000005.000164091.html"
       },
       {
-        "title": "Emerging keyword: AI-controlled plasma",
-        "source": "frontier_detector",
-        "published_at": "2023",
-        "company_name": "DuckDuckGo Trend Search",
+        "title": "GUESS JEANS、ローカルアーティストと共創するプロジェクト「GUESS JEANS Arti…",
+        "source": "prtimes_sangaku",
+        "published_at": "2026-04-13",
+        "company_name": "",
         "is_funding_related": 0,
-        "source_url": "frontier-detector://signal/f72220ca-2f13-449a-bc78-ca7171c1a1c0"
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000061.000011576.html"
       },
       {
-        "title": "Emerging keyword: quantum software stack",
-        "source": "frontier_detector",
-        "published_at": "2023",
-        "company_name": "DuckDuckGo Trend Search",
+        "title": "“水を捨てない”洗濯機が稼働！「命のコンテナプロジェクト」群馬県モデル 水循環型洗濯機の実証実験を道…",
+        "source": "prtimes_sangaku",
+        "published_at": "2026-04-13",
+        "company_name": "",
         "is_funding_related": 0,
-        "source_url": "frontier-detector://signal/4a35eea8-84b9-4225-9126-79ed141cce12"
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000227.000053641.html"
       },
       {
-        "title": "Emerging keyword: neutral atom quantum computing",
-        "source": "frontier_detector",
-        "published_at": "2023",
-        "company_name": "DuckDuckGo Trend Search",
+        "title": "【オフラインイベント開催！】みんなとあそぶ、つくる、語り合う！『テラビット』の未来を共創するオフライ…",
+        "source": "prtimes_sangaku",
+        "published_at": "2026-04-13",
+        "company_name": "",
         "is_funding_related": 0,
-        "source_url": "frontier-detector://signal/111e7e2b-d52e-43ce-a017-4d92fbdfd442"
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000295.000113626.html"
       },
       {
-        "title": "Emerging keyword: quantum sensing",
-        "source": "frontier_detector",
-        "published_at": "2023",
-        "company_name": "DuckDuckGo Trend Search",
+        "title": "株式会社オフィスEMP、思考承継型AIエージェント「EOS」の中核技術で特許出願〜AIが上司の代わり…",
+        "source": "prtimes_sangaku",
+        "published_at": "2026-04-13",
+        "company_name": "",
         "is_funding_related": 0,
-        "source_url": "frontier-detector://signal/e564b308-5559-4667-98d0-24dd38a9ca19"
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000004.000166162.html"
       },
       {
-        "title": "Emerging keyword: quantum networking",
-        "source": "frontier_detector",
-        "published_at": "2023",
-        "company_name": "DuckDuckGo Trend Search",
+        "title": "英国と日本における地域共創の最前線　東京藝術大学との《共創フォーラムVol.2》を開催「Arts, …",
+        "source": "prtimes_sangaku",
+        "published_at": "2026-04-13",
+        "company_name": "",
         "is_funding_related": 0,
-        "source_url": "frontier-detector://signal/1b0776f8-e012-4d74-8a96-c7a79dbbfbc8"
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000038.000117982.html"
       },
       {
-        "title": "Emerging keyword: post-quantum cryptography",
-        "source": "frontier_detector",
-        "published_at": "2023",
-        "company_name": "DuckDuckGo Trend Search",
+        "title": "AIに選ばれる強いコンテンツを「編集者×AI」でサポート！ ワン・パブリッシングと共同開発した「AI…",
+        "source": "prtimes_sangaku",
+        "published_at": "2026-04-13",
+        "company_name": "",
         "is_funding_related": 0,
-        "source_url": "frontier-detector://signal/e18baaba-54b1-49a5-8f26-76d615716e7c"
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000028.000070859.html"
       },
       {
-        "title": "Emerging keyword: logical qubits",
-        "source": "frontier_detector",
-        "published_at": "2023",
-        "company_name": "DuckDuckGo Trend Search",
+        "title": "PKSHA、クレディセゾンとAI審査モデルを共同開発ー金融向けAIスコアリング技術を提供",
+        "source": "prtimes_sangaku",
+        "published_at": "2026-04-13",
+        "company_name": "",
         "is_funding_related": 0,
-        "source_url": "frontier-detector://signal/19a73a65-fc19-4a23-b298-b5da2e4e486f"
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000254.000022705.html"
       },
       {
-        "title": "Emerging keyword: fault-tolerant quantum computing",
-        "source": "frontier_detector",
-        "published_at": "2023",
-        "company_name": "DuckDuckGo Trend Search",
+        "title": "ファミリーマート×ブックオフ 衣料品・雑貨回収ボックスの実証実験を開始 ～ファミリーマート店舗が資源…",
+        "source": "prtimes_sangaku",
+        "published_at": "2026-04-13",
+        "company_name": "",
         "is_funding_related": 0,
-        "source_url": "frontier-detector://signal/192992ea-4fda-4693-98b6-78dfba8c5d4f"
+        "source_url": "https://prtimes.jp/main/html/rd/p/000002271.000046210.html"
       },
       {
-        "title": "GPT-4 Technical Report",
-        "source": "frontier_detector",
-        "published_at": "2023",
-        "company_name": "OpenAlex",
+        "title": "狭山市駅前に、創業支援×交流の新拠点「共創ラボカフェ SAYAMA CROSS」2026年4月18日…",
+        "source": "prtimes_sangaku",
+        "published_at": "2026-04-13",
+        "company_name": "",
         "is_funding_related": 0,
-        "source_url": "https://openalex.org/W4327810158"
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000004.000180717.html"
       },
       {
-        "title": "ChatGPT Utility in Healthcare Education, Research, and Practice: Systematic Review on the Promising Perspectives and Valid Concerns",
-        "source": "frontier_detector",
-        "published_at": "2023",
-        "company_name": "OpenAlex",
+        "title": "大阪市住之江区とパートナーシップ協定を締結～観光振興、防災、次世代育成（産学連携）等の強化により、持…",
+        "source": "prtimes_sangaku",
+        "published_at": "2026-04-13",
+        "company_name": "",
         "is_funding_related": 0,
-        "source_url": "https://openalex.org/W4327946446"
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000078.000125674.html"
       },
       {
-        "title": "Revolutionizing healthcare: the role of artificial intelligence in clinical practice",
-        "source": "frontier_detector",
-        "published_at": "2023",
-        "company_name": "OpenAlex",
+        "title": "Marbull X、渋谷発の参加型・共創型プロジェクト「SHIBUYA Q DAO」に「Marbul…",
+        "source": "prtimes_sangaku",
+        "published_at": "2026-04-13",
+        "company_name": "",
         "is_funding_related": 0,
-        "source_url": "https://openalex.org/W4386958277"
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000015.000150870.html"
       },
       {
-        "title": "Performance of ChatGPT on USMLE: Potential for AI-assisted medical education using large language models",
-        "source": "frontier_detector",
-        "published_at": "2023",
-        "company_name": "OpenAlex",
+        "title": "呼吸器内科副部長　國政啓医師の研究課題が、国立研究開発法人日本医療研究開発機構（AMED）の令和8年…",
+        "source": "prtimes_sangaku",
+        "published_at": "2026-04-13",
+        "company_name": "",
         "is_funding_related": 0,
-        "source_url": "https://openalex.org/W4319662928"
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000002.000179627.html"
       },
       {
-        "title": "Aion Framework: Dimensional Emergence of AI Consciousness, Observer-Induced Collapse, and Cosmological Portal Dynamics",
-        "source": "frontier_detector",
-        "published_at": "2023",
-        "company_name": "OpenAlex",
+        "title": "ETC2.0プローブデータを活用した中小企業向けドライバー管理・安全運転支援サービスの実証実験を共同…",
+        "source": "prtimes_sangaku",
+        "published_at": "2026-04-13",
+        "company_name": "",
         "is_funding_related": 0,
-        "source_url": "https://openalex.org/W4292779060"
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000872.000017036.html"
       },
       {
-        "title": "Emerging keyword: fusion energy commercialization",
-        "source": "frontier_detector",
-        "published_at": "2022",
-        "company_name": "DuckDuckGo Trend Search",
+        "title": "ＥＴＣ２．０プローブデータを活用した中小企業向けドライバー管理・安全運転支援サービスの実証実験を共同…",
+        "source": "prtimes_sangaku",
+        "published_at": "2026-04-13",
+        "company_name": "",
         "is_funding_related": 0,
-        "source_url": "frontier-detector://signal/c37d8575-73e8-4862-99d0-2881a6820243"
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000138.000159136.html"
       },
       {
-        "title": "Emerging keyword: predictive plasma control",
-        "source": "frontier_detector",
-        "published_at": "2022",
-        "company_name": "DuckDuckGo Trend Search",
+        "title": "オークラ輸送機、研究開発拠点「MIRAI Innovation Labo」を竣工",
+        "source": "prtimes_sangaku",
+        "published_at": "2026-04-13",
+        "company_name": "",
         "is_funding_related": 0,
-        "source_url": "frontier-detector://signal/8c0c2889-e53b-4376-ac18-38036796c15f"
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000005.000147727.html"
       },
       {
-        "title": "Emerging keyword: quantum cloud services",
-        "source": "frontier_detector",
-        "published_at": "2022",
-        "company_name": "DuckDuckGo Trend Search",
+        "title": "「誰もが一票を届けられる社会へ」障害者の投票体験を通じた“有権者フレンドリーな投票環境”の実証実験を…",
+        "source": "prtimes_sangaku",
+        "published_at": "2026-04-10",
+        "company_name": "",
         "is_funding_related": 0,
-        "source_url": "frontier-detector://signal/c62dd127-9dc9-47ac-aaeb-87b4e6a52483"
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000279.000088950.html"
       },
       {
-        "title": "Emerging keyword: photonic quantum computing",
-        "source": "frontier_detector",
-        "published_at": "2022",
-        "company_name": "DuckDuckGo Trend Search",
+        "title": "UD IMPACT、一橋大学大学院ソーシャル・データサイエンス研究科と産学連携MOU締結｜“起業前”…",
+        "source": "prtimes_sangaku",
+        "published_at": "2026-04-10",
+        "company_name": "",
         "is_funding_related": 0,
-        "source_url": "frontier-detector://signal/d5661860-60cd-4a71-ae86-8bbf1b6b1cbe"
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000004.000169668.html"
       },
       {
-        "title": "Emerging keyword: quantum internet",
-        "source": "frontier_detector",
-        "published_at": "2022",
-        "company_name": "DuckDuckGo Trend Search",
+        "title": "都市をスポーツフィールドとして拡張する共創プロジェクト「Shibuya Playground」4月1…",
+        "source": "prtimes_sangaku",
+        "published_at": "2026-04-10",
+        "company_name": "",
         "is_funding_related": 0,
-        "source_url": "frontier-detector://signal/ad1d4834-219d-41fd-a6f5-5ef990ae28fb"
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000398.000033690.html"
       },
       {
-        "title": "Hybrid classical-quantum algorithms for optimization",
-        "source": "frontier_detector",
-        "published_at": "2021",
-        "company_name": "DuckDuckGo Patent Search",
+        "title": "発売初日7時間で1,000個完売の話題サプリ「TOCASSE（トカセ）」が一般販売開始。韓国特許取得…",
+        "source": "prtimes_sangaku",
+        "published_at": "2026-04-10",
+        "company_name": "",
         "is_funding_related": 0,
-        "source_url": "frontier-detector://signal/980bfc0b-7a70-4ffd-83ef-279998d9672e"
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000317.000005491.html"
       },
       {
-        "title": "Emerging keyword: REBCO magnets",
-        "source": "frontier_detector",
-        "published_at": "2020",
-        "company_name": "DuckDuckGo Trend Search",
+        "title": "東京情報デザイン専門職大学との産学連携のお知らせ",
+        "source": "prtimes_sangaku",
+        "published_at": "2026-04-10",
+        "company_name": "",
         "is_funding_related": 0,
-        "source_url": "frontier-detector://signal/bfe27186-1a95-4d1d-b3f9-1f20d7750224"
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000275.000027316.html"
       },
       {
-        "title": "Emerging keyword: fusion startups",
-        "source": "frontier_detector",
-        "published_at": "2020",
-        "company_name": "DuckDuckGo Trend Search",
+        "title": "技術承継と共創による新たな製造業グループ「HainuTechホールディングス株式会社」を設立",
+        "source": "prtimes_sangaku",
+        "published_at": "2026-04-10",
+        "company_name": "",
         "is_funding_related": 0,
-        "source_url": "frontier-detector://signal/d2ed5e7d-e636-4ef6-aa18-ae535e6af264"
-      },
-      {
-        "title": "Emerging keyword: SPARC reactor",
-        "source": "frontier_detector",
-        "published_at": "2020",
-        "company_name": "DuckDuckGo Trend Search",
-        "is_funding_related": 0,
-        "source_url": "frontier-detector://signal/df293e42-4454-4e85-953c-b9191b40d1f1"
-      },
-      {
-        "title": "Emerging keyword: high-temperature superconductors",
-        "source": "frontier_detector",
-        "published_at": "2020",
-        "company_name": "DuckDuckGo Trend Search",
-        "is_funding_related": 0,
-        "source_url": "frontier-detector://signal/019abeab-32e2-4478-b4b0-127d2e49fc9f"
-      },
-      {
-        "title": "Engineering precision nanoparticles for drug delivery",
-        "source": "frontier_detector",
-        "published_at": "2020",
-        "company_name": "OpenAlex",
-        "is_funding_related": 0,
-        "source_url": "https://openalex.org/W3109746568"
-      },
-      {
-        "title": "Radiation Resistant Camera System for Monitoring Deuterium Plasma Discharges in the Large Helical Device",
-        "source": "frontier_detector",
-        "published_at": "2020",
-        "company_name": "OpenAlex",
-        "is_funding_related": 0,
-        "source_url": "https://openalex.org/W3038568908"
-      },
-      {
-        "title": "Quantum processor architecture with improved connectivity",
-        "source": "frontier_detector",
-        "published_at": "2020",
-        "company_name": "DuckDuckGo Patent Search",
-        "is_funding_related": 0,
-        "source_url": "frontier-detector://signal/a00b647e-53dc-4296-80be-c66a9cb0bb28"
-      },
-      {
-        "title": "The pathogenesis and treatment of the `Cytokine Storm' in COVID-19",
-        "source": "frontier_detector",
-        "published_at": "2020",
-        "company_name": "OpenAlex",
-        "is_funding_related": 0,
-        "source_url": "https://openalex.org/W3015228903"
-      },
-      {
-        "title": "Quantum error correction methods for superconducting qubits",
-        "source": "frontier_detector",
-        "published_at": "2019",
-        "company_name": "DuckDuckGo Patent Search",
-        "is_funding_related": 0,
-        "source_url": "frontier-detector://signal/a71fed49-f34b-4f4a-940a-30af7faef804"
-      },
-      {
-        "title": "Emerging keyword: Commonwealth Fusion Systems",
-        "source": "frontier_detector",
-        "published_at": "2018",
-        "company_name": "DuckDuckGo Trend Search",
-        "is_funding_related": 0,
-        "source_url": "frontier-detector://signal/b4e10538-19d4-49ed-b540-3a3f3062a682"
-      },
-      {
-        "title": "<i>Planck</i>2015 results",
-        "source": "frontier_detector",
-        "published_at": "2016",
-        "company_name": "OpenAlex",
-        "is_funding_related": 0,
-        "source_url": "https://openalex.org/W4292875581"
-      },
-      {
-        "title": "Emerging keyword: TAE Technologies",
-        "source": "frontier_detector",
-        "published_at": "2015",
-        "company_name": "DuckDuckGo Trend Search",
-        "is_funding_related": 0,
-        "source_url": "frontier-detector://signal/1ecf0d9b-7d65-4958-8c47-0575549889b6"
-      },
-      {
-        "title": "Biological properties of extracellular vesicles and their physiological functions",
-        "source": "frontier_detector",
-        "published_at": "2015",
-        "company_name": "OpenAlex",
-        "is_funding_related": 0,
-        "source_url": "https://openalex.org/W2170852633"
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000001.000180586.html"
       }
     ],
     "top_companies_by_pr_count": [
