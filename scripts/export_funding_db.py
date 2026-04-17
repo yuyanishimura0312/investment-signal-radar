@@ -89,17 +89,18 @@ CREATE INDEX IF NOT EXISTS idx_fr_round ON funding_releases(round_type);
 
 # Round type detection
 ROUND_PATTERNS = [
-    (r"プレシード|pre.?seed", "pre_seed"),
-    (r"シード|seed", "seed"),
-    (r"プレシリーズ\s*A|pre.?series\s*a", "pre_series_a"),
-    (r"シリーズ\s*A|series\s*a", "series_a"),
-    (r"シリーズ\s*B|series\s*b", "series_b"),
-    (r"シリーズ\s*C|series\s*c", "series_c"),
-    (r"シリーズ\s*D|series\s*d", "series_d"),
-    (r"シリーズ\s*E|series\s*e", "series_e"),
+    (r"プレシード|プレシード|pre.?seed", "pre_seed"),
+    (r"シード|シード|seed", "seed"),
+    (r"プレシリーズ\s*[AＡ]|pre.?series\s*a", "pre_series_a"),
+    (r"シリーズ\s*[AＡ]|series\s*a", "series_a"),
+    (r"シリーズ\s*[BＢ]|series\s*b", "series_b"),
+    (r"シリーズ\s*[CＣ]|series\s*c", "series_c"),
+    (r"シリーズ\s*[DＤ]|series\s*d", "series_d"),
+    (r"シリーズ\s*[EＥ]|series\s*e", "series_e"),
+    (r"シリーズ\s*[FＦ]|series\s*f", "series_f"),
     (r"第三者割当増資", "third_party_allotment"),
-    (r"IPO|新規上場|株式公開", "ipo"),
-    (r"M&A|買収|事業譲渡", "ma"),
+    (r"IPO|ＩＰＯ|新規上場|株式公開", "ipo"),
+    (r"M&A|Ｍ＆Ａ|買収|事業譲渡", "ma"),
 ]
 
 
@@ -132,10 +133,21 @@ def parse_amount_jpy(amount_raw: str | None) -> int | None:
 def extract_amount(title: str, body: str = "") -> str | None:
     """Extract amount from text."""
     text = f"{title} {body}"
+    # Japanese yen amounts
     m = re.search(r"([\d,.]+\s*億円)", text)
     if m:
         return m.group(1)
     m = re.search(r"([\d,.]+\s*万円)", text)
+    if m:
+        return m.group(1)
+    # Dollar amounts
+    m = re.search(r"([\d,.]+\s*億ドル)", text)
+    if m:
+        return m.group(1)
+    m = re.search(r"(\$[\d,.]+\s*[MB])", text)
+    if m:
+        return m.group(1)
+    m = re.search(r"([\d,.]+\s*million\s*(?:USD|dollars?))", text, re.IGNORECASE)
     if m:
         return m.group(1)
     return None
@@ -152,14 +164,20 @@ def export(src_path: Path, dst_path: Path, include_all: bool = False) -> None:
     dst = sqlite3.connect(dst_path)
     dst.executescript(SCHEMA)
 
-    # Export press releases
+    # Export press releases (filter out pre-2021 anomalies)
+    date_filter = "AND (published_at IS NULL OR published_at >= '2021-01-01')"
     if include_all:
-        rows = src.execute("SELECT * FROM press_releases ORDER BY published_at DESC").fetchall()
-    else:
-        rows = src.execute("""
+        rows = src.execute(f"""
             SELECT * FROM press_releases
-            WHERE is_funding_related = 1
-               OR category IN ('funding', 'exit', 'accelerator', 'partnership')
+            WHERE 1=1 {date_filter}
+            ORDER BY published_at DESC
+        """).fetchall()
+    else:
+        rows = src.execute(f"""
+            SELECT * FROM press_releases
+            WHERE (is_funding_related = 1
+               OR category IN ('funding', 'exit', 'accelerator', 'partnership'))
+               {date_filter}
             ORDER BY published_at DESC
         """).fetchall()
 
@@ -233,6 +251,10 @@ def export(src_path: Path, dst_path: Path, include_all: bool = False) -> None:
             cat = r["category"] or "other"
             if cat in md:
                 md[cat] += 1
+            # Also count is_funding_related=1 records in funding
+            # (covers exit category items marked as funding-related)
+            if r["is_funding_related"] and cat != "funding":
+                md["funding"] += 1
 
     # Insert companies
     for name, data in company_data.items():
