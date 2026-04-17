@@ -201,6 +201,97 @@ def data_source_breakdown() -> list[dict]:
     return [dict(r) for r in rows]
 
 
+def export_press_release_data() -> dict:
+    """Aggregate press release data for the dashboard.
+
+    Returns a summary dict with counts by source/category/month,
+    recent releases, and top companies by PR count.
+    Safe to call even if press_releases table is empty or missing.
+    """
+    with _conn() as conn:
+        # Check if press_releases table exists
+        table_check = conn.execute(
+            "SELECT name FROM sqlite_master WHERE type='table' AND name='press_releases'"
+        ).fetchone()
+        if not table_check:
+            return {
+                "total_count": 0,
+                "funding_related_count": 0,
+                "by_source": {},
+                "by_category": {},
+                "by_month": [],
+                "recent_releases": [],
+                "top_companies_by_pr_count": [],
+            }
+
+        # Total and funding count
+        row = conn.execute("SELECT COUNT(*) as c FROM press_releases").fetchone()
+        total = row["c"]
+
+        row = conn.execute(
+            "SELECT COUNT(*) as c FROM press_releases WHERE is_funding_related = 1"
+        ).fetchone()
+        funding_count = row["c"]
+
+        # By source
+        rows = conn.execute(
+            "SELECT source, COUNT(*) as c FROM press_releases GROUP BY source"
+        ).fetchall()
+        by_source = {r["source"]: r["c"] for r in rows}
+
+        # By category
+        rows = conn.execute(
+            "SELECT COALESCE(category, 'unknown') as cat, COUNT(*) as c "
+            "FROM press_releases GROUP BY cat ORDER BY c DESC"
+        ).fetchall()
+        by_category = {r["cat"]: r["c"] for r in rows}
+
+        # By month (last 24 months)
+        rows = conn.execute("""
+            SELECT
+                strftime('%Y-%m', published_at) AS month,
+                COUNT(*) AS count,
+                SUM(CASE WHEN is_funding_related = 1 THEN 1 ELSE 0 END) AS funding_count
+            FROM press_releases
+            WHERE published_at IS NOT NULL
+            GROUP BY month
+            ORDER BY month DESC
+            LIMIT 24
+        """).fetchall()
+        by_month = [dict(r) for r in rows]
+
+        # Recent releases (last 50)
+        rows = conn.execute("""
+            SELECT title, source, published_at, company_name,
+                   is_funding_related, source_url
+            FROM press_releases
+            ORDER BY published_at DESC NULLS LAST, id DESC
+            LIMIT 50
+        """).fetchall()
+        recent = [dict(r) for r in rows]
+
+        # Top companies by press release count
+        rows = conn.execute("""
+            SELECT company_name, COUNT(*) as count
+            FROM press_releases
+            WHERE company_name IS NOT NULL AND company_name != ''
+            GROUP BY company_name
+            ORDER BY count DESC
+            LIMIT 20
+        """).fetchall()
+        top_companies = [dict(r) for r in rows]
+
+    return {
+        "total_count": total,
+        "funding_related_count": funding_count,
+        "by_source": by_source,
+        "by_category": by_category,
+        "by_month": by_month,
+        "recent_releases": recent,
+        "top_companies_by_pr_count": top_companies,
+    }
+
+
 def top_organizations_by_score(limit: int = 20) -> list[dict]:
     """Top companies by latest composite score (empty if no scores yet)."""
     with _conn() as conn:
@@ -214,6 +305,36 @@ def top_organizations_by_score(limit: int = 20) -> list[dict]:
             LIMIT ?
         """, (limit,)).fetchall()
     return [dict(r) for r in rows]
+
+
+# ================================================================
+# Enrichment data (gBizINFO corporate info)
+# ================================================================
+
+def _safe_enrichment_data() -> dict:
+    """Wrapper that returns empty stats if enrichment is not yet set up."""
+    try:
+        return export_enrichment_data()
+    except Exception:
+        return {
+            "enriched_count": 0,
+            "total_organizations": 0,
+            "enrichment_rate": 0.0,
+            "capital_distribution": [],
+        }
+
+
+def export_enrichment_data() -> dict:
+    """Export corporate enrichment stats for the dashboard.
+
+    Returns aggregated statistics on how many organizations have been
+    enriched with official government data via gBizINFO, plus a capital
+    distribution breakdown.
+    """
+    from integrations.enrichment_pipeline import get_enrichment_stats
+
+    db_path = str(Path(__file__).parent.parent.parent / "data" / "investment_signal_v2.db")
+    return get_enrichment_stats(db_path)
 
 
 # ================================================================
@@ -240,6 +361,10 @@ def export_dashboard_data(output_path: Optional[str] = None) -> dict:
         "data_freshness": data_freshness_summary(),
         "data_source_breakdown": data_source_breakdown(),
         "top_organizations_by_score": top_organizations_by_score(),
+        # Corporate enrichment via gBizINFO
+        "corporate_enrichment": _safe_enrichment_data(),
+        # Press releases (PR TIMES, Frontier Detector, etc.)
+        "press_releases": export_press_release_data(),
     }
 
     if output_path is None:

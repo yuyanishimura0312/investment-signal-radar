@@ -8,12 +8,13 @@ import {
 const COLORS = ['#F0A671', '#CEA26F', '#DC8766', '#B07256', '#7A4033', '#966D5E', '#F2C792', '#F0BE83']
 
 // Tab ordering is used for keyboard navigation
-const TAB_ORDER = ['overview', 'investors', 'sectors', 'deals', 'data', 'about']
+const TAB_ORDER = ['overview', 'investors', 'sectors', 'deals', 'press_releases', 'data', 'about']
 const TAB_LABELS = {
   overview: '概要',
   investors: '投資家',
   sectors: 'セクター',
   deals: 'ラウンド',
+  press_releases: 'プレスリリース',
   data: 'データヘルス',
   about: 'このツールについて',
 }
@@ -232,6 +233,11 @@ export default function App() {
       {tab === 'deals' && (
         <div role="tabpanel" id="panel-deals" aria-labelledby="tab-deals">
           <DealsTab distribution={round_distribution} />
+        </div>
+      )}
+      {tab === 'press_releases' && (
+        <div role="tabpanel" id="panel-press_releases" aria-labelledby="tab-press_releases">
+          <PressReleasesTab data={data} />
         </div>
       )}
       {tab === 'data' && (
@@ -531,6 +537,210 @@ function DealsTab({ distribution }) {
   )
 }
 
+// Category labels for press releases
+const PR_CATEGORY_LABELS = {
+  funding: '資金調達',
+  partnership: '提携・協業',
+  product_launch: '製品・サービスリリース',
+  hiring: '採用・人事',
+  other: 'その他',
+}
+
+// Source labels for press releases
+const PR_SOURCE_LABELS = {
+  prtimes: 'PR TIMES',
+  bridge: 'Bridge',
+}
+
+function PressReleasesTab({ data }) {
+  const prData = data?.press_releases
+
+  // Graceful handling when data is not yet available
+  if (!prData || prData.total_count === 0) {
+    return (
+      <div className="empty-state">
+        プレスリリースデータを収集しています…
+      </div>
+    )
+  }
+
+  const fundingPct = prData.total_count > 0
+    ? ((prData.funding_related_count / prData.total_count) * 100).toFixed(1)
+    : 0
+
+  // Build source breakdown text
+  const sourceText = Object.entries(prData.by_source || {})
+    .map(([k, v]) => `${PR_SOURCE_LABELS[k] || k}: ${v}`)
+    .join(' / ')
+
+  // Monthly chart data with non-funding count
+  const monthlyData = (prData.by_month || []).map(m => ({
+    ...m,
+    non_funding_count: m.count - (m.funding_count || 0),
+  }))
+
+  // Pie chart data for source distribution
+  const sourceData = Object.entries(prData.by_source || {}).map(([k, v]) => ({
+    name: PR_SOURCE_LABELS[k] || k,
+    value: v,
+  }))
+
+  // Category distribution data
+  const categoryData = Object.entries(prData.by_category || {})
+    .map(([k, v]) => ({
+      category: PR_CATEGORY_LABELS[k] || k,
+      count: v,
+    }))
+    .sort((a, b) => b.count - a.count)
+
+  return (
+    <>
+      {/* Summary cards */}
+      <div className="stats-grid" style={{ marginBottom: 'var(--space-lg)' }}>
+        <StatCard label="プレスリリース総数" value={prData.total_count} />
+        <StatCard label="資金調達関連" value={`${prData.funding_related_count} (${fundingPct}%)`} />
+        <StatCard label="ソース内訳" value={sourceText || '-'} />
+      </div>
+
+      {/* Monthly volume chart */}
+      <div className="section">
+        <h2>月次プレスリリース件数</h2>
+        {monthlyData.length > 0 ? (
+          <div className="chart-container">
+            <ResponsiveContainer>
+              <BarChart data={monthlyData}>
+                <CartesianGrid strokeDasharray="3 3" />
+                <XAxis dataKey="month" fontSize={12} />
+                <YAxis fontSize={12} />
+                <Tooltip formatter={(v, n) => [
+                  v,
+                  n === 'funding_count' ? '資金調達関連' : 'その他',
+                ]} />
+                <Legend formatter={(v) => v === 'funding_count' ? '資金調達関連' : 'その他'} />
+                <Bar dataKey="funding_count" stackId="pr" fill="#DC8766" name="funding_count" radius={[0,0,0,0]} />
+                <Bar dataKey="non_funding_count" stackId="pr" fill="#F2C792" name="non_funding_count" radius={[4,4,0,0]} />
+              </BarChart>
+            </ResponsiveContainer>
+          </div>
+        ) : (
+          <div className="empty-state-inline">月次データはまだありません。</div>
+        )}
+      </div>
+
+      {/* Source distribution pie chart */}
+      {sourceData.length > 0 && (
+        <div className="section">
+          <h2>ソース分布</h2>
+          <div className="chart-container" style={{ height: 260 }}>
+            <ResponsiveContainer>
+              <PieChart>
+                <Pie data={sourceData} dataKey="value" nameKey="name" cx="50%" cy="50%"
+                     outerRadius={90} label={({ name, value }) => `${name}: ${value}`}>
+                  {sourceData.map((_, i) => (
+                    <Cell key={i} fill={COLORS[i % COLORS.length]} />
+                  ))}
+                </Pie>
+                <Tooltip formatter={(v) => [v, '件数']} />
+              </PieChart>
+            </ResponsiveContainer>
+          </div>
+        </div>
+      )}
+
+      {/* Category distribution */}
+      {categoryData.length > 0 && (
+        <div className="section">
+          <h2>カテゴリ分布</h2>
+          <div className="chart-container" style={{ height: Math.max(200, categoryData.length * 50) }}>
+            <ResponsiveContainer>
+              <BarChart data={categoryData} layout="vertical" margin={{ left: 140 }}>
+                <CartesianGrid strokeDasharray="3 3" />
+                <XAxis type="number" fontSize={12} />
+                <YAxis dataKey="category" type="category" fontSize={11} width={130} />
+                <Tooltip formatter={(v) => [v, '件数']} />
+                <Bar dataKey="count" fill="#B07256" name="件数" radius={[0,4,4,0]} />
+              </BarChart>
+            </ResponsiveContainer>
+          </div>
+        </div>
+      )}
+
+      {/* Recent press releases */}
+      <div className="section">
+        <h2>最新プレスリリース</h2>
+        {prData.recent_releases && prData.recent_releases.length > 0 ? (
+          <div className="pr-list-scroll">
+            <table>
+              <thead>
+                <tr>
+                  <th scope="col">タイトル</th>
+                  <th scope="col">企業名</th>
+                  <th scope="col">ソース</th>
+                  <th scope="col">日付</th>
+                  <th scope="col">種別</th>
+                </tr>
+              </thead>
+              <tbody>
+                {prData.recent_releases.slice(0, 30).map((pr, i) => (
+                  <tr key={i}>
+                    <td>
+                      {pr.source_url ? (
+                        <a href={pr.source_url} target="_blank" rel="noopener noreferrer"
+                           className="pr-title-link">
+                          {pr.title}
+                        </a>
+                      ) : pr.title}
+                    </td>
+                    <td>{pr.company_name || '-'}</td>
+                    <td>
+                      <span className={`badge badge-source-${pr.source || 'unknown'}`}>
+                        {PR_SOURCE_LABELS[pr.source] || pr.source || '-'}
+                      </span>
+                    </td>
+                    <td style={{ whiteSpace: 'nowrap' }}>{formatDateTime(pr.published_at)}</td>
+                    <td>
+                      {pr.is_funding_related && (
+                        <span className="badge badge-funding">資金調達</span>
+                      )}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        ) : (
+          <div className="empty-state-inline">プレスリリースデータがまだありません。</div>
+        )}
+      </div>
+
+      {/* Top companies by PR count */}
+      {prData.top_companies_by_pr_count && prData.top_companies_by_pr_count.length > 0 && (
+        <div className="section">
+          <h2>企業別プレスリリース数ランキング</h2>
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">順位</th>
+                <th scope="col">企業名</th>
+                <th scope="col">件数</th>
+              </tr>
+            </thead>
+            <tbody>
+              {prData.top_companies_by_pr_count.map((c, i) => (
+                <tr key={i}>
+                  <td>{i + 1}</td>
+                  <td>{c.company_name}</td>
+                  <td>{c.count}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      )}
+    </>
+  )
+}
+
 function DataHealthTab({ data }) {
   const { stats, data_freshness, data_source_breakdown, event_momentum } = data
 
@@ -652,7 +862,70 @@ function DataHealthTab({ data }) {
           </div>
         )}
       </div>
+
+      {/* Corporate enrichment section (gBizINFO) */}
+      <CorporateEnrichmentSection data={data} />
     </>
+  )
+}
+
+function CorporateEnrichmentSection({ data }) {
+  const enrichData = data?.corporate_enrichment
+  if (!enrichData) return null
+
+  const enrichPct = (enrichData.enrichment_rate * 100).toFixed(1)
+
+  return (
+    <div className="section">
+      <h2>法人情報エンリッチメント（gBizINFO）</h2>
+      <p className="hint">
+        gBizINFO（経済産業省）と連携し、収集した組織の資本金・設立年・従業員数等を補完しています。
+      </p>
+      <div className="stats-grid" style={{ marginBottom: 'var(--space-md)' }}>
+        <StatCard
+          label="エンリッチ済み"
+          value={`${enrichData.enriched_count} / ${enrichData.total_organizations}`}
+        />
+        <StatCard label="エンリッチ率" value={`${enrichPct}%`} />
+      </div>
+
+      {/* Enrichment rate progress bar */}
+      <div className="enrichment-progress-wrapper">
+        <div
+          className="enrichment-progress-bar"
+          role="progressbar"
+          aria-valuenow={enrichPct}
+          aria-valuemin={0}
+          aria-valuemax={100}
+          aria-label={`エンリッチメント進捗: ${enrichPct}%`}
+        >
+          <div
+            className="enrichment-progress-fill"
+            style={{ width: `${Math.min(enrichData.enrichment_rate * 100, 100)}%` }}
+          />
+        </div>
+      </div>
+
+      {/* Capital distribution chart */}
+      {enrichData.capital_distribution && enrichData.capital_distribution.length > 0 && (
+        <>
+          <h3 style={{ fontSize: 14, fontWeight: 600, margin: '20px 0 8px', color: 'var(--accent)' }}>
+            資本金分布
+          </h3>
+          <div className="chart-container" style={{ height: 220 }}>
+            <ResponsiveContainer>
+              <BarChart data={enrichData.capital_distribution}>
+                <CartesianGrid strokeDasharray="3 3" />
+                <XAxis dataKey="range" fontSize={12} />
+                <YAxis fontSize={12} />
+                <Tooltip formatter={(v) => [v, '企業数']} />
+                <Bar dataKey="count" fill="#CEA26F" name="企業数" radius={[4,4,0,0]} />
+              </BarChart>
+            </ResponsiveContainer>
+          </div>
+        </>
+      )}
+    </div>
   )
 }
 
@@ -699,11 +972,34 @@ function AboutTab({ data }) {
             <tr><td><code>migrated_v1</code></td><td>manual</td><td>v1スキーマから移行された既存データ</td></tr>
             <tr><td><code>houjin_bangou</code></td><td>official</td><td>国税庁法人番号API（今後連携予定）</td></tr>
             <tr><td><code>sec_edgar_form_d</code></td><td>official</td><td>SEC EDGAR Form D（今後連携予定）</td></tr>
+            <tr><td><code>gbizinfo</code></td><td>official</td><td>gBizINFO（経済産業省）法人基本情報・資本金・従業員数</td></tr>
+            <tr><td><code>pr_times_full</code></td><td>news</td><td>PR TIMESプレスリリース全文（カテゴリ分類付き）</td></tr>
+            <tr><td><code>bridge_full</code></td><td>news</td><td>Bridgeプレスリリース全文（カテゴリ分類付き）</td></tr>
           </tbody>
         </table>
         <p>
           収集した記事は2段階キーワードフィルタ（強キーワード1つでOK / 弱キーワード2つ以上で採用）を経て、
           Claude APIで構造化されます。信頼度が low と判定された場合は、より高精度なモデルで再抽出されます。
+        </p>
+      </div>
+
+      <div className="section about-section">
+        <h2>プレスリリース収集</h2>
+        <p>
+          「プレスリリース」タブでは、PR TIMESおよびBridgeから収集したスタートアップ関連のプレスリリースを
+          一覧・分析しています。各プレスリリースはClaude APIによって自動的にカテゴリ分類（資金調達・提携・
+          製品リリース・採用・その他）され、資金調達関連のものは投資シグナルとして重点的に追跡されます。
+          企業名の自動抽出とマッチングにより、組織データとの紐付けも行われています。
+        </p>
+      </div>
+
+      <div className="section about-section">
+        <h2>法人情報エンリッチメント（gBizINFO）</h2>
+        <p>
+          gBizINFO（経済産業省が提供する法人情報データベース）を活用し、収集した企業の基本情報を補完しています。
+          法人番号をキーとして、資本金・設立年月日・従業員数・業種分類などの公式データを取得し、
+          データベース上の組織レコードに統合します。これにより、資金調達データだけでは見えない企業の規模感や
+          成長ステージの推定が可能になります。「データヘルス」タブでエンリッチメントの進捗を確認できます。
         </p>
       </div>
 
@@ -739,7 +1035,8 @@ function AboutTab({ data }) {
             <tr><td><strong>投資家</strong></td><td>活発な投資家ランキング・共同投資ペア</td><td>積極的な投資家と戦略的アライアンスの特定</td></tr>
             <tr><td><strong>セクター</strong></td><td>セクター別投資件数・タグ分布（v2）</td><td>資金集中領域と産業横断クラスタの把握</td></tr>
             <tr><td><strong>ラウンド</strong></td><td>ラウンドタイプ別のディール件数と合計調達額</td><td>シード/アーリー比率から市場の成熟度を判断</td></tr>
-            <tr><td><strong>データヘルス</strong></td><td>組織数・データ鮮度・ソース内訳・イベントモメンタム</td><td>データベースの信頼度と網羅性を可視化（v2新設）</td></tr>
+            <tr><td><strong>プレスリリース</strong></td><td>PR TIMES・Bridge収集のプレスリリース一覧・カテゴリ分析</td><td>資金調達以外の企業動向（提携・採用・製品リリース）も把握</td></tr>
+            <tr><td><strong>データヘルス</strong></td><td>組織数・データ鮮度・ソース内訳・イベントモメンタム・法人エンリッチメント</td><td>データベースの信頼度と網羅性を可視化（v2新設）</td></tr>
             <tr><td><strong>このツールについて</strong></td><td>仕組み・用語解説・更新情報</td><td>ダッシュボードの前提知識と解釈のガイド</td></tr>
           </tbody>
         </table>

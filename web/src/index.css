@@ -407,6 +407,58 @@ tr:hover td {
   text-decoration: underline;
 }
 
+/* Press release styles */
+.pr-list-scroll {
+  max-height: 600px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.pr-title-link {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+}
+.pr-title-link:hover {
+  text-decoration: underline;
+}
+
+.badge-source-prtimes {
+  background: #FAE8D8;
+  color: #7A4033;
+}
+.badge-source-bridge {
+  background: #F2E8D8;
+  color: #5E3F35;
+}
+.badge-source-unknown {
+  background: #f3f0ed;
+  color: #5E3F35;
+}
+.badge-funding {
+  background: #DC8766;
+  color: #fff;
+}
+
+/* Enrichment progress bar */
+.enrichment-progress-wrapper {
+  margin-bottom: var(--space-md);
+}
+.enrichment-progress-bar {
+  width: 100%;
+  height: 24px;
+  background: var(--bg);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+.enrichment-progress-fill {
+  height: 100%;
+  background: var(--miratuku-camel);
+  border-radius: var(--radius-md);
+  transition: width 0.5s ease;
+}
+
 /* Screen-reader only utility */
 .sr-only {
   position: absolute;

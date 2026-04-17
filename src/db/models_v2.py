@@ -469,4 +469,235 @@ def get_stats(conn: sqlite3.Connection) -> dict:
         "SELECT COUNT(*) as c FROM organizations WHERE is_investor = 1"
     ).fetchone()
     stats["investors"] = row["c"]
+    # Press release count (table may not exist in older DBs)
+    try:
+        row = conn.execute(
+            "SELECT COUNT(*) as c FROM press_releases"
+        ).fetchone()
+        stats["press_releases"] = row["c"]
+    except Exception:
+        stats["press_releases"] = 0
     return stats
+
+
+# ================================================================
+# Press Release CRUD
+# ================================================================
+
+def insert_press_release(
+    conn: sqlite3.Connection,
+    data: dict,
+) -> Optional[int]:
+    """Insert a press release. Returns id, or None if duplicate URL.
+
+    Expected keys in data:
+        title, source, source_url (required)
+        body_text, published_at, company_name, organization_id,
+        category, is_funding_related, funding_round_id,
+        extracted_data (dict or JSON string), confidence_score,
+        data_source_name (str, looked up to data_source_id)
+    """
+    source_url = data.get("source_url", "")
+    if not source_url:
+        return None
+
+    h = url_hash(source_url)
+    # Deduplicate by URL hash
+    if conn.execute(
+        "SELECT 1 FROM press_releases WHERE url_hash = ?", (h,)
+    ).fetchone():
+        return None
+
+    # Resolve data_source_id
+    ds_name = data.get("data_source_name", "manual")
+    ds_id = data.get("data_source_id") or get_data_source_id(conn, ds_name)
+
+    # extracted_data can be dict or string
+    extracted = data.get("extracted_data")
+    if isinstance(extracted, dict):
+        extracted = json.dumps(extracted, ensure_ascii=False)
+
+    cur = conn.execute(
+        """INSERT INTO press_releases (
+            title, body_text, source, source_url, url_hash,
+            published_at, company_name, organization_id,
+            category, is_funding_related, funding_round_id,
+            extracted_data, confidence_score, data_source_id
+        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""",
+        (
+            data.get("title", ""),
+            data.get("body_text"),
+            data.get("source", "other"),
+            source_url,
+            h,
+            data.get("published_at"),
+            data.get("company_name"),
+            data.get("organization_id"),
+            data.get("category"),
+            1 if data.get("is_funding_related") else 0,
+            data.get("funding_round_id"),
+            extracted,
+            data.get("confidence_score", 0.5),
+            ds_id,
+        ),
+    )
+    return cur.lastrowid
+
+
+def get_press_releases(
+    conn: sqlite3.Connection,
+    limit: int = 50,
+    offset: int = 0,
+    source: Optional[str] = None,
+    funding_only: bool = False,
+) -> list[dict]:
+    """Retrieve press releases with optional filters."""
+    where_parts = []
+    params: list = []
+    if source:
+        where_parts.append("source = ?")
+        params.append(source)
+    if funding_only:
+        where_parts.append("is_funding_related = 1")
+
+    where_clause = ""
+    if where_parts:
+        where_clause = "WHERE " + " AND ".join(where_parts)
+
+    rows = conn.execute(
+        f"""SELECT id, title, source, source_url, published_at,
+                   company_name, category, is_funding_related,
+                   confidence_score, collected_at
+            FROM press_releases
+            {where_clause}
+            ORDER BY published_at DESC NULLS LAST, id DESC
+            LIMIT ? OFFSET ?""",
+        params + [limit, offset],
+    ).fetchall()
+    return [dict(r) for r in rows]
+
+
+def get_press_release_stats(conn: sqlite3.Connection) -> dict:
+    """Aggregate stats about press releases."""
+    stats: dict = {}
+
+    row = conn.execute("SELECT COUNT(*) as c FROM press_releases").fetchone()
+    stats["total"] = row["c"]
+
+    row = conn.execute(
+        "SELECT COUNT(*) as c FROM press_releases WHERE is_funding_related = 1"
+    ).fetchone()
+    stats["funding_related"] = row["c"]
+
+    # By source
+    rows = conn.execute(
+        "SELECT source, COUNT(*) as c FROM press_releases GROUP BY source"
+    ).fetchall()
+    stats["by_source"] = {r["source"]: r["c"] for r in rows}
+
+    # By category
+    rows = conn.execute(
+        "SELECT COALESCE(category, 'unknown') as cat, COUNT(*) as c "
+        "FROM press_releases GROUP BY cat"
+    ).fetchall()
+    stats["by_category"] = {r["cat"]: r["c"] for r in rows}
+
+    return stats
+
+
+def link_press_release_to_funding(
+    conn: sqlite3.Connection,
+    pr_id: int,
+    funding_round_id: int,
+) -> None:
+    """Link a press release to a funding round."""
+    conn.execute(
+        """UPDATE press_releases
+           SET funding_round_id = ?, is_funding_related = 1
+           WHERE id = ?""",
+        (funding_round_id, pr_id),
+    )
+
+
+def import_frontier_detector_signals(
+    conn: sqlite3.Connection,
+    frontier_db_path: str,
+) -> int:
+    """Import signals from Frontier Detector DB as press releases.
+
+    Maps frontier signals to press_releases table. All signal types are imported
+    (academic, funding, keyword, patent) to provide a comprehensive view.
+    Returns the count of newly imported records.
+    """
+    import sqlite3 as _sqlite3
+
+    fconn = _sqlite3.connect(frontier_db_path)
+    fconn.row_factory = _sqlite3.Row
+    try:
+        rows = fconn.execute("""
+            SELECT s.id, s.technology_id, s.agent_type, s.source_type,
+                   s.source_url, s.source_name, s.title, s.content,
+                   s.signal_date, s.metadata_json, s.collected_at,
+                   t.name_ja AS tech_name_ja, t.name_en AS tech_name_en,
+                   t.domain AS tech_domain
+            FROM signals s
+            LEFT JOIN technologies t ON s.technology_id = t.id
+        """).fetchall()
+    finally:
+        fconn.close()
+
+    ds_id = get_data_source_id(conn, "frontier_detector_import")
+    imported = 0
+
+    # Map frontier agent_type to press release category
+    category_map = {
+        "prtimes": "product_launch",
+        "academic": "other",
+        "funding": "funding",
+        "patent": "other",
+        "keyword": "other",
+    }
+
+    for row in rows:
+        source_url = row["source_url"] or ""
+        if not source_url:
+            # Build a synthetic URL from the signal ID so we can deduplicate
+            source_url = f"frontier-detector://signal/{row['id']}"
+
+        is_funding = 1 if row["agent_type"] == "funding" else 0
+        category = category_map.get(row["agent_type"], "other")
+
+        # Build extracted_data with frontier-specific metadata
+        extracted = {
+            "frontier_signal_id": row["id"],
+            "technology_id": row["technology_id"],
+            "tech_name_ja": row["tech_name_ja"],
+            "tech_name_en": row["tech_name_en"],
+            "tech_domain": row["tech_domain"],
+            "agent_type": row["agent_type"],
+            "source_type": row["source_type"],
+        }
+        if row["metadata_json"]:
+            try:
+                extracted["original_metadata"] = json.loads(row["metadata_json"])
+            except (json.JSONDecodeError, TypeError):
+                pass
+
+        result = insert_press_release(conn, {
+            "title": row["title"] or f"Signal: {row['agent_type']}",
+            "body_text": row["content"],
+            "source": "frontier_detector",
+            "source_url": source_url,
+            "published_at": row["signal_date"] or row["collected_at"],
+            "company_name": row["source_name"],
+            "category": category,
+            "is_funding_related": is_funding,
+            "extracted_data": extracted,
+            "confidence_score": 0.6,
+            "data_source_id": ds_id,
+        })
+        if result is not None:
+            imported += 1
+
+    conn.commit()
+    return imported

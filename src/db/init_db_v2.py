@@ -407,6 +407,42 @@ CREATE INDEX IF NOT EXISTS idx_os_sector ON organization_sectors(sector_id);
 CREATE INDEX IF NOT EXISTS idx_signals_type ON signals(signal_type);
 CREATE INDEX IF NOT EXISTS idx_signals_sector ON signals(sector_id);
 
+-- ------------------------------------------------------------
+-- 14. Press Releases (PR TIMES, Bridge, Frontier Detector imports)
+-- ------------------------------------------------------------
+CREATE TABLE IF NOT EXISTS press_releases (
+    id                  INTEGER PRIMARY KEY AUTOINCREMENT,
+    title               TEXT    NOT NULL,
+    body_text           TEXT,
+    source              TEXT    NOT NULL,  -- 'prtimes', 'bridge', 'frontier_detector', 'other'
+    source_url          TEXT    NOT NULL,
+    url_hash            TEXT    UNIQUE,
+    published_at        TEXT,
+    company_name        TEXT,
+    organization_id     INTEGER REFERENCES organizations(id),
+    category            TEXT,   -- 'funding', 'partnership', 'product_launch', 'hiring', 'other'
+    is_funding_related  INTEGER DEFAULT 0,
+    funding_round_id    INTEGER REFERENCES funding_rounds(id),
+    extracted_data      TEXT,   -- JSON blob for structured extraction results
+    confidence_score    REAL    DEFAULT 0.5,
+    data_source_id      INTEGER REFERENCES data_sources(id),
+    collected_at        TEXT    DEFAULT (strftime('%Y-%m-%dT%H:%M:%SZ', 'now')),
+    created_at          TEXT    DEFAULT (strftime('%Y-%m-%dT%H:%M:%SZ', 'now'))
+);
+
+CREATE INDEX IF NOT EXISTS idx_pr_url_hash ON press_releases(url_hash);
+CREATE INDEX IF NOT EXISTS idx_pr_published ON press_releases(published_at);
+CREATE INDEX IF NOT EXISTS idx_pr_org ON press_releases(organization_id);
+CREATE INDEX IF NOT EXISTS idx_pr_funding ON press_releases(is_funding_related);
+CREATE INDEX IF NOT EXISTS idx_pr_source ON press_releases(source);
+CREATE INDEX IF NOT EXISTS idx_pr_category ON press_releases(category);
+
+CREATE TABLE IF NOT EXISTS press_release_tags (
+    press_release_id    INTEGER REFERENCES press_releases(id) ON DELETE CASCADE,
+    tag_id              INTEGER REFERENCES tags(id),
+    PRIMARY KEY (press_release_id, tag_id)
+);
+
 -- ============================================================
 -- VIEWS
 -- ============================================================
@@ -474,6 +510,8 @@ SEED_DATA_SOURCES = [
     ("sec_edgar_form_d", "official", 1.0, 30, 90, "https://data.sec.gov/submissions/", "SEC EDGAR Form D filings"),
     ("claude_extracted", "ml_inferred", 0.6, 30, 90, None, "Extracted from news via Claude API"),
     ("migrated_v1", "manual", 0.5, 30, 90, None, "Migrated from schema v1"),
+    ("prtimes_enhanced", "news", 0.7, 7, 30, "https://prtimes.jp/", "Enhanced PR TIMES collector (search + RSS + body extraction)"),
+    ("frontier_detector_import", "news", 0.6, 30, 90, None, "Imported from Frontier Detector signals DB"),
 ]
 
 # Seed sectors based on Dealroom's 32 fixed industries (adapted for investment radar)
@@ -549,12 +587,40 @@ def seed_initial_data(conn: sqlite3.Connection) -> None:
     conn.commit()
 
 
+def _apply_enrichment_columns(conn: sqlite3.Connection) -> None:
+    """Add enrichment columns for gBizINFO integration (idempotent).
+
+    These columns store official corporate data fetched from the
+    gBizINFO government API (capital, employee count, address).
+    """
+    alter_statements = [
+        "ALTER TABLE organizations ADD COLUMN capital_yen INTEGER",
+        "ALTER TABLE organizations ADD COLUMN employee_count INTEGER",
+        "ALTER TABLE organizations ADD COLUMN address TEXT",
+        "ALTER TABLE organizations ADD COLUMN enriched_at TEXT",
+    ]
+    for stmt in alter_statements:
+        try:
+            conn.execute(stmt)
+        except sqlite3.OperationalError:
+            # Column already exists — safe to ignore
+            pass
+
+    # Index for corporate_number lookups (covers enrichment queries)
+    conn.execute(
+        "CREATE INDEX IF NOT EXISTS idx_org_corp_number "
+        "ON organizations(corporate_number)"
+    )
+    conn.commit()
+
+
 def init_db(db_path: Path = DEFAULT_DB_PATH, seed: bool = True) -> Path:
     """Create database with v2 schema. Idempotent."""
     db_path.parent.mkdir(parents=True, exist_ok=True)
     conn = sqlite3.connect(str(db_path))
     try:
         conn.executescript(SCHEMA_SQL)
+        _apply_enrichment_columns(conn)
         if seed:
             seed_initial_data(conn)
     finally:
