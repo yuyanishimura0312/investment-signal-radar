@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-17T14:18:52.377135",
+  "generated_at": "2026-04-17T14:54:01.815715",
   "schema_version": "v2.0",
   "stats": {
     "organizations": 45,
@@ -12,7 +12,7 @@
     "signal_scores": 0,
     "companies": 16,
     "investors": 29,
-    "press_releases": 72
+    "press_releases": 272
   },
   "sector_trends": [
     {
@@ -309,14 +309,18 @@
     ]
   },
   "press_releases": {
-    "total_count": 72,
-    "funding_related_count": 3,
+    "total_count": 272,
+    "funding_related_count": 9,
     "by_source": {
-      "frontier_detector": 72
+      "frontier_detector": 72,
+      "prtimes": 200
     },
     "by_category": {
-      "other": 69,
-      "funding": 3
+      "other": 170,
+      "product_launch": 49,
+      "partnership": 23,
+      "hiring": 21,
+      "funding": 9
     },
     "by_month": [
       {
@@ -336,8 +340,8 @@
       },
       {
         "month": null,
-        "count": 2,
-        "funding_count": 0
+        "count": 202,
+        "funding_count": 6
       }
     ],
     "recent_releases": [
