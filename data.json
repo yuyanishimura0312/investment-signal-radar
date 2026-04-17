@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-17T15:00:39.331780",
+  "generated_at": "2026-04-17T15:13:29.222135",
   "schema_version": "v2.0",
   "stats": {
     "organizations": 45,
@@ -12,7 +12,7 @@
     "signal_scores": 0,
     "companies": 16,
     "investors": 29,
-    "press_releases": 6853
+    "press_releases": 7236
   },
   "sector_trends": [
     {
@@ -309,35 +309,38 @@
     ]
   },
   "press_releases": {
-    "total_count": 6853,
-    "funding_related_count": 251,
+    "total_count": 7236,
+    "funding_related_count": 314,
     "by_source": {
       "frontier_detector": 72,
       "prtimes": 200,
+      "prtimes_funding": 383,
       "prtimes_sangaku": 6581
     },
     "by_category": {
-      "other": 6082,
-      "funding": 251,
-      "partnership": 214,
+      "other": 6375,
+      "funding": 306,
+      "partnership": 229,
       "hiring": 182,
-      "product_launch": 124
+      "product_launch": 124,
+      "accelerator": 12,
+      "exit": 8
     },
     "by_month": [
       {
         "month": "2026-04",
-        "count": 213,
-        "funding_count": 3
+        "count": 431,
+        "funding_count": 48
       },
       {
         "month": "2026-03",
-        "count": 313,
-        "funding_count": 8
+        "count": 371,
+        "funding_count": 20
       },
       {
         "month": "2026-02",
-        "count": 212,
-        "funding_count": 5
+        "count": 215,
+        "funding_count": 6
       },
       {
         "month": "2026-01",
@@ -447,404 +450,404 @@
     ],
     "recent_releases": [
       {
-        "title": "Kudan、「消防技術研究開発センター」の開所式にて、先進3D技術を活用した消防活動支援ソリューショ…",
-        "source": "prtimes_sangaku",
-        "published_at": "2026-04-14",
-        "company_name": "",
+        "title": "Qoo10 を運営する eBay Japan が 2026年度経営方針・新戦略を発表　Beauty …",
+        "source": "prtimes_funding",
+        "published_at": "2026-04-16",
+        "company_name": "eBay Japan合同会社",
         "is_funding_related": 0,
-        "source_url": "https://prtimes.jp/main/html/rd/p/000000065.000015483.html"
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000930.000022933.html"
       },
       {
-        "title": "「新規事業のリーダーに最も必要なのは、楽しむこと」　Z世代と企業が15週間の共創で証明したこと。",
-        "source": "prtimes_sangaku",
-        "published_at": "2026-04-14",
-        "company_name": "",
+        "title": "雇用企業1,067名・就労支援機関111名の大規模調査で浮き彫りになる「外国人労働者教育」の構造的課…",
+        "source": "prtimes_funding",
+        "published_at": "2026-04-16",
+        "company_name": "株式会社IDEATECH",
         "is_funding_related": 0,
-        "source_url": "https://prtimes.jp/main/html/rd/p/000000079.000072201.html"
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000628.000045863.html"
       },
       {
-        "title": "福島民報社と新潟日報生成AI研究所が「地域共創　生成AIパートナーシップ協定」を締結",
-        "source": "prtimes_sangaku",
-        "published_at": "2026-04-14",
-        "company_name": "",
+        "title": "オイシックス・ラ・大地とNSGグループが推進する「新潟フードテックタウン」　起業家を育む世界的VCの…",
+        "source": "prtimes_funding",
+        "published_at": "2026-04-16",
+        "company_name": "オイシックス・ラ・大地株式会社",
         "is_funding_related": 0,
-        "source_url": "https://prtimes.jp/main/html/rd/p/000000041.000083014.html"
+        "source_url": "https://prtimes.jp/main/html/rd/p/000001181.000008895.html"
       },
       {
-        "title": "新潟日報生成AI研究所、福島民報社と「地域共創 生成AIパートナーシップ協定」を締結",
-        "source": "prtimes_sangaku",
-        "published_at": "2026-04-14",
-        "company_name": "",
+        "title": "LiLz、JR東日本スタートアップと資本業務提携を締結",
+        "source": "prtimes_funding",
+        "published_at": "2026-04-16",
+        "company_name": "LiLz株式会社",
         "is_funding_related": 0,
-        "source_url": "https://prtimes.jp/main/html/rd/p/000000036.000149493.html"
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000080.000042105.html"
       },
       {
-        "title": "洋上風況マップ（NeoWins）改定に向けた研究開発を採択しました",
-        "source": "prtimes_sangaku",
-        "published_at": "2026-04-14",
-        "company_name": "",
+        "title": "ReGACY、仙台市の「スタートアップスタジオ推進業務」をATOMicaと共同受託",
+        "source": "prtimes_funding",
+        "published_at": "2026-04-16",
+        "company_name": "ReGACY Innovation Group株式会社",
         "is_funding_related": 0,
-        "source_url": "https://prtimes.jp/main/html/rd/p/000000264.000135644.html"
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000178.000099287.html"
       },
       {
-        "title": "Caccoメールチェックサービス「Mail Validator」の独自技術で特許を取得",
-        "source": "prtimes_sangaku",
-        "published_at": "2026-04-14",
-        "company_name": "",
+        "title": "事業共創カンパニーのRelic、VC／CVCや事業会社の投資戦略部門向け「技術デューデリジェンス支援…",
+        "source": "prtimes_funding",
+        "published_at": "2026-04-16",
+        "company_name": "Relic",
         "is_funding_related": 0,
-        "source_url": "https://prtimes.jp/main/html/rd/p/000000218.000009799.html"
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000472.000016318.html"
       },
       {
-        "title": "医療と企業の“距離”を縮める新たな試みが始動 – 済生会中央病院との共創コミュニティ発足",
-        "source": "prtimes_sangaku",
-        "published_at": "2026-04-14",
-        "company_name": "",
+        "title": "KOZAROCKS 2026 開催決定｜7月10日・11日｜壊して創る時代から、活かして創る時代へ …",
+        "source": "prtimes_funding",
+        "published_at": "2026-04-16",
+        "company_name": "フォーシーズ株式会社",
         "is_funding_related": 0,
-        "source_url": "https://prtimes.jp/main/html/rd/p/000000001.000181510.html"
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000038.000098718.html"
       },
       {
-        "title": "共創拠点e-Nexus棟 竣工記念式典にて国立大学法人電気通信大学より感謝状を授与",
-        "source": "prtimes_sangaku",
-        "published_at": "2026-04-14",
-        "company_name": "",
+        "title": "【スタートアップワールドカップ2026名古屋予選】 愛知県知事・名古屋市長が登壇決定！地域一体でスタ…",
+        "source": "prtimes_funding",
+        "published_at": "2026-04-16",
+        "company_name": "株式会社ペガサス・テック・ベンチャーズ・ジャパン",
         "is_funding_related": 0,
-        "source_url": "https://prtimes.jp/main/html/rd/p/000000018.000028854.html"
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000188.000044738.html"
       },
       {
-        "title": "SPLYZAは、東京大学医学部附属病院とAIによる動作解析技術の共同研究を開始",
-        "source": "prtimes_sangaku",
-        "published_at": "2026-04-14",
-        "company_name": "",
+        "title": "JR東日本スタートアップとLiLzが資本業務提携",
+        "source": "prtimes_funding",
+        "published_at": "2026-04-16",
+        "company_name": "JR東日本スタートアップ株式会社",
         "is_funding_related": 0,
-        "source_url": "https://prtimes.jp/main/html/rd/p/000000071.000012922.html"
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000366.000034286.html"
       },
       {
-        "title": "危険物保管庫の指定数量管理をスマートフォンで完結 ブラウザアプリ「ぼうばくんDX」を提供開始　※特許…",
-        "source": "prtimes_sangaku",
-        "published_at": "2026-04-14",
-        "company_name": "",
+        "title": "AI modelとの協業によりAIモデル「MirAI（ミライ）」が誕生　～「MirAI」を活用し新た…",
+        "source": "prtimes_funding",
+        "published_at": "2026-04-16",
+        "company_name": "キヤノンMJ",
         "is_funding_related": 0,
-        "source_url": "https://prtimes.jp/main/html/rd/p/000000011.000090730.html"
+        "source_url": "https://prtimes.jp/main/html/rd/p/000001405.000013943.html"
       },
       {
-        "title": "京都情報大学院大学・京都コンピュータ学院と株式会社テムザックが協定締結　産学連携し次世代ロボット開発…",
-        "source": "prtimes_sangaku",
-        "published_at": "2026-04-14",
-        "company_name": "",
+        "title": "株式会社MakeCare、株式会社Bridgeと資本提携および業務連携を開始",
+        "source": "prtimes_funding",
+        "published_at": "2026-04-16",
+        "company_name": "Make Care",
         "is_funding_related": 0,
-        "source_url": "https://prtimes.jp/main/html/rd/p/000000108.000029724.html"
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000006.000133569.html"
       },
       {
-        "title": "【地方共創】Gaika、北海道浦河町の神馬建設と協業し、次世代人材と「地域ブランディング実装プログラ…",
-        "source": "prtimes_sangaku",
-        "published_at": "2026-04-14",
-        "company_name": "",
+        "title": "株式会社Bridge、株式会社MakeCareと資本提携および業務連携を開始",
+        "source": "prtimes_funding",
+        "published_at": "2026-04-16",
+        "company_name": "株式会社Bridge",
         "is_funding_related": 0,
-        "source_url": "https://prtimes.jp/main/html/rd/p/000000008.000169607.html"
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000003.000180695.html"
       },
       {
-        "title": "博報堂とビザスクが資本業務提携専門家の観点・判断軸を学習した「エキスパートAI」の共同開発へ",
-        "source": "prtimes_sangaku",
-        "published_at": "2026-04-14",
-        "company_name": "",
+        "title": "＜Samsung＞「Samsung Galaxy A57 5G」（SIMフリーモデル）2026年4月…",
+        "source": "prtimes_funding",
+        "published_at": "2026-04-16",
+        "company_name": "Samsung",
         "is_funding_related": 0,
-        "source_url": "https://prtimes.jp/main/html/rd/p/000001146.000008062.html"
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000918.000030942.html"
       },
       {
-        "title": "教育環境の充実を目的としたファンドレイジングに向け共創",
-        "source": "prtimes_sangaku",
-        "published_at": "2026-04-14",
-        "company_name": "",
+        "title": "＜ドコモ＞「Samsung Galaxy A57 5G」2026年4月16日(木)予約開始・4月23…",
+        "source": "prtimes_funding",
+        "published_at": "2026-04-16",
+        "company_name": "Samsung",
+        "is_funding_related": 0,
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000920.000030942.html"
+      },
+      {
+        "title": "「Samsung Galaxy A57 5G」（SIMフリーモデル）2026年4月16日(木)予約開…",
+        "source": "prtimes_funding",
+        "published_at": "2026-04-16",
+        "company_name": "Samsung",
+        "is_funding_related": 0,
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000917.000030942.html"
+      },
+      {
+        "title": "＜ソフトバンク＞「Samsung Galaxy A57 5G」2026年4月16日(木)予約開始・4…",
+        "source": "prtimes_funding",
+        "published_at": "2026-04-16",
+        "company_name": "Samsung",
+        "is_funding_related": 0,
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000919.000030942.html"
+      },
+      {
+        "title": "9年の時を超え、映画館で〝烈(レッツ)！Rock!!〟超歌劇『幕末Rock』応援上映会7月4日(土)…",
+        "source": "prtimes_funding",
+        "published_at": "2026-04-16",
+        "company_name": "株式会社ヒューマックスエンタテインメント",
+        "is_funding_related": 0,
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000154.000045787.html"
+      },
+      {
+        "title": "いま求められる国際経営管理とは？ニューノーマル時代の戦略と実行を学ぶ講座動画を公開｜インサイトアカデ…",
+        "source": "prtimes_funding",
+        "published_at": "2026-04-16",
+        "company_name": "インサイトアカデミー株式会社",
+        "is_funding_related": 0,
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000544.000077877.html"
+      },
+      {
+        "title": "【AVIOT】河森正治による次世代の電動キックボード『Ridepiece KB-S350』が「GRE…",
+        "source": "prtimes_funding",
+        "published_at": "2026-04-16",
+        "company_name": "プレシードジャパン株式会社",
+        "is_funding_related": 0,
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000289.000027368.html"
+      },
+      {
+        "title": "シリーズ最新作『プロ野球スピリッツ2026』 7月16日（木）に発売決定！本日4月16日（木）から予…",
+        "source": "prtimes_funding",
+        "published_at": "2026-04-16",
+        "company_name": "株式会社コナミデジタルエンタテインメント",
+        "is_funding_related": 0,
+        "source_url": "https://prtimes.jp/main/html/rd/p/000001400.000050711.html"
+      },
+      {
+        "title": "【北海道特化】伴走型支援でプレシードから挑戦者を支える「POLAR SHORTCUT 2号投資事業有…",
+        "source": "prtimes_funding",
+        "published_at": "2026-04-16",
+        "company_name": "株式会社POLAR SHORTCUT",
+        "is_funding_related": 0,
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000004.000078609.html"
+      },
+      {
+        "title": "体験型デジタルスペース「Roomiq」で人生の意思決定体験を変える。リプロネクスト、シードラウンドで…",
+        "source": "prtimes_funding",
+        "published_at": "2026-04-16",
+        "company_name": "株式会社リプロネクスト",
         "is_funding_related": 1,
-        "source_url": "https://prtimes.jp/main/html/rd/p/000000007.000170842.html"
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000025.000064851.html"
       },
       {
-        "title": "コモンプロダクツ、製造・物流現場の自動化を推進する産学連携拠点「京田辺ロボティクスラボ」を開設",
-        "source": "prtimes_sangaku",
-        "published_at": "2026-04-14",
-        "company_name": "",
+        "title": "建設向けAI異常予兆検知システムを開発する株式会社RapidX、GazelleCapitalよりシー…",
+        "source": "prtimes_funding",
+        "published_at": "2026-04-16",
+        "company_name": "株式会社RapidX",
         "is_funding_related": 0,
-        "source_url": "https://prtimes.jp/main/html/rd/p/000000009.000109608.html"
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000006.000106290.html"
       },
       {
-        "title": "博報堂とビザスクが資本業務提携。専門家の観点・判断軸を学習した「エキスパートAI」の共同開発へ",
-        "source": "prtimes_sangaku",
-        "published_at": "2026-04-14",
-        "company_name": "",
-        "is_funding_related": 0,
-        "source_url": "https://prtimes.jp/main/html/rd/p/000000483.000015233.html"
+        "title": "体験型デジタルスペース「Roomiq」で意思決定の変革を目指すリプロネクストのシードラウンドにおいて…",
+        "source": "prtimes_funding",
+        "published_at": "2026-04-16",
+        "company_name": "株式会社ジェネシア・ベンチャーズ",
+        "is_funding_related": 1,
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000197.000056091.html"
       },
       {
-        "title": "タキロンシーアイ、研究開発を集約 「三田総合研究所」で新事業創出を加速",
-        "source": "prtimes_sangaku",
-        "published_at": "2026-04-14",
-        "company_name": "",
-        "is_funding_related": 0,
-        "source_url": "https://prtimes.jp/main/html/rd/p/000000032.000077732.html"
+        "title": "個人投資家の意思決定を支援するAI投資エージェント『Velpha』、約6,000万円をシードラウンド…",
+        "source": "prtimes_funding",
+        "published_at": "2026-04-16",
+        "company_name": "ヴェルファ株式会社",
+        "is_funding_related": 1,
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000006.000148835.html"
       },
       {
-        "title": "巨大災害から命を守る「情報の空白」をゼロに。最新技術の活用で防災インフラを高度化する取り組みを開始",
-        "source": "prtimes_sangaku",
-        "published_at": "2026-04-14",
-        "company_name": "",
-        "is_funding_related": 0,
-        "source_url": "https://prtimes.jp/main/html/rd/p/000000004.000070425.html"
+        "title": "個人投資家の意思決定を支援するAI投資エージェント「Velpha」のシードラウンドにおいて出資",
+        "source": "prtimes_funding",
+        "published_at": "2026-04-16",
+        "company_name": "株式会社ジェネシア・ベンチャーズ",
+        "is_funding_related": 1,
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000198.000056091.html"
       },
       {
-        "title": "MNインターファッション株式会社 三陽商会と「HANAE MORI」のライセンス契約を締結",
-        "source": "prtimes_sangaku",
-        "published_at": "2026-04-14",
-        "company_name": "",
-        "is_funding_related": 0,
-        "source_url": "https://prtimes.jp/main/html/rd/p/000000181.000024743.html"
+        "title": "MolexがTeramount Ltd.の買収合意を発表――スケーラブルなコパッケージドオプティクス…",
+        "source": "prtimes_funding",
+        "published_at": "2026-04-16",
+        "company_name": "Molex, LLC",
+        "is_funding_related": 1,
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000014.000173131.html"
       },
       {
-        "title": "ZenmuTech、AIHOBSの「Digital Trust Grid」に共同開発技術を提供 　ー…",
-        "source": "prtimes_sangaku",
-        "published_at": "2026-04-14",
-        "company_name": "",
+        "title": "PETcision、犬のがん検査製品「PETcision Guard」を携え、SusHi Tech …",
+        "source": "prtimes_funding",
+        "published_at": "2026-04-16",
+        "company_name": "Everiii & Partners International Co. Ltd",
         "is_funding_related": 0,
-        "source_url": "https://prtimes.jp/main/html/rd/p/000000049.000041061.html"
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000079.000127346.html"
       },
       {
-        "title": "四国4県を中心に、20校の高校生と教員、企業の社員ら総勢75名以上が高松に集結──次世代共創リーダー…",
-        "source": "prtimes_sangaku",
-        "published_at": "2026-04-14",
-        "company_name": "",
+        "title": "分断を乗り越えるヒントは長崎の街に。平和×起業家精神を持った次世代リーダー300人が集う国際フォーラ…",
+        "source": "prtimes_funding",
+        "published_at": "2026-04-16",
+        "company_name": "一般社団法人ONE YOUNG WORLD長崎協議会",
         "is_funding_related": 0,
-        "source_url": "https://prtimes.jp/main/html/rd/p/000000591.000006682.html"
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000004.000139779.html"
       },
       {
-        "title": "共創で進化する鉄道電気分野の「設備のスマートメンテナンス」や「工事業務の機械化・DX」",
-        "source": "prtimes_sangaku",
-        "published_at": "2026-04-14",
-        "company_name": "",
+        "title": "【ピークデザイン / イベント出展】日本最大のスポーツサイクルフェスティバル「CYCLE MODE …",
+        "source": "prtimes_funding",
+        "published_at": "2026-04-16",
+        "company_name": "銀一株式会社",
         "is_funding_related": 0,
-        "source_url": "https://prtimes.jp/main/html/rd/p/000001401.000017557.html"
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000168.000050753.html"
       },
       {
-        "title": "上野トランステック株式会社、広島商船高等専門学校と産学連携に関する包括協定を締結",
-        "source": "prtimes_sangaku",
-        "published_at": "2026-04-14",
-        "company_name": "",
+        "title": "MedTech特化アクセラレーション「MedTech Angels Season5」の集大成　医療系…",
+        "source": "prtimes_funding",
+        "published_at": "2026-04-16",
+        "company_name": "プレモパートナー株式会社",
         "is_funding_related": 0,
-        "source_url": "https://prtimes.jp/main/html/rd/p/000000003.000181247.html"
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000032.000059971.html"
       },
       {
-        "title": "小売業との共創を実現する！「JBP ジョイントビジネスプラン」の進め方　集合型セミナー 5月20日開…",
-        "source": "prtimes_sangaku",
-        "published_at": "2026-04-14",
-        "company_name": "",
+        "title": "WEIN / BACKSTAGE Group、CG制作プロダクション「CONTORNO」をグループ会…",
+        "source": "prtimes_funding",
+        "published_at": "2026-04-16",
+        "company_name": "株式会社BACKSTAGE",
         "is_funding_related": 0,
-        "source_url": "https://prtimes.jp/main/html/rd/p/000000190.000102999.html"
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000048.000120613.html"
       },
       {
-        "title": "暁電機製作所、東芝テック様、サンプラザ様で商品券読取装置とセルフレジシステムとの連動における実証実験…",
-        "source": "prtimes_sangaku",
-        "published_at": "2026-04-14",
-        "company_name": "",
+        "title": "京都フュージョニアリングとStarlight Engine が、人類のエネルギー史を変える「フュージ…",
+        "source": "prtimes_funding",
+        "published_at": "2026-04-16",
+        "company_name": "エン株式会社",
         "is_funding_related": 0,
-        "source_url": "https://prtimes.jp/main/html/rd/p/000000013.000154721.html"
+        "source_url": "https://prtimes.jp/main/html/rd/p/000001188.000000725.html"
       },
       {
-        "title": "Brilliaの住まいと暮らしの共創プロジェクト「bloomoi」「TOKYOROOMS展 〜40の…",
-        "source": "prtimes_sangaku",
-        "published_at": "2026-04-14",
-        "company_name": "",
+        "title": "FESコンテスト®大学生運営委員会、2026年度の開催エリア拡大に伴う体制強化で新メンバー募集",
+        "source": "prtimes_funding",
+        "published_at": "2026-04-16",
+        "company_name": "一般社団法人日本金融教育支援機構",
         "is_funding_related": 0,
-        "source_url": "https://prtimes.jp/main/html/rd/p/000000526.000052843.html"
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000032.000165189.html"
       },
       {
-        "title": "「能登の太陽　ビタミンちくわカレー」4/15発売　能登・スギヨ　長野県の小学生と復興支援で共同開発",
-        "source": "prtimes_sangaku",
-        "published_at": "2026-04-14",
-        "company_name": "",
+        "title": "「デジタル証券「renga」 第2号 〜レジデンス（南青山）〜」運用開始のお知らせ",
+        "source": "prtimes_funding",
+        "published_at": "2026-04-16",
+        "company_name": "デジタル証券株式会社",
         "is_funding_related": 0,
-        "source_url": "https://prtimes.jp/main/html/rd/p/000000028.000085219.html"
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000024.000126590.html"
       },
       {
-        "title": "株式会社メンテル、神奈川県オープンイノベーション成果発表会「Kanagawa Innovators …",
-        "source": "prtimes_sangaku",
-        "published_at": "2026-04-14",
-        "company_name": "",
+        "title": "運送業における「ドライバー採用戦略と人事設計」徹底解説セミナーを開催",
+        "source": "prtimes_funding",
+        "published_at": "2026-04-16",
+        "company_name": "アセンド株式会社",
         "is_funding_related": 0,
-        "source_url": "https://prtimes.jp/main/html/rd/p/000000026.000130784.html"
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000103.000071415.html"
       },
       {
-        "title": "「一般社団法人スマートビルディング共創機構」年次成果フォーラム『SmartBuilding Conn…",
-        "source": "prtimes_sangaku",
-        "published_at": "2026-04-14",
-        "company_name": "",
+        "title": "ゼロボード総研所長の待場智雄、サステナビリティ開示基準 GRIスタンダードの審議機関GSSB副議長に…",
+        "source": "prtimes_funding",
+        "published_at": "2026-04-15",
+        "company_name": "株式会社ゼロボード",
         "is_funding_related": 0,
-        "source_url": "https://prtimes.jp/main/html/rd/p/000000005.000164091.html"
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000247.000087068.html"
       },
       {
-        "title": "GUESS JEANS、ローカルアーティストと共創するプロジェクト「GUESS JEANS Arti…",
-        "source": "prtimes_sangaku",
-        "published_at": "2026-04-13",
-        "company_name": "",
-        "is_funding_related": 0,
-        "source_url": "https://prtimes.jp/main/html/rd/p/000000061.000011576.html"
+        "title": "Upstage - シリーズCで1億3,500万米ドル（約200億円）を調達",
+        "source": "prtimes_funding",
+        "published_at": "2026-04-15",
+        "company_name": "Upstage AI株式会社",
+        "is_funding_related": 1,
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000015.000159603.html"
       },
       {
-        "title": "“水を捨てない”洗濯機が稼働！「命のコンテナプロジェクト」群馬県モデル 水循環型洗濯機の実証実験を道…",
-        "source": "prtimes_sangaku",
-        "published_at": "2026-04-13",
-        "company_name": "",
+        "title": "シェルパ、MSCIとウェビナー「MSCIに聞く！ESG評価において投資家が注目するポイント」を実施",
+        "source": "prtimes_funding",
+        "published_at": "2026-04-15",
+        "company_name": "シェルパ・アンド・カンパニー",
         "is_funding_related": 0,
-        "source_url": "https://prtimes.jp/main/html/rd/p/000000227.000053641.html"
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000134.000100923.html"
       },
       {
-        "title": "【オフラインイベント開催！】みんなとあそぶ、つくる、語り合う！『テラビット』の未来を共創するオフライ…",
-        "source": "prtimes_sangaku",
-        "published_at": "2026-04-13",
-        "company_name": "",
+        "title": "Interbrand “Best Japan Brands 2026”ブランド価値による日本ブランド…",
+        "source": "prtimes_funding",
+        "published_at": "2026-04-15",
+        "company_name": "株式会社インターブランドジャパン",
         "is_funding_related": 0,
-        "source_url": "https://prtimes.jp/main/html/rd/p/000000295.000113626.html"
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000201.000000092.html"
       },
       {
-        "title": "株式会社オフィスEMP、思考承継型AIエージェント「EOS」の中核技術で特許出願〜AIが上司の代わり…",
-        "source": "prtimes_sangaku",
-        "published_at": "2026-04-13",
-        "company_name": "",
+        "title": "インパクト投資の「実践」を解き明かす。ImpactShare、解説動画シリーズを全7本一挙公開",
+        "source": "prtimes_funding",
+        "published_at": "2026-04-15",
+        "company_name": "一般社団法人ImpactShare",
         "is_funding_related": 0,
-        "source_url": "https://prtimes.jp/main/html/rd/p/000000004.000166162.html"
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000004.000140520.html"
       },
       {
-        "title": "英国と日本における地域共創の最前線　東京藝術大学との《共創フォーラムVol.2》を開催「Arts, …",
-        "source": "prtimes_sangaku",
-        "published_at": "2026-04-13",
-        "company_name": "",
+        "title": "Transpose Platform主催、東大IPC共催・森ビル協賛の３社布陣、AIハッカソン「c0…",
+        "source": "prtimes_funding",
+        "published_at": "2026-04-15",
+        "company_name": "TRANSPOSE PLATFORM MANAGEMENT, LLC",
         "is_funding_related": 0,
-        "source_url": "https://prtimes.jp/main/html/rd/p/000000038.000117982.html"
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000015.000172016.html"
       },
       {
-        "title": "AIに選ばれる強いコンテンツを「編集者×AI」でサポート！ ワン・パブリッシングと共同開発した「AI…",
-        "source": "prtimes_sangaku",
-        "published_at": "2026-04-13",
-        "company_name": "",
+        "title": "アトツギ支援エコシステム「オカヤマ1000」始動",
+        "source": "prtimes_funding",
+        "published_at": "2026-04-15",
+        "company_name": "瀬戸内と株式会社",
         "is_funding_related": 0,
-        "source_url": "https://prtimes.jp/main/html/rd/p/000000028.000070859.html"
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000046.000091117.html"
       },
       {
-        "title": "PKSHA、クレディセゾンとAI審査モデルを共同開発ー金融向けAIスコアリング技術を提供",
-        "source": "prtimes_sangaku",
-        "published_at": "2026-04-13",
-        "company_name": "",
+        "title": "EdgeCortix、Axiro SemiconductorおよびMPower Partnersから…",
+        "source": "prtimes_funding",
+        "published_at": "2026-04-15",
+        "company_name": "EdgeCortix株式会社",
         "is_funding_related": 0,
-        "source_url": "https://prtimes.jp/main/html/rd/p/000000254.000022705.html"
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000035.000053504.html"
       },
       {
-        "title": "ファミリーマート×ブックオフ 衣料品・雑貨回収ボックスの実証実験を開始 ～ファミリーマート店舗が資源…",
-        "source": "prtimes_sangaku",
-        "published_at": "2026-04-13",
-        "company_name": "",
+        "title": "米ペガサスとジャパネット、CVCファンドを300億円へ拡大 ──既存領域に加え、生成AI・Physi…",
+        "source": "prtimes_funding",
+        "published_at": "2026-04-15",
+        "company_name": "株式会社ペガサス・テック・ベンチャーズ・ジャパン",
         "is_funding_related": 0,
-        "source_url": "https://prtimes.jp/main/html/rd/p/000002271.000046210.html"
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000191.000044738.html"
       },
       {
-        "title": "狭山市駅前に、創業支援×交流の新拠点「共創ラボカフェ SAYAMA CROSS」2026年4月18日…",
-        "source": "prtimes_sangaku",
-        "published_at": "2026-04-13",
-        "company_name": "",
+        "title": "ジャパネット、米ペガサスCVCファンドを300億円へ拡大",
+        "source": "prtimes_funding",
+        "published_at": "2026-04-15",
+        "company_name": "株式会社　ジャパネットホールディングス",
         "is_funding_related": 0,
-        "source_url": "https://prtimes.jp/main/html/rd/p/000000004.000180717.html"
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000685.000016651.html"
       },
       {
-        "title": "大阪市住之江区とパートナーシップ協定を締結～観光振興、防災、次世代育成（産学連携）等の強化により、持…",
-        "source": "prtimes_sangaku",
-        "published_at": "2026-04-13",
-        "company_name": "",
+        "title": "「地域×海外×スタートアップ」で成長資金を動かすBIG Impact、2号ファンドを組成しファースト…",
+        "source": "prtimes_funding",
+        "published_at": "2026-04-15",
+        "company_name": "BIG Impact",
         "is_funding_related": 0,
-        "source_url": "https://prtimes.jp/main/html/rd/p/000000078.000125674.html"
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000008.000105398.html"
       },
       {
-        "title": "Marbull X、渋谷発の参加型・共創型プロジェクト「SHIBUYA Q DAO」に「Marbul…",
-        "source": "prtimes_sangaku",
-        "published_at": "2026-04-13",
-        "company_name": "",
+        "title": "CVCファンドを通じ、建設部材の調達プラットフォームを提供するスタートアップ企業「BALLAS」へ出…",
+        "source": "prtimes_funding",
+        "published_at": "2026-04-15",
+        "company_name": "日揮HD",
         "is_funding_related": 0,
-        "source_url": "https://prtimes.jp/main/html/rd/p/000000015.000150870.html"
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000325.000065135.html"
       },
       {
-        "title": "呼吸器内科副部長　國政啓医師の研究課題が、国立研究開発法人日本医療研究開発機構（AMED）の令和8年…",
-        "source": "prtimes_sangaku",
-        "published_at": "2026-04-13",
-        "company_name": "",
-        "is_funding_related": 0,
-        "source_url": "https://prtimes.jp/main/html/rd/p/000000002.000179627.html"
+        "title": "建設部材プラットフォームを運営する「BALLAS」に出資(ニュースレター)",
+        "source": "prtimes_funding",
+        "published_at": "2026-04-15",
+        "company_name": "大和ハウス工業株式会社",
+        "is_funding_related": 1,
+        "source_url": "https://prtimes.jp/main/html/rd/p/000002641.000002296.html"
       },
       {
-        "title": "ETC2.0プローブデータを活用した中小企業向けドライバー管理・安全運転支援サービスの実証実験を共同…",
-        "source": "prtimes_sangaku",
-        "published_at": "2026-04-13",
-        "company_name": "",
-        "is_funding_related": 0,
-        "source_url": "https://prtimes.jp/main/html/rd/p/000000872.000017036.html"
-      },
-      {
-        "title": "ＥＴＣ２．０プローブデータを活用した中小企業向けドライバー管理・安全運転支援サービスの実証実験を共同…",
-        "source": "prtimes_sangaku",
-        "published_at": "2026-04-13",
-        "company_name": "",
-        "is_funding_related": 0,
-        "source_url": "https://prtimes.jp/main/html/rd/p/000000138.000159136.html"
-      },
-      {
-        "title": "オークラ輸送機、研究開発拠点「MIRAI Innovation Labo」を竣工",
-        "source": "prtimes_sangaku",
-        "published_at": "2026-04-13",
-        "company_name": "",
-        "is_funding_related": 0,
-        "source_url": "https://prtimes.jp/main/html/rd/p/000000005.000147727.html"
-      },
-      {
-        "title": "「誰もが一票を届けられる社会へ」障害者の投票体験を通じた“有権者フレンドリーな投票環境”の実証実験を…",
-        "source": "prtimes_sangaku",
-        "published_at": "2026-04-10",
-        "company_name": "",
-        "is_funding_related": 0,
-        "source_url": "https://prtimes.jp/main/html/rd/p/000000279.000088950.html"
-      },
-      {
-        "title": "UD IMPACT、一橋大学大学院ソーシャル・データサイエンス研究科と産学連携MOU締結｜“起業前”…",
-        "source": "prtimes_sangaku",
-        "published_at": "2026-04-10",
-        "company_name": "",
-        "is_funding_related": 0,
-        "source_url": "https://prtimes.jp/main/html/rd/p/000000004.000169668.html"
-      },
-      {
-        "title": "都市をスポーツフィールドとして拡張する共創プロジェクト「Shibuya Playground」4月1…",
-        "source": "prtimes_sangaku",
-        "published_at": "2026-04-10",
-        "company_name": "",
-        "is_funding_related": 0,
-        "source_url": "https://prtimes.jp/main/html/rd/p/000000398.000033690.html"
-      },
-      {
-        "title": "発売初日7時間で1,000個完売の話題サプリ「TOCASSE（トカセ）」が一般販売開始。韓国特許取得…",
-        "source": "prtimes_sangaku",
-        "published_at": "2026-04-10",
-        "company_name": "",
-        "is_funding_related": 0,
-        "source_url": "https://prtimes.jp/main/html/rd/p/000000317.000005491.html"
-      },
-      {
-        "title": "東京情報デザイン専門職大学との産学連携のお知らせ",
-        "source": "prtimes_sangaku",
-        "published_at": "2026-04-10",
-        "company_name": "",
-        "is_funding_related": 0,
-        "source_url": "https://prtimes.jp/main/html/rd/p/000000275.000027316.html"
-      },
-      {
-        "title": "技術承継と共創による新たな製造業グループ「HainuTechホールディングス株式会社」を設立",
-        "source": "prtimes_sangaku",
-        "published_at": "2026-04-10",
-        "company_name": "",
-        "is_funding_related": 0,
-        "source_url": "https://prtimes.jp/main/html/rd/p/000000001.000180586.html"
+        "title": "業務ロボット×統合管理プラットフォームを展開する「ｕｇｏ」に出資(ニュースレター)",
+        "source": "prtimes_funding",
+        "published_at": "2026-04-15",
+        "company_name": "大和ハウス工業株式会社",
+        "is_funding_related": 1,
+        "source_url": "https://prtimes.jp/main/html/rd/p/000002642.000002296.html"
       }
     ],
     "top_companies_by_pr_count": [
@@ -857,12 +860,76 @@
         "count": 30
       },
       {
+        "company_name": "株式会社ペガサス・テック・ベンチャーズ・ジャパン",
+        "count": 5
+      },
+      {
+        "company_name": "株式会社ジェネシア・ベンチャーズ",
+        "count": 5
+      },
+      {
+        "company_name": "東大IPC",
+        "count": 4
+      },
+      {
+        "company_name": "グローバル・ブレイン株式会社",
+        "count": 4
+      },
+      {
+        "company_name": "Samsung",
+        "count": 4
+      },
+      {
+        "company_name": "株式会社ソニー・ミュージックレーベルズ",
+        "count": 3
+      },
+      {
+        "company_name": "株式会社　和多屋別荘",
+        "count": 3
+      },
+      {
+        "company_name": "株式会社eiicon",
+        "count": 3
+      },
+      {
+        "company_name": "プレシードジャパン株式会社",
+        "count": 3
+      },
+      {
+        "company_name": "ティフォン株式会社",
+        "count": 3
+      },
+      {
+        "company_name": "JR東日本スタートアップ株式会社",
+        "count": 3
+      },
+      {
         "company_name": "DuckDuckGo Patent Search",
         "count": 3
       },
       {
         "company_name": "DuckDuckGo Funding Search",
         "count": 3
+      },
+      {
+        "company_name": "01Booster",
+        "count": 3
+      },
+      {
+        "company_name": "銀一株式会社",
+        "count": 2
+      },
+      {
+        "company_name": "株式会社ディープコア",
+        "count": 2
+      },
+      {
+        "company_name": "株式会社ウェルカム",
+        "count": 2
+      },
+      {
+        "company_name": "株式会社coly",
+        "count": 2
       }
     ]
   }
