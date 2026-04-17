@@ -164,12 +164,14 @@ def export(src_path: Path, dst_path: Path, include_all: bool = False) -> None:
     dst = sqlite3.connect(dst_path)
     dst.executescript(SCHEMA)
 
-    # Export press releases (filter out pre-2021 anomalies)
+    # Export press releases (filter out pre-2021 anomalies and sangaku data)
     date_filter = "AND (published_at IS NULL OR published_at >= '2021-01-01')"
+    # Exclude prtimes_sangaku (academia/industry data) from VC funding DB
+    source_filter = "AND source != 'prtimes_sangaku'"
     if include_all:
         rows = src.execute(f"""
             SELECT * FROM press_releases
-            WHERE 1=1 {date_filter}
+            WHERE 1=1 {date_filter} {source_filter}
             ORDER BY published_at DESC
         """).fetchall()
     else:
@@ -177,7 +179,7 @@ def export(src_path: Path, dst_path: Path, include_all: bool = False) -> None:
             SELECT * FROM press_releases
             WHERE (is_funding_related = 1
                OR category IN ('funding', 'exit', 'accelerator', 'partnership'))
-               {date_filter}
+               {date_filter} {source_filter}
             ORDER BY published_at DESC
         """).fetchall()
 
