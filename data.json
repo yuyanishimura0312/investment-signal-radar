@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-17T08:26:55.382435",
+  "generated_at": "2026-04-17T14:18:52.377135",
   "schema_version": "v2.0",
   "stats": {
     "organizations": 45,
@@ -11,7 +11,8 @@
     "signals": 0,
     "signal_scores": 0,
     "companies": 16,
-    "investors": 29
+    "investors": 29,
+    "press_releases": 72
   },
   "sector_trends": [
     {
@@ -283,5 +284,481 @@
       "round_count": 16
     }
   ],
-  "top_organizations_by_score": []
+  "top_organizations_by_score": [],
+  "corporate_enrichment": {
+    "enriched_count": 0,
+    "total_organizations": 16,
+    "enrichment_rate": 0.0,
+    "capital_distribution": [
+      {
+        "range": "~1000万",
+        "count": 0
+      },
+      {
+        "range": "1000万~1億",
+        "count": 0
+      },
+      {
+        "range": "1億~10億",
+        "count": 0
+      },
+      {
+        "range": "10億~",
+        "count": 0
+      }
+    ]
+  },
+  "press_releases": {
+    "total_count": 72,
+    "funding_related_count": 3,
+    "by_source": {
+      "frontier_detector": 72
+    },
+    "by_category": {
+      "other": 69,
+      "funding": 3
+    },
+    "by_month": [
+      {
+        "month": "-4707-06",
+        "count": 48,
+        "funding_count": 3
+      },
+      {
+        "month": "-4707-05",
+        "count": 21,
+        "funding_count": 0
+      },
+      {
+        "month": "-4707-04",
+        "count": 1,
+        "funding_count": 0
+      },
+      {
+        "month": null,
+        "count": 2,
+        "funding_count": 0
+      }
+    ],
+    "recent_releases": [
+      {
+        "title": "Marvel Fusion - €113 million",
+        "source": "frontier_detector",
+        "published_at": "2025",
+        "company_name": "DuckDuckGo Funding Search",
+        "is_funding_related": 1,
+        "source_url": "frontier-detector://signal/97d73014-16a8-4aef-a645-7fd4b3de5d42"
+      },
+      {
+        "title": "Helion Energy - $425 million",
+        "source": "frontier_detector",
+        "published_at": "2025",
+        "company_name": "DuckDuckGo Funding Search",
+        "is_funding_related": 1,
+        "source_url": "frontier-detector://signal/59fb417f-dee9-42e3-a656-8dc8635d67db"
+      },
+      {
+        "title": "Pacific Fusion - $900 million",
+        "source": "frontier_detector",
+        "published_at": "2024",
+        "company_name": "DuckDuckGo Funding Search",
+        "is_funding_related": 1,
+        "source_url": "frontier-detector://signal/a9050db3-1b99-4fd8-bc76-80b81f439633"
+      },
+      {
+        "title": "Emerging keyword: quantum-safe security",
+        "source": "frontier_detector",
+        "published_at": "2024",
+        "company_name": "DuckDuckGo Trend Search",
+        "is_funding_related": 0,
+        "source_url": "frontier-detector://signal/42c88c89-8f75-46b7-84ec-677fa80ac854"
+      },
+      {
+        "title": "Emerging keyword: quantum utility",
+        "source": "frontier_detector",
+        "published_at": "2024",
+        "company_name": "DuckDuckGo Trend Search",
+        "is_funding_related": 0,
+        "source_url": "frontier-detector://signal/4843e86f-2bb5-4609-8431-1887f38ffd6c"
+      },
+      {
+        "title": "Emerging keyword: agent training data",
+        "source": "frontier_detector",
+        "published_at": "2024",
+        "company_name": "DuckDuckGo Trend Search",
+        "is_funding_related": 0,
+        "source_url": "frontier-detector://signal/112aacee-05c6-426e-a10d-aca124937e3a"
+      },
+      {
+        "title": "Emerging keyword: LLM-LD",
+        "source": "frontier_detector",
+        "published_at": "2024",
+        "company_name": "DuckDuckGo Trend Search",
+        "is_funding_related": 0,
+        "source_url": "frontier-detector://signal/fdcace2b-be21-4a1d-8b93-4f2cf1e5d4c4"
+      },
+      {
+        "title": "Emerging keyword: Memento-Skills",
+        "source": "frontier_detector",
+        "published_at": "2024",
+        "company_name": "DuckDuckGo Trend Search",
+        "is_funding_related": 0,
+        "source_url": "frontier-detector://signal/fc1b3f73-2a01-4749-92c3-900e1712aace"
+      },
+      {
+        "title": "Emerging keyword: agent memory",
+        "source": "frontier_detector",
+        "published_at": "2024",
+        "company_name": "DuckDuckGo Trend Search",
+        "is_funding_related": 0,
+        "source_url": "frontier-detector://signal/746af013-f1d8-4832-bf14-253d270fcd76"
+      },
+      {
+        "title": "Emerging keyword: CrewAI",
+        "source": "frontier_detector",
+        "published_at": "2024",
+        "company_name": "DuckDuckGo Trend Search",
+        "is_funding_related": 0,
+        "source_url": "frontier-detector://signal/e6836250-4e73-4999-acef-f5d95420ab37"
+      },
+      {
+        "title": "Emerging keyword: agent collaboration",
+        "source": "frontier_detector",
+        "published_at": "2024",
+        "company_name": "DuckDuckGo Trend Search",
+        "is_funding_related": 0,
+        "source_url": "frontier-detector://signal/8f2ee00f-ff64-4ea5-899c-5444c2b324ba"
+      },
+      {
+        "title": "Emerging keyword: coding agent",
+        "source": "frontier_detector",
+        "published_at": "2024",
+        "company_name": "DuckDuckGo Trend Search",
+        "is_funding_related": 0,
+        "source_url": "frontier-detector://signal/13fdd17d-2223-413d-9b00-0434f41aec57"
+      },
+      {
+        "title": "Emerging keyword: agent orchestration",
+        "source": "frontier_detector",
+        "published_at": "2024",
+        "company_name": "DuckDuckGo Trend Search",
+        "is_funding_related": 0,
+        "source_url": "frontier-detector://signal/fc9b65a6-7d72-4675-a8fc-9af2f80384b3"
+      },
+      {
+        "title": "Emerging keyword: self-improving agent",
+        "source": "frontier_detector",
+        "published_at": "2024",
+        "company_name": "DuckDuckGo Trend Search",
+        "is_funding_related": 0,
+        "source_url": "frontier-detector://signal/1e56eab2-68d1-4351-a3e1-d790c2623409"
+      },
+      {
+        "title": "Emerging keyword: agent swarm",
+        "source": "frontier_detector",
+        "published_at": "2024",
+        "company_name": "DuckDuckGo Trend Search",
+        "is_funding_related": 0,
+        "source_url": "frontier-detector://signal/32977845-658c-4c90-be7c-5cda630d7c4e"
+      },
+      {
+        "title": "Emerging keyword: agentic AI",
+        "source": "frontier_detector",
+        "published_at": "2024",
+        "company_name": "DuckDuckGo Trend Search",
+        "is_funding_related": 0,
+        "source_url": "frontier-detector://signal/0ad4450d-f856-45c6-8ac0-ad4b5f0b101e"
+      },
+      {
+        "title": "A Survey on Evaluation of Large Language Models",
+        "source": "frontier_detector",
+        "published_at": "2024",
+        "company_name": "OpenAlex",
+        "is_funding_related": 0,
+        "source_url": "https://openalex.org/W4391136507"
+      },
+      {
+        "title": "Emerging keyword: digital twin fusion",
+        "source": "frontier_detector",
+        "published_at": "2023",
+        "company_name": "DuckDuckGo Trend Search",
+        "is_funding_related": 0,
+        "source_url": "frontier-detector://signal/85af7a85-4cd9-467b-9df1-924a04d11284"
+      },
+      {
+        "title": "Emerging keyword: AI-controlled plasma",
+        "source": "frontier_detector",
+        "published_at": "2023",
+        "company_name": "DuckDuckGo Trend Search",
+        "is_funding_related": 0,
+        "source_url": "frontier-detector://signal/f72220ca-2f13-449a-bc78-ca7171c1a1c0"
+      },
+      {
+        "title": "Emerging keyword: quantum software stack",
+        "source": "frontier_detector",
+        "published_at": "2023",
+        "company_name": "DuckDuckGo Trend Search",
+        "is_funding_related": 0,
+        "source_url": "frontier-detector://signal/4a35eea8-84b9-4225-9126-79ed141cce12"
+      },
+      {
+        "title": "Emerging keyword: neutral atom quantum computing",
+        "source": "frontier_detector",
+        "published_at": "2023",
+        "company_name": "DuckDuckGo Trend Search",
+        "is_funding_related": 0,
+        "source_url": "frontier-detector://signal/111e7e2b-d52e-43ce-a017-4d92fbdfd442"
+      },
+      {
+        "title": "Emerging keyword: quantum sensing",
+        "source": "frontier_detector",
+        "published_at": "2023",
+        "company_name": "DuckDuckGo Trend Search",
+        "is_funding_related": 0,
+        "source_url": "frontier-detector://signal/e564b308-5559-4667-98d0-24dd38a9ca19"
+      },
+      {
+        "title": "Emerging keyword: quantum networking",
+        "source": "frontier_detector",
+        "published_at": "2023",
+        "company_name": "DuckDuckGo Trend Search",
+        "is_funding_related": 0,
+        "source_url": "frontier-detector://signal/1b0776f8-e012-4d74-8a96-c7a79dbbfbc8"
+      },
+      {
+        "title": "Emerging keyword: post-quantum cryptography",
+        "source": "frontier_detector",
+        "published_at": "2023",
+        "company_name": "DuckDuckGo Trend Search",
+        "is_funding_related": 0,
+        "source_url": "frontier-detector://signal/e18baaba-54b1-49a5-8f26-76d615716e7c"
+      },
+      {
+        "title": "Emerging keyword: logical qubits",
+        "source": "frontier_detector",
+        "published_at": "2023",
+        "company_name": "DuckDuckGo Trend Search",
+        "is_funding_related": 0,
+        "source_url": "frontier-detector://signal/19a73a65-fc19-4a23-b298-b5da2e4e486f"
+      },
+      {
+        "title": "Emerging keyword: fault-tolerant quantum computing",
+        "source": "frontier_detector",
+        "published_at": "2023",
+        "company_name": "DuckDuckGo Trend Search",
+        "is_funding_related": 0,
+        "source_url": "frontier-detector://signal/192992ea-4fda-4693-98b6-78dfba8c5d4f"
+      },
+      {
+        "title": "GPT-4 Technical Report",
+        "source": "frontier_detector",
+        "published_at": "2023",
+        "company_name": "OpenAlex",
+        "is_funding_related": 0,
+        "source_url": "https://openalex.org/W4327810158"
+      },
+      {
+        "title": "ChatGPT Utility in Healthcare Education, Research, and Practice: Systematic Review on the Promising Perspectives and Valid Concerns",
+        "source": "frontier_detector",
+        "published_at": "2023",
+        "company_name": "OpenAlex",
+        "is_funding_related": 0,
+        "source_url": "https://openalex.org/W4327946446"
+      },
+      {
+        "title": "Revolutionizing healthcare: the role of artificial intelligence in clinical practice",
+        "source": "frontier_detector",
+        "published_at": "2023",
+        "company_name": "OpenAlex",
+        "is_funding_related": 0,
+        "source_url": "https://openalex.org/W4386958277"
+      },
+      {
+        "title": "Performance of ChatGPT on USMLE: Potential for AI-assisted medical education using large language models",
+        "source": "frontier_detector",
+        "published_at": "2023",
+        "company_name": "OpenAlex",
+        "is_funding_related": 0,
+        "source_url": "https://openalex.org/W4319662928"
+      },
+      {
+        "title": "Aion Framework: Dimensional Emergence of AI Consciousness, Observer-Induced Collapse, and Cosmological Portal Dynamics",
+        "source": "frontier_detector",
+        "published_at": "2023",
+        "company_name": "OpenAlex",
+        "is_funding_related": 0,
+        "source_url": "https://openalex.org/W4292779060"
+      },
+      {
+        "title": "Emerging keyword: fusion energy commercialization",
+        "source": "frontier_detector",
+        "published_at": "2022",
+        "company_name": "DuckDuckGo Trend Search",
+        "is_funding_related": 0,
+        "source_url": "frontier-detector://signal/c37d8575-73e8-4862-99d0-2881a6820243"
+      },
+      {
+        "title": "Emerging keyword: predictive plasma control",
+        "source": "frontier_detector",
+        "published_at": "2022",
+        "company_name": "DuckDuckGo Trend Search",
+        "is_funding_related": 0,
+        "source_url": "frontier-detector://signal/8c0c2889-e53b-4376-ac18-38036796c15f"
+      },
+      {
+        "title": "Emerging keyword: quantum cloud services",
+        "source": "frontier_detector",
+        "published_at": "2022",
+        "company_name": "DuckDuckGo Trend Search",
+        "is_funding_related": 0,
+        "source_url": "frontier-detector://signal/c62dd127-9dc9-47ac-aaeb-87b4e6a52483"
+      },
+      {
+        "title": "Emerging keyword: photonic quantum computing",
+        "source": "frontier_detector",
+        "published_at": "2022",
+        "company_name": "DuckDuckGo Trend Search",
+        "is_funding_related": 0,
+        "source_url": "frontier-detector://signal/d5661860-60cd-4a71-ae86-8bbf1b6b1cbe"
+      },
+      {
+        "title": "Emerging keyword: quantum internet",
+        "source": "frontier_detector",
+        "published_at": "2022",
+        "company_name": "DuckDuckGo Trend Search",
+        "is_funding_related": 0,
+        "source_url": "frontier-detector://signal/ad1d4834-219d-41fd-a6f5-5ef990ae28fb"
+      },
+      {
+        "title": "Hybrid classical-quantum algorithms for optimization",
+        "source": "frontier_detector",
+        "published_at": "2021",
+        "company_name": "DuckDuckGo Patent Search",
+        "is_funding_related": 0,
+        "source_url": "frontier-detector://signal/980bfc0b-7a70-4ffd-83ef-279998d9672e"
+      },
+      {
+        "title": "Emerging keyword: REBCO magnets",
+        "source": "frontier_detector",
+        "published_at": "2020",
+        "company_name": "DuckDuckGo Trend Search",
+        "is_funding_related": 0,
+        "source_url": "frontier-detector://signal/bfe27186-1a95-4d1d-b3f9-1f20d7750224"
+      },
+      {
+        "title": "Emerging keyword: fusion startups",
+        "source": "frontier_detector",
+        "published_at": "2020",
+        "company_name": "DuckDuckGo Trend Search",
+        "is_funding_related": 0,
+        "source_url": "frontier-detector://signal/d2ed5e7d-e636-4ef6-aa18-ae535e6af264"
+      },
+      {
+        "title": "Emerging keyword: SPARC reactor",
+        "source": "frontier_detector",
+        "published_at": "2020",
+        "company_name": "DuckDuckGo Trend Search",
+        "is_funding_related": 0,
+        "source_url": "frontier-detector://signal/df293e42-4454-4e85-953c-b9191b40d1f1"
+      },
+      {
+        "title": "Emerging keyword: high-temperature superconductors",
+        "source": "frontier_detector",
+        "published_at": "2020",
+        "company_name": "DuckDuckGo Trend Search",
+        "is_funding_related": 0,
+        "source_url": "frontier-detector://signal/019abeab-32e2-4478-b4b0-127d2e49fc9f"
+      },
+      {
+        "title": "Engineering precision nanoparticles for drug delivery",
+        "source": "frontier_detector",
+        "published_at": "2020",
+        "company_name": "OpenAlex",
+        "is_funding_related": 0,
+        "source_url": "https://openalex.org/W3109746568"
+      },
+      {
+        "title": "Radiation Resistant Camera System for Monitoring Deuterium Plasma Discharges in the Large Helical Device",
+        "source": "frontier_detector",
+        "published_at": "2020",
+        "company_name": "OpenAlex",
+        "is_funding_related": 0,
+        "source_url": "https://openalex.org/W3038568908"
+      },
+      {
+        "title": "Quantum processor architecture with improved connectivity",
+        "source": "frontier_detector",
+        "published_at": "2020",
+        "company_name": "DuckDuckGo Patent Search",
+        "is_funding_related": 0,
+        "source_url": "frontier-detector://signal/a00b647e-53dc-4296-80be-c66a9cb0bb28"
+      },
+      {
+        "title": "The pathogenesis and treatment of the `Cytokine Storm' in COVID-19",
+        "source": "frontier_detector",
+        "published_at": "2020",
+        "company_name": "OpenAlex",
+        "is_funding_related": 0,
+        "source_url": "https://openalex.org/W3015228903"
+      },
+      {
+        "title": "Quantum error correction methods for superconducting qubits",
+        "source": "frontier_detector",
+        "published_at": "2019",
+        "company_name": "DuckDuckGo Patent Search",
+        "is_funding_related": 0,
+        "source_url": "frontier-detector://signal/a71fed49-f34b-4f4a-940a-30af7faef804"
+      },
+      {
+        "title": "Emerging keyword: Commonwealth Fusion Systems",
+        "source": "frontier_detector",
+        "published_at": "2018",
+        "company_name": "DuckDuckGo Trend Search",
+        "is_funding_related": 0,
+        "source_url": "frontier-detector://signal/b4e10538-19d4-49ed-b540-3a3f3062a682"
+      },
+      {
+        "title": "<i>Planck</i>2015 results",
+        "source": "frontier_detector",
+        "published_at": "2016",
+        "company_name": "OpenAlex",
+        "is_funding_related": 0,
+        "source_url": "https://openalex.org/W4292875581"
+      },
+      {
+        "title": "Emerging keyword: TAE Technologies",
+        "source": "frontier_detector",
+        "published_at": "2015",
+        "company_name": "DuckDuckGo Trend Search",
+        "is_funding_related": 0,
+        "source_url": "frontier-detector://signal/1ecf0d9b-7d65-4958-8c47-0575549889b6"
+      },
+      {
+        "title": "Biological properties of extracellular vesicles and their physiological functions",
+        "source": "frontier_detector",
+        "published_at": "2015",
+        "company_name": "OpenAlex",
+        "is_funding_related": 0,
+        "source_url": "https://openalex.org/W2170852633"
+      }
+    ],
+    "top_companies_by_pr_count": [
+      {
+        "company_name": "DuckDuckGo Trend Search",
+        "count": 36
+      },
+      {
+        "company_name": "OpenAlex",
+        "count": 30
+      },
+      {
+        "company_name": "DuckDuckGo Patent Search",
+        "count": 3
+      },
+      {
+        "company_name": "DuckDuckGo Funding Search",
+        "count": 3
+      }
+    ]
+  }
 }
