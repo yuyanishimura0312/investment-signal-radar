@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-17T15:13:02.845029",
+  "generated_at": "2026-04-17T17:06:00.185177",
   "schema_version": "v2.0",
   "stats": {
     "organizations": 45,
@@ -12,7 +12,7 @@
     "signal_scores": 0,
     "companies": 16,
     "investors": 29,
-    "press_releases": 7236
+    "press_releases": 10496
   },
   "sector_trends": [
     {
@@ -309,146 +309,453 @@
     ]
   },
   "press_releases": {
-    "total_count": 7236,
-    "funding_related_count": 314,
+    "total_count": 10496,
+    "funding_related_count": 1566,
     "by_source": {
       "frontier_detector": 72,
       "prtimes": 200,
       "prtimes_funding": 383,
-      "prtimes_sangaku": 6581
+      "prtimes_historical": 2945,
+      "prtimes_sangaku": 6581,
+      "startupdb": 295,
+      "thebridge": 20
     },
     "by_category": {
-      "other": 6375,
-      "funding": 306,
-      "partnership": 229,
+      "other": 8216,
+      "funding": 1459,
+      "partnership": 298,
       "hiring": 182,
       "product_launch": 124,
-      "accelerator": 12,
-      "exit": 8
+      "accelerator": 110,
+      "exit": 107
     },
     "by_month": [
       {
         "month": "2026-04",
-        "count": 431,
-        "funding_count": 48
+        "count": 727,
+        "funding_count": 96
       },
       {
         "month": "2026-03",
-        "count": 371,
-        "funding_count": 20
+        "count": 654,
+        "funding_count": 87
       },
       {
         "month": "2026-02",
-        "count": 215,
-        "funding_count": 6
+        "count": 426,
+        "funding_count": 79
       },
       {
         "month": "2026-01",
-        "count": 181,
-        "funding_count": 4
+        "count": 361,
+        "funding_count": 66
       },
       {
         "month": "2025-12",
-        "count": 216,
-        "funding_count": 7
+        "count": 391,
+        "funding_count": 72
       },
       {
         "month": "2025-11",
-        "count": 204,
-        "funding_count": 4
+        "count": 392,
+        "funding_count": 93
       },
       {
         "month": "2025-10",
-        "count": 208,
-        "funding_count": 7
+        "count": 363,
+        "funding_count": 65
       },
       {
         "month": "2025-09",
-        "count": 213,
-        "funding_count": 8
+        "count": 337,
+        "funding_count": 52
       },
       {
         "month": "2025-08",
-        "count": 133,
-        "funding_count": 6
+        "count": 254,
+        "funding_count": 51
       },
       {
         "month": "2025-07",
-        "count": 166,
-        "funding_count": 6
+        "count": 271,
+        "funding_count": 54
       },
       {
         "month": "2025-06",
-        "count": 151,
-        "funding_count": 8
+        "count": 249,
+        "funding_count": 55
       },
       {
         "month": "2025-05",
-        "count": 129,
-        "funding_count": 4
+        "count": 219,
+        "funding_count": 42
       },
       {
         "month": "2025-04",
-        "count": 120,
-        "funding_count": 6
+        "count": 215,
+        "funding_count": 36
       },
       {
         "month": "2025-03",
-        "count": 106,
-        "funding_count": 4
+        "count": 159,
+        "funding_count": 26
       },
       {
         "month": "2025-02",
-        "count": 132,
-        "funding_count": 1
+        "count": 187,
+        "funding_count": 23
       },
       {
         "month": "2025-01",
-        "count": 88,
-        "funding_count": 3
+        "count": 127,
+        "funding_count": 29
       },
       {
         "month": "2024-12",
-        "count": 92,
-        "funding_count": 2
+        "count": 138,
+        "funding_count": 23
       },
       {
         "month": "2024-11",
-        "count": 111,
-        "funding_count": 8
+        "count": 163,
+        "funding_count": 35
       },
       {
         "month": "2024-10",
-        "count": 121,
-        "funding_count": 6
+        "count": 176,
+        "funding_count": 27
       },
       {
         "month": "2024-09",
-        "count": 94,
-        "funding_count": 5
+        "count": 140,
+        "funding_count": 25
       },
       {
         "month": "2024-08",
-        "count": 79,
-        "funding_count": 4
+        "count": 115,
+        "funding_count": 24
       },
       {
         "month": "2024-07",
-        "count": 98,
-        "funding_count": 4
+        "count": 130,
+        "funding_count": 20
       },
       {
         "month": "2024-06",
-        "count": 55,
-        "funding_count": 2
+        "count": 88,
+        "funding_count": 17
       },
       {
         "month": "2024-05",
-        "count": 76,
-        "funding_count": 4
+        "count": 108,
+        "funding_count": 15
       }
     ],
     "recent_releases": [
+      {
+        "title": "フォースタートアップス「STARTUP DB」と京都大学「スタートアップM&A寄附講座」による共同研究の成果として、松本茂特命教授が『スタートアップM&A 知られざる急成長の仕組み』を上梓｜News｜フォースタートアップス株式会社 - フォースタートアップス",
+        "source": "startupdb",
+        "published_at": "2026-04-17",
+        "company_name": "フォースタートアップス",
+        "is_funding_related": 1,
+        "source_url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBaWEpEQ0ZDbHNIZlN0Z05WX1NFTC13ci1OSGx4Wm5sOHh5ZUNHanZKWFJmaThtcElmMEg3Q1EwM2dHcUVUTnVWeU5WNzM5LUVOWWhRaDRkNEdEbjVL?oc=5&hl=en-US&gl=US&ceid=US:en"
+      },
+      {
+        "title": "起業家支援のSocialups、テレビ新潟放送網と木山産業から第三者割当増資を実施",
+        "source": "thebridge",
+        "published_at": "2026-04-17",
+        "company_name": "起業家支援",
+        "is_funding_related": 1,
+        "source_url": "https://thebridge.jp/2026/04/socialups-raises-funding-from-teny-and-kiyama-sangyo"
+      },
+      {
+        "title": "住宅向け太陽光発電PPA「シェアでんき」運営、シリーズCで8.62億円追加調達",
+        "source": "thebridge",
+        "published_at": "2026-04-17",
+        "company_name": "住宅向け太陽光発電PPA「シェアでんき」運営",
+        "is_funding_related": 1,
+        "source_url": "https://thebridge.jp/2026/04/sharing-energy-raises-862-million-yen-series-c-second-close"
+      },
+      {
+        "title": "飲食店向け予約・顧客管理のTableCheck、東邦ガス系CVCが出資",
+        "source": "thebridge",
+        "published_at": "2026-04-17",
+        "company_name": "飲食店向け予約・顧客管理",
+        "is_funding_related": 1,
+        "source_url": "https://thebridge.jp/2026/04/tablecheck-receives-investment-from-toho-gas-cvc"
+      },
+      {
+        "title": "小規模分散型水循環システムのWOTA、シリーズC追加調達——能登半島地震で活躍",
+        "source": "thebridge",
+        "published_at": "2026-04-17",
+        "company_name": "小規模分散型水循環システム",
+        "is_funding_related": 1,
+        "source_url": "https://thebridge.jp/2026/04/wota-raises-series-c-extension-for-distributed-water-recycling-system"
+      },
+      {
+        "title": "「生成AI実践会」運営者が自社のリアルなAI活用術を全公開！経営者コミュニティ「参謀」が5月12日(…",
+        "source": "prtimes_historical",
+        "published_at": "2026-04-16",
+        "company_name": "株式会社 経営参謀",
+        "is_funding_related": 0,
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000046.000016218.html"
+      },
+      {
+        "title": "「パンどろぼう」初のファンクラブイベント開催、アニメ版主人公役：朝井彩加、ED主題歌：きゃりーぱみゅ…",
+        "source": "prtimes_historical",
+        "published_at": "2026-04-16",
+        "company_name": "株式会社KADOKAWA",
+        "is_funding_related": 0,
+        "source_url": "https://prtimes.jp/main/html/rd/p/000019257.000007006.html"
+      },
+      {
+        "title": "【LEPSIM】ブランド創設20周年カルビー人気スナック菓子「Jagabee」とのスペシャルコラボが…",
+        "source": "prtimes_historical",
+        "published_at": "2026-04-16",
+        "company_name": "株式会社アンドエスティHD",
+        "is_funding_related": 0,
+        "source_url": "https://prtimes.jp/main/html/rd/p/000003071.000001304.html"
+      },
+      {
+        "title": "上場企業AI事業責任者が登壇！生成AIで「組織マネジメント」を変革する事例共有会を5月26日に開催",
+        "source": "prtimes_historical",
+        "published_at": "2026-04-16",
+        "company_name": "株式会社 経営参謀",
+        "is_funding_related": 1,
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000048.000016218.html"
+      },
+      {
+        "title": "BitStarがAIを活用したHP制作、 Instagram運用・MEO対策まで一元管理する『Bit…",
+        "source": "prtimes_historical",
+        "published_at": "2026-04-16",
+        "company_name": "株式会社BitStar",
+        "is_funding_related": 0,
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000480.000015232.html"
+      },
+      {
+        "title": "守屋実氏の実践知を体系化した映像講座「守屋実の新規事業解体新書」提供開始",
+        "source": "prtimes_historical",
+        "published_at": "2026-04-16",
+        "company_name": "Spready株式会社",
+        "is_funding_related": 0,
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000090.000040560.html"
+      },
+      {
+        "title": "Studioが「ノーコードCMS 国内利用数No.1」を獲得",
+        "source": "prtimes_historical",
+        "published_at": "2026-04-16",
+        "company_name": "Studio株式会社",
+        "is_funding_related": 0,
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000068.000025503.html"
+      },
+      {
+        "title": "『対話からの出発』吉田健一対談集『デジタル・ガバメントと日本の将来』読書会開催のお知らせ",
+        "source": "prtimes_historical",
+        "published_at": "2026-04-16",
+        "company_name": "少数株ドットコム株式会社",
+        "is_funding_related": 0,
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000278.000158730.html"
+      },
+      {
+        "title": "『対話からの出発』吉田健一対談集『民間のよさを行政に生かす』読書会開催のお知らせ",
+        "source": "prtimes_historical",
+        "published_at": "2026-04-16",
+        "company_name": "少数株ドットコム株式会社",
+        "is_funding_related": 0,
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000277.000158730.html"
+      },
+      {
+        "title": "埼玉県さいたま市における複合型スマート農園の開園のお知らせ",
+        "source": "prtimes_historical",
+        "published_at": "2026-04-16",
+        "company_name": "株式会社ミツウロコグループホールディングス",
+        "is_funding_related": 0,
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000335.000070816.html"
+      },
+      {
+        "title": "大阪「スマート工場EXPO」にZAICOが出展！製造現場の人手不足を解消する「AI在庫分析・最適化」…",
+        "source": "prtimes_historical",
+        "published_at": "2026-04-16",
+        "company_name": "株式会社ZAICO",
+        "is_funding_related": 0,
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000103.000038326.html"
+      },
+      {
+        "title": "岩手発「発信格差」ゼロへ。プレスリリースエバンジェリストが地域の情報発信に挑む｜産学連携「チャグチャ…",
+        "source": "prtimes_historical",
+        "published_at": "2026-04-16",
+        "company_name": "株式会社PR TIMES",
+        "is_funding_related": 0,
+        "source_url": "https://prtimes.jp/main/html/rd/p/000001647.000000112.html"
+      },
+      {
+        "title": "【イベントレポート】「Linon」新シャンプー・トリートメント発表会開催！ME:Iが「Linon」ア…",
+        "source": "prtimes_historical",
+        "published_at": "2026-04-16",
+        "company_name": "株式会社SOLIA",
+        "is_funding_related": 0,
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000131.000010863.html"
+      },
+      {
+        "title": "物流DX「ロジポケ」「クロスワーク」ジャパントラックショー2026に出展",
+        "source": "prtimes_historical",
+        "published_at": "2026-04-16",
+        "company_name": "X Mile株式会社",
+        "is_funding_related": 0,
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000187.000063503.html"
+      },
+      {
+        "title": "Renewer、製造業AX・AI×BPOなどエンタープライズの先進事例を1冊に集約した『エンタープラ…",
+        "source": "prtimes_historical",
+        "published_at": "2026-04-16",
+        "company_name": "株式会社Renewer",
+        "is_funding_related": 0,
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000017.000139254.html"
+      },
+      {
+        "title": "日商保「敷金返還くん」、東証プライム上場・株式会社SHIFTの決算説明資料に掲載",
+        "source": "prtimes_historical",
+        "published_at": "2026-04-16",
+        "company_name": "株式会社日商保",
+        "is_funding_related": 1,
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000098.000016254.html"
+      },
+      {
+        "title": "Eco-Pork、養豚業界初のAI（人工知能）活用推進コミュニティ「養豚AX実践ラボ」を立ち上げ",
+        "source": "prtimes_historical",
+        "published_at": "2026-04-16",
+        "company_name": "株式会社Eco-Pork",
+        "is_funding_related": 0,
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000073.000047724.html"
+      },
+      {
+        "title": "MAHLE、2025年度の営業利益が改善",
+        "source": "prtimes_historical",
+        "published_at": "2026-04-16",
+        "company_name": "マーレジャパン株式会社",
+        "is_funding_related": 0,
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000021.000143896.html"
+      },
+      {
+        "title": "HERALBONY ACADEMYから、体感型チームビルディング研修「ISAI BUILDING」が…",
+        "source": "prtimes_historical",
+        "published_at": "2026-04-16",
+        "company_name": "ヘラルボニー",
+        "is_funding_related": 0,
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000549.000039365.html"
+      },
+      {
+        "title": "KudasaiのDeFi教育動画シリーズにＳＭＢＣ日興証券株式会社が協賛決定。",
+        "source": "prtimes_historical",
+        "published_at": "2026-04-16",
+        "company_name": "株式会社Kudasai",
+        "is_funding_related": 0,
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000023.000118043.html"
+      },
+      {
+        "title": "【関西電力 × eiicon】共創イノベーションプログラム『 KANDEN DOKEN SOCIAL…",
+        "source": "prtimes_historical",
+        "published_at": "2026-04-16",
+        "company_name": "株式会社eiicon",
+        "is_funding_related": 0,
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000887.000037194.html"
+      },
+      {
+        "title": "ブルーモ証券の投資戦略顧問に大川智宏氏が就任",
+        "source": "prtimes_historical",
+        "published_at": "2026-04-16",
+        "company_name": "ブルーモ証券株式会社",
+        "is_funding_related": 0,
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000064.000117358.html"
+      },
+      {
+        "title": "話し方トレーニングサービスkaeka、「雑談・関係構築トレーニング」を提供開始。双方向コミュニケーシ…",
+        "source": "prtimes_historical",
+        "published_at": "2026-04-16",
+        "company_name": "株式会社カエカ",
+        "is_funding_related": 0,
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000062.000056190.html"
+      },
+      {
+        "title": "「niko and ...」新CMキャラクターに俳優・上坂樹里を起用！キャンペーンムービーを4月16…",
+        "source": "prtimes_historical",
+        "published_at": "2026-04-16",
+        "company_name": "株式会社アンドエスティHD",
+        "is_funding_related": 0,
+        "source_url": "https://prtimes.jp/main/html/rd/p/000003069.000001304.html"
+      },
+      {
+        "title": "西日本高速道路株式会社ソーシャルボンド：大和証券の窓口で購入いただけます（法人のお客さま向け）",
+        "source": "prtimes_historical",
+        "published_at": "2026-04-16",
+        "company_name": "大和証券株式会社",
+        "is_funding_related": 0,
+        "source_url": "https://prtimes.jp/main/html/rd/p/000000059.000134373.html"
+      },
+      {
+        "title": "建設データのAI活用基盤「ONESTRUCTION」三井住友海上キャピタルなどから総額9.1億円の資金調達",
+        "source": "thebridge",
+        "published_at": "2026-04-16",
+        "company_name": "建設データ",
+        "is_funding_related": 1,
+        "source_url": "https://thebridge.jp/2026/04/onestruction-raises-910-million-yen"
+      },
+      {
+        "title": "シングルマザー向け就労支援「ジョブトランジット」のCLACK、シード資金獲得",
+        "source": "thebridge",
+        "published_at": "2026-04-16",
+        "company_name": "シングルマザー向け就労支援「ジョブトランジット」",
+        "is_funding_related": 1,
+        "source_url": "https://thebridge.jp/2026/04/clack-raises-seed-funding-for-job-transit"
+      },
+      {
+        "title": "レストアビジョン、PreシリーズBで13億円を調達——網膜疾患向け遺伝子治療薬のグローバル開発を加速",
+        "source": "thebridge",
+        "published_at": "2026-04-16",
+        "company_name": "レストアビジョン",
+        "is_funding_related": 1,
+        "source_url": "https://thebridge.jp/2026/04/restorevision-raises-1-3-billion-yen-in-pre-series-b"
+      },
+      {
+        "title": "iPresence、AI・デジタルツイン・ロボットを融合した次世代サービス開発に向け資金調達",
+        "source": "thebridge",
+        "published_at": "2026-04-16",
+        "company_name": "iPresence",
+        "is_funding_related": 1,
+        "source_url": "https://thebridge.jp/2026/04/ipresence-raises-30-million-yen-for-ai-digital-twin-robot-service"
+      },
+      {
+        "title": "モビリティエディション、中長期レンタカー「マンスリーゴー」でエンジェルラウンド実施——オプト創業者の鉢嶺登氏らが参画",
+        "source": "thebridge",
+        "published_at": "2026-04-16",
+        "company_name": "モビリティエディション",
+        "is_funding_related": 1,
+        "source_url": "https://thebridge.jp/2026/04/mobility-edition-raises-angel-round-for-monthly-go"
+      },
+      {
+        "title": "生成AI採用支援サービス「エースジョブ」のフォワード、財務基盤強化に向け総額2億円の資金調達",
+        "source": "thebridge",
+        "published_at": "2026-04-16",
+        "company_name": "生成AI採用支援サービス「エースジョブ」",
+        "is_funding_related": 1,
+        "source_url": "https://thebridge.jp/2026/04/forward-raises-2-billion-yen-debt-financing-for-acejob"
+      },
+      {
+        "title": "エンタープライズの機密データを暗号化環境で処理、AI Agent 向け秘密計算セキュリティインフラの「Almure」シード資金獲得",
+        "source": "thebridge",
+        "published_at": "2026-04-16",
+        "company_name": "エンタープライズ",
+        "is_funding_related": 1,
+        "source_url": "https://thebridge.jp/2026/04/almure-raises-seed-funding-for-confidential-computing-security-infrastructure"
+      },
+      {
+        "title": "ペットの写真1枚からフィギュアを作成する「メモリアペット」Next Paradigm2が松尾豊教授から資金調達",
+        "source": "thebridge",
+        "published_at": "2026-04-16",
+        "company_name": "ペット",
+        "is_funding_related": 1,
+        "source_url": "https://thebridge.jp/2026/04/next-paradigm2-raises-funding-from-professor-matsuo-for-memoria-pet"
+      },
       {
         "title": "Qoo10 を運営する eBay Japan が 2026年度経営方針・新戦略を発表　Beauty …",
         "source": "prtimes_funding",
@@ -544,392 +851,88 @@
         "company_name": "株式会社Bridge",
         "is_funding_related": 0,
         "source_url": "https://prtimes.jp/main/html/rd/p/000000003.000180695.html"
-      },
-      {
-        "title": "＜Samsung＞「Samsung Galaxy A57 5G」（SIMフリーモデル）2026年4月…",
-        "source": "prtimes_funding",
-        "published_at": "2026-04-16",
-        "company_name": "Samsung",
-        "is_funding_related": 0,
-        "source_url": "https://prtimes.jp/main/html/rd/p/000000918.000030942.html"
-      },
-      {
-        "title": "＜ドコモ＞「Samsung Galaxy A57 5G」2026年4月16日(木)予約開始・4月23…",
-        "source": "prtimes_funding",
-        "published_at": "2026-04-16",
-        "company_name": "Samsung",
-        "is_funding_related": 0,
-        "source_url": "https://prtimes.jp/main/html/rd/p/000000920.000030942.html"
-      },
-      {
-        "title": "「Samsung Galaxy A57 5G」（SIMフリーモデル）2026年4月16日(木)予約開…",
-        "source": "prtimes_funding",
-        "published_at": "2026-04-16",
-        "company_name": "Samsung",
-        "is_funding_related": 0,
-        "source_url": "https://prtimes.jp/main/html/rd/p/000000917.000030942.html"
-      },
-      {
-        "title": "＜ソフトバンク＞「Samsung Galaxy A57 5G」2026年4月16日(木)予約開始・4…",
-        "source": "prtimes_funding",
-        "published_at": "2026-04-16",
-        "company_name": "Samsung",
-        "is_funding_related": 0,
-        "source_url": "https://prtimes.jp/main/html/rd/p/000000919.000030942.html"
-      },
-      {
-        "title": "9年の時を超え、映画館で〝烈(レッツ)！Rock!!〟超歌劇『幕末Rock』応援上映会7月4日(土)…",
-        "source": "prtimes_funding",
-        "published_at": "2026-04-16",
-        "company_name": "株式会社ヒューマックスエンタテインメント",
-        "is_funding_related": 0,
-        "source_url": "https://prtimes.jp/main/html/rd/p/000000154.000045787.html"
-      },
-      {
-        "title": "いま求められる国際経営管理とは？ニューノーマル時代の戦略と実行を学ぶ講座動画を公開｜インサイトアカデ…",
-        "source": "prtimes_funding",
-        "published_at": "2026-04-16",
-        "company_name": "インサイトアカデミー株式会社",
-        "is_funding_related": 0,
-        "source_url": "https://prtimes.jp/main/html/rd/p/000000544.000077877.html"
-      },
-      {
-        "title": "【AVIOT】河森正治による次世代の電動キックボード『Ridepiece KB-S350』が「GRE…",
-        "source": "prtimes_funding",
-        "published_at": "2026-04-16",
-        "company_name": "プレシードジャパン株式会社",
-        "is_funding_related": 0,
-        "source_url": "https://prtimes.jp/main/html/rd/p/000000289.000027368.html"
-      },
-      {
-        "title": "シリーズ最新作『プロ野球スピリッツ2026』 7月16日（木）に発売決定！本日4月16日（木）から予…",
-        "source": "prtimes_funding",
-        "published_at": "2026-04-16",
-        "company_name": "株式会社コナミデジタルエンタテインメント",
-        "is_funding_related": 0,
-        "source_url": "https://prtimes.jp/main/html/rd/p/000001400.000050711.html"
-      },
-      {
-        "title": "【北海道特化】伴走型支援でプレシードから挑戦者を支える「POLAR SHORTCUT 2号投資事業有…",
-        "source": "prtimes_funding",
-        "published_at": "2026-04-16",
-        "company_name": "株式会社POLAR SHORTCUT",
-        "is_funding_related": 0,
-        "source_url": "https://prtimes.jp/main/html/rd/p/000000004.000078609.html"
-      },
-      {
-        "title": "体験型デジタルスペース「Roomiq」で人生の意思決定体験を変える。リプロネクスト、シードラウンドで…",
-        "source": "prtimes_funding",
-        "published_at": "2026-04-16",
-        "company_name": "株式会社リプロネクスト",
-        "is_funding_related": 1,
-        "source_url": "https://prtimes.jp/main/html/rd/p/000000025.000064851.html"
-      },
-      {
-        "title": "建設向けAI異常予兆検知システムを開発する株式会社RapidX、GazelleCapitalよりシー…",
-        "source": "prtimes_funding",
-        "published_at": "2026-04-16",
-        "company_name": "株式会社RapidX",
-        "is_funding_related": 0,
-        "source_url": "https://prtimes.jp/main/html/rd/p/000000006.000106290.html"
-      },
-      {
-        "title": "体験型デジタルスペース「Roomiq」で意思決定の変革を目指すリプロネクストのシードラウンドにおいて…",
-        "source": "prtimes_funding",
-        "published_at": "2026-04-16",
-        "company_name": "株式会社ジェネシア・ベンチャーズ",
-        "is_funding_related": 1,
-        "source_url": "https://prtimes.jp/main/html/rd/p/000000197.000056091.html"
-      },
-      {
-        "title": "個人投資家の意思決定を支援するAI投資エージェント『Velpha』、約6,000万円をシードラウンド…",
-        "source": "prtimes_funding",
-        "published_at": "2026-04-16",
-        "company_name": "ヴェルファ株式会社",
-        "is_funding_related": 1,
-        "source_url": "https://prtimes.jp/main/html/rd/p/000000006.000148835.html"
-      },
-      {
-        "title": "個人投資家の意思決定を支援するAI投資エージェント「Velpha」のシードラウンドにおいて出資",
-        "source": "prtimes_funding",
-        "published_at": "2026-04-16",
-        "company_name": "株式会社ジェネシア・ベンチャーズ",
-        "is_funding_related": 1,
-        "source_url": "https://prtimes.jp/main/html/rd/p/000000198.000056091.html"
-      },
-      {
-        "title": "MolexがTeramount Ltd.の買収合意を発表――スケーラブルなコパッケージドオプティクス…",
-        "source": "prtimes_funding",
-        "published_at": "2026-04-16",
-        "company_name": "Molex, LLC",
-        "is_funding_related": 1,
-        "source_url": "https://prtimes.jp/main/html/rd/p/000000014.000173131.html"
-      },
-      {
-        "title": "PETcision、犬のがん検査製品「PETcision Guard」を携え、SusHi Tech …",
-        "source": "prtimes_funding",
-        "published_at": "2026-04-16",
-        "company_name": "Everiii & Partners International Co. Ltd",
-        "is_funding_related": 0,
-        "source_url": "https://prtimes.jp/main/html/rd/p/000000079.000127346.html"
-      },
-      {
-        "title": "分断を乗り越えるヒントは長崎の街に。平和×起業家精神を持った次世代リーダー300人が集う国際フォーラ…",
-        "source": "prtimes_funding",
-        "published_at": "2026-04-16",
-        "company_name": "一般社団法人ONE YOUNG WORLD長崎協議会",
-        "is_funding_related": 0,
-        "source_url": "https://prtimes.jp/main/html/rd/p/000000004.000139779.html"
-      },
-      {
-        "title": "【ピークデザイン / イベント出展】日本最大のスポーツサイクルフェスティバル「CYCLE MODE …",
-        "source": "prtimes_funding",
-        "published_at": "2026-04-16",
-        "company_name": "銀一株式会社",
-        "is_funding_related": 0,
-        "source_url": "https://prtimes.jp/main/html/rd/p/000000168.000050753.html"
-      },
-      {
-        "title": "MedTech特化アクセラレーション「MedTech Angels Season5」の集大成　医療系…",
-        "source": "prtimes_funding",
-        "published_at": "2026-04-16",
-        "company_name": "プレモパートナー株式会社",
-        "is_funding_related": 0,
-        "source_url": "https://prtimes.jp/main/html/rd/p/000000032.000059971.html"
-      },
-      {
-        "title": "WEIN / BACKSTAGE Group、CG制作プロダクション「CONTORNO」をグループ会…",
-        "source": "prtimes_funding",
-        "published_at": "2026-04-16",
-        "company_name": "株式会社BACKSTAGE",
-        "is_funding_related": 0,
-        "source_url": "https://prtimes.jp/main/html/rd/p/000000048.000120613.html"
-      },
-      {
-        "title": "京都フュージョニアリングとStarlight Engine が、人類のエネルギー史を変える「フュージ…",
-        "source": "prtimes_funding",
-        "published_at": "2026-04-16",
-        "company_name": "エン株式会社",
-        "is_funding_related": 0,
-        "source_url": "https://prtimes.jp/main/html/rd/p/000001188.000000725.html"
-      },
-      {
-        "title": "FESコンテスト®大学生運営委員会、2026年度の開催エリア拡大に伴う体制強化で新メンバー募集",
-        "source": "prtimes_funding",
-        "published_at": "2026-04-16",
-        "company_name": "一般社団法人日本金融教育支援機構",
-        "is_funding_related": 0,
-        "source_url": "https://prtimes.jp/main/html/rd/p/000000032.000165189.html"
-      },
-      {
-        "title": "「デジタル証券「renga」 第2号 〜レジデンス（南青山）〜」運用開始のお知らせ",
-        "source": "prtimes_funding",
-        "published_at": "2026-04-16",
-        "company_name": "デジタル証券株式会社",
-        "is_funding_related": 0,
-        "source_url": "https://prtimes.jp/main/html/rd/p/000000024.000126590.html"
-      },
-      {
-        "title": "運送業における「ドライバー採用戦略と人事設計」徹底解説セミナーを開催",
-        "source": "prtimes_funding",
-        "published_at": "2026-04-16",
-        "company_name": "アセンド株式会社",
-        "is_funding_related": 0,
-        "source_url": "https://prtimes.jp/main/html/rd/p/000000103.000071415.html"
-      },
-      {
-        "title": "ゼロボード総研所長の待場智雄、サステナビリティ開示基準 GRIスタンダードの審議機関GSSB副議長に…",
-        "source": "prtimes_funding",
-        "published_at": "2026-04-15",
-        "company_name": "株式会社ゼロボード",
-        "is_funding_related": 0,
-        "source_url": "https://prtimes.jp/main/html/rd/p/000000247.000087068.html"
-      },
-      {
-        "title": "Upstage - シリーズCで1億3,500万米ドル（約200億円）を調達",
-        "source": "prtimes_funding",
-        "published_at": "2026-04-15",
-        "company_name": "Upstage AI株式会社",
-        "is_funding_related": 1,
-        "source_url": "https://prtimes.jp/main/html/rd/p/000000015.000159603.html"
-      },
-      {
-        "title": "シェルパ、MSCIとウェビナー「MSCIに聞く！ESG評価において投資家が注目するポイント」を実施",
-        "source": "prtimes_funding",
-        "published_at": "2026-04-15",
-        "company_name": "シェルパ・アンド・カンパニー",
-        "is_funding_related": 0,
-        "source_url": "https://prtimes.jp/main/html/rd/p/000000134.000100923.html"
-      },
-      {
-        "title": "Interbrand “Best Japan Brands 2026”ブランド価値による日本ブランド…",
-        "source": "prtimes_funding",
-        "published_at": "2026-04-15",
-        "company_name": "株式会社インターブランドジャパン",
-        "is_funding_related": 0,
-        "source_url": "https://prtimes.jp/main/html/rd/p/000000201.000000092.html"
-      },
-      {
-        "title": "インパクト投資の「実践」を解き明かす。ImpactShare、解説動画シリーズを全7本一挙公開",
-        "source": "prtimes_funding",
-        "published_at": "2026-04-15",
-        "company_name": "一般社団法人ImpactShare",
-        "is_funding_related": 0,
-        "source_url": "https://prtimes.jp/main/html/rd/p/000000004.000140520.html"
-      },
-      {
-        "title": "Transpose Platform主催、東大IPC共催・森ビル協賛の３社布陣、AIハッカソン「c0…",
-        "source": "prtimes_funding",
-        "published_at": "2026-04-15",
-        "company_name": "TRANSPOSE PLATFORM MANAGEMENT, LLC",
-        "is_funding_related": 0,
-        "source_url": "https://prtimes.jp/main/html/rd/p/000000015.000172016.html"
-      },
-      {
-        "title": "アトツギ支援エコシステム「オカヤマ1000」始動",
-        "source": "prtimes_funding",
-        "published_at": "2026-04-15",
-        "company_name": "瀬戸内と株式会社",
-        "is_funding_related": 0,
-        "source_url": "https://prtimes.jp/main/html/rd/p/000000046.000091117.html"
-      },
-      {
-        "title": "EdgeCortix、Axiro SemiconductorおよびMPower Partnersから…",
-        "source": "prtimes_funding",
-        "published_at": "2026-04-15",
-        "company_name": "EdgeCortix株式会社",
-        "is_funding_related": 0,
-        "source_url": "https://prtimes.jp/main/html/rd/p/000000035.000053504.html"
-      },
-      {
-        "title": "米ペガサスとジャパネット、CVCファンドを300億円へ拡大 ──既存領域に加え、生成AI・Physi…",
-        "source": "prtimes_funding",
-        "published_at": "2026-04-15",
-        "company_name": "株式会社ペガサス・テック・ベンチャーズ・ジャパン",
-        "is_funding_related": 0,
-        "source_url": "https://prtimes.jp/main/html/rd/p/000000191.000044738.html"
-      },
-      {
-        "title": "ジャパネット、米ペガサスCVCファンドを300億円へ拡大",
-        "source": "prtimes_funding",
-        "published_at": "2026-04-15",
-        "company_name": "株式会社　ジャパネットホールディングス",
-        "is_funding_related": 0,
-        "source_url": "https://prtimes.jp/main/html/rd/p/000000685.000016651.html"
-      },
-      {
-        "title": "「地域×海外×スタートアップ」で成長資金を動かすBIG Impact、2号ファンドを組成しファースト…",
-        "source": "prtimes_funding",
-        "published_at": "2026-04-15",
-        "company_name": "BIG Impact",
-        "is_funding_related": 0,
-        "source_url": "https://prtimes.jp/main/html/rd/p/000000008.000105398.html"
-      },
-      {
-        "title": "CVCファンドを通じ、建設部材の調達プラットフォームを提供するスタートアップ企業「BALLAS」へ出…",
-        "source": "prtimes_funding",
-        "published_at": "2026-04-15",
-        "company_name": "日揮HD",
-        "is_funding_related": 0,
-        "source_url": "https://prtimes.jp/main/html/rd/p/000000325.000065135.html"
-      },
-      {
-        "title": "建設部材プラットフォームを運営する「BALLAS」に出資(ニュースレター)",
-        "source": "prtimes_funding",
-        "published_at": "2026-04-15",
-        "company_name": "大和ハウス工業株式会社",
-        "is_funding_related": 1,
-        "source_url": "https://prtimes.jp/main/html/rd/p/000002641.000002296.html"
-      },
-      {
-        "title": "業務ロボット×統合管理プラットフォームを展開する「ｕｇｏ」に出資(ニュースレター)",
-        "source": "prtimes_funding",
-        "published_at": "2026-04-15",
-        "company_name": "大和ハウス工業株式会社",
-        "is_funding_related": 1,
-        "source_url": "https://prtimes.jp/main/html/rd/p/000002642.000002296.html"
       }
     ],
     "top_companies_by_pr_count": [
       {
+        "company_name": "フォースタートアップス",
+        "count": 138
+      },
+      {
+        "company_name": "株式会社ジェネシア・ベンチャーズ",
+        "count": 73
+      },
+      {
+        "company_name": "グローバル・ブレイン株式会社",
+        "count": 65
+      },
+      {
+        "company_name": "STARTUP DB ENTERPRISE",
+        "count": 65
+      },
+      {
+        "company_name": "少数株ドットコム株式会社",
+        "count": 39
+      },
+      {
+        "company_name": "PR TIMES",
+        "count": 37
+      },
+      {
         "company_name": "DuckDuckGo Trend Search",
         "count": 36
+      },
+      {
+        "company_name": "amu",
+        "count": 30
       },
       {
         "company_name": "OpenAlex",
         "count": 30
       },
       {
-        "company_name": "株式会社ペガサス・テック・ベンチャーズ・ジャパン",
-        "count": 5
-      },
-      {
-        "company_name": "株式会社ジェネシア・ベンチャーズ",
-        "count": 5
-      },
-      {
         "company_name": "東大IPC",
-        "count": 4
+        "count": 27
       },
       {
-        "company_name": "グローバル・ブレイン株式会社",
-        "count": 4
+        "company_name": "JAFCO",
+        "count": 27
       },
       {
-        "company_name": "Samsung",
-        "count": 4
+        "company_name": "株式会社HQ",
+        "count": 23
       },
       {
-        "company_name": "株式会社ソニー・ミュージックレーベルズ",
-        "count": 3
+        "company_name": "パナソニックグループ",
+        "count": 20
       },
       {
-        "company_name": "株式会社　和多屋別荘",
-        "count": 3
+        "company_name": "Z Venture Capital株式会社",
+        "count": 20
       },
       {
         "company_name": "株式会社eiicon",
-        "count": 3
+        "count": 17
       },
       {
-        "company_name": "プレシードジャパン株式会社",
-        "count": 3
+        "company_name": "ニッセイ・キャピタル株式会社",
+        "count": 16
       },
       {
-        "company_name": "ティフォン株式会社",
-        "count": 3
+        "company_name": "IVS",
+        "count": 16
       },
       {
-        "company_name": "JR東日本スタートアップ株式会社",
-        "count": 3
+        "company_name": "アセンド株式会社",
+        "count": 15
       },
       {
-        "company_name": "DuckDuckGo Patent Search",
-        "count": 3
+        "company_name": "ReGACY Innovation Group株式会社",
+        "count": 15
       },
       {
-        "company_name": "DuckDuckGo Funding Search",
-        "count": 3
-      },
-      {
-        "company_name": "01Booster",
-        "count": 3
-      },
-      {
-        "company_name": "銀一株式会社",
-        "count": 2
-      },
-      {
-        "company_name": "株式会社ディープコア",
-        "count": 2
-      },
-      {
-        "company_name": "株式会社ウェルカム",
-        "count": 2
-      },
-      {
-        "company_name": "株式会社coly",
-        "count": 2
+        "company_name": "GVA TECH株式会社",
+        "count": 15
       }
     ]
   }
