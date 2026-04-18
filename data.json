@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-04-18T13:50:12.696639",
+  "generated_at": "2026-04-18T14:01:23.569646",
   "schema_version": "v2.0",
   "stats": {
-    "organizations": 3641,
-    "funding_rounds": 1457,
-    "round_participants": 6060,
-    "events": 1457,
-    "sectors": 212,
+    "organizations": 3760,
+    "funding_rounds": 1521,
+    "round_participants": 6238,
+    "events": 1521,
+    "sectors": 220,
     "tags": 0,
     "signals": 0,
     "signal_scores": 0,
-    "companies": 1057,
-    "investors": 2615,
+    "companies": 1095,
+    "investors": 2697,
     "press_releases": 12357
   },
   "sector_trends": [
@@ -113,6 +113,12 @@
     },
     {
       "month": "2025-05",
+      "sector": "モビリティ",
+      "count": 3,
+      "total_amount_jpy": 1624000000
+    },
+    {
+      "month": "2025-05",
       "sector": "ヘルスケア",
       "count": 3,
       "total_amount_jpy": 2200000000
@@ -137,12 +143,6 @@
     },
     {
       "month": "2025-05",
-      "sector": "モビリティ",
-      "count": 2,
-      "total_amount_jpy": 1390000000
-    },
-    {
-      "month": "2025-05",
       "sector": "トラベルテック",
       "count": 2,
       "total_amount_jpy": 1130000000
@@ -164,6 +164,12 @@
       "sector": "物流",
       "count": 1,
       "total_amount_jpy": 700000000
+    },
+    {
+      "month": "2025-05",
+      "sector": "フィンテック",
+      "count": 1,
+      "total_amount_jpy": 270000000
     },
     {
       "month": "2025-05",
@@ -233,15 +239,15 @@
     },
     {
       "month": "2025-06",
-      "sector": "AI/機械学習",
+      "sector": "フィンテック",
       "count": 3,
-      "total_amount_jpy": 980000000
+      "total_amount_jpy": 996000000
     },
     {
       "month": "2025-06",
-      "sector": "フィンテック",
-      "count": 2,
-      "total_amount_jpy": 500000000
+      "sector": "AI/機械学習",
+      "count": 3,
+      "total_amount_jpy": 980000000
     },
     {
       "month": "2025-06",
@@ -282,8 +288,8 @@
     {
       "month": "2025-07",
       "sector": "SaaS",
-      "count": 12,
-      "total_amount_jpy": 4363000000
+      "count": 13,
+      "total_amount_jpy": 9463000000
     },
     {
       "month": "2025-07",
@@ -299,9 +305,21 @@
     },
     {
       "month": "2025-07",
-      "sector": "クリーンテック",
+      "sector": "ディープテック",
       "count": 4,
-      "total_amount_jpy": 4980000000
+      "total_amount_jpy": 800000000
+    },
+    {
+      "month": "2025-07",
+      "sector": "AI/機械学習",
+      "count": 4,
+      "total_amount_jpy": 2290000000
+    },
+    {
+      "month": "2025-07",
+      "sector": "クリーンテック",
+      "count": 3,
+      "total_amount_jpy": 4700000000
     },
     {
       "month": "2025-07",
@@ -311,21 +329,15 @@
     },
     {
       "month": "2025-07",
-      "sector": "AI/機械学習",
-      "count": 3,
-      "total_amount_jpy": 2120000000
-    },
-    {
-      "month": "2025-07",
       "sector": "ヘルスケア",
       "count": 2,
       "total_amount_jpy": 1000000000
     },
     {
       "month": "2025-07",
-      "sector": "ディープテック",
+      "sector": "IoT/AI",
       "count": 2,
-      "total_amount_jpy": 520000000
+      "total_amount_jpy": 430000000
     },
     {
       "month": "2025-07",
@@ -356,12 +368,6 @@
       "sector": "M&A仲介・事業承継",
       "count": 1,
       "total_amount_jpy": 0
-    },
-    {
-      "month": "2025-07",
-      "sector": "IoT/AI",
-      "count": 1,
-      "total_amount_jpy": 430000000
     },
     {
       "month": "2025-08",
@@ -407,6 +413,12 @@
     },
     {
       "month": "2025-08",
+      "sector": "不動産テック",
+      "count": 2,
+      "total_amount_jpy": 1300000000
+    },
+    {
+      "month": "2025-08",
       "sector": "ディープテック",
       "count": 2,
       "total_amount_jpy": 0
@@ -416,12 +428,6 @@
       "sector": "FoodTech",
       "count": 2,
       "total_amount_jpy": 2200000000
-    },
-    {
-      "month": "2025-08",
-      "sector": "不動産テック",
-      "count": 1,
-      "total_amount_jpy": 1300000000
     },
     {
       "month": "2025-08",
@@ -446,6 +452,12 @@
       "sector": "LegalTech",
       "count": 1,
       "total_amount_jpy": 100000000
+    },
+    {
+      "month": "2025-08",
+      "sector": "EdTech",
+      "count": 1,
+      "total_amount_jpy": 300000000
     },
     {
       "month": "2025-09",
@@ -485,15 +497,15 @@
     },
     {
       "month": "2025-09",
-      "sector": "ディープテック",
-      "count": 2,
-      "total_amount_jpy": 1500000000
+      "sector": "クリーンテック",
+      "count": 3,
+      "total_amount_jpy": 1890000000
     },
     {
       "month": "2025-09",
-      "sector": "クリーンテック",
+      "sector": "ディープテック",
       "count": 2,
-      "total_amount_jpy": 1770000000
+      "total_amount_jpy": 1500000000
     },
     {
       "month": "2025-09",
@@ -539,6 +551,12 @@
     },
     {
       "month": "2025-09",
+      "sector": "その他",
+      "count": 1,
+      "total_amount_jpy": 0
+    },
+    {
+      "month": "2025-09",
       "sector": "Web3/GameFi",
       "count": 1,
       "total_amount_jpy": 0
@@ -552,20 +570,20 @@
     {
       "month": "2025-10",
       "sector": "FoodTech",
-      "count": 8,
+      "count": 9,
       "total_amount_jpy": 2070000000
+    },
+    {
+      "month": "2025-10",
+      "sector": "クリーンテック",
+      "count": 5,
+      "total_amount_jpy": 4140000000
     },
     {
       "month": "2025-10",
       "sector": "ヘルスケア",
       "count": 4,
       "total_amount_jpy": 950000000
-    },
-    {
-      "month": "2025-10",
-      "sector": "クリーンテック",
-      "count": 4,
-      "total_amount_jpy": 4140000000
     },
     {
       "month": "2025-10",
@@ -593,6 +611,18 @@
     },
     {
       "month": "2025-10",
+      "sector": "モビリティ",
+      "count": 2,
+      "total_amount_jpy": 316000000
+    },
+    {
+      "month": "2025-10",
+      "sector": "フィンテック",
+      "count": 2,
+      "total_amount_jpy": 0
+    },
+    {
+      "month": "2025-10",
       "sector": "HR Tech",
       "count": 2,
       "total_amount_jpy": 125000000
@@ -608,6 +638,12 @@
       "sector": "AI/機械学習",
       "count": 2,
       "total_amount_jpy": 150000000
+    },
+    {
+      "month": "2025-10",
+      "sector": "製造技術/バイオものづくり",
+      "count": 1,
+      "total_amount_jpy": 1000000000
     },
     {
       "month": "2025-10",
@@ -629,27 +665,9 @@
     },
     {
       "month": "2025-10",
-      "sector": "モビリティ",
-      "count": 1,
-      "total_amount_jpy": 50000000
-    },
-    {
-      "month": "2025-10",
       "sector": "メディア・エンターテイメント",
       "count": 1,
       "total_amount_jpy": 1000000000
-    },
-    {
-      "month": "2025-10",
-      "sector": "ブロックチェーン/Web3",
-      "count": 1,
-      "total_amount_jpy": 0
-    },
-    {
-      "month": "2025-10",
-      "sector": "フィンテック",
-      "count": 1,
-      "total_amount_jpy": 0
     },
     {
       "month": "2025-10",
@@ -690,7 +708,7 @@
     {
       "month": "2025-11",
       "sector": "AI/機械学習",
-      "count": 8,
+      "count": 10,
       "total_amount_jpy": 8378000000
     },
     {
@@ -708,7 +726,7 @@
     {
       "month": "2025-11",
       "sector": "モビリティ",
-      "count": 4,
+      "count": 5,
       "total_amount_jpy": 4800000000
     },
     {
@@ -719,15 +737,15 @@
     },
     {
       "month": "2025-11",
-      "sector": "物流",
-      "count": 3,
-      "total_amount_jpy": 7580000000
+      "sector": "フィンテック",
+      "count": 4,
+      "total_amount_jpy": 4090000000
     },
     {
       "month": "2025-11",
-      "sector": "フィンテック",
+      "sector": "物流",
       "count": 3,
-      "total_amount_jpy": 3830000000
+      "total_amount_jpy": 7580000000
     },
     {
       "month": "2025-11",
@@ -906,14 +924,14 @@
     {
       "month": "2026-01",
       "sector": "AI/機械学習",
-      "count": 9,
-      "total_amount_jpy": 67310000000
+      "count": 10,
+      "total_amount_jpy": 70210000000
     },
     {
       "month": "2026-01",
       "sector": "フィンテック",
-      "count": 6,
-      "total_amount_jpy": 49685000000
+      "count": 7,
+      "total_amount_jpy": 51685000000
     },
     {
       "month": "2026-01",
@@ -1061,27 +1079,27 @@
     },
     {
       "month": "2026-02",
+      "sector": "ヘルスケア",
+      "count": 5,
+      "total_amount_jpy": 0
+    },
+    {
+      "month": "2026-02",
       "sector": "FoodTech",
       "count": 5,
       "total_amount_jpy": 1910000000
     },
     {
       "month": "2026-02",
-      "sector": "ヘルスケア",
+      "sector": "フィンテック",
       "count": 4,
-      "total_amount_jpy": 0
+      "total_amount_jpy": 5580000000
     },
     {
       "month": "2026-02",
       "sector": "ディープテック",
       "count": 4,
       "total_amount_jpy": 2560000000
-    },
-    {
-      "month": "2026-02",
-      "sector": "フィンテック",
-      "count": 3,
-      "total_amount_jpy": 3800000000
     },
     {
       "month": "2026-02",
@@ -1145,12 +1163,6 @@
     },
     {
       "month": "2026-02",
-      "sector": "ブロックチェーン/Web3",
-      "count": 1,
-      "total_amount_jpy": 1780000000
-    },
-    {
-      "month": "2026-02",
       "sector": "コンテンツ/メディア",
       "count": 1,
       "total_amount_jpy": 500000000
@@ -1164,19 +1176,19 @@
     {
       "month": "2026-03",
       "sector": "ディープテック",
-      "count": 7,
-      "total_amount_jpy": 11105000000
+      "count": 8,
+      "total_amount_jpy": 11725000000
     },
     {
       "month": "2026-03",
       "sector": "SaaS",
-      "count": 6,
-      "total_amount_jpy": 1750000000
+      "count": 8,
+      "total_amount_jpy": 2350000000
     },
     {
       "month": "2026-03",
       "sector": "クリーンテック",
-      "count": 5,
+      "count": 7,
       "total_amount_jpy": 4403000000
     },
     {
@@ -1199,9 +1211,21 @@
     },
     {
       "month": "2026-03",
+      "sector": "FoodTech",
+      "count": 4,
+      "total_amount_jpy": 4060000000
+    },
+    {
+      "month": "2026-03",
       "sector": "ヘルスケア",
       "count": 3,
       "total_amount_jpy": 0
+    },
+    {
+      "month": "2026-03",
+      "sector": "フィンテック",
+      "count": 3,
+      "total_amount_jpy": 10000000000
     },
     {
       "month": "2026-03",
@@ -1217,12 +1241,6 @@
     },
     {
       "month": "2026-03",
-      "sector": "FoodTech",
-      "count": 2,
-      "total_amount_jpy": 4060000000
-    },
-    {
-      "month": "2026-03",
       "sector": "音楽テック",
       "count": 1,
       "total_amount_jpy": 945000000
@@ -1230,6 +1248,12 @@
     {
       "month": "2026-03",
       "sector": "通信・5G",
+      "count": 1,
+      "total_amount_jpy": 0
+    },
+    {
+      "month": "2026-03",
+      "sector": "医療機器",
       "count": 1,
       "total_amount_jpy": 0
     },
@@ -1247,19 +1271,13 @@
     },
     {
       "month": "2026-03",
-      "sector": "ヘルステック",
+      "sector": "ベンチャーキャピタル",
       "count": 1,
       "total_amount_jpy": 0
     },
     {
       "month": "2026-03",
-      "sector": "ブロックチェーン/暗号資産",
-      "count": 1,
-      "total_amount_jpy": 10000000000
-    },
-    {
-      "month": "2026-03",
-      "sector": "ブロックチェーン/Web3",
+      "sector": "ヘルステック",
       "count": 1,
       "total_amount_jpy": 0
     },
@@ -1296,8 +1314,8 @@
     {
       "month": "2026-04",
       "sector": "AI/機械学習",
-      "count": 17,
-      "total_amount_jpy": 185480240300
+      "count": 18,
+      "total_amount_jpy": 186440240300
     },
     {
       "month": "2026-04",
@@ -1320,13 +1338,13 @@
     {
       "month": "2026-04",
       "sector": "SaaS",
-      "count": 5,
+      "count": 6,
       "total_amount_jpy": 1780000000
     },
     {
       "month": "2026-04",
       "sector": "建設テック",
-      "count": 3,
+      "count": 4,
       "total_amount_jpy": 2400091000
     },
     {
@@ -1439,6 +1457,12 @@
     },
     {
       "month": "2026-04",
+      "sector": "スポーツ・エンターテインメント",
+      "count": 1,
+      "total_amount_jpy": 0
+    },
+    {
+      "month": "2026-04",
       "sector": "エンターテイメント/ファンプラットフォーム",
       "count": 1,
       "total_amount_jpy": 0
@@ -1475,6 +1499,12 @@
     },
     {
       "month": "2026-04",
+      "sector": "CleanTech",
+      "count": 1,
+      "total_amount_jpy": 0
+    },
+    {
+      "month": "2026-04",
       "sector": "AI/機械学習、ロボティクス、デジタルツイン",
       "count": 1,
       "total_amount_jpy": 30000
@@ -1483,58 +1513,58 @@
   "round_distribution": [
     {
       "round_type": "series_a",
-      "count": 414,
-      "total_amount_jpy": 272061473061
+      "count": 423,
+      "total_amount_jpy": 275491473061
     },
     {
       "round_type": "seed",
-      "count": 205,
-      "total_amount_jpy": 36062280000
+      "count": 214,
+      "total_amount_jpy": 37660280000
     },
     {
       "round_type": "series_b",
-      "count": 201,
-      "total_amount_jpy": 329195000000
+      "count": 204,
+      "total_amount_jpy": 331445000000
     },
     {
       "round_type": "corporate_round",
-      "count": 138,
+      "count": 146,
       "total_amount_jpy": 151369968800
     },
     {
-      "round_type": "pre_seed",
-      "count": 102,
-      "total_amount_jpy": 19602000000
-    },
-    {
       "round_type": "strategic",
-      "count": 100,
+      "count": 109,
       "total_amount_jpy": 386667500000
     },
     {
+      "round_type": "pre_seed",
+      "count": 104,
+      "total_amount_jpy": 19832000000
+    },
+    {
       "round_type": "series_c",
-      "count": 86,
-      "total_amount_jpy": 242452097500
+      "count": 90,
+      "total_amount_jpy": 249677125600
     },
     {
       "round_type": "unknown",
-      "count": 56,
-      "total_amount_jpy": 166895091000
+      "count": 59,
+      "total_amount_jpy": 166934191000
     },
     {
       "round_type": "series_d",
-      "count": 39,
-      "total_amount_jpy": 406360000000
+      "count": 40,
+      "total_amount_jpy": 408860000000
     },
     {
       "round_type": "debt",
-      "count": 32,
-      "total_amount_jpy": 28332996000
+      "count": 37,
+      "total_amount_jpy": 29552996000
     },
     {
       "round_type": "j_kiss",
-      "count": 23,
-      "total_amount_jpy": 3134000000
+      "count": 30,
+      "total_amount_jpy": 3754000000
     },
     {
       "round_type": "angel",
@@ -1543,8 +1573,13 @@
     },
     {
       "round_type": "secondary",
-      "count": 11,
+      "count": 12,
       "total_amount_jpy": 3587500000
+    },
+    {
+      "round_type": "ipo",
+      "count": 11,
+      "total_amount_jpy": 163600000000
     },
     {
       "round_type": "grant",
@@ -1552,14 +1587,9 @@
       "total_amount_jpy": 6650000000
     },
     {
-      "round_type": "ipo",
-      "count": 9,
-      "total_amount_jpy": 163600000000
-    },
-    {
       "round_type": "series_e",
-      "count": 8,
-      "total_amount_jpy": 48680000000
+      "count": 9,
+      "total_amount_jpy": 51580000000
     },
     {
       "round_type": "convertible_note",
@@ -1586,8 +1616,8 @@
     {
       "investor_name": "三菱UFJキャピタル株式会社",
       "investor_type": "vc",
-      "deal_count": 75,
-      "lead_count": 18
+      "deal_count": 78,
+      "lead_count": 20
     },
     {
       "investor_name": "みずほキャピタル株式会社",
@@ -1604,7 +1634,7 @@
     {
       "investor_name": "グローバル・ブレイン株式会社",
       "investor_type": "vc",
-      "deal_count": 62,
+      "deal_count": 63,
       "lead_count": 37
     },
     {
@@ -1616,8 +1646,14 @@
     {
       "investor_name": "ANRI",
       "investor_type": "vc",
+      "deal_count": 53,
+      "lead_count": 27
+    },
+    {
+      "investor_name": "三菱UFJキャピタル",
+      "investor_type": "cvc",
       "deal_count": 52,
-      "lead_count": 26
+      "lead_count": 10
     },
     {
       "investor_name": "DNX Ventures",
@@ -1626,16 +1662,16 @@
       "lead_count": 32
     },
     {
-      "investor_name": "三菱UFJキャピタル",
-      "investor_type": "cvc",
-      "deal_count": 51,
-      "lead_count": 10
-    },
-    {
       "investor_name": "East Ventures",
       "investor_type": "vc",
       "deal_count": 44,
       "lead_count": 21
+    },
+    {
+      "investor_name": "ジャフコ グループ株式会社",
+      "investor_type": "vc",
+      "deal_count": 41,
+      "lead_count": 25
     },
     {
       "investor_name": "ニッセイ・キャピタル株式会社",
@@ -1644,10 +1680,10 @@
       "lead_count": 17
     },
     {
-      "investor_name": "ジャフコ グループ株式会社",
-      "investor_type": "vc",
+      "investor_name": "日本政策金融公庫",
+      "investor_type": "gov",
       "deal_count": 40,
-      "lead_count": 25
+      "lead_count": 2
     },
     {
       "investor_name": "Coral Capital",
@@ -1656,16 +1692,16 @@
       "lead_count": 20
     },
     {
-      "investor_name": "日本政策金融公庫",
-      "investor_type": "gov",
-      "deal_count": 38,
-      "lead_count": 1
-    },
-    {
       "investor_name": "SBIインベストメント株式会社",
       "investor_type": "corporate",
-      "deal_count": 36,
-      "lead_count": 20
+      "deal_count": 37,
+      "lead_count": 21
+    },
+    {
+      "investor_name": "個人投資家",
+      "investor_type": "angel",
+      "deal_count": 37,
+      "lead_count": 0
     },
     {
       "investor_name": "三井住友海上キャピタル株式会社",
@@ -1674,10 +1710,10 @@
       "lead_count": 14
     },
     {
-      "investor_name": "個人投資家",
-      "investor_type": "angel",
-      "deal_count": 35,
-      "lead_count": 0
+      "investor_name": "Headline Asia",
+      "investor_type": "vc",
+      "deal_count": 33,
+      "lead_count": 20
     },
     {
       "investor_name": "SMBCベンチャーキャピタル",
@@ -1686,22 +1722,16 @@
       "lead_count": 6
     },
     {
-      "investor_name": "Headline Asia",
-      "investor_type": "vc",
-      "deal_count": 32,
-      "lead_count": 19
-    },
-    {
       "investor_name": "インキュベイトファンド株式会社",
       "investor_type": "vc",
       "deal_count": 32,
       "lead_count": 16
     },
     {
-      "investor_name": "DBJキャピタル株式会社",
-      "investor_type": "corporate",
+      "investor_name": "JICベンチャー・グロース・インベストメンツ株式会社",
+      "investor_type": "vc",
       "deal_count": 31,
-      "lead_count": 8
+      "lead_count": 19
     }
   ],
   "co_investment_pairs": [
@@ -1766,6 +1796,11 @@
       "shared_deals": 9
     },
     {
+      "investor_a": "JICベンチャー・グロース・インベストメンツ株式会社",
+      "investor_b": "ジャフコ グループ株式会社",
+      "shared_deals": 9
+    },
+    {
       "investor_a": "北國銀行",
       "investor_b": "みずほ銀行",
       "shared_deals": 8
@@ -1788,11 +1823,6 @@
     {
       "investor_a": "JICベンチャー・グロース・インベストメンツ株式会社",
       "investor_b": "DBJキャピタル株式会社",
-      "shared_deals": 8
-    },
-    {
-      "investor_a": "JICベンチャー・グロース・インベストメンツ株式会社",
-      "investor_b": "ジャフコ グループ株式会社",
       "shared_deals": 8
     },
     {
@@ -1991,6 +2021,11 @@
       "shared_deals": 5
     },
     {
+      "investor_a": "株式会社日本政策金融公庫",
+      "investor_b": "株式会社りそな銀行",
+      "shared_deals": 5
+    },
+    {
       "investor_a": "みずほキャピタル株式会社",
       "investor_b": "株式会社三菱UFJ銀行",
       "shared_deals": 5
@@ -2033,6 +2068,11 @@
     {
       "investor_a": "三菱UFJキャピタル株式会社",
       "investor_b": "ジャフコグループ株式会社",
+      "shared_deals": 5
+    },
+    {
+      "investor_a": "三菱UFJキャピタル株式会社",
+      "investor_b": "JICベンチャー・グロース・インベストメンツ株式会社",
       "shared_deals": 5
     },
     {
@@ -2192,6 +2232,11 @@
     },
     {
       "investor_a": "グローバル・ブレイン株式会社",
+      "investor_b": "三菱UFJキャピタル株式会社",
+      "shared_deals": 4
+    },
+    {
+      "investor_a": "グローバル・ブレイン株式会社",
       "investor_b": "明治安田未来共創投資事業有限責任組合",
       "shared_deals": 4
     },
@@ -2208,11 +2253,6 @@
     {
       "investor_a": "株式会社みずほ銀行",
       "investor_b": "株式会社日本政策金融公庫",
-      "shared_deals": 4
-    },
-    {
-      "investor_a": "株式会社日本政策金融公庫",
-      "investor_b": "株式会社りそな銀行",
       "shared_deals": 4
     },
     {
@@ -2258,11 +2298,6 @@
     {
       "investor_a": "商工組合中央金庫",
       "investor_b": "三井住友銀行",
-      "shared_deals": 4
-    },
-    {
-      "investor_a": "三菱UFJキャピタル株式会社",
-      "investor_b": "JICベンチャー・グロース・インベストメンツ株式会社",
       "shared_deals": 4
     },
     {
@@ -2326,8 +2361,18 @@
       "shared_deals": 4
     },
     {
+      "investor_a": "株式会社りそな銀行",
+      "investor_b": "あおぞら企業投資株式会社",
+      "shared_deals": 4
+    },
+    {
       "investor_a": "ANRI",
       "investor_b": "千葉道場ファンド",
+      "shared_deals": 4
+    },
+    {
+      "investor_a": "ANRI",
+      "investor_b": "XTech Ventures",
       "shared_deals": 4
     },
     {
@@ -2413,6 +2458,11 @@
     {
       "investor_a": "三菱UFJキャピタル",
       "investor_b": "ごうぎんキャピタル",
+      "shared_deals": 3
+    },
+    {
+      "investor_a": "三菱UFJキャピタル",
+      "investor_b": "ニッセイ・キャピタル",
       "shared_deals": 3
     },
     {
@@ -2503,6 +2553,11 @@
     {
       "investor_a": "みずほ銀行",
       "investor_b": "博報堂ＤＹベンチャーズ",
+      "shared_deals": 3
+    },
+    {
+      "investor_a": "日本政策金融公庫",
+      "investor_b": "株式会社みずほ銀行",
       "shared_deals": 3
     },
     {
@@ -2602,11 +2657,6 @@
     },
     {
       "investor_a": "グローバル・ブレイン株式会社",
-      "investor_b": "三菱UFJキャピタル株式会社",
-      "shared_deals": 3
-    },
-    {
-      "investor_a": "グローバル・ブレイン株式会社",
       "investor_b": "東京大学協創プラットフォーム開発株式会社（AOI1号ファンド）",
       "shared_deals": 3
     },
@@ -2658,6 +2708,11 @@
     {
       "investor_a": "株式会社日本政策金融公庫",
       "investor_b": "株式会社三菱UFJ銀行",
+      "shared_deals": 3
+    },
+    {
+      "investor_a": "株式会社日本政策金融公庫",
+      "investor_b": "あおぞら企業投資株式会社",
       "shared_deals": 3
     },
     {
@@ -2887,6 +2942,11 @@
     },
     {
       "investor_a": "三菱UFJキャピタル株式会社",
+      "investor_b": "ジャフコ グループ株式会社",
+      "shared_deals": 3
+    },
+    {
+      "investor_a": "三菱UFJキャピタル株式会社",
       "investor_b": "第一生命保険株式会社",
       "shared_deals": 3
     },
@@ -3061,11 +3121,6 @@
       "shared_deals": 3
     },
     {
-      "investor_a": "株式会社りそな銀行",
-      "investor_b": "あおぞら企業投資株式会社",
-      "shared_deals": 3
-    },
-    {
       "investor_a": "D4V（Design for Ventures）",
       "investor_b": "スクラムベンチャーズ",
       "shared_deals": 3
@@ -3087,7 +3142,7 @@
     },
     {
       "investor_a": "ANRI",
-      "investor_b": "XTech Ventures",
+      "investor_b": "DG Daiwa Ventures",
       "shared_deals": 3
     },
     {
@@ -3331,6 +3386,31 @@
       "shared_deals": 2
     },
     {
+      "investor_a": "Altos Ventures",
+      "investor_b": "Goldman Sachs",
+      "shared_deals": 2
+    },
+    {
+      "investor_a": "Altos Ventures",
+      "investor_b": "9Yards Capital",
+      "shared_deals": 2
+    },
+    {
+      "investor_a": "Altos Ventures",
+      "investor_b": "Hedosophia",
+      "shared_deals": 2
+    },
+    {
+      "investor_a": "Altos Ventures",
+      "investor_b": "NFX",
+      "shared_deals": 2
+    },
+    {
+      "investor_a": "Altos Ventures",
+      "investor_b": "Craft Ventures",
+      "shared_deals": 2
+    },
+    {
       "investor_a": "三菱UFJキャピタル",
       "investor_b": "JICベンチャー・グロース・インベストメンツ",
       "shared_deals": 2
@@ -3373,11 +3453,6 @@
     {
       "investor_a": "三菱UFJキャピタル",
       "investor_b": "株式会社R6B",
-      "shared_deals": 2
-    },
-    {
-      "investor_a": "三菱UFJキャピタル",
-      "investor_b": "ニッセイ・キャピタル",
       "shared_deals": 2
     },
     {
@@ -3458,6 +3533,11 @@
     {
       "investor_a": "三菱UFJキャピタル",
       "investor_b": "AGキャピタル",
+      "shared_deals": 2
+    },
+    {
+      "investor_a": "三菱UFJキャピタル",
+      "investor_b": "Eight Roads Ventures Japan",
       "shared_deals": 2
     },
     {
@@ -3743,11 +3823,6 @@
     {
       "investor_a": "日本政策金融公庫",
       "investor_b": "グローバル・ブレイン株式会社",
-      "shared_deals": 2
-    },
-    {
-      "investor_a": "日本政策金融公庫",
-      "investor_b": "株式会社みずほ銀行",
       "shared_deals": 2
     },
     {
@@ -4057,6 +4132,11 @@
     },
     {
       "investor_a": "株式会社商工組合中央金庫",
+      "investor_b": "株式会社北國銀行",
+      "shared_deals": 2
+    },
+    {
+      "investor_a": "株式会社商工組合中央金庫",
       "investor_b": "TIS株式会社",
       "shared_deals": 2
     },
@@ -4147,6 +4227,11 @@
     },
     {
       "investor_a": "グローバル・ブレイン株式会社",
+      "investor_b": "JICベンチャー・グロース・インベストメンツ株式会社",
+      "shared_deals": 2
+    },
+    {
+      "investor_a": "グローバル・ブレイン株式会社",
       "investor_b": "株式会社慶應イノベーション・イニシアティブ",
       "shared_deals": 2
     },
@@ -4178,6 +4263,11 @@
     {
       "investor_a": "グローバル・ブレイン株式会社",
       "investor_b": "DBJキャピタル株式会社",
+      "shared_deals": 2
+    },
+    {
+      "investor_a": "グローバル・ブレイン株式会社",
+      "investor_b": "ジャフコ グループ株式会社",
       "shared_deals": 2
     },
     {
@@ -4236,6 +4326,11 @@
       "shared_deals": 2
     },
     {
+      "investor_a": "株式会社北國銀行",
+      "investor_b": "株式会社日本政策金融公庫",
+      "shared_deals": 2
+    },
+    {
       "investor_a": "株式会社みずほ銀行",
       "investor_b": "インキュベイトファンド株式会社",
       "shared_deals": 2
@@ -4288,11 +4383,6 @@
     {
       "investor_a": "株式会社日本政策金融公庫",
       "investor_b": "株式会社京都銀行",
-      "shared_deals": 2
-    },
-    {
-      "investor_a": "株式会社日本政策金融公庫",
-      "investor_b": "あおぞら企業投資株式会社",
       "shared_deals": 2
     },
     {
@@ -5037,6 +5127,11 @@
     },
     {
       "investor_a": "三菱UFJキャピタル株式会社",
+      "investor_b": "日本ベンチャーキャピタル株式会社",
+      "shared_deals": 2
+    },
+    {
+      "investor_a": "三菱UFJキャピタル株式会社",
       "investor_b": "Headline Asia",
       "shared_deals": 2
     },
@@ -5067,7 +5162,7 @@
     },
     {
       "investor_a": "三菱UFJキャピタル株式会社",
-      "investor_b": "ジャフコ グループ株式会社",
+      "investor_b": "京都大学イノベーションキャピタル株式会社",
       "shared_deals": 2
     },
     {
@@ -5946,6 +6041,11 @@
       "shared_deals": 2
     },
     {
+      "investor_a": "株式会社りそな銀行",
+      "investor_b": "Funds Startups株式会社",
+      "shared_deals": 2
+    },
+    {
       "investor_a": "JFR MIRAI CREATORS Fund",
       "investor_b": "DBJキャピタル株式会社",
       "shared_deals": 2
@@ -5973,11 +6073,6 @@
     {
       "investor_a": "ANRI",
       "investor_b": "伊藤忠テクノロジーベンチャーズ",
-      "shared_deals": 2
-    },
-    {
-      "investor_a": "ANRI",
-      "investor_b": "DG Daiwa Ventures",
       "shared_deals": 2
     },
     {
@@ -6308,6 +6403,11 @@
     {
       "investor_a": "グリーンコインベスト投資事業有限責任組合",
       "investor_b": "Coral Capital",
+      "shared_deals": 2
+    },
+    {
+      "investor_a": "日本ベンチャーキャピタル株式会社",
+      "investor_b": "DCIパートナーズ株式会社",
       "shared_deals": 2
     },
     {
@@ -7809,6 +7909,56 @@
       "investor_a": "株式会社JVCケンウッド",
       "investor_b": "パナソニック ホールディングス株式会社",
       "shared_deals": 2
+    },
+    {
+      "investor_a": "Goldman Sachs",
+      "investor_b": "9Yards Capital",
+      "shared_deals": 2
+    },
+    {
+      "investor_a": "Goldman Sachs",
+      "investor_b": "Hedosophia",
+      "shared_deals": 2
+    },
+    {
+      "investor_a": "Goldman Sachs",
+      "investor_b": "NFX",
+      "shared_deals": 2
+    },
+    {
+      "investor_a": "Goldman Sachs",
+      "investor_b": "Craft Ventures",
+      "shared_deals": 2
+    },
+    {
+      "investor_a": "9Yards Capital",
+      "investor_b": "Hedosophia",
+      "shared_deals": 2
+    },
+    {
+      "investor_a": "9Yards Capital",
+      "investor_b": "NFX",
+      "shared_deals": 2
+    },
+    {
+      "investor_a": "9Yards Capital",
+      "investor_b": "Craft Ventures",
+      "shared_deals": 2
+    },
+    {
+      "investor_a": "Hedosophia",
+      "investor_b": "NFX",
+      "shared_deals": 2
+    },
+    {
+      "investor_a": "Hedosophia",
+      "investor_b": "Craft Ventures",
+      "shared_deals": 2
+    },
+    {
+      "investor_a": "NFX",
+      "investor_b": "Craft Ventures",
+      "shared_deals": 2
     }
   ],
   "monthly_summary": [
@@ -8036,9 +8186,9 @@
     },
     {
       "month": "2022-11",
-      "deal_count": 17,
+      "deal_count": 18,
       "total_amount_jpy": 12415000000,
-      "unique_companies": 14
+      "unique_companies": 15
     },
     {
       "month": "2022-12",
@@ -8108,9 +8258,9 @@
     },
     {
       "month": "2023-11",
-      "deal_count": 28,
+      "deal_count": 29,
       "total_amount_jpy": 23371473560,
-      "unique_companies": 26
+      "unique_companies": 27
     },
     {
       "month": "2023-12",
@@ -8120,51 +8270,51 @@
     },
     {
       "month": "2024-01",
-      "deal_count": 13,
-      "total_amount_jpy": 9623900000,
-      "unique_companies": 13
-    },
-    {
-      "month": "2024-02",
-      "deal_count": 15,
-      "total_amount_jpy": 17740000000,
+      "deal_count": 14,
+      "total_amount_jpy": 10528928100,
       "unique_companies": 14
     },
     {
+      "month": "2024-02",
+      "deal_count": 17,
+      "total_amount_jpy": 17740000000,
+      "unique_companies": 16
+    },
+    {
       "month": "2024-03",
-      "deal_count": 15,
-      "total_amount_jpy": 5350000000,
-      "unique_companies": 12
+      "deal_count": 18,
+      "total_amount_jpy": 5712000000,
+      "unique_companies": 15
     },
     {
       "month": "2024-04",
-      "deal_count": 17,
+      "deal_count": 18,
       "total_amount_jpy": 17785000000,
-      "unique_companies": 15
+      "unique_companies": 16
     },
     {
       "month": "2024-05",
-      "deal_count": 20,
+      "deal_count": 21,
       "total_amount_jpy": 15634000000,
-      "unique_companies": 17
+      "unique_companies": 18
     },
     {
       "month": "2024-06",
-      "deal_count": 15,
-      "total_amount_jpy": 10340000000,
-      "unique_companies": 15
+      "deal_count": 18,
+      "total_amount_jpy": 10570000000,
+      "unique_companies": 18
     },
     {
       "month": "2024-07",
-      "deal_count": 17,
+      "deal_count": 18,
       "total_amount_jpy": 38524000000,
-      "unique_companies": 17
+      "unique_companies": 18
     },
     {
       "month": "2024-08",
-      "deal_count": 24,
+      "deal_count": 25,
       "total_amount_jpy": 16105000000,
-      "unique_companies": 23
+      "unique_companies": 24
     },
     {
       "month": "2024-09",
@@ -8174,15 +8324,15 @@
     },
     {
       "month": "2024-10",
-      "deal_count": 24,
-      "total_amount_jpy": 25450000000,
-      "unique_companies": 24
+      "deal_count": 26,
+      "total_amount_jpy": 27700000000,
+      "unique_companies": 25
     },
     {
       "month": "2024-11",
-      "deal_count": 30,
+      "deal_count": 31,
       "total_amount_jpy": 41823000000,
-      "unique_companies": 27
+      "unique_companies": 28
     },
     {
       "month": "2024-12",
@@ -8192,69 +8342,69 @@
     },
     {
       "month": "2025-01",
-      "deal_count": 26,
-      "total_amount_jpy": 65960000000,
-      "unique_companies": 23
+      "deal_count": 28,
+      "total_amount_jpy": 66260000000,
+      "unique_companies": 25
     },
     {
       "month": "2025-02",
-      "deal_count": 25,
-      "total_amount_jpy": 33559800000,
-      "unique_companies": 22
+      "deal_count": 27,
+      "total_amount_jpy": 33689800000,
+      "unique_companies": 24
     },
     {
       "month": "2025-03",
-      "deal_count": 21,
-      "total_amount_jpy": 21820000000,
-      "unique_companies": 17
+      "deal_count": 25,
+      "total_amount_jpy": 21859100000,
+      "unique_companies": 21
     },
     {
       "month": "2025-04",
-      "deal_count": 32,
-      "total_amount_jpy": 40115000000,
-      "unique_companies": 30
+      "deal_count": 33,
+      "total_amount_jpy": 42615000000,
+      "unique_companies": 31
     },
     {
       "month": "2025-05",
-      "deal_count": 30,
-      "total_amount_jpy": 18341000000,
-      "unique_companies": 26
+      "deal_count": 32,
+      "total_amount_jpy": 18845000000,
+      "unique_companies": 28
     },
     {
       "month": "2025-06",
-      "deal_count": 37,
-      "total_amount_jpy": 21330000000,
+      "deal_count": 38,
+      "total_amount_jpy": 21826000000,
       "unique_companies": 32
     },
     {
       "month": "2025-07",
-      "deal_count": 45,
-      "total_amount_jpy": 24606700000,
-      "unique_companies": 36
+      "deal_count": 49,
+      "total_amount_jpy": 29876700000,
+      "unique_companies": 38
     },
     {
       "month": "2025-08",
-      "deal_count": 39,
-      "total_amount_jpy": 50137000000,
-      "unique_companies": 33
+      "deal_count": 41,
+      "total_amount_jpy": 50437000000,
+      "unique_companies": 34
     },
     {
       "month": "2025-09",
-      "deal_count": 44,
-      "total_amount_jpy": 52661500000,
-      "unique_companies": 37
+      "deal_count": 46,
+      "total_amount_jpy": 52781500000,
+      "unique_companies": 39
     },
     {
       "month": "2025-10",
-      "deal_count": 59,
-      "total_amount_jpy": 52224600000,
-      "unique_companies": 50
+      "deal_count": 63,
+      "total_amount_jpy": 53490600000,
+      "unique_companies": 52
     },
     {
       "month": "2025-11",
-      "deal_count": 57,
-      "total_amount_jpy": 90083000000,
-      "unique_companies": 48
+      "deal_count": 61,
+      "total_amount_jpy": 90343000000,
+      "unique_companies": 51
     },
     {
       "month": "2025-12",
@@ -8264,49 +8414,49 @@
     },
     {
       "month": "2026-01",
-      "deal_count": 50,
-      "total_amount_jpy": 214270000000,
-      "unique_companies": 45
+      "deal_count": 52,
+      "total_amount_jpy": 219170000000,
+      "unique_companies": 47
     },
     {
       "month": "2026-02",
-      "deal_count": 63,
+      "deal_count": 64,
       "total_amount_jpy": 137440680000,
       "unique_companies": 55
     },
     {
       "month": "2026-03",
-      "deal_count": 52,
-      "total_amount_jpy": 53338000000,
-      "unique_companies": 44
+      "deal_count": 62,
+      "total_amount_jpy": 54558000000,
+      "unique_companies": 52
     },
     {
       "month": "2026-04",
-      "deal_count": 77,
-      "total_amount_jpy": 206674903800,
-      "unique_companies": 72
+      "deal_count": 82,
+      "total_amount_jpy": 207634903800,
+      "unique_companies": 76
     }
   ],
   "event_momentum": [
     {
       "event_type": "funding",
-      "count": 221,
-      "avg_significance": 0.78868778280543
+      "count": 238,
+      "avg_significance": 0.7827731092436975
     }
   ],
   "tag_distribution": [],
   "data_freshness": {
-    "total": 3641,
+    "total": 3760,
     "expired": 0,
     "stale": 0,
-    "fresh": 3641
+    "fresh": 3760
   },
   "data_source_breakdown": [
     {
       "source": "claude_extracted",
       "source_type": "ml_inferred",
-      "org_count": 3596,
-      "round_count": 1441
+      "org_count": 3715,
+      "round_count": 1505
     },
     {
       "source": "migrated_v1",
@@ -8318,7 +8468,7 @@
   "top_organizations_by_score": [],
   "corporate_enrichment": {
     "enriched_count": 0,
-    "total_organizations": 1057,
+    "total_organizations": 1095,
     "enrichment_rate": 0.0,
     "capital_distribution": [
       {
@@ -8341,7 +8491,7 @@
   },
   "press_releases": {
     "total_count": 12357,
-    "funding_related_count": 1628,
+    "funding_related_count": 1590,
     "by_source": {
       "frontier_detector": 72,
       "prtimes": 200,
@@ -8364,12 +8514,12 @@
       {
         "month": "2026-04",
         "count": 813,
-        "funding_count": 80
+        "funding_count": 76
       },
       {
         "month": "2026-03",
         "count": 841,
-        "funding_count": 70
+        "funding_count": 69
       },
       {
         "month": "2026-02",
@@ -8384,7 +8534,7 @@
       {
         "month": "2025-12",
         "count": 453,
-        "funding_count": 51
+        "funding_count": 50
       },
       {
         "month": "2025-11",
@@ -8399,7 +8549,7 @@
       {
         "month": "2025-09",
         "count": 392,
-        "funding_count": 48
+        "funding_count": 47
       },
       {
         "month": "2025-08",
@@ -8409,17 +8559,17 @@
       {
         "month": "2025-07",
         "count": 331,
-        "funding_count": 55
+        "funding_count": 54
       },
       {
         "month": "2025-06",
         "count": 285,
-        "funding_count": 44
+        "funding_count": 43
       },
       {
         "month": "2025-05",
         "count": 261,
-        "funding_count": 35
+        "funding_count": 34
       },
       {
         "month": "2025-04",
@@ -8434,12 +8584,12 @@
       {
         "month": "2025-02",
         "count": 231,
-        "funding_count": 31
+        "funding_count": 30
       },
       {
         "month": "2025-01",
         "count": 158,
-        "funding_count": 25
+        "funding_count": 24
       },
       {
         "month": "2024-12",
@@ -8449,12 +8599,12 @@
       {
         "month": "2024-11",
         "count": 191,
-        "funding_count": 33
+        "funding_count": 31
       },
       {
         "month": "2024-10",
         "count": 221,
-        "funding_count": 29
+        "funding_count": 28
       },
       {
         "month": "2024-09",
@@ -8464,7 +8614,7 @@
       {
         "month": "2024-08",
         "count": 138,
-        "funding_count": 32
+        "funding_count": 31
       },
       {
         "month": "2024-07",
@@ -8474,7 +8624,7 @@
       {
         "month": "2024-06",
         "count": 117,
-        "funding_count": 19
+        "funding_count": 17
       },
       {
         "month": "2024-05",
@@ -8972,13 +9122,13 @@
       "id": 189,
       "investor_name": "三菱UFJキャピタル株式会社",
       "investor_type": "vc",
-      "deal_count": 75,
-      "portfolio_count": 69,
-      "total_invested_jpy": 89894000000,
-      "avg_deal_size_jpy": 1404593750.0,
+      "deal_count": 78,
+      "portfolio_count": 70,
+      "total_invested_jpy": 92144000000,
+      "avg_deal_size_jpy": 1417600000.0,
       "first_deal": "2018-02-26",
       "last_deal": "2026-04-07",
-      "lead_count": 18,
+      "lead_count": 20,
       "round_types": "seed,series_a,pre_seed,series_b,series_c,unknown,corporate_round,series_d,strategic"
     },
     {
@@ -9011,10 +9161,10 @@
       "id": 115,
       "investor_name": "グローバル・ブレイン株式会社",
       "investor_type": "vc",
-      "deal_count": 62,
-      "portfolio_count": 48,
-      "total_invested_jpy": 31025000000,
-      "avg_deal_size_jpy": 1477380952.3809524,
+      "deal_count": 63,
+      "portfolio_count": 49,
+      "total_invested_jpy": 33275000000,
+      "avg_deal_size_jpy": 1512500000.0,
       "first_deal": "2022-04-20",
       "last_deal": "2026-04-15",
       "lead_count": 37,
@@ -9037,23 +9187,23 @@
       "id": 347,
       "investor_name": "ANRI",
       "investor_type": "vc",
-      "deal_count": 52,
+      "deal_count": 53,
       "portfolio_count": 46,
-      "total_invested_jpy": 74504000000,
-      "avg_deal_size_jpy": 1732651162.7906976,
+      "total_invested_jpy": 75000000000,
+      "avg_deal_size_jpy": 1704545454.5454545,
       "first_deal": "2019-11-25",
       "last_deal": "2026-03-17",
-      "lead_count": 26,
+      "lead_count": 27,
       "round_types": "seed,series_a,pre_seed,angel,series_b,series_d,series_c,j_kiss"
     },
     {
       "id": 38,
       "investor_name": "三菱UFJキャピタル",
       "investor_type": "cvc",
-      "deal_count": 51,
-      "portfolio_count": 40,
-      "total_invested_jpy": 93173015300,
-      "avg_deal_size_jpy": 2025500332.6086957,
+      "deal_count": 52,
+      "portfolio_count": 41,
+      "total_invested_jpy": 94078043400,
+      "avg_deal_size_jpy": 2001660497.8723404,
       "first_deal": "2021-05-01",
       "last_deal": "2026-04-15",
       "lead_count": 10,
@@ -9102,10 +9252,10 @@
       "id": 736,
       "investor_name": "ジャフコ グループ株式会社",
       "investor_type": "vc",
-      "deal_count": 40,
-      "portfolio_count": 35,
-      "total_invested_jpy": 157310000000,
-      "avg_deal_size_jpy": 4369722222.222222,
+      "deal_count": 41,
+      "portfolio_count": 36,
+      "total_invested_jpy": 159560000000,
+      "avg_deal_size_jpy": 4312432432.432432,
       "first_deal": "2021-11-17",
       "last_deal": "2025-12-23",
       "lead_count": 25,
@@ -9115,13 +9265,13 @@
       "id": 64,
       "investor_name": "日本政策金融公庫",
       "investor_type": "gov",
-      "deal_count": 38,
-      "portfolio_count": 38,
-      "total_invested_jpy": 42855000000,
-      "avg_deal_size_jpy": 1190416666.6666667,
+      "deal_count": 40,
+      "portfolio_count": 40,
+      "total_invested_jpy": 42985000000,
+      "avg_deal_size_jpy": 1161756756.7567568,
       "first_deal": "2020-06-30",
       "last_deal": "2026-04-16",
-      "lead_count": 1,
+      "lead_count": 2,
       "round_types": "debt,series_a,series_e,pre_seed,seed,series_c,series_b,corporate_round,strategic"
     },
     {
@@ -9141,14 +9291,27 @@
       "id": 93,
       "investor_name": "SBIインベストメント株式会社",
       "investor_type": "corporate",
-      "deal_count": 36,
-      "portfolio_count": 35,
-      "total_invested_jpy": 80455000000,
-      "avg_deal_size_jpy": 2979814814.814815,
+      "deal_count": 37,
+      "portfolio_count": 36,
+      "total_invested_jpy": 81455000000,
+      "avg_deal_size_jpy": 2909107142.857143,
       "first_deal": "2022-07-05",
       "last_deal": "2026-04-15",
-      "lead_count": 20,
+      "lead_count": 21,
       "round_types": "series_b,series_a,corporate_round,series_d,series_c,seed"
+    },
+    {
+      "id": 135,
+      "investor_name": "個人投資家",
+      "investor_type": "angel",
+      "deal_count": 37,
+      "portfolio_count": 34,
+      "total_invested_jpy": 12455000000,
+      "avg_deal_size_jpy": 429482758.62068963,
+      "first_deal": "2020-12-03",
+      "last_deal": "2026-04-02",
+      "lead_count": 0,
+      "round_types": "series_a,seed,pre_seed,series_b,strategic,j_kiss,unknown"
     },
     {
       "id": 95,
@@ -9164,17 +9327,17 @@
       "round_types": "series_b,pre_seed,series_a,seed,corporate_round,series_c,unknown,series_d"
     },
     {
-      "id": 135,
-      "investor_name": "個人投資家",
-      "investor_type": "angel",
-      "deal_count": 35,
-      "portfolio_count": 32,
-      "total_invested_jpy": 12455000000,
-      "avg_deal_size_jpy": 429482758.62068963,
-      "first_deal": "2020-12-03",
-      "last_deal": "2026-04-02",
-      "lead_count": 0,
-      "round_types": "series_a,seed,pre_seed,series_b,strategic,j_kiss,unknown"
+      "id": 479,
+      "investor_name": "Headline Asia",
+      "investor_type": "vc",
+      "deal_count": 33,
+      "portfolio_count": 27,
+      "total_invested_jpy": 22150004760,
+      "avg_deal_size_jpy": 1476666984.0,
+      "first_deal": "2021-07-28",
+      "last_deal": "2026-02-26",
+      "lead_count": 20,
+      "round_types": "seed,pre_seed,series_b,series_a,angel,unknown,strategic"
     },
     {
       "id": 581,
@@ -9203,19 +9366,6 @@
       "round_types": "seed,series_b,series_a,series_d,series_c"
     },
     {
-      "id": 479,
-      "investor_name": "Headline Asia",
-      "investor_type": "vc",
-      "deal_count": 32,
-      "portfolio_count": 26,
-      "total_invested_jpy": 22150004760,
-      "avg_deal_size_jpy": 1476666984.0,
-      "first_deal": "2021-07-28",
-      "last_deal": "2026-02-26",
-      "lead_count": 19,
-      "round_types": "seed,pre_seed,series_b,series_a,angel,unknown,strategic"
-    },
-    {
       "id": 142,
       "investor_name": "みずほキャピタル",
       "investor_type": "vc",
@@ -9229,6 +9379,19 @@
       "round_types": "series_a,series_d,series_b,pre_seed,series_c"
     },
     {
+      "id": 312,
+      "investor_name": "JICベンチャー・グロース・インベストメンツ株式会社",
+      "investor_type": "vc",
+      "deal_count": 31,
+      "portfolio_count": 26,
+      "total_invested_jpy": 92130000000,
+      "avg_deal_size_jpy": 3071000000.0,
+      "first_deal": "2022-03-03",
+      "last_deal": "2026-03-19",
+      "lead_count": 19,
+      "round_types": "series_a,series_c,series_d,series_b,pre_seed,strategic"
+    },
+    {
       "id": 676,
       "investor_name": "DBJキャピタル株式会社",
       "investor_type": "corporate",
@@ -9240,19 +9403,6 @@
       "last_deal": "2026-01-16",
       "lead_count": 8,
       "round_types": "series_b,series_a,series_c,unknown,seed,strategic"
-    },
-    {
-      "id": 312,
-      "investor_name": "JICベンチャー・グロース・インベストメンツ株式会社",
-      "investor_type": "vc",
-      "deal_count": 30,
-      "portfolio_count": 25,
-      "total_invested_jpy": 89880000000,
-      "avg_deal_size_jpy": 3099310344.827586,
-      "first_deal": "2022-03-03",
-      "last_deal": "2026-03-19",
-      "lead_count": 19,
-      "round_types": "series_a,series_c,series_d,series_b,pre_seed,strategic"
     },
     {
       "id": 63,
@@ -9284,13 +9434,13 @@
       "id": 128,
       "investor_name": "株式会社みずほ銀行",
       "investor_type": "bank",
-      "deal_count": 26,
-      "portfolio_count": 25,
+      "deal_count": 27,
+      "portfolio_count": 26,
       "total_invested_jpy": 71915000000,
       "avg_deal_size_jpy": 2996458333.3333335,
       "first_deal": "2022-09-30",
       "last_deal": "2026-04-15",
-      "lead_count": 5,
+      "lead_count": 6,
       "round_types": "debt,corporate_round,series_a,series_b,series_c,seed,strategic,series_d,unknown"
     },
     {
@@ -9305,6 +9455,19 @@
       "last_deal": "2026-04-06",
       "lead_count": 15,
       "round_types": "pre_seed,series_a,series_b,unknown,seed,series_c,series_d"
+    },
+    {
+      "id": 96,
+      "investor_name": "株式会社商工組合中央金庫",
+      "investor_type": "bank",
+      "deal_count": 22,
+      "portfolio_count": 21,
+      "total_invested_jpy": 57420000000,
+      "avg_deal_size_jpy": 2734285714.285714,
+      "first_deal": "2021-03-12",
+      "last_deal": "2026-04-15",
+      "lead_count": 2,
+      "round_types": "series_b,corporate_round,series_e,debt,series_c,series_a,series_d,pre_seed"
     },
     {
       "id": 172,
@@ -9331,19 +9494,6 @@
       "last_deal": "2026-04-02",
       "lead_count": 10,
       "round_types": "series_a,pre_seed,seed,series_b,series_c,j_kiss"
-    },
-    {
-      "id": 96,
-      "investor_name": "株式会社商工組合中央金庫",
-      "investor_type": "bank",
-      "deal_count": 21,
-      "portfolio_count": 20,
-      "total_invested_jpy": 57160000000,
-      "avg_deal_size_jpy": 2858000000.0,
-      "first_deal": "2021-03-12",
-      "last_deal": "2026-04-15",
-      "lead_count": 2,
-      "round_types": "series_b,corporate_round,series_e,debt,series_c,series_a,series_d,pre_seed"
     },
     {
       "id": 394,
@@ -9476,6 +9626,19 @@
       "round_types": "series_a,debt,series_b,series_c,series_d"
     },
     {
+      "id": 391,
+      "investor_name": "グロービス・キャピタル・パートナーズ株式会社",
+      "investor_type": "vc",
+      "deal_count": 18,
+      "portfolio_count": 14,
+      "total_invested_jpy": 21190000000,
+      "avg_deal_size_jpy": 1324375000.0,
+      "first_deal": "2022-09-07",
+      "last_deal": "2026-03-10",
+      "lead_count": 16,
+      "round_types": "series_a,series_b,secondary,series_d,series_c,series_e"
+    },
+    {
       "id": 616,
       "investor_name": "株式会社環境エネルギー投資",
       "investor_type": "vc",
@@ -9500,6 +9663,19 @@
       "last_deal": "2026-04-08",
       "lead_count": 0,
       "round_types": "pre_seed,seed,series_a,j_kiss,angel,unknown,series_b"
+    },
+    {
+      "id": 297,
+      "investor_name": "ユナイテッド株式会社",
+      "investor_type": "corporate",
+      "deal_count": 17,
+      "portfolio_count": 16,
+      "total_invested_jpy": 6854000000,
+      "avg_deal_size_jpy": 623090909.0909091,
+      "first_deal": "2022-08-09",
+      "last_deal": "2026-03-24",
+      "lead_count": 6,
+      "round_types": "seed,series_a,strategic,corporate_round,pre_seed,series_c"
     },
     {
       "id": 458,
@@ -9541,17 +9717,30 @@
       "round_types": "pre_seed,seed,series_b,series_a,unknown,series_d,strategic,ipo,series_c"
     },
     {
-      "id": 297,
-      "investor_name": "ユナイテッド株式会社",
+      "id": 129,
+      "investor_name": "株式会社日本政策金融公庫",
+      "investor_type": "gov",
+      "deal_count": 16,
+      "portfolio_count": 15,
+      "total_invested_jpy": 11980000000,
+      "avg_deal_size_jpy": 921538461.5384616,
+      "first_deal": "2023-02-28",
+      "last_deal": "2026-04-15",
+      "lead_count": 1,
+      "round_types": "debt,seed,corporate_round,series_c,series_a,pre_seed,series_b"
+    },
+    {
+      "id": 286,
+      "investor_name": "Sony Innovation Fund",
       "investor_type": "corporate",
       "deal_count": 16,
-      "portfolio_count": 16,
-      "total_invested_jpy": 6854000000,
-      "avg_deal_size_jpy": 623090909.0909091,
-      "first_deal": "2022-08-09",
-      "last_deal": "2026-03-24",
-      "lead_count": 5,
-      "round_types": "seed,series_a,strategic,corporate_round,pre_seed,series_c"
+      "portfolio_count": 14,
+      "total_invested_jpy": 22390000000,
+      "avg_deal_size_jpy": 1722307692.3076923,
+      "first_deal": "2021-06-29",
+      "last_deal": "2026-03-26",
+      "lead_count": 2,
+      "round_types": "series_a,strategic,series_b,corporate_round,series_c,pre_seed"
     },
     {
       "id": 376,
@@ -9567,19 +9756,6 @@
       "round_types": "corporate_round,unknown,series_a,pre_seed,series_b,series_f"
     },
     {
-      "id": 391,
-      "investor_name": "グロービス・キャピタル・パートナーズ株式会社",
-      "investor_type": "vc",
-      "deal_count": 16,
-      "portfolio_count": 13,
-      "total_invested_jpy": 17290000000,
-      "avg_deal_size_jpy": 1235000000.0,
-      "first_deal": "2022-09-07",
-      "last_deal": "2026-03-10",
-      "lead_count": 14,
-      "round_types": "series_a,series_b,secondary,series_d,series_c"
-    },
-    {
       "id": 560,
       "investor_name": "三菱UFJ銀行",
       "investor_type": "bank",
@@ -9591,32 +9767,6 @@
       "last_deal": "2026-02-06",
       "lead_count": 3,
       "round_types": "debt,series_a,series_b,series_d,seed,series_c"
-    },
-    {
-      "id": 88,
-      "investor_name": "Z Venture Capital株式会社",
-      "investor_type": "vc",
-      "deal_count": 15,
-      "portfolio_count": 13,
-      "total_invested_jpy": 14000000000,
-      "avg_deal_size_jpy": 3500000000.0,
-      "first_deal": "2021-06-30",
-      "last_deal": "2026-04-15",
-      "lead_count": 11,
-      "round_types": "series_b,series_c,ipo,secondary,series_a,strategic,corporate_round"
-    },
-    {
-      "id": 129,
-      "investor_name": "株式会社日本政策金融公庫",
-      "investor_type": "gov",
-      "deal_count": 15,
-      "portfolio_count": 14,
-      "total_invested_jpy": 11020000000,
-      "avg_deal_size_jpy": 918333333.3333334,
-      "first_deal": "2023-02-28",
-      "last_deal": "2026-04-15",
-      "lead_count": 1,
-      "round_types": "debt,seed,corporate_round,series_c,series_a,pre_seed,series_b"
     }
   ],
   "investor_sector_matrix": [
@@ -9645,16 +9795,16 @@
       "total_invested_jpy": 10520000000
     },
     {
-      "investor_name": "三菱UFJキャピタル株式会社",
-      "sector_name": "クリーンテック",
-      "deal_count": 14,
-      "total_invested_jpy": 25680000000
-    },
-    {
       "investor_name": "Coral Capital",
       "sector_name": "SaaS",
       "deal_count": 14,
       "total_invested_jpy": 14985000000
+    },
+    {
+      "investor_name": "三菱UFJキャピタル株式会社",
+      "sector_name": "クリーンテック",
+      "deal_count": 13,
+      "total_invested_jpy": 25400000000
     },
     {
       "investor_name": "三菱UFJキャピタル株式会社",
@@ -9667,6 +9817,12 @@
       "sector_name": "SaaS",
       "deal_count": 11,
       "total_invested_jpy": 14720000000
+    },
+    {
+      "investor_name": "三菱UFJキャピタル株式会社",
+      "sector_name": "ディープテック",
+      "deal_count": 11,
+      "total_invested_jpy": 9670000000
     },
     {
       "investor_name": "SMBCベンチャーキャピタル株式会社",
@@ -9687,10 +9843,10 @@
       "total_invested_jpy": 3790000000
     },
     {
-      "investor_name": "三菱UFJキャピタル株式会社",
-      "sector_name": "ディープテック",
+      "investor_name": "JICベンチャー・グロース・インベストメンツ株式会社",
+      "sector_name": "バイオテック",
       "deal_count": 9,
-      "total_invested_jpy": 9390000000
+      "total_invested_jpy": 14000000000
     },
     {
       "investor_name": "株式会社ジェネシア・ベンチャーズ",
@@ -9753,16 +9909,16 @@
       "total_invested_jpy": 10803000000
     },
     {
-      "investor_name": "JICベンチャー・グロース・インベストメンツ株式会社",
-      "sector_name": "バイオテック",
-      "deal_count": 8,
-      "total_invested_jpy": 11750000000
-    },
-    {
       "investor_name": "SMBCベンチャーキャピタル株式会社",
       "sector_name": "クリーンテック",
       "deal_count": 8,
       "total_invested_jpy": 19690000000
+    },
+    {
+      "investor_name": "ANRI",
+      "sector_name": "フィンテック",
+      "deal_count": 8,
+      "total_invested_jpy": 38996000000
     },
     {
       "investor_name": "Headline Asia",
@@ -9808,6 +9964,12 @@
     },
     {
       "investor_name": "三菱UFJキャピタル株式会社",
+      "sector_name": "バイオテック",
+      "deal_count": 7,
+      "total_invested_jpy": 5950000000
+    },
+    {
+      "investor_name": "三菱UFJキャピタル株式会社",
       "sector_name": "FoodTech",
       "deal_count": 7,
       "total_invested_jpy": 4000000000
@@ -9843,12 +10005,6 @@
       "total_invested_jpy": 18890000000
     },
     {
-      "investor_name": "ANRI",
-      "sector_name": "フィンテック",
-      "deal_count": 7,
-      "total_invested_jpy": 38500000000
-    },
-    {
       "investor_name": "株式会社環境エネルギー投資",
       "sector_name": "クリーンテック",
       "deal_count": 7,
@@ -9877,12 +10033,6 @@
       "sector_name": "SaaS",
       "deal_count": 6,
       "total_invested_jpy": 15500000000
-    },
-    {
-      "investor_name": "三菱UFJキャピタル株式会社",
-      "sector_name": "バイオテック",
-      "deal_count": 6,
-      "total_invested_jpy": 3700000000
     },
     {
       "investor_name": "インキュベイトファンド株式会社",
@@ -9939,6 +10089,12 @@
       "total_invested_jpy": 3900000000
     },
     {
+      "investor_name": "ジャフコ グループ株式会社",
+      "sector_name": "バイオテック",
+      "deal_count": 6,
+      "total_invested_jpy": 6890000000
+    },
+    {
       "investor_name": "SBIインベストメント",
       "sector_name": "SaaS",
       "deal_count": 6,
@@ -9955,6 +10111,12 @@
       "sector_name": "フィンテック",
       "deal_count": 5,
       "total_invested_jpy": 36413000000
+    },
+    {
+      "investor_name": "三菱UFJキャピタル",
+      "sector_name": "HR Tech",
+      "deal_count": 5,
+      "total_invested_jpy": 7475028100
     },
     {
       "investor_name": "株式会社ジェネシア・ベンチャーズ",
@@ -10053,6 +10215,12 @@
       "total_invested_jpy": 5400000000
     },
     {
+      "investor_name": "株式会社ANOBAKA",
+      "sector_name": "AI/機械学習",
+      "deal_count": 5,
+      "total_invested_jpy": 226500000
+    },
+    {
       "investor_name": "グローバル・ブレイン",
       "sector_name": "フィンテック",
       "deal_count": 5,
@@ -10113,12 +10281,6 @@
       "total_invested_jpy": 7610000000
     },
     {
-      "investor_name": "ジャフコ グループ株式会社",
-      "sector_name": "バイオテック",
-      "deal_count": 5,
-      "total_invested_jpy": 4640000000
-    },
-    {
       "investor_name": "ANRI株式会社",
       "sector_name": "ヘルスケア",
       "deal_count": 5,
@@ -10135,12 +10297,6 @@
       "sector_name": "SaaS",
       "deal_count": 5,
       "total_invested_jpy": 5040000000
-    },
-    {
-      "investor_name": "三菱UFJキャピタル",
-      "sector_name": "HR Tech",
-      "deal_count": 4,
-      "total_invested_jpy": 6570000000
     },
     {
       "investor_name": "三菱UFJキャピタル",
@@ -10207,6 +10363,12 @@
       "sector_name": "EdTech",
       "deal_count": 4,
       "total_invested_jpy": 530000000
+    },
+    {
+      "investor_name": "グローバル・ブレイン株式会社",
+      "sector_name": "フィンテック",
+      "deal_count": 4,
+      "total_invested_jpy": null
     },
     {
       "investor_name": "グローバル・ブレイン株式会社",
@@ -10299,12 +10461,6 @@
       "total_invested_jpy": 3550000000
     },
     {
-      "investor_name": "株式会社ANOBAKA",
-      "sector_name": "AI/機械学習",
-      "deal_count": 4,
-      "total_invested_jpy": 226500000
-    },
-    {
       "investor_name": "グローバル・ブレイン",
       "sector_name": "SaaS",
       "deal_count": 4,
@@ -10321,6 +10477,18 @@
       "sector_name": "フィンテック",
       "deal_count": 4,
       "total_invested_jpy": 650000000
+    },
+    {
+      "investor_name": "ユナイテッド株式会社",
+      "sector_name": "SaaS",
+      "deal_count": 4,
+      "total_invested_jpy": 334000000
+    },
+    {
+      "investor_name": "Spiral Capital",
+      "sector_name": "AI/機械学習",
+      "deal_count": 4,
+      "total_invested_jpy": 1660000000
     },
     {
       "investor_name": "JICベンチャー・グロース・インベストメンツ株式会社",
@@ -10357,6 +10525,12 @@
       "sector_name": "モビリティ",
       "deal_count": 4,
       "total_invested_jpy": 4625000000
+    },
+    {
+      "investor_name": "ANRI",
+      "sector_name": "AI/機械学習",
+      "deal_count": 4,
+      "total_invested_jpy": 4140000000
     },
     {
       "investor_name": "三菱電機株式会社",
@@ -10399,6 +10573,12 @@
       "sector_name": "モビリティ",
       "deal_count": 4,
       "total_invested_jpy": 10000000000
+    },
+    {
+      "investor_name": "ニッセイ・キャピタル",
+      "sector_name": "HR Tech",
+      "deal_count": 4,
+      "total_invested_jpy": 5115028100
     },
     {
       "investor_name": "株式会社環境エネルギー投資",
@@ -10465,6 +10645,12 @@
       "sector_name": "ディープテック",
       "deal_count": 4,
       "total_invested_jpy": 2150000000
+    },
+    {
+      "investor_name": "株式会社脱炭素化支援機構",
+      "sector_name": "クリーンテック",
+      "deal_count": 4,
+      "total_invested_jpy": 4160000000
     },
     {
       "investor_name": "Z Venture Capital",
@@ -10630,12 +10816,6 @@
     },
     {
       "investor_name": "グローバル・ブレイン株式会社",
-      "sector_name": "フィンテック",
-      "deal_count": 3,
-      "total_invested_jpy": null
-    },
-    {
-      "investor_name": "グローバル・ブレイン株式会社",
       "sector_name": "不動産テック",
       "deal_count": 3,
       "total_invested_jpy": 500000000
@@ -10651,6 +10831,12 @@
       "sector_name": "FoodTech",
       "deal_count": 3,
       "total_invested_jpy": 5860000000
+    },
+    {
+      "investor_name": "株式会社日本政策金融公庫",
+      "sector_name": "AI/機械学習",
+      "deal_count": 3,
+      "total_invested_jpy": 2160000000
     },
     {
       "investor_name": "みずほキャピタル株式会社",
@@ -10675,12 +10861,6 @@
       "sector_name": "HR Tech",
       "deal_count": 3,
       "total_invested_jpy": 550000000
-    },
-    {
-      "investor_name": "Archetype Ventures",
-      "sector_name": "クリーンテック",
-      "deal_count": 3,
-      "total_invested_jpy": 730000000
     },
     {
       "investor_name": "Archetype Ventures",
@@ -10803,6 +10983,12 @@
       "total_invested_jpy": 1150000000
     },
     {
+      "investor_name": "Sony Innovation Fund",
+      "sector_name": "フィンテック",
+      "deal_count": 3,
+      "total_invested_jpy": 12140000000
+    },
+    {
       "investor_name": "East Ventures",
       "sector_name": "サイバーセキュリティ",
       "deal_count": 3,
@@ -10813,18 +10999,6 @@
       "sector_name": "物流",
       "deal_count": 3,
       "total_invested_jpy": 200004760
-    },
-    {
-      "investor_name": "ユナイテッド株式会社",
-      "sector_name": "SaaS",
-      "deal_count": 3,
-      "total_invested_jpy": 334000000
-    },
-    {
-      "investor_name": "Spiral Capital",
-      "sector_name": "AI/機械学習",
-      "deal_count": 3,
-      "total_invested_jpy": 1020000000
     },
     {
       "investor_name": "Spiral Capital",
@@ -10864,12 +11038,6 @@
     },
     {
       "investor_name": "ANRI",
-      "sector_name": "AI/機械学習",
-      "deal_count": 3,
-      "total_invested_jpy": 3500000000
-    },
-    {
-      "investor_name": "ANRI",
       "sector_name": "クリーンテック",
       "deal_count": 3,
       "total_invested_jpy": 3690000000
@@ -10903,6 +11071,12 @@
       "sector_name": "ヘルスケア",
       "deal_count": 3,
       "total_invested_jpy": 1360000000
+    },
+    {
+      "investor_name": "XTech Ventures株式会社",
+      "sector_name": "SaaS",
+      "deal_count": 3,
+      "total_invested_jpy": 2400000000
     },
     {
       "investor_name": "XTech Ventures株式会社",
@@ -10947,6 +11121,12 @@
       "total_invested_jpy": 3520000000
     },
     {
+      "investor_name": "日本ベンチャーキャピタル株式会社",
+      "sector_name": "バイオテック",
+      "deal_count": 3,
+      "total_invested_jpy": 7270000000
+    },
+    {
       "investor_name": "Headline Asia",
       "sector_name": "Web3/ブロックチェーン",
       "deal_count": 3,
@@ -10975,12 +11155,6 @@
       "sector_name": "AI/機械学習",
       "deal_count": 3,
       "total_invested_jpy": 15330000000
-    },
-    {
-      "investor_name": "ニッセイ・キャピタル",
-      "sector_name": "HR Tech",
-      "deal_count": 3,
-      "total_invested_jpy": 4210000000
     },
     {
       "investor_name": "DBJキャピタル",
@@ -11103,6 +11277,12 @@
       "total_invested_jpy": 4500000000
     },
     {
+      "investor_name": "DG Daiwa Ventures",
+      "sector_name": "フィンテック",
+      "deal_count": 3,
+      "total_invested_jpy": 2796000000
+    },
+    {
       "investor_name": "慶應イノベーション・イニシアティブ",
       "sector_name": "ディープテック",
       "deal_count": 3,
@@ -11143,12 +11323,6 @@
       "sector_name": "SaaS",
       "deal_count": 3,
       "total_invested_jpy": 3200000000
-    },
-    {
-      "investor_name": "株式会社脱炭素化支援機構",
-      "sector_name": "クリーンテック",
-      "deal_count": 3,
-      "total_invested_jpy": 4040000000
     },
     {
       "investor_name": "Z Venture Capital",
@@ -11271,6 +11445,12 @@
       "total_invested_jpy": 540000000
     },
     {
+      "investor_name": "いよぎんキャピタル株式会社",
+      "sector_name": "モビリティ",
+      "deal_count": 3,
+      "total_invested_jpy": 5340000000
+    },
+    {
       "investor_name": "大阪・関西万博活性化投資事業有限責任組合",
       "sector_name": "バイオテック",
       "deal_count": 3,
@@ -11287,6 +11467,12 @@
       "sector_name": "SaaS",
       "deal_count": 3,
       "total_invested_jpy": 10700000000
+    },
+    {
+      "investor_name": "Eight Roads Ventures Japan",
+      "sector_name": "HR Tech",
+      "deal_count": 3,
+      "total_invested_jpy": 7705028100
     },
     {
       "investor_name": "株式会社アイティーファーム（IT-Farm）",
@@ -11371,6 +11557,12 @@
       "sector_name": "AI/機械学習",
       "deal_count": 2,
       "total_invested_jpy": 530000000
+    },
+    {
+      "investor_name": "Altos Ventures",
+      "sector_name": "SaaS",
+      "deal_count": 2,
+      "total_invested_jpy": 5700000000
     },
     {
       "investor_name": "三菱UFJキャピタル",
@@ -11536,6 +11728,12 @@
     },
     {
       "investor_name": "Z Venture Capital株式会社",
+      "sector_name": "ブロックチェーン/Web3",
+      "deal_count": 2,
+      "total_invested_jpy": null
+    },
+    {
+      "investor_name": "Z Venture Capital株式会社",
       "sector_name": "ガブテック",
       "deal_count": 2,
       "total_invested_jpy": null
@@ -11551,12 +11749,6 @@
       "sector_name": "モビリティ",
       "deal_count": 2,
       "total_invested_jpy": 3000000000
-    },
-    {
-      "investor_name": "Z Venture Capital株式会社",
-      "sector_name": "ブロックチェーン/NFT/ゲーム",
-      "deal_count": 2,
-      "total_invested_jpy": null
     },
     {
       "investor_name": "JGC MIRAI Innovation Fund",
@@ -11575,6 +11767,12 @@
       "sector_name": "ヘルスケア",
       "deal_count": 2,
       "total_invested_jpy": 2000000000
+    },
+    {
+      "investor_name": "パーソルベンチャーパートナーズ合同会社",
+      "sector_name": "建設テック",
+      "deal_count": 2,
+      "total_invested_jpy": 2400000000
     },
     {
       "investor_name": "SBIインベストメント株式会社",
@@ -11638,6 +11836,12 @@
     },
     {
       "investor_name": "株式会社商工組合中央金庫",
+      "sector_name": "フィンテック",
+      "deal_count": 2,
+      "total_invested_jpy": 1110000000
+    },
+    {
+      "investor_name": "株式会社商工組合中央金庫",
       "sector_name": "クリーンテック",
       "deal_count": 2,
       "total_invested_jpy": 5000000000
@@ -11662,6 +11866,18 @@
     },
     {
       "investor_name": "東京計器株式会社",
+      "sector_name": "AI/機械学習",
+      "deal_count": 2,
+      "total_invested_jpy": null
+    },
+    {
+      "investor_name": "グローバル・ブレイン株式会社",
+      "sector_name": "バイオテック",
+      "deal_count": 2,
+      "total_invested_jpy": 2250000000
+    },
+    {
+      "investor_name": "MPower Partners Fund II",
       "sector_name": "AI/機械学習",
       "deal_count": 2,
       "total_invested_jpy": null
@@ -11695,12 +11911,6 @@
       "sector_name": "ディープテック",
       "deal_count": 2,
       "total_invested_jpy": 9975000000
-    },
-    {
-      "investor_name": "株式会社日本政策金融公庫",
-      "sector_name": "AI/機械学習",
-      "deal_count": 2,
-      "total_invested_jpy": 1200000000
     },
     {
       "investor_name": "株式会社日本政策金融公庫",
@@ -11755,6 +11965,12 @@
       "sector_name": "不動産テック",
       "deal_count": 2,
       "total_invested_jpy": 150000000
+    },
+    {
+      "investor_name": "Archetype Ventures",
+      "sector_name": "クリーンテック",
+      "deal_count": 2,
+      "total_invested_jpy": 450000000
     },
     {
       "investor_name": "みずほキャピタル",
@@ -11905,6 +12121,12 @@
       "sector_name": "モビリティ",
       "deal_count": 2,
       "total_invested_jpy": 4450000000
+    },
+    {
+      "investor_name": "三菱UFJキャピタル株式会社",
+      "sector_name": "不動産テック",
+      "deal_count": 2,
+      "total_invested_jpy": 1300000000
     },
     {
       "investor_name": "スパークル株式会社",
@@ -12069,6 +12291,12 @@
       "total_invested_jpy": 200000000
     },
     {
+      "investor_name": "肥銀キャピタル株式会社",
+      "sector_name": "クリーンテック",
+      "deal_count": 2,
+      "total_invested_jpy": 890000000
+    },
+    {
       "investor_name": "One Capital株式会社",
       "sector_name": "ヘルスケア",
       "deal_count": 2,
@@ -12115,6 +12343,12 @@
       "sector_name": "ディープテック",
       "deal_count": 2,
       "total_invested_jpy": 2400000000
+    },
+    {
+      "investor_name": "SBIグループ",
+      "sector_name": "フィンテック",
+      "deal_count": 2,
+      "total_invested_jpy": 32500000000
     },
     {
       "investor_name": "SBIグループ",
@@ -12394,12 +12628,6 @@
     },
     {
       "investor_name": "XTech Ventures株式会社",
-      "sector_name": "SaaS",
-      "deal_count": 2,
-      "total_invested_jpy": 2200000000
-    },
-    {
-      "investor_name": "XTech Ventures株式会社",
       "sector_name": "HR Tech",
       "deal_count": 2,
       "total_invested_jpy": 1720000000
@@ -12415,6 +12643,12 @@
       "sector_name": "ヘルスケア",
       "deal_count": 2,
       "total_invested_jpy": 1145000000
+    },
+    {
+      "investor_name": "グロービス・キャピタル・パートナーズ株式会社",
+      "sector_name": "AI/機械学習",
+      "deal_count": 2,
+      "total_invested_jpy": 4900000000
     },
     {
       "investor_name": "グロービス・キャピタル・パートナーズ株式会社",
@@ -12435,6 +12669,12 @@
       "total_invested_jpy": 1100000000
     },
     {
+      "investor_name": "株式会社東和銀行",
+      "sector_name": "クリーンテック",
+      "deal_count": 2,
+      "total_invested_jpy": 1000000000
+    },
+    {
       "investor_name": "複数の個人投資家",
       "sector_name": "SaaS",
       "deal_count": 2,
@@ -12442,7 +12682,7 @@
     },
     {
       "investor_name": "大和ハウスグループグロースファンド",
-      "sector_name": "ブロックチェーン/Web3",
+      "sector_name": "フィンテック",
       "deal_count": 2,
       "total_invested_jpy": 1780000000
     },
@@ -12483,8 +12723,14 @@
       "total_invested_jpy": 1720000000
     },
     {
+      "investor_name": "FINOLAB1号投資事業有限責任組合",
+      "sector_name": "フィンテック",
+      "deal_count": 2,
+      "total_invested_jpy": 1780000000
+    },
+    {
       "investor_name": "明治安田未来共創投資事業有限責任組合",
-      "sector_name": "ブロックチェーン/Web3",
+      "sector_name": "フィンテック",
       "deal_count": 2,
       "total_invested_jpy": 1780000000
     },
@@ -12556,12 +12802,6 @@
     },
     {
       "investor_name": "東海東京インベストメント株式会社",
-      "sector_name": "バイオテック",
-      "deal_count": 2,
-      "total_invested_jpy": 5020000000
-    },
-    {
-      "investor_name": "日本ベンチャーキャピタル株式会社",
       "sector_name": "バイオテック",
       "deal_count": 2,
       "total_invested_jpy": 5020000000
@@ -12745,6 +12985,12 @@
       "sector_name": "物流",
       "deal_count": 2,
       "total_invested_jpy": 3240000000
+    },
+    {
+      "investor_name": "信金キャピタル株式会社",
+      "sector_name": "クリーンテック",
+      "deal_count": 2,
+      "total_invested_jpy": 4230000000
     },
     {
       "investor_name": "信金キャピタル株式会社",
@@ -12999,6 +13245,12 @@
       "total_invested_jpy": 1800000000
     },
     {
+      "investor_name": "京都大学イノベーションキャピタル株式会社",
+      "sector_name": "バイオテック",
+      "deal_count": 2,
+      "total_invested_jpy": 2920000000
+    },
+    {
       "investor_name": "東邦ホールディングス株式会社",
       "sector_name": "バイオテック",
       "deal_count": 2,
@@ -13138,9 +13390,9 @@
     },
     {
       "investor_name": "DG Daiwa Ventures",
-      "sector_name": "フィンテック",
+      "sector_name": "AI/機械学習",
       "deal_count": 2,
-      "total_invested_jpy": 2300000000
+      "total_invested_jpy": 840000000
     },
     {
       "investor_name": "DG Daiwa Ventures",
@@ -13321,6 +13573,12 @@
       "sector_name": "SaaS",
       "deal_count": 2,
       "total_invested_jpy": 670000000
+    },
+    {
+      "investor_name": "スパークル1号投資事業有限責任組合",
+      "sector_name": "クリーンテック",
+      "deal_count": 2,
+      "total_invested_jpy": 150000000
     },
     {
       "investor_name": "UntroD Capital Japan株式会社",
@@ -13579,6 +13837,12 @@
       "sector_name": "不動産テック",
       "deal_count": 2,
       "total_invested_jpy": 400000000
+    },
+    {
+      "investor_name": "SDFキャピタル株式会社",
+      "sector_name": "SaaS",
+      "deal_count": 2,
+      "total_invested_jpy": 580000000
     },
     {
       "investor_name": "アルフレッサ株式会社",
@@ -13845,12 +14109,6 @@
       "total_invested_jpy": 105000000
     },
     {
-      "investor_name": "いよぎんキャピタル株式会社",
-      "sector_name": "モビリティ",
-      "deal_count": 2,
-      "total_invested_jpy": 2840000000
-    },
-    {
       "investor_name": "ロッテホールディングス株式会社",
       "sector_name": "バイオテック",
       "deal_count": 2,
@@ -13885,12 +14143,6 @@
       "sector_name": "クリーンテック",
       "deal_count": 2,
       "total_invested_jpy": 4862000000
-    },
-    {
-      "investor_name": "Eight Roads Ventures Japan",
-      "sector_name": "HR Tech",
-      "deal_count": 2,
-      "total_invested_jpy": 6800000000
     },
     {
       "investor_name": "Eight Roads Ventures Japan",
@@ -14199,6 +14451,12 @@
       "total_invested_jpy": null
     },
     {
+      "investor_name": "TPR株式会社",
+      "sector_name": "モビリティ",
+      "deal_count": 2,
+      "total_invested_jpy": 500000000
+    },
+    {
       "investor_name": "Oxford Science Enterprises",
       "sector_name": "ディープテック",
       "deal_count": 2,
@@ -14245,6 +14503,12 @@
       "sector_name": "SaaS",
       "deal_count": 2,
       "total_invested_jpy": 670000000
+    },
+    {
+      "investor_name": "独立行政法人中小企業基盤整備機構",
+      "sector_name": "ベンチャーキャピタル",
+      "deal_count": 2,
+      "total_invested_jpy": 3000000000
     },
     {
       "investor_name": "株式会社Gemseki",
@@ -14337,10 +14601,22 @@
       "total_invested_jpy": 250000000
     },
     {
+      "investor_name": "ファルス株式会社",
+      "sector_name": "フィンテック",
+      "deal_count": 2,
+      "total_invested_jpy": 430000000
+    },
+    {
       "investor_name": "Sansan株式会社",
       "sector_name": "SaaS",
       "deal_count": 2,
       "total_invested_jpy": 1550000000
+    },
+    {
+      "investor_name": "Goldman Sachs",
+      "sector_name": "SaaS",
+      "deal_count": 2,
+      "total_invested_jpy": 5700000000
     },
     {
       "investor_name": "パナソニック ホールディングス株式会社",
@@ -14353,6 +14629,12 @@
       "sector_name": "バイオテック",
       "deal_count": 2,
       "total_invested_jpy": 450000000
+    },
+    {
+      "investor_name": "DCIパートナーズ株式会社",
+      "sector_name": "バイオテック",
+      "deal_count": 2,
+      "total_invested_jpy": 3750000000
     },
     {
       "investor_name": "アシックス・ベンチャーズ株式会社",
@@ -14377,6 +14659,30 @@
       "sector_name": "モビリティ",
       "deal_count": 2,
       "total_invested_jpy": 3400000000
+    },
+    {
+      "investor_name": "9Yards Capital",
+      "sector_name": "SaaS",
+      "deal_count": 2,
+      "total_invested_jpy": 5700000000
+    },
+    {
+      "investor_name": "Hedosophia",
+      "sector_name": "SaaS",
+      "deal_count": 2,
+      "total_invested_jpy": 5700000000
+    },
+    {
+      "investor_name": "NFX",
+      "sector_name": "SaaS",
+      "deal_count": 2,
+      "total_invested_jpy": 5700000000
+    },
+    {
+      "investor_name": "Craft Ventures",
+      "sector_name": "SaaS",
+      "deal_count": 2,
+      "total_invested_jpy": 5700000000
     },
     {
       "investor_name": "株式会社みなと銀行",
@@ -14943,6 +15249,18 @@
       "total_invested_jpy": 1130000000
     },
     {
+      "investor_name": "日本政策金融公庫",
+      "sector_name": "CleanTech",
+      "deal_count": 1,
+      "total_invested_jpy": null
+    },
+    {
+      "investor_name": "日本政策金融公庫",
+      "sector_name": "ウェルビーイングテック",
+      "deal_count": 1,
+      "total_invested_jpy": 130000000
+    },
+    {
       "investor_name": "鉢嶺登",
       "sector_name": "HR Tech",
       "deal_count": 1,
@@ -15148,12 +15466,6 @@
     },
     {
       "investor_name": "パーソルベンチャーパートナーズ合同会社",
-      "sector_name": "建設テック",
-      "deal_count": 1,
-      "total_invested_jpy": 2400000000
-    },
-    {
-      "investor_name": "パーソルベンチャーパートナーズ合同会社",
       "sector_name": "クリーンテック",
       "deal_count": 1,
       "total_invested_jpy": 1940000000
@@ -15231,6 +15543,12 @@
       "total_invested_jpy": 1160000000
     },
     {
+      "investor_name": "SBIインベストメント株式会社",
+      "sector_name": "製造技術/バイオものづくり",
+      "deal_count": 1,
+      "total_invested_jpy": 1000000000
+    },
+    {
       "investor_name": "京都キャピタルパートナーズ株式会社",
       "sector_name": "フィンテック",
       "deal_count": 1,
@@ -15277,12 +15595,6 @@
       "sector_name": "AI/機械学習",
       "deal_count": 1,
       "total_invested_jpy": 1600000000
-    },
-    {
-      "investor_name": "株式会社商工組合中央金庫",
-      "sector_name": "フィンテック",
-      "deal_count": 1,
-      "total_invested_jpy": 850000000
     },
     {
       "investor_name": "株式会社商工組合中央金庫",
@@ -15514,19 +15826,7 @@
     },
     {
       "investor_name": "グローバル・ブレイン株式会社",
-      "sector_name": "ブロックチェーン/Web3",
-      "deal_count": 1,
-      "total_invested_jpy": null
-    },
-    {
-      "investor_name": "グローバル・ブレイン株式会社",
       "sector_name": "HR Tech",
-      "deal_count": 1,
-      "total_invested_jpy": null
-    },
-    {
-      "investor_name": "グローバル・ブレイン株式会社",
-      "sector_name": "バイオテック",
       "deal_count": 1,
       "total_invested_jpy": null
     },
@@ -15553,12 +15853,6 @@
       "sector_name": "Travel Tech",
       "deal_count": 1,
       "total_invested_jpy": 4800000000
-    },
-    {
-      "investor_name": "MPower Partners Fund II",
-      "sector_name": "AI/機械学習",
-      "deal_count": 1,
-      "total_invested_jpy": null
     },
     {
       "investor_name": "MPower Partners Fund II",
@@ -15595,6 +15889,18 @@
       "sector_name": "AI/機械学習",
       "deal_count": 1,
       "total_invested_jpy": 645000000
+    },
+    {
+      "investor_name": "株式会社北國銀行",
+      "sector_name": "AI/機械学習",
+      "deal_count": 1,
+      "total_invested_jpy": 960000000
+    },
+    {
+      "investor_name": "株式会社北國銀行",
+      "sector_name": "フィンテック",
+      "deal_count": 1,
+      "total_invested_jpy": 260000000
     },
     {
       "investor_name": "株式会社北國銀行",
@@ -15697,6 +16003,12 @@
       "sector_name": "M&A・事業投資",
       "deal_count": 1,
       "total_invested_jpy": 960000000
+    },
+    {
+      "investor_name": "株式会社みずほ銀行",
+      "sector_name": "CleanTech",
+      "deal_count": 1,
+      "total_invested_jpy": null
     },
     {
       "investor_name": "株式会社日本政策金融公庫",
@@ -15844,21 +16156,33 @@
     },
     {
       "investor_name": "個人投資家",
+      "sector_name": "フィンテック",
+      "deal_count": 1,
+      "total_invested_jpy": 200000000
+    },
+    {
+      "investor_name": "個人投資家",
       "sector_name": "サイバーセキュリティ",
       "deal_count": 1,
       "total_invested_jpy": 70000000
     },
     {
       "investor_name": "個人投資家",
-      "sector_name": "ブロックチェーン/Web3",
+      "sector_name": "モビリティ",
       "deal_count": 1,
-      "total_invested_jpy": 200000000
+      "total_invested_jpy": null
     },
     {
       "investor_name": "個人投資家",
       "sector_name": "ヘルスケア",
       "deal_count": 1,
       "total_invested_jpy": 220000000
+    },
+    {
+      "investor_name": "個人投資家",
+      "sector_name": "ベンチャーキャピタル",
+      "deal_count": 1,
+      "total_invested_jpy": null
     },
     {
       "investor_name": "個人投資家",
@@ -15931,6 +16255,12 @@
       "sector_name": "インシュアテック",
       "deal_count": 1,
       "total_invested_jpy": 1500000000
+    },
+    {
+      "investor_name": "Archetype Ventures",
+      "sector_name": "ディープテック",
+      "deal_count": 1,
+      "total_invested_jpy": 280000000
     },
     {
       "investor_name": "Archetype Ventures",
@@ -16141,6 +16471,12 @@
       "sector_name": "HR Tech",
       "deal_count": 1,
       "total_invested_jpy": 1610000000
+    },
+    {
+      "investor_name": "Angel Bridge",
+      "sector_name": "EdTech",
+      "deal_count": 1,
+      "total_invested_jpy": 300000000
     },
     {
       "investor_name": "Angel Bridge",
@@ -16567,12 +16903,6 @@
       "sector_name": "モビリティ",
       "deal_count": 1,
       "total_invested_jpy": 1450000000
-    },
-    {
-      "investor_name": "三菱UFJキャピタル株式会社",
-      "sector_name": "不動産テック",
-      "deal_count": 1,
-      "total_invested_jpy": 1300000000
     },
     {
       "investor_name": "三菱UFJキャピタル株式会社",
@@ -17152,12 +17482,6 @@
     },
     {
       "investor_name": "肥銀キャピタル株式会社",
-      "sector_name": "クリーンテック",
-      "deal_count": 1,
-      "total_invested_jpy": 660000000
-    },
-    {
-      "investor_name": "肥銀キャピタル株式会社",
       "sector_name": "バイオテック",
       "deal_count": 1,
       "total_invested_jpy": 1500000000
@@ -17251,6 +17575,12 @@
       "sector_name": "バイオテック",
       "deal_count": 1,
       "total_invested_jpy": 370000000
+    },
+    {
+      "investor_name": "TIS株式会社",
+      "sector_name": "ブロックチェーン/Web3",
+      "deal_count": 1,
+      "total_invested_jpy": null
     },
     {
       "investor_name": "TIS株式会社",
@@ -17350,6 +17680,12 @@
     },
     {
       "investor_name": "ジャフコグループ株式会社",
+      "sector_name": "AI/機械学習",
+      "deal_count": 1,
+      "total_invested_jpy": 170000000
+    },
+    {
+      "investor_name": "ジャフコグループ株式会社",
       "sector_name": "クリーンテック",
       "deal_count": 1,
       "total_invested_jpy": 1230000000
@@ -17440,6 +17776,12 @@
     },
     {
       "investor_name": "株式会社オールアバウト",
+      "sector_name": "クリーンテック",
+      "deal_count": 1,
+      "total_invested_jpy": null
+    },
+    {
+      "investor_name": "株式会社オールアバウト",
       "sector_name": "CreatorEconomy",
       "deal_count": 1,
       "total_invested_jpy": 1500000000
@@ -17452,7 +17794,7 @@
     },
     {
       "investor_name": "株式会社JR西日本イノベーションズ",
-      "sector_name": "ブロックチェーン/Web3",
+      "sector_name": "フィンテック",
       "deal_count": 1,
       "total_invested_jpy": 1780000000
     },
@@ -17476,18 +17818,6 @@
     },
     {
       "investor_name": "SBIグループ",
-      "sector_name": "フィンテック",
-      "deal_count": 1,
-      "total_invested_jpy": 22500000000
-    },
-    {
-      "investor_name": "SBIグループ",
-      "sector_name": "ブロックチェーン/暗号資産",
-      "deal_count": 1,
-      "total_invested_jpy": 10000000000
-    },
-    {
-      "investor_name": "SBIグループ",
       "sector_name": "宇宙テック",
       "deal_count": 1,
       "total_invested_jpy": 3100000000
@@ -17497,12 +17827,6 @@
       "sector_name": "Web3/ブロックチェーン",
       "deal_count": 1,
       "total_invested_jpy": null
-    },
-    {
-      "investor_name": "Sony Innovation Fund",
-      "sector_name": "フィンテック",
-      "deal_count": 1,
-      "total_invested_jpy": 140000000
     },
     {
       "investor_name": "Sony Innovation Fund",
@@ -17533,12 +17857,6 @@
       "sector_name": "ディープテック",
       "deal_count": 1,
       "total_invested_jpy": 400000000
-    },
-    {
-      "investor_name": "Sony Innovation Fund",
-      "sector_name": "ブロックチェーン/暗号資産",
-      "deal_count": 1,
-      "total_invested_jpy": 10000000000
     },
     {
       "investor_name": "Sony Innovation Fund",
@@ -17725,12 +18043,6 @@
       "sector_name": "M&A・事業投資",
       "deal_count": 1,
       "total_invested_jpy": null
-    },
-    {
-      "investor_name": "Spiral Capital",
-      "sector_name": "サイバーセキュリティ",
-      "deal_count": 1,
-      "total_invested_jpy": 640000000
     },
     {
       "investor_name": "Spiral Capital",
@@ -17977,6 +18289,12 @@
       "sector_name": "FoodTech",
       "deal_count": 1,
       "total_invested_jpy": 250000000
+    },
+    {
+      "investor_name": "株式会社りそな銀行",
+      "sector_name": "AI/機械学習",
+      "deal_count": 1,
+      "total_invested_jpy": 960000000
     },
     {
       "investor_name": "株式会社りそな銀行",
@@ -18244,12 +18562,6 @@
     },
     {
       "investor_name": "ANRI",
-      "sector_name": "サイバーセキュリティ",
-      "deal_count": 1,
-      "total_invested_jpy": 640000000
-    },
-    {
-      "investor_name": "ANRI",
       "sector_name": "メディア",
       "deal_count": 1,
       "total_invested_jpy": 100000000
@@ -18478,6 +18790,12 @@
     },
     {
       "investor_name": "あおぞら企業投資株式会社",
+      "sector_name": "AI/機械学習",
+      "deal_count": 1,
+      "total_invested_jpy": 960000000
+    },
+    {
+      "investor_name": "あおぞら企業投資株式会社",
       "sector_name": "フィンテック",
       "deal_count": 1,
       "total_invested_jpy": null
@@ -18531,6 +18849,12 @@
       "total_invested_jpy": 3100000000
     },
     {
+      "investor_name": "株式会社北洋銀行",
+      "sector_name": "ウェルビーイングテック",
+      "deal_count": 1,
+      "total_invested_jpy": 130000000
+    },
+    {
       "investor_name": "ミッドタウン・フロンティア・ファンド有限責任事業組合",
       "sector_name": "モビリティ",
       "deal_count": 1,
@@ -18580,12 +18904,6 @@
     },
     {
       "investor_name": "グロービス・キャピタル・パートナーズ株式会社",
-      "sector_name": "AI/機械学習",
-      "deal_count": 1,
-      "total_invested_jpy": 2000000000
-    },
-    {
-      "investor_name": "グロービス・キャピタル・パートナーズ株式会社",
       "sector_name": "ディープテック",
       "deal_count": 1,
       "total_invested_jpy": 520000000
@@ -18601,6 +18919,12 @@
       "sector_name": "スポーツテック/AI",
       "deal_count": 1,
       "total_invested_jpy": 480000000
+    },
+    {
+      "investor_name": "グロービス・キャピタル・パートナーズ株式会社",
+      "sector_name": "製造技術/バイオものづくり",
+      "deal_count": 1,
+      "total_invested_jpy": 1000000000
     },
     {
       "investor_name": "株式会社ツカサペトコ",
@@ -18855,12 +19179,6 @@
       "total_invested_jpy": 750000000
     },
     {
-      "investor_name": "株式会社東和銀行",
-      "sector_name": "クリーンテック",
-      "deal_count": 1,
-      "total_invested_jpy": 1000000000
-    },
-    {
       "investor_name": "G-STARTUP",
       "sector_name": "M&A/Corporate Finance",
       "deal_count": 1,
@@ -18898,7 +19216,7 @@
     },
     {
       "investor_name": "イグニション・ポイント ベンチャーパートナーズ株式会社",
-      "sector_name": "ブロックチェーン/Web3",
+      "sector_name": "フィンテック",
       "deal_count": 1,
       "total_invested_jpy": null
     },
@@ -19018,13 +19336,19 @@
     },
     {
       "investor_name": "アステリア株式会社",
-      "sector_name": "ブロックチェーン/Web3",
+      "sector_name": "フィンテック",
       "deal_count": 1,
       "total_invested_jpy": 1780000000
     },
     {
       "investor_name": "QR2号ファンド投資事業有限責任組合",
-      "sector_name": "ブロックチェーン/Web3",
+      "sector_name": "フィンテック",
+      "deal_count": 1,
+      "total_invested_jpy": 1780000000
+    },
+    {
+      "investor_name": "directX Ventures1号有限責任事業組合",
+      "sector_name": "フィンテック",
       "deal_count": 1,
       "total_invested_jpy": 1780000000
     },
@@ -19035,38 +19359,32 @@
       "total_invested_jpy": 380000000
     },
     {
-      "investor_name": "directX Ventures1号有限責任事業組合",
-      "sector_name": "ブロックチェーン/Web3",
-      "deal_count": 1,
-      "total_invested_jpy": 1780000000
-    },
-    {
       "investor_name": "ちゅうぎんインフィニティファンド3号投資事業有限責任組合",
-      "sector_name": "ブロックチェーン/Web3",
+      "sector_name": "フィンテック",
       "deal_count": 1,
       "total_invested_jpy": 1780000000
     },
     {
       "investor_name": "TNBI一号投資事業有限責任組合",
-      "sector_name": "ブロックチェーン/Web3",
+      "sector_name": "フィンテック",
       "deal_count": 1,
       "total_invested_jpy": 1780000000
     },
     {
       "investor_name": "株式会社TMキャピタル",
-      "sector_name": "ブロックチェーン/Web3",
+      "sector_name": "フィンテック",
       "deal_count": 1,
       "total_invested_jpy": 1780000000
     },
     {
       "investor_name": "テクミラ一号投資事業有限責任組合",
-      "sector_name": "ブロックチェーン/Web3",
+      "sector_name": "フィンテック",
       "deal_count": 1,
       "total_invested_jpy": 1780000000
     },
     {
       "investor_name": "HEROZ株式会社",
-      "sector_name": "ブロックチェーン/Web3",
+      "sector_name": "フィンテック",
       "deal_count": 1,
       "total_invested_jpy": 1780000000
     },
@@ -19078,25 +19396,13 @@
     },
     {
       "investor_name": "株式会社bitFlyer Holdings",
-      "sector_name": "ブロックチェーン/Web3",
+      "sector_name": "フィンテック",
       "deal_count": 1,
       "total_invested_jpy": 1780000000
     },
     {
       "investor_name": "fundnote株式会社",
-      "sector_name": "ブロックチェーン/Web3",
-      "deal_count": 1,
-      "total_invested_jpy": 1780000000
-    },
-    {
-      "investor_name": "FINOLAB1号投資事業有限責任組合",
       "sector_name": "フィンテック",
-      "deal_count": 1,
-      "total_invested_jpy": null
-    },
-    {
-      "investor_name": "FINOLAB1号投資事業有限責任組合",
-      "sector_name": "ブロックチェーン/Web3",
       "deal_count": 1,
       "total_invested_jpy": 1780000000
     },
@@ -19120,7 +19426,7 @@
     },
     {
       "investor_name": "両備システムズイノベーションファンド投資事業有限責任組合",
-      "sector_name": "ブロックチェーン/Web3",
+      "sector_name": "フィンテック",
       "deal_count": 1,
       "total_invested_jpy": 1780000000
     },
@@ -19264,7 +19570,7 @@
     },
     {
       "investor_name": "明治安田生命保険相互会社",
-      "sector_name": "ブロックチェーン/Web3",
+      "sector_name": "フィンテック",
       "deal_count": 1,
       "total_invested_jpy": null
     },
@@ -19279,6 +19585,12 @@
       "sector_name": "バイオテック",
       "deal_count": 1,
       "total_invested_jpy": 6640000000
+    },
+    {
+      "investor_name": "ベータ・ベンチャーキャピタル株式会社",
+      "sector_name": "クリーンテック",
+      "deal_count": 1,
+      "total_invested_jpy": 230000000
     },
     {
       "investor_name": "ベータ・ベンチャーキャピタル株式会社",
@@ -19433,6 +19745,12 @@
     {
       "investor_name": "Headline Asia",
       "sector_name": "クリーンテック",
+      "deal_count": 1,
+      "total_invested_jpy": null
+    },
+    {
+      "investor_name": "Headline Asia",
+      "sector_name": "不動産テック",
       "deal_count": 1,
       "total_invested_jpy": null
     },
@@ -19633,6 +19951,12 @@
       "sector_name": "モビリティ",
       "deal_count": 1,
       "total_invested_jpy": 1250000000
+    },
+    {
+      "investor_name": "ペガサス・テック・ベンチャーズ",
+      "sector_name": "ディープテック",
+      "deal_count": 1,
+      "total_invested_jpy": 620000000
     },
     {
       "investor_name": "David Heller（Vertex Ventures）",
@@ -20319,6 +20643,12 @@
       "total_invested_jpy": 2800000000
     },
     {
+      "investor_name": "個人投資家複数名",
+      "sector_name": "アグリテック",
+      "deal_count": 1,
+      "total_invested_jpy": null
+    },
+    {
       "investor_name": "Coreline Ventures",
       "sector_name": "サイバーセキュリティ",
       "deal_count": 1,
@@ -20333,6 +20663,12 @@
     {
       "investor_name": "Coreline Ventures",
       "sector_name": "SaaS",
+      "deal_count": 1,
+      "total_invested_jpy": 300000000
+    },
+    {
+      "investor_name": "Coreline Ventures",
+      "sector_name": "EdTech",
       "deal_count": 1,
       "total_invested_jpy": 300000000
     },
@@ -20503,12 +20839,6 @@
       "sector_name": "FoodTech",
       "deal_count": 1,
       "total_invested_jpy": 1550000000
-    },
-    {
-      "investor_name": "信金キャピタル株式会社",
-      "sector_name": "クリーンテック",
-      "deal_count": 1,
-      "total_invested_jpy": 4000000000
     },
     {
       "investor_name": "信金キャピタル株式会社",
@@ -21136,12 +21466,6 @@
     },
     {
       "investor_name": "ANOBAKA",
-      "sector_name": "クリーンテック",
-      "deal_count": 1,
-      "total_invested_jpy": 280000000
-    },
-    {
-      "investor_name": "ANOBAKA",
       "sector_name": "SaaS",
       "deal_count": 1,
       "total_invested_jpy": 110000000
@@ -21151,6 +21475,12 @@
       "sector_name": "HR Tech",
       "deal_count": 1,
       "total_invested_jpy": 210000000
+    },
+    {
+      "investor_name": "ANOBAKA",
+      "sector_name": "ディープテック",
+      "deal_count": 1,
+      "total_invested_jpy": 280000000
     },
     {
       "investor_name": "ANOBAKA",
@@ -21316,7 +21646,19 @@
     },
     {
       "investor_name": "MLCベンチャーズ株式会社",
+      "sector_name": "モビリティ",
+      "deal_count": 1,
+      "total_invested_jpy": null
+    },
+    {
+      "investor_name": "MLCベンチャーズ株式会社",
       "sector_name": "FoodTech",
+      "deal_count": 1,
+      "total_invested_jpy": null
+    },
+    {
+      "investor_name": "MLCベンチャーズ株式会社",
+      "sector_name": "物流",
       "deal_count": 1,
       "total_invested_jpy": null
     },
@@ -21433,12 +21775,6 @@
       "sector_name": "クリーンテック",
       "deal_count": 1,
       "total_invested_jpy": 220000000
-    },
-    {
-      "investor_name": "京都大学イノベーションキャピタル株式会社",
-      "sector_name": "バイオテック",
-      "deal_count": 1,
-      "total_invested_jpy": 670000000
     },
     {
       "investor_name": "京都大学イノベーションキャピタル株式会社",
@@ -22420,6 +22756,12 @@
     },
     {
       "investor_name": "宮本邦久",
+      "sector_name": "EdTech",
+      "deal_count": 1,
+      "total_invested_jpy": 130000000
+    },
+    {
+      "investor_name": "宮本邦久",
       "sector_name": "ウェルネス/FitTech",
       "deal_count": 1,
       "total_invested_jpy": null
@@ -22498,9 +22840,21 @@
     },
     {
       "investor_name": "モバイル・インターネットキャピタル株式会社",
+      "sector_name": "FoodTech",
+      "deal_count": 1,
+      "total_invested_jpy": null
+    },
+    {
+      "investor_name": "モバイル・インターネットキャピタル株式会社",
       "sector_name": "ウェルビーイング・ヘルスケア",
       "deal_count": 1,
       "total_invested_jpy": 540000000
+    },
+    {
+      "investor_name": "モバイル・インターネットキャピタル株式会社",
+      "sector_name": "IoT/DX",
+      "deal_count": 1,
+      "total_invested_jpy": null
     },
     {
       "investor_name": "新韓－GBフューチャーフロー投資事業有限責任組合",
@@ -22513,18 +22867,6 @@
       "sector_name": "SaaS",
       "deal_count": 1,
       "total_invested_jpy": null
-    },
-    {
-      "investor_name": "DG Daiwa Ventures",
-      "sector_name": "AI/機械学習",
-      "deal_count": 1,
-      "total_invested_jpy": 200000000
-    },
-    {
-      "investor_name": "DG Daiwa Ventures",
-      "sector_name": "サイバーセキュリティ",
-      "deal_count": 1,
-      "total_invested_jpy": 640000000
     },
     {
       "investor_name": "DG Daiwa Ventures",
@@ -22567,6 +22909,12 @@
       "sector_name": "AI/機械学習",
       "deal_count": 1,
       "total_invested_jpy": 200000000
+    },
+    {
+      "investor_name": "笠原健治",
+      "sector_name": "EdTech",
+      "deal_count": 1,
+      "total_invested_jpy": 130000000
     },
     {
       "investor_name": "エー・アイ・キャピタル株式会社",
@@ -22792,6 +23140,18 @@
     },
     {
       "investor_name": "XTech Ventures",
+      "sector_name": "フィンテック",
+      "deal_count": 1,
+      "total_invested_jpy": 496000000
+    },
+    {
+      "investor_name": "XTech Ventures",
+      "sector_name": "EdTech",
+      "deal_count": 1,
+      "total_invested_jpy": 130000000
+    },
+    {
+      "investor_name": "XTech Ventures",
       "sector_name": "モビリティ",
       "deal_count": 1,
       "total_invested_jpy": 200000000
@@ -22873,6 +23233,12 @@
       "sector_name": "ヘルスケア",
       "deal_count": 1,
       "total_invested_jpy": 1200000000
+    },
+    {
+      "investor_name": "慶應イノベーション・イニシアティブ",
+      "sector_name": "クリーンテック",
+      "deal_count": 1,
+      "total_invested_jpy": null
     },
     {
       "investor_name": "慶應イノベーション・イニシアティブ",
@@ -23554,6 +23920,12 @@
     },
     {
       "investor_name": "JPインベストメント株式会社",
+      "sector_name": "モビリティ",
+      "deal_count": 1,
+      "total_invested_jpy": 2500000000
+    },
+    {
+      "investor_name": "JPインベストメント株式会社",
       "sector_name": "ロボティクス・ファクトリーオートメーション",
       "deal_count": 1,
       "total_invested_jpy": 500000000
@@ -23871,10 +24243,16 @@
       "total_invested_jpy": 100000000
     },
     {
-      "investor_name": "スパークル1号投資事業有限責任組合",
-      "sector_name": "クリーンテック",
+      "investor_name": "札幌イノベーションファンド投資事業有限責任組合",
+      "sector_name": "ウェルビーイングテック",
       "deal_count": 1,
-      "total_invested_jpy": 150000000
+      "total_invested_jpy": 130000000
+    },
+    {
+      "investor_name": "QXLV（クオンタムリープベンチャーズ）",
+      "sector_name": "フィンテック",
+      "deal_count": 1,
+      "total_invested_jpy": 270000000
     },
     {
       "investor_name": "QXLV（クオンタムリープベンチャーズ）",
@@ -24525,8 +24903,14 @@
       "total_invested_jpy": 3200000000
     },
     {
+      "investor_name": "アルバクロス1号投資事業有限責任組合",
+      "sector_name": "モビリティ",
+      "deal_count": 1,
+      "total_invested_jpy": 234000000
+    },
+    {
       "investor_name": "Beyond Next Ventures",
-      "sector_name": "サイバーセキュリティ",
+      "sector_name": "AI/機械学習",
       "deal_count": 1,
       "total_invested_jpy": 640000000
     },
@@ -25126,7 +25510,7 @@
     },
     {
       "investor_name": "豊田合成株式会社",
-      "sector_name": "建設テック",
+      "sector_name": "クリーンテック",
       "deal_count": 1,
       "total_invested_jpy": 350000000
     },
@@ -25258,6 +25642,12 @@
     },
     {
       "investor_name": "株式会社サムライインキュベート",
+      "sector_name": "AI/機械学習",
+      "deal_count": 1,
+      "total_invested_jpy": 170000000
+    },
+    {
+      "investor_name": "株式会社サムライインキュベート",
       "sector_name": "クリーンテック",
       "deal_count": 1,
       "total_invested_jpy": null
@@ -25282,12 +25672,6 @@
     },
     {
       "investor_name": "INNOVATION HAYATE V Capital",
-      "sector_name": "SaaS",
-      "deal_count": 1,
-      "total_invested_jpy": 580000000
-    },
-    {
-      "investor_name": "SDFキャピタル株式会社",
       "sector_name": "SaaS",
       "deal_count": 1,
       "total_invested_jpy": 580000000
@@ -25738,13 +26122,7 @@
     },
     {
       "investor_name": "かごしまスタートアップ支援投資事業有限責任組合",
-      "sector_name": "クリーンテック",
-      "deal_count": 1,
-      "total_invested_jpy": 280000000
-    },
-    {
-      "investor_name": "PARTNERS FUND",
-      "sector_name": "クリーンテック",
+      "sector_name": "ディープテック",
       "deal_count": 1,
       "total_invested_jpy": 280000000
     },
@@ -25755,8 +26133,14 @@
       "total_invested_jpy": 60000000
     },
     {
+      "investor_name": "PARTNERS FUND",
+      "sector_name": "ディープテック",
+      "deal_count": 1,
+      "total_invested_jpy": 280000000
+    },
+    {
       "investor_name": "エネルギア株式会社",
-      "sector_name": "クリーンテック",
+      "sector_name": "ディープテック",
       "deal_count": 1,
       "total_invested_jpy": 280000000
     },
@@ -25855,6 +26239,12 @@
       "sector_name": "不動産テック",
       "deal_count": 1,
       "total_invested_jpy": 3100000000
+    },
+    {
+      "investor_name": "三菱UFJキャピタル9号投資事業有限責任組合",
+      "sector_name": "AI/機械学習",
+      "deal_count": 1,
+      "total_invested_jpy": null
     },
     {
       "investor_name": "三菱UFJキャピタル9号投資事業有限責任組合",
@@ -25957,6 +26347,12 @@
       "sector_name": "EdTech",
       "deal_count": 1,
       "total_invested_jpy": 150000000
+    },
+    {
+      "investor_name": "イーストベンチャーズ株式会社",
+      "sector_name": "ゲーム/エンターテインメント",
+      "deal_count": 1,
+      "total_invested_jpy": null
     },
     {
       "investor_name": "荻原国啓",
@@ -26131,6 +26527,12 @@
       "sector_name": "SaaS",
       "deal_count": 1,
       "total_invested_jpy": 3400000000
+    },
+    {
+      "investor_name": "東大創業者の会ファンド（UT創業者の会投資事業有限責任組合）",
+      "sector_name": "フィンテック",
+      "deal_count": 1,
+      "total_invested_jpy": 270000000
     },
     {
       "investor_name": "東大創業者の会ファンド（UT創業者の会投資事業有限責任組合）",
@@ -26494,7 +26896,7 @@
     },
     {
       "investor_name": "AGキャピタル株式会社",
-      "sector_name": "ブロックチェーン/Web3",
+      "sector_name": "フィンテック",
       "deal_count": 1,
       "total_invested_jpy": null
     },
@@ -26629,6 +27031,12 @@
       "sector_name": "不動産テック",
       "deal_count": 1,
       "total_invested_jpy": 140000000
+    },
+    {
+      "investor_name": "株式会社FLAG-41",
+      "sector_name": "クリーンテック",
+      "deal_count": 1,
+      "total_invested_jpy": null
     },
     {
       "investor_name": "株式会社FLAG-41",
@@ -27045,6 +27453,12 @@
       "total_invested_jpy": 2000000000
     },
     {
+      "investor_name": "トヨタ紡織株式会社",
+      "sector_name": "物流",
+      "deal_count": 1,
+      "total_invested_jpy": null
+    },
+    {
       "investor_name": "愛知キャピタル株式会社",
       "sector_name": "HR Tech",
       "deal_count": 1,
@@ -27415,6 +27829,12 @@
       "sector_name": "フィンテック",
       "deal_count": 1,
       "total_invested_jpy": 2000000000
+    },
+    {
+      "investor_name": "Funds Startups株式会社",
+      "sector_name": "AI/機械学習",
+      "deal_count": 1,
+      "total_invested_jpy": 960000000
     },
     {
       "investor_name": "Funds Startups株式会社",
@@ -28006,25 +28426,25 @@
     },
     {
       "investor_name": "株式会社慶應イノベーション・イニシアティブ（KII3号インパクト投資事業有限責任組合）",
-      "sector_name": "建設テック",
+      "sector_name": "クリーンテック",
       "deal_count": 1,
       "total_invested_jpy": 350000000
     },
     {
       "investor_name": "三井住友海上キャピタル株式会社（MSIVC2023V投資事業有限責任組合）",
-      "sector_name": "建設テック",
+      "sector_name": "クリーンテック",
       "deal_count": 1,
       "total_invested_jpy": 350000000
     },
     {
       "investor_name": "DBJキャピタル株式会社（DBJキャピタル投資事業有限責任組合）",
-      "sector_name": "建設テック",
+      "sector_name": "クリーンテック",
       "deal_count": 1,
       "total_invested_jpy": 350000000
     },
     {
       "investor_name": "SMBC ベンチャーキャピタル 8 号投資事業有限責任組合",
-      "sector_name": "建設テック",
+      "sector_name": "クリーンテック",
       "deal_count": 1,
       "total_invested_jpy": 350000000
     },
@@ -29662,6 +30082,12 @@
     },
     {
       "investor_name": "Salesforce Ventures",
+      "sector_name": "HR Tech",
+      "deal_count": 1,
+      "total_invested_jpy": 905028100
+    },
+    {
+      "investor_name": "Salesforce Ventures",
       "sector_name": "クラウドインフラ",
       "deal_count": 1,
       "total_invested_jpy": 31500000000
@@ -31036,7 +31462,7 @@
     },
     {
       "investor_name": "株式会社HYPERITHM",
-      "sector_name": "ブロックチェーン/Web3",
+      "sector_name": "フィンテック",
       "deal_count": 1,
       "total_invested_jpy": 60000000
     },
@@ -31797,12 +32223,6 @@
       "total_invested_jpy": 320000000
     },
     {
-      "investor_name": "独立行政法人中小企業基盤整備機構",
-      "sector_name": "ベンチャーキャピタル",
-      "deal_count": 1,
-      "total_invested_jpy": 3000000000
-    },
-    {
       "investor_name": "インキュベートファンド株式会社",
       "sector_name": "クリーンテック",
       "deal_count": 1,
@@ -32077,6 +32497,12 @@
       "sector_name": "クリーンテック",
       "deal_count": 1,
       "total_invested_jpy": 10500000000
+    },
+    {
+      "investor_name": "三菱商事株式会社",
+      "sector_name": "モビリティ",
+      "deal_count": 1,
+      "total_invested_jpy": 2500000000
     },
     {
       "investor_name": "Nordstar",
@@ -33460,19 +33886,19 @@
     },
     {
       "investor_name": "日本テクノロジーベンチャーパートナーズ",
-      "sector_name": "ブロックチェーン/Web3",
+      "sector_name": "フィンテック",
       "deal_count": 1,
       "total_invested_jpy": 200000000
     },
     {
       "investor_name": "xWINアセットマネジメントジャパン合同会社",
-      "sector_name": "ブロックチェーン/Web3",
+      "sector_name": "フィンテック",
       "deal_count": 1,
       "total_invested_jpy": 200000000
     },
     {
       "investor_name": "既存投資家",
-      "sector_name": "ブロックチェーン/Web3",
+      "sector_name": "フィンテック",
       "deal_count": 1,
       "total_invested_jpy": 200000000
     },
@@ -33616,12 +34042,6 @@
     },
     {
       "investor_name": "創造する心株式会社",
-      "sector_name": "フィンテック",
-      "deal_count": 1,
-      "total_invested_jpy": 170000000
-    },
-    {
-      "investor_name": "ファルス株式会社",
       "sector_name": "フィンテック",
       "deal_count": 1,
       "total_invested_jpy": 170000000
@@ -33921,6 +34341,12 @@
       "total_invested_jpy": 48000000
     },
     {
+      "investor_name": "Sansan株式会社",
+      "sector_name": "スポーツ・エンターテインメント",
+      "deal_count": 1,
+      "total_invested_jpy": null
+    },
+    {
       "investor_name": "米国機関投資家",
       "sector_name": "SaaS",
       "deal_count": 1,
@@ -34107,6 +34533,12 @@
       "total_invested_jpy": 1100000000
     },
     {
+      "investor_name": "東北大学ベンチャーパートナーズ株式会社",
+      "sector_name": "バイオテック",
+      "deal_count": 1,
+      "total_invested_jpy": 2250000000
+    },
+    {
       "investor_name": "Bonds Investment Group株式会社",
       "sector_name": "AI/機械学習",
       "deal_count": 1,
@@ -34153,6 +34585,12 @@
       "sector_name": "SaaS",
       "deal_count": 1,
       "total_invested_jpy": 40000000
+    },
+    {
+      "investor_name": "麻生要一",
+      "sector_name": "EdTech",
+      "deal_count": 1,
+      "total_invested_jpy": 130000000
     },
     {
       "investor_name": "麻生要一",
@@ -34303,6 +34741,12 @@
       "sector_name": "メタバース/VR/XR",
       "deal_count": 1,
       "total_invested_jpy": 1020000000
+    },
+    {
+      "investor_name": "株式会社電通グループ",
+      "sector_name": "スポーツ・エンターテインメント",
+      "deal_count": 1,
+      "total_invested_jpy": null
     },
     {
       "investor_name": "損害保険ジャパン株式会社",
@@ -34971,6 +35415,12 @@
       "total_invested_jpy": 4000000000
     },
     {
+      "investor_name": "東京都",
+      "sector_name": "ベンチャーキャピタル・ファンド",
+      "deal_count": 1,
+      "total_invested_jpy": null
+    },
+    {
       "investor_name": "株式会社テレビ大分",
       "sector_name": "ヘルスケア",
       "deal_count": 1,
@@ -34999,6 +35449,12 @@
       "sector_name": "FoodTech",
       "deal_count": 1,
       "total_invested_jpy": 1300000000
+    },
+    {
+      "investor_name": "阿波銀キャピタル株式会社",
+      "sector_name": "モビリティ",
+      "deal_count": 1,
+      "total_invested_jpy": 2500000000
     },
     {
       "investor_name": "阿波銀キャピタル株式会社",
@@ -35149,12 +35605,6 @@
       "sector_name": "HR Tech",
       "deal_count": 1,
       "total_invested_jpy": null
-    },
-    {
-      "investor_name": "DCIパートナーズ株式会社",
-      "sector_name": "バイオテック",
-      "deal_count": 1,
-      "total_invested_jpy": 1500000000
     },
     {
       "investor_name": "鹿児島ディベロップメント株式会社",
@@ -35419,6 +35869,12 @@
       "sector_name": "AI/機械学習",
       "deal_count": 1,
       "total_invested_jpy": 1100000000
+    },
+    {
+      "investor_name": "アシックス・ベンチャーズ株式会社",
+      "sector_name": "スポーツ・エンターテインメント",
+      "deal_count": 1,
+      "total_invested_jpy": null
     },
     {
       "investor_name": "鴻池運輸株式会社",
@@ -35878,7 +36334,7 @@
     },
     {
       "investor_name": "Yield Technology投資事業有限責任組合（YTFUND）",
-      "sector_name": "ブロックチェーン/Web3",
+      "sector_name": "フィンテック",
       "deal_count": 1,
       "total_invested_jpy": null
     },
@@ -35993,6 +36449,12 @@
     {
       "investor_name": "三井不動産株式会社",
       "sector_name": "クリーンテック",
+      "deal_count": 1,
+      "total_invested_jpy": null
+    },
+    {
+      "investor_name": "三井不動産株式会社",
+      "sector_name": "スポーツ・エンターテインメント",
       "deal_count": 1,
       "total_invested_jpy": null
     },
@@ -36235,6 +36697,12 @@
       "sector_name": "フィンテック",
       "deal_count": 1,
       "total_invested_jpy": 1170000000
+    },
+    {
+      "investor_name": "SGインキュベート株式会社",
+      "sector_name": "クリーンテック",
+      "deal_count": 1,
+      "total_invested_jpy": 230000000
     },
     {
       "investor_name": "Samurai Africa Fund",
@@ -36676,6 +37144,12 @@
     },
     {
       "investor_name": "スパークス・グループ株式会社",
+      "sector_name": "クリーンテック",
+      "deal_count": 1,
+      "total_invested_jpy": null
+    },
+    {
+      "investor_name": "スパークス・グループ株式会社",
       "sector_name": "ディープテック",
       "deal_count": 1,
       "total_invested_jpy": 500000000
@@ -36955,124 +37429,598 @@
       "sector_name": "AI/機械学習",
       "deal_count": 1,
       "total_invested_jpy": 163600000000
+    },
+    {
+      "investor_name": "柴田 雄平（株式会社koujitsu）",
+      "sector_name": "SaaS",
+      "deal_count": 1,
+      "total_invested_jpy": null
+    },
+    {
+      "investor_name": "山本 智也（株式会社スカイ）",
+      "sector_name": "SaaS",
+      "deal_count": 1,
+      "total_invested_jpy": null
+    },
+    {
+      "investor_name": "北川 雅人（オルクス株式会社）",
+      "sector_name": "SaaS",
+      "deal_count": 1,
+      "total_invested_jpy": null
+    },
+    {
+      "investor_name": "川崎 裕平（SINCEED株式会社）",
+      "sector_name": "SaaS",
+      "deal_count": 1,
+      "total_invested_jpy": null
+    },
+    {
+      "investor_name": "東 淳（株式会社ange）",
+      "sector_name": "SaaS",
+      "deal_count": 1,
+      "total_invested_jpy": null
+    },
+    {
+      "investor_name": "TBSイノベーション・パートナーズ合同会社",
+      "sector_name": "スポーツ・エンターテインメント",
+      "deal_count": 1,
+      "total_invested_jpy": null
+    },
+    {
+      "investor_name": "三菱UFJキャピタル株式会社（三菱UFJライフサイエンス4号投資事業有限責任組合）",
+      "sector_name": "ヘルスケア",
+      "deal_count": 1,
+      "total_invested_jpy": null
+    },
+    {
+      "investor_name": "三菱UFJキャピタル株式会社（三菱UFJライフサイエンス4号投資事業有限責任組合）",
+      "sector_name": "医療機器",
+      "deal_count": 1,
+      "total_invested_jpy": null
+    },
+    {
+      "investor_name": "ENRISSION INDIA CAPITAL株式会社",
+      "sector_name": "FoodTech",
+      "deal_count": 1,
+      "total_invested_jpy": null
+    },
+    {
+      "investor_name": "札幌市",
+      "sector_name": "クリーンテック",
+      "deal_count": 1,
+      "total_invested_jpy": null
+    },
+    {
+      "investor_name": "北海道",
+      "sector_name": "クリーンテック",
+      "deal_count": 1,
+      "total_invested_jpy": null
+    },
+    {
+      "investor_name": "岡三証券株式会社",
+      "sector_name": "フィンテック",
+      "deal_count": 1,
+      "total_invested_jpy": null
+    },
+    {
+      "investor_name": "HSBC",
+      "sector_name": "SaaS",
+      "deal_count": 1,
+      "total_invested_jpy": 600000000
+    },
+    {
+      "investor_name": "World Innovation Labs",
+      "sector_name": "SaaS",
+      "deal_count": 1,
+      "total_invested_jpy": 600000000
+    },
+    {
+      "investor_name": "JPMorgan",
+      "sector_name": "SaaS",
+      "deal_count": 1,
+      "total_invested_jpy": 600000000
+    },
+    {
+      "investor_name": "American Express",
+      "sector_name": "SaaS",
+      "deal_count": 1,
+      "total_invested_jpy": 600000000
+    },
+    {
+      "investor_name": "HIRAC FUND（マネーフォワードベンチャーパートナーズ株式会社運営）",
+      "sector_name": "FoodTech",
+      "deal_count": 1,
+      "total_invested_jpy": null
+    },
+    {
+      "investor_name": "NCBベンチャー2号投資事業有限責任組合",
+      "sector_name": "ディープテック",
+      "deal_count": 1,
+      "total_invested_jpy": 620000000
+    },
+    {
+      "investor_name": "株式会社FLAG-VENTURES",
+      "sector_name": "ディープテック",
+      "deal_count": 1,
+      "total_invested_jpy": 620000000
+    },
+    {
+      "investor_name": "JIA２号投資事業有限責任組合",
+      "sector_name": "ディープテック",
+      "deal_count": 1,
+      "total_invested_jpy": 620000000
+    },
+    {
+      "investor_name": "電源開発株式会社（J-POWER）",
+      "sector_name": "クリーンテック",
+      "deal_count": 1,
+      "total_invested_jpy": null
+    },
+    {
+      "investor_name": "アイコム株式会社",
+      "sector_name": "AI/機械学習",
+      "deal_count": 1,
+      "total_invested_jpy": null
+    },
+    {
+      "investor_name": "DEEPCORE TOKYO2号投資事業有限責任組合",
+      "sector_name": "AI/機械学習",
+      "deal_count": 1,
+      "total_invested_jpy": null
+    },
+    {
+      "investor_name": "三菱UFJキャピタル株式会社（三菱UFJキャピタル10号投資事業有限責任組合）",
+      "sector_name": "FoodTech",
+      "deal_count": 1,
+      "total_invested_jpy": null
+    },
+    {
+      "investor_name": "株式会社NAGALAB",
+      "sector_name": "その他",
+      "deal_count": 1,
+      "total_invested_jpy": null
+    },
+    {
+      "investor_name": "未来創生3号ファンド（スパークス・アセット・マネジメント株式会社運営）",
+      "sector_name": "クリーンテック",
+      "deal_count": 1,
+      "total_invested_jpy": 120000000
+    },
+    {
+      "investor_name": "Edenred",
+      "sector_name": "SaaS",
+      "deal_count": 1,
+      "total_invested_jpy": 5100000000
+    },
+    {
+      "investor_name": "三菱UFJキャピタル株式会社（三菱UFJキャピタル9号投資事業有限責任組合）",
+      "sector_name": "IoT/AI",
+      "deal_count": 1,
+      "total_invested_jpy": null
+    },
+    {
+      "investor_name": "杉江陸",
+      "sector_name": "フィンテック",
+      "deal_count": 1,
+      "total_invested_jpy": 496000000
+    },
+    {
+      "investor_name": "GxPartners（九州オープンイノベーション2号投資事業有限責任組合）",
+      "sector_name": "フィンテック",
+      "deal_count": 1,
+      "total_invested_jpy": 270000000
+    },
+    {
+      "investor_name": "Headline Asia（LAUNCHPAD FUND2号投資事業有限責任組合）",
+      "sector_name": "フィンテック",
+      "deal_count": 1,
+      "total_invested_jpy": 270000000
+    },
+    {
+      "investor_name": "Co-Founder Fund（株式会社プライムパートナーズ）",
+      "sector_name": "フィンテック",
+      "deal_count": 1,
+      "total_invested_jpy": 270000000
+    },
+    {
+      "investor_name": "Uber Technologies, Inc.",
+      "sector_name": "モビリティ",
+      "deal_count": 1,
+      "total_invested_jpy": 2500000000
+    },
+    {
+      "investor_name": "国際自動車株式会社",
+      "sector_name": "モビリティ",
+      "deal_count": 1,
+      "total_invested_jpy": 2500000000
+    },
+    {
+      "investor_name": "大和自動車交通株式会社",
+      "sector_name": "モビリティ",
+      "deal_count": 1,
+      "total_invested_jpy": 2500000000
+    },
+    {
+      "investor_name": "つばめ自動車株式会社",
+      "sector_name": "モビリティ",
+      "deal_count": 1,
+      "total_invested_jpy": 2500000000
+    },
+    {
+      "investor_name": "エムケイ株式会社",
+      "sector_name": "モビリティ",
+      "deal_count": 1,
+      "total_invested_jpy": 2500000000
+    },
+    {
+      "investor_name": "三和交通株式会社",
+      "sector_name": "モビリティ",
+      "deal_count": 1,
+      "total_invested_jpy": 2500000000
+    },
+    {
+      "investor_name": "第一交通産業株式会社",
+      "sector_name": "モビリティ",
+      "deal_count": 1,
+      "total_invested_jpy": 2500000000
+    },
+    {
+      "investor_name": "株式会社徳島大正銀行",
+      "sector_name": "モビリティ",
+      "deal_count": 1,
+      "total_invested_jpy": 2500000000
+    },
+    {
+      "investor_name": "群馬県",
+      "sector_name": "FoodTech",
+      "deal_count": 1,
+      "total_invested_jpy": 39100000
+    },
+    {
+      "investor_name": "株式会社ガイアックス",
+      "sector_name": "FoodTech",
+      "deal_count": 1,
+      "total_invested_jpy": 39100000
+    },
+    {
+      "investor_name": "チモリ合同会社",
+      "sector_name": "FoodTech",
+      "deal_count": 1,
+      "total_invested_jpy": 39100000
+    },
+    {
+      "investor_name": "北海道電力株式会社",
+      "sector_name": "ウェルビーイングテック",
+      "deal_count": 1,
+      "total_invested_jpy": 130000000
+    },
+    {
+      "investor_name": "エステー株式会社",
+      "sector_name": "ウェルビーイングテック",
+      "deal_count": 1,
+      "total_invested_jpy": 130000000
+    },
+    {
+      "investor_name": "大阪大学ベンチャーキャピタル株式会社（OUVC2号投資事業有限責任組合経由）",
+      "sector_name": "ヘルスケア",
+      "deal_count": 1,
+      "total_invested_jpy": 300000000
+    },
+    {
+      "investor_name": "CDIB クロスボーダー・イノベーション・ファンド(CCBI)",
+      "sector_name": "モビリティ",
+      "deal_count": 1,
+      "total_invested_jpy": null
+    },
+    {
+      "investor_name": "開発創新管理顧問",
+      "sector_name": "モビリティ",
+      "deal_count": 1,
+      "total_invested_jpy": null
+    },
+    {
+      "investor_name": "クールジャパン機構",
+      "sector_name": "モビリティ",
+      "deal_count": 1,
+      "total_invested_jpy": null
+    },
+    {
+      "investor_name": "Golden Asia Fund Ventures Ltd.",
+      "sector_name": "バイオテック",
+      "deal_count": 1,
+      "total_invested_jpy": 2250000000
+    },
+    {
+      "investor_name": "三井化学株式会社",
+      "sector_name": "バイオテック",
+      "deal_count": 1,
+      "total_invested_jpy": 2250000000
+    },
+    {
+      "investor_name": "QB2パートナーズ有限責任事業組合",
+      "sector_name": "バイオテック",
+      "deal_count": 1,
+      "total_invested_jpy": 2250000000
+    },
+    {
+      "investor_name": "旭化成株式会社",
+      "sector_name": "バイオテック",
+      "deal_count": 1,
+      "total_invested_jpy": 2250000000
+    },
+    {
+      "investor_name": "SMBCベンチャーキャピタル株式会社（SMBC事業開発4号投資事業有限責任組合）",
+      "sector_name": "モビリティ",
+      "deal_count": 1,
+      "total_invested_jpy": null
+    },
+    {
+      "investor_name": "かんべ土地建物株式会社",
+      "sector_name": "モビリティ",
+      "deal_count": 1,
+      "total_invested_jpy": null
+    },
+    {
+      "investor_name": "株式会社ブーストキャピタル（ブーストキャピタル1号投資事業有限責任組合）",
+      "sector_name": "モビリティ",
+      "deal_count": 1,
+      "total_invested_jpy": null
+    },
+    {
+      "investor_name": "ブレイクポイント株式会社",
+      "sector_name": "ゲーム/エンターテインメント",
+      "deal_count": 1,
+      "total_invested_jpy": null
+    },
+    {
+      "investor_name": "UntroD Capital Japan株式会社（リアルテックファンド）",
+      "sector_name": "クリーンテック",
+      "deal_count": 1,
+      "total_invested_jpy": 230000000
+    },
+    {
+      "investor_name": "Galvanize Climate Solutions",
+      "sector_name": "クリーンテック",
+      "deal_count": 1,
+      "total_invested_jpy": null
+    },
+    {
+      "investor_name": "Lightrock",
+      "sector_name": "クリーンテック",
+      "deal_count": 1,
+      "total_invested_jpy": null
+    },
+    {
+      "investor_name": "ジェネレーション・インベストメント・マネジメント社",
+      "sector_name": "クリーンテック",
+      "deal_count": 1,
+      "total_invested_jpy": null
+    },
+    {
+      "investor_name": "カナダ年金制度投資委員会（CPPインベストメンツ）",
+      "sector_name": "クリーンテック",
+      "deal_count": 1,
+      "total_invested_jpy": null
+    },
+    {
+      "investor_name": "アウェア・スーパー",
+      "sector_name": "クリーンテック",
+      "deal_count": 1,
+      "total_invested_jpy": null
+    },
+    {
+      "investor_name": "株式会社電算システム",
+      "sector_name": "フィンテック",
+      "deal_count": 1,
+      "total_invested_jpy": null
+    },
+    {
+      "investor_name": "久保泰一郎",
+      "sector_name": "FoodTech",
+      "deal_count": 1,
+      "total_invested_jpy": 32000000
+    },
+    {
+      "investor_name": "桑原正守",
+      "sector_name": "FoodTech",
+      "deal_count": 1,
+      "total_invested_jpy": 32000000
+    },
+    {
+      "investor_name": "個人投資家7名",
+      "sector_name": "FoodTech",
+      "deal_count": 1,
+      "total_invested_jpy": 32000000
+    },
+    {
+      "investor_name": "西口一希氏",
+      "sector_name": "SaaS",
+      "deal_count": 1,
+      "total_invested_jpy": 200000000
+    },
+    {
+      "investor_name": "堅田航平氏",
+      "sector_name": "SaaS",
+      "deal_count": 1,
+      "total_invested_jpy": 200000000
+    },
+    {
+      "investor_name": "アコード・ベンチャーズ",
+      "sector_name": "EdTech",
+      "deal_count": 1,
+      "total_invested_jpy": 130000000
+    },
+    {
+      "investor_name": "旺文社ベンチャーズ",
+      "sector_name": "EdTech",
+      "deal_count": 1,
+      "total_invested_jpy": 130000000
+    },
+    {
+      "investor_name": "吉村英毅",
+      "sector_name": "EdTech",
+      "deal_count": 1,
+      "total_invested_jpy": 130000000
+    },
+    {
+      "investor_name": "大冨智弘",
+      "sector_name": "EdTech",
+      "deal_count": 1,
+      "total_invested_jpy": 130000000
+    },
+    {
+      "investor_name": "長野貴浩",
+      "sector_name": "EdTech",
+      "deal_count": 1,
+      "total_invested_jpy": 130000000
+    },
+    {
+      "investor_name": "上杉健太郎",
+      "sector_name": "EdTech",
+      "deal_count": 1,
+      "total_invested_jpy": 130000000
+    },
+    {
+      "investor_name": "山邉圭介",
+      "sector_name": "EdTech",
+      "deal_count": 1,
+      "total_invested_jpy": 130000000
+    },
+    {
+      "investor_name": "小田部崇弘",
+      "sector_name": "EdTech",
+      "deal_count": 1,
+      "total_invested_jpy": 130000000
+    },
+    {
+      "investor_name": "藤井正明",
+      "sector_name": "EdTech",
+      "deal_count": 1,
+      "total_invested_jpy": 130000000
+    },
+    {
+      "investor_name": "AbiesVentures株式会社",
+      "sector_name": "物流",
+      "deal_count": 1,
+      "total_invested_jpy": null
     }
   ],
   "sector_summary": [
     {
       "sector_name": "SaaS",
-      "deal_count": 207,
-      "company_count": 144,
-      "investor_count": 439,
-      "total_raised_jpy": 910172990000,
-      "avg_deal_size_jpy": 1419926661.4664586,
+      "deal_count": 213,
+      "company_count": 147,
+      "investor_count": 457,
+      "total_raised_jpy": 952472990000,
+      "avg_deal_size_jpy": 1440957624.8108926,
       "first_deal": "2021-03-02",
       "last_deal": "2026-04-17"
     },
     {
       "sector_name": "AI/機械学習",
-      "deal_count": 136,
-      "company_count": 110,
-      "investor_count": 365,
-      "total_raised_jpy": 3702292381300,
-      "avg_deal_size_jpy": 9052059611.98044,
+      "deal_count": 143,
+      "company_count": 114,
+      "investor_count": 375,
+      "total_raised_jpy": 3712892381300,
+      "avg_deal_size_jpy": 8819221808.31354,
       "first_deal": "2019-12-10",
       "last_deal": "2026-04-18"
     },
     {
       "sector_name": "クリーンテック",
-      "deal_count": 107,
-      "company_count": 71,
-      "investor_count": 330,
-      "total_raised_jpy": 1460753820000,
-      "avg_deal_size_jpy": 3562814195.121951,
+      "deal_count": 116,
+      "company_count": 76,
+      "investor_count": 347,
+      "total_raised_jpy": 1462213820000,
+      "avg_deal_size_jpy": 3514937067.3076925,
       "first_deal": "2021-03-15",
       "last_deal": "2026-04-18"
     },
     {
-      "sector_name": "ヘルスケア",
-      "deal_count": 102,
-      "company_count": 80,
-      "investor_count": 291,
-      "total_raised_jpy": 251455988002,
-      "avg_deal_size_jpy": 914385410.9163636,
-      "first_deal": "2017-02-13",
-      "last_deal": "2026-04-07"
-    },
-    {
       "sector_name": "FoodTech",
-      "deal_count": 99,
-      "company_count": 75,
-      "investor_count": 306,
-      "total_raised_jpy": 317110968800,
-      "avg_deal_size_jpy": 1074952436.6101694,
+      "deal_count": 105,
+      "company_count": 79,
+      "investor_count": 316,
+      "total_raised_jpy": 317324268800,
+      "avg_deal_size_jpy": 1054233451.1627907,
       "first_deal": "2020-01-16",
       "last_deal": "2026-04-18"
     },
     {
+      "sector_name": "ヘルスケア",
+      "deal_count": 104,
+      "company_count": 81,
+      "investor_count": 293,
+      "total_raised_jpy": 251755988002,
+      "avg_deal_size_jpy": 912159376.8188406,
+      "first_deal": "2017-02-13",
+      "last_deal": "2026-04-07"
+    },
+    {
       "sector_name": "ディープテック",
-      "deal_count": 86,
-      "company_count": 54,
-      "investor_count": 302,
-      "total_raised_jpy": 1138116000000,
-      "avg_deal_size_jpy": 3051249329.7587132,
+      "deal_count": 89,
+      "company_count": 56,
+      "investor_count": 311,
+      "total_raised_jpy": 1142276000000,
+      "avg_deal_size_jpy": 2982443864.229765,
       "first_deal": "2019-11-25",
       "last_deal": "2026-04-09"
     },
     {
-      "sector_name": "バイオテック",
-      "deal_count": 81,
-      "company_count": 48,
-      "investor_count": 258,
-      "total_raised_jpy": 534723200000,
-      "avg_deal_size_jpy": 1655489783.2817338,
-      "first_deal": "2022-03-23",
-      "last_deal": "2026-04-16"
-    },
-    {
       "sector_name": "モビリティ",
-      "deal_count": 81,
-      "company_count": 51,
-      "investor_count": 321,
-      "total_raised_jpy": 655405000000,
-      "avg_deal_size_jpy": 1815526315.7894738,
+      "deal_count": 87,
+      "company_count": 53,
+      "investor_count": 342,
+      "total_raised_jpy": 686139000000,
+      "avg_deal_size_jpy": 1824837765.9574468,
       "first_deal": "2018-07-01",
       "last_deal": "2026-04-16"
     },
     {
+      "sector_name": "バイオテック",
+      "deal_count": 82,
+      "company_count": 48,
+      "investor_count": 263,
+      "total_raised_jpy": 561723200000,
+      "avg_deal_size_jpy": 1676785671.641791,
+      "first_deal": "2022-03-23",
+      "last_deal": "2026-04-16"
+    },
+    {
       "sector_name": "HR Tech",
-      "deal_count": 79,
-      "company_count": 57,
-      "investor_count": 247,
-      "total_raised_jpy": 509618920000,
-      "avg_deal_size_jpy": 1930374696.969697,
+      "deal_count": 80,
+      "company_count": 58,
+      "investor_count": 248,
+      "total_raised_jpy": 513239032400,
+      "avg_deal_size_jpy": 1915071016.4179103,
       "first_deal": "2020-09-07",
       "last_deal": "2026-04-17"
     },
     {
       "sector_name": "フィンテック",
-      "deal_count": 66,
-      "company_count": 52,
-      "investor_count": 261,
-      "total_raised_jpy": 1289585600000,
-      "avg_deal_size_jpy": 4776242962.962963,
+      "deal_count": 80,
+      "company_count": 57,
+      "investor_count": 294,
+      "total_raised_jpy": 1343259600000,
+      "avg_deal_size_jpy": 4404129836.065574,
       "first_deal": "2021-05-01",
-      "last_deal": "2026-02-26"
+      "last_deal": "2026-03-26"
     },
     {
       "sector_name": "EdTech",
-      "deal_count": 62,
-      "company_count": 43,
-      "investor_count": 141,
-      "total_raised_jpy": 67486000000,
-      "avg_deal_size_jpy": 553163934.4262295,
+      "deal_count": 64,
+      "company_count": 45,
+      "investor_count": 156,
+      "total_raised_jpy": 69776000000,
+      "avg_deal_size_jpy": 509313868.6131387,
       "first_deal": "2021-06-30",
       "last_deal": "2026-04-16"
     },
     {
       "sector_name": "不動産テック",
-      "deal_count": 38,
-      "company_count": 28,
-      "investor_count": 128,
+      "deal_count": 40,
+      "company_count": 29,
+      "investor_count": 129,
       "total_raised_jpy": 134815000000,
       "avg_deal_size_jpy": 1006082089.5522388,
       "first_deal": "2019-08-30",
@@ -37080,9 +38028,9 @@
     },
     {
       "sector_name": "物流",
-      "deal_count": 20,
-      "company_count": 15,
-      "investor_count": 78,
+      "deal_count": 21,
+      "company_count": 16,
+      "investor_count": 81,
       "total_raised_jpy": 114452033320,
       "avg_deal_size_jpy": 1546649098.9189188,
       "first_deal": "2021-10-01",
@@ -37090,31 +38038,21 @@
     },
     {
       "sector_name": "サイバーセキュリティ",
-      "deal_count": 17,
-      "company_count": 16,
-      "investor_count": 65,
-      "total_raised_jpy": 171206000000,
-      "avg_deal_size_jpy": 2675093750.0,
+      "deal_count": 16,
+      "company_count": 15,
+      "investor_count": 61,
+      "total_raised_jpy": 168646000000,
+      "avg_deal_size_jpy": 2810766666.6666665,
       "first_deal": "2022-05-11",
       "last_deal": "2026-04-16"
     },
     {
-      "sector_name": "ブロックチェーン/Web3",
-      "deal_count": 11,
-      "company_count": 5,
-      "investor_count": 40,
-      "total_raised_jpy": 30520000000,
-      "avg_deal_size_jpy": 1090000000.0,
-      "first_deal": "2021-11-30",
-      "last_deal": "2026-03-03"
-    },
-    {
       "sector_name": "建設テック",
       "deal_count": 10,
-      "company_count": 7,
-      "investor_count": 27,
-      "total_raised_jpy": 40840091000,
-      "avg_deal_size_jpy": 1458574678.5714285,
+      "company_count": 6,
+      "investor_count": 22,
+      "total_raised_jpy": 39090091000,
+      "avg_deal_size_jpy": 1699569173.9130435,
       "first_deal": "2021-08-25",
       "last_deal": "2026-04-15"
     },
@@ -37149,6 +38087,16 @@
       "last_deal": "2026-04-15"
     },
     {
+      "sector_name": "ブロックチェーン/Web3",
+      "deal_count": 7,
+      "company_count": 5,
+      "investor_count": 17,
+      "total_raised_jpy": 2960000000,
+      "avg_deal_size_jpy": 370000000.0,
+      "first_deal": "2021-09-03",
+      "last_deal": "2025-02-21"
+    },
+    {
       "sector_name": "Eコマース・モノづくり",
       "deal_count": 6,
       "company_count": 1,
@@ -37157,6 +38105,16 @@
       "avg_deal_size_jpy": 4194444444.4444447,
       "first_deal": "2023-05-17",
       "last_deal": "2025-10-06"
+    },
+    {
+      "sector_name": "ベンチャーキャピタル",
+      "deal_count": 6,
+      "company_count": 6,
+      "investor_count": 11,
+      "total_raised_jpy": 214550000000,
+      "avg_deal_size_jpy": 19504545454.545456,
+      "first_deal": "2023-06-14",
+      "last_deal": "2026-03-30"
     },
     {
       "sector_name": "宇宙テック",
@@ -37169,14 +38127,14 @@
       "last_deal": "2025-09-17"
     },
     {
-      "sector_name": "ベンチャーキャピタル",
+      "sector_name": "アグリテック",
       "deal_count": 5,
       "company_count": 5,
-      "investor_count": 10,
-      "total_raised_jpy": 214550000000,
-      "avg_deal_size_jpy": 19504545454.545456,
-      "first_deal": "2023-06-14",
-      "last_deal": "2026-01-27"
+      "investor_count": 18,
+      "total_raised_jpy": 2532000000,
+      "avg_deal_size_jpy": 253200000.0,
+      "first_deal": "2022-09-26",
+      "last_deal": "2026-01-30"
     },
     {
       "sector_name": "建設DX",
@@ -37217,16 +38175,6 @@
       "avg_deal_size_jpy": 630000000.0,
       "first_deal": "2021-04-26",
       "last_deal": "2024-11-13"
-    },
-    {
-      "sector_name": "アグリテック",
-      "deal_count": 4,
-      "company_count": 4,
-      "investor_count": 17,
-      "total_raised_jpy": 2532000000,
-      "avg_deal_size_jpy": 253200000.0,
-      "first_deal": "2022-09-26",
-      "last_deal": "2026-01-30"
     },
     {
       "sector_name": "ロボティクス/AI",
@@ -37409,16 +38357,6 @@
       "last_deal": "2026-01-15"
     },
     {
-      "sector_name": "ブロックチェーン/NFT/ゲーム",
-      "deal_count": 2,
-      "company_count": 1,
-      "investor_count": 1,
-      "total_raised_jpy": null,
-      "avg_deal_size_jpy": null,
-      "first_deal": "2021-09-03",
-      "last_deal": "2022-04-27"
-    },
-    {
       "sector_name": "コンテンツ/メディア",
       "deal_count": 2,
       "company_count": 1,
@@ -37549,6 +38487,16 @@
       "last_deal": "2025-05-15"
     },
     {
+      "sector_name": "IoT/AI",
+      "deal_count": 2,
+      "company_count": 1,
+      "investor_count": 9,
+      "total_raised_jpy": 3440000000,
+      "avg_deal_size_jpy": 430000000.0,
+      "first_deal": "2025-07-08",
+      "last_deal": "2025-07-08"
+    },
+    {
       "sector_name": "エンターテック",
       "deal_count": 2,
       "company_count": 1,
@@ -37599,6 +38547,16 @@
       "last_deal": "2026-04-16"
     },
     {
+      "sector_name": "その他",
+      "deal_count": 2,
+      "company_count": 2,
+      "investor_count": 3,
+      "total_raised_jpy": 197800000,
+      "avg_deal_size_jpy": 98900000.0,
+      "first_deal": "2024-01-25",
+      "last_deal": "2025-09-26"
+    },
+    {
       "sector_name": "インシュアテック",
       "deal_count": 2,
       "company_count": 2,
@@ -37627,6 +38585,86 @@
       "avg_deal_size_jpy": 2000000000.0,
       "first_deal": "2026-03-03",
       "last_deal": "2026-03-09"
+    },
+    {
+      "sector_name": "ゲーム/エンターテインメント",
+      "deal_count": 1,
+      "company_count": 1,
+      "investor_count": 2,
+      "total_raised_jpy": null,
+      "avg_deal_size_jpy": null,
+      "first_deal": "2024-07-02",
+      "last_deal": "2024-07-02"
+    },
+    {
+      "sector_name": "ウェルビーイングテック",
+      "deal_count": 1,
+      "company_count": 1,
+      "investor_count": 5,
+      "total_raised_jpy": 650000000,
+      "avg_deal_size_jpy": 130000000.0,
+      "first_deal": "2025-02-12",
+      "last_deal": "2025-02-12"
+    },
+    {
+      "sector_name": "ベンチャーキャピタル・ファンド",
+      "deal_count": 1,
+      "company_count": 1,
+      "investor_count": 1,
+      "total_raised_jpy": null,
+      "avg_deal_size_jpy": null,
+      "first_deal": "2025-03-07",
+      "last_deal": "2025-03-07"
+    },
+    {
+      "sector_name": "IoT/DX",
+      "deal_count": 1,
+      "company_count": 1,
+      "investor_count": 1,
+      "total_raised_jpy": null,
+      "avg_deal_size_jpy": null,
+      "first_deal": "2025-03-21",
+      "last_deal": "2025-03-21"
+    },
+    {
+      "sector_name": "製造技術/バイオものづくり",
+      "deal_count": 1,
+      "company_count": 1,
+      "investor_count": 2,
+      "total_raised_jpy": 2000000000,
+      "avg_deal_size_jpy": 1000000000.0,
+      "first_deal": "2025-10-30",
+      "last_deal": "2025-10-30"
+    },
+    {
+      "sector_name": "医療機器",
+      "deal_count": 1,
+      "company_count": 1,
+      "investor_count": 1,
+      "total_raised_jpy": null,
+      "avg_deal_size_jpy": null,
+      "first_deal": "2026-03-31",
+      "last_deal": "2026-03-31"
+    },
+    {
+      "sector_name": "スポーツ・エンターテインメント",
+      "deal_count": 1,
+      "company_count": 1,
+      "investor_count": 5,
+      "total_raised_jpy": null,
+      "avg_deal_size_jpy": null,
+      "first_deal": "2026-04-07",
+      "last_deal": "2026-04-07"
+    },
+    {
+      "sector_name": "CleanTech",
+      "deal_count": 1,
+      "company_count": 1,
+      "investor_count": 2,
+      "total_raised_jpy": null,
+      "avg_deal_size_jpy": null,
+      "first_deal": "2026-04-07",
+      "last_deal": "2026-04-07"
     },
     {
       "sector_name": "VR/AR",
@@ -38189,16 +39227,6 @@
       "last_deal": "2025-07-08"
     },
     {
-      "sector_name": "IoT/AI",
-      "deal_count": 1,
-      "company_count": 1,
-      "investor_count": 8,
-      "total_raised_jpy": 3440000000,
-      "avg_deal_size_jpy": 430000000.0,
-      "first_deal": "2025-07-08",
-      "last_deal": "2025-07-08"
-    },
-    {
       "sector_name": "M&A・コンサルティング",
       "deal_count": 1,
       "company_count": 1,
@@ -38409,16 +39437,6 @@
       "last_deal": "2026-03-17"
     },
     {
-      "sector_name": "ブロックチェーン/暗号資産",
-      "deal_count": 1,
-      "company_count": 1,
-      "investor_count": 2,
-      "total_raised_jpy": 20000000000,
-      "avg_deal_size_jpy": 10000000000.0,
-      "first_deal": "2026-03-26",
-      "last_deal": "2026-03-26"
-    },
-    {
       "sector_name": "M&A",
       "deal_count": 1,
       "company_count": 1,
@@ -38567,16 +39585,6 @@
       "avg_deal_size_jpy": 30000.0,
       "first_deal": "2026-04-15",
       "last_deal": "2026-04-15"
-    },
-    {
-      "sector_name": "その他",
-      "deal_count": 1,
-      "company_count": 1,
-      "investor_count": 2,
-      "total_raised_jpy": 197800000,
-      "avg_deal_size_jpy": 98900000.0,
-      "first_deal": "2024-01-25",
-      "last_deal": "2024-01-25"
     },
     {
       "sector_name": "ゲーム",
