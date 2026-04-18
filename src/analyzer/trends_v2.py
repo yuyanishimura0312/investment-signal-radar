@@ -126,6 +126,81 @@ def monthly_summary() -> list[dict]:
     return [dict(r) for r in rows]
 
 
+def investor_profiles(limit: int = 50) -> list[dict]:
+    """Detailed investor profiles with sector breakdown and portfolio info."""
+    with _conn() as conn:
+        rows = conn.execute("""
+            SELECT
+                o.id, o.name AS investor_name, o.investor_type,
+                COUNT(DISTINCT rp.funding_round_id) AS deal_count,
+                COUNT(DISTINCT fr.organization_id) AS portfolio_count,
+                SUM(fr.amount_jpy) AS total_invested_jpy,
+                AVG(fr.amount_jpy) AS avg_deal_size_jpy,
+                MIN(fr.announced_date) AS first_deal,
+                MAX(fr.announced_date) AS last_deal,
+                SUM(CASE WHEN rp.is_lead = 1 THEN 1 ELSE 0 END) AS lead_count,
+                GROUP_CONCAT(DISTINCT fr.round_type) AS round_types
+            FROM organizations o
+            JOIN round_participants rp ON o.id = rp.investor_id
+            JOIN funding_rounds fr ON rp.funding_round_id = fr.id
+            WHERE o.is_investor = 1
+            GROUP BY o.id
+            ORDER BY deal_count DESC
+            LIMIT ?
+        """, (limit,)).fetchall()
+    return [dict(r) for r in rows]
+
+
+def investor_sector_matrix() -> list[dict]:
+    """Investor x Sector cross-analysis for heatmap visualization."""
+    with _conn() as conn:
+        rows = conn.execute("""
+            SELECT
+                inv.name AS investor_name,
+                COALESCE(s.name_ja, s.name, 'Unknown') AS sector_name,
+                COUNT(DISTINCT fr.id) AS deal_count,
+                SUM(fr.amount_jpy) AS total_invested_jpy
+            FROM organizations inv
+            JOIN round_participants rp ON inv.id = rp.investor_id
+            JOIN funding_rounds fr ON rp.funding_round_id = fr.id
+            JOIN organizations co ON fr.organization_id = co.id
+            LEFT JOIN organization_sectors os
+                ON co.id = os.organization_id AND os.is_primary = 1
+            LEFT JOIN sectors s ON os.sector_id = s.id
+            WHERE inv.is_investor = 1
+            GROUP BY inv.id, s.id
+            HAVING deal_count >= 1
+            ORDER BY deal_count DESC
+        """).fetchall()
+    return [dict(r) for r in rows]
+
+
+def sector_summary() -> list[dict]:
+    """Sector-level investment summary."""
+    with _conn() as conn:
+        rows = conn.execute("""
+            SELECT
+                COALESCE(s.name_ja, s.name, 'Unknown') AS sector_name,
+                COUNT(DISTINCT fr.id) AS deal_count,
+                COUNT(DISTINCT fr.organization_id) AS company_count,
+                COUNT(DISTINCT rp.investor_id) AS investor_count,
+                SUM(fr.amount_jpy) AS total_raised_jpy,
+                AVG(fr.amount_jpy) AS avg_deal_size_jpy,
+                MIN(fr.announced_date) AS first_deal,
+                MAX(fr.announced_date) AS last_deal
+            FROM funding_rounds fr
+            JOIN organizations co ON fr.organization_id = co.id
+            LEFT JOIN organization_sectors os
+                ON co.id = os.organization_id AND os.is_primary = 1
+            LEFT JOIN sectors s ON os.sector_id = s.id
+            LEFT JOIN round_participants rp ON fr.id = rp.funding_round_id
+            WHERE fr.is_duplicate IS NULL OR fr.is_duplicate = 0
+            GROUP BY s.id
+            ORDER BY deal_count DESC
+        """).fetchall()
+    return [dict(r) for r in rows]
+
+
 # ================================================================
 # v2-specific aggregations (new capabilities)
 # ================================================================
@@ -365,6 +440,10 @@ def export_dashboard_data(output_path: Optional[str] = None) -> dict:
         "corporate_enrichment": _safe_enrichment_data(),
         # Press releases (PR TIMES, Frontier Detector, etc.)
         "press_releases": export_press_release_data(),
+        # Investor analysis (Phase 3)
+        "investor_profiles": investor_profiles(),
+        "investor_sector_matrix": investor_sector_matrix(),
+        "sector_summary": sector_summary(),
     }
 
     if output_path is None:

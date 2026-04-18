@@ -498,6 +498,55 @@ SELECT
 FROM events
 WHERE event_date >= date('now', '-90 days')
 GROUP BY organization_id, event_type;
+
+-- Investor profile summary
+CREATE VIEW IF NOT EXISTS v_investor_profile AS
+SELECT
+    o.id, o.name, o.investor_type,
+    COUNT(DISTINCT rp.funding_round_id) AS deal_count,
+    COUNT(DISTINCT fr.organization_id) AS portfolio_count,
+    SUM(fr.amount_jpy) AS total_invested_jpy,
+    AVG(fr.amount_jpy) AS avg_deal_size_jpy,
+    MIN(fr.announced_date) AS first_deal,
+    MAX(fr.announced_date) AS last_deal,
+    GROUP_CONCAT(DISTINCT fr.round_type) AS round_types
+FROM organizations o
+JOIN round_participants rp ON o.id = rp.investor_id
+JOIN funding_rounds fr ON rp.funding_round_id = fr.id
+WHERE o.is_investor = 1
+GROUP BY o.id;
+
+-- Sector investment summary
+CREATE VIEW IF NOT EXISTS v_sector_investment AS
+SELECT
+    s.id AS sector_id, s.name AS sector_name, s.name_ja AS sector_name_ja,
+    COUNT(DISTINCT fr.id) AS deal_count,
+    COUNT(DISTINCT fr.organization_id) AS company_count,
+    COUNT(DISTINCT rp.investor_id) AS investor_count,
+    SUM(fr.amount_jpy) AS total_raised_jpy,
+    AVG(fr.amount_jpy) AS avg_deal_size_jpy,
+    MIN(fr.announced_date) AS first_deal,
+    MAX(fr.announced_date) AS last_deal
+FROM sectors s
+JOIN organization_sectors os ON s.id = os.sector_id AND os.is_primary = 1
+JOIN funding_rounds fr ON os.organization_id = fr.organization_id
+LEFT JOIN round_participants rp ON fr.id = rp.funding_round_id
+GROUP BY s.id;
+
+-- Investor x Sector cross-analysis
+CREATE VIEW IF NOT EXISTS v_investor_sector_matrix AS
+SELECT
+    inv.id AS investor_id, inv.name AS investor_name,
+    s.id AS sector_id, s.name AS sector_name, s.name_ja AS sector_name_ja,
+    COUNT(DISTINCT fr.id) AS deal_count,
+    SUM(fr.amount_jpy) AS total_invested_jpy
+FROM organizations inv
+JOIN round_participants rp ON inv.id = rp.investor_id
+JOIN funding_rounds fr ON rp.funding_round_id = fr.id
+JOIN organization_sectors os ON fr.organization_id = os.organization_id AND os.is_primary = 1
+JOIN sectors s ON os.sector_id = s.id
+WHERE inv.is_investor = 1
+GROUP BY inv.id, s.id;
 """
 
 
