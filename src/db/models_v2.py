@@ -199,7 +199,7 @@ def find_or_create_sector(conn: sqlite3.Connection, name: str) -> int:
     Normalizes the input name to a canonical sector before lookup/insert,
     preventing fragmentation of the sectors table.
     """
-    from src.normalizer.sector_normalizer import normalize_sector
+    from normalizer.sector_normalizer import normalize_sector
 
     canonical = normalize_sector(name)
     row = conn.execute(
