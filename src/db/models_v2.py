@@ -194,18 +194,24 @@ def find_or_create_investor(
 # ================================================================
 
 def find_or_create_sector(conn: sqlite3.Connection, name: str) -> int:
-    """Find sector by name (en or ja) or create a new one."""
-    if not name:
-        name = "Other"
+    """Find sector by name (en or ja) or create a new one.
+
+    Normalizes the input name to a canonical sector before lookup/insert,
+    preventing fragmentation of the sectors table.
+    """
+    from src.normalizer.sector_normalizer import normalize_sector
+
+    canonical = normalize_sector(name)
     row = conn.execute(
         "SELECT id FROM sectors WHERE LOWER(name) = LOWER(?) OR name_ja = ?",
-        (name, name),
+        (canonical, canonical),
     ).fetchone()
     if row:
         return row["id"]
+    # Fallback: create with canonical name (should rarely happen)
     cur = conn.execute(
         "INSERT INTO sectors (name, name_ja, sort_order) VALUES (?, ?, 100)",
-        (name, name),
+        (canonical, canonical),
     )
     return cur.lastrowid
 
