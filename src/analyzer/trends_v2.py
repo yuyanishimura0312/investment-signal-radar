@@ -444,6 +444,9 @@ def export_dashboard_data(output_path: Optional[str] = None) -> dict:
         "investor_profiles": investor_profiles(),
         "investor_sector_matrix": investor_sector_matrix(),
         "sector_summary": sector_summary(),
+        # Signals & Network (Phase 3a/3b enrichment)
+        "signals": _export_signals(),
+        "network_top_investors": _export_network_top(),
     }
 
     if output_path is None:
@@ -456,6 +459,40 @@ def export_dashboard_data(output_path: Optional[str] = None) -> dict:
 
     print(f"Dashboard data exported to {output_path}")
     return data
+
+
+def _export_signals() -> list[dict]:
+    """Export detected signals for dashboard display."""
+    with _conn() as conn:
+        rows = conn.execute("""
+            SELECT signal_type, s.name AS sector_name, si.detected_at,
+                   si.baseline_count, si.current_count, si.acceleration_ratio,
+                   si.description
+            FROM signals si
+            LEFT JOIN sectors s ON si.sector_id = s.id
+            ORDER BY si.detected_at DESC
+            LIMIT 50
+        """).fetchall()
+        return [dict(r) for r in rows]
+
+
+def _export_network_top() -> list[dict]:
+    """Export top investors by network centrality."""
+    with _conn() as conn:
+        rows = conn.execute("""
+            SELECT o.name AS investor_name,
+                   MAX(CASE WHEN nm.metric_type='degree_centrality' THEN nm.metric_value END) AS degree,
+                   MAX(CASE WHEN nm.metric_type='betweenness_centrality' THEN nm.metric_value END) AS betweenness,
+                   MAX(CASE WHEN nm.metric_type='eigenvector_centrality' THEN nm.metric_value END) AS eigenvector,
+                   MAX(CASE WHEN nm.metric_type='co_investment_count' THEN nm.metric_value END) AS co_investments,
+                   MAX(CASE WHEN nm.metric_type='unique_co_investors' THEN nm.metric_value END) AS unique_partners
+            FROM network_metrics nm
+            JOIN organizations o ON nm.organization_id = o.id
+            GROUP BY nm.organization_id
+            ORDER BY degree DESC
+            LIMIT 30
+        """).fetchall()
+        return [dict(r) for r in rows]
 
 
 if __name__ == "__main__":

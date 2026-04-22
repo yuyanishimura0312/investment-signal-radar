@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-22T19:49:09.033467",
+  "generated_at": "2026-04-22T20:01:07.662889",
   "schema_version": "v2.0",
   "stats": {
     "organizations": 3461,
@@ -35667,6 +35667,700 @@
       "avg_deal_size_jpy": 97500.0,
       "first_deal": "2026-04-15",
       "last_deal": "2026-04-15"
+    }
+  ],
+  "signals": [
+    {
+      "signal_type": "new_sector",
+      "sector_name": "Cybersecurity",
+      "detected_at": "2026-04-22 10:47:26",
+      "baseline_count": 0,
+      "current_count": 2,
+      "acceleration_ratio": null,
+      "description": "New sector 'Cybersecurity': 2 deals in last 4 weeks (no prior baseline)"
+    },
+    {
+      "signal_type": "new_sector",
+      "sector_name": "Education/EdTech",
+      "detected_at": "2026-04-22 10:47:26",
+      "baseline_count": 0,
+      "current_count": 2,
+      "acceleration_ratio": null,
+      "description": "New sector 'Education/EdTech': 2 deals in last 4 weeks (no prior baseline)"
+    },
+    {
+      "signal_type": "new_sector",
+      "sector_name": "Marketing/AdTech",
+      "detected_at": "2026-04-22 10:47:26",
+      "baseline_count": 0,
+      "current_count": 3,
+      "acceleration_ratio": null,
+      "description": "New sector 'Marketing/AdTech': 3 deals in last 4 weeks (no prior baseline)"
+    },
+    {
+      "signal_type": "investment_surge",
+      "sector_name": "HR/WorkTech",
+      "detected_at": "2026-04-22 10:47:26",
+      "baseline_count": 0,
+      "current_count": 8,
+      "acceleration_ratio": 12.86,
+      "description": "Sector 'HR/WorkTech': 8 deals in last 4 weeks (baseline avg: 0.7/month, ratio: 12.9x)"
+    },
+    {
+      "signal_type": "investment_surge",
+      "sector_name": "Other",
+      "detected_at": "2026-04-22 10:47:26",
+      "baseline_count": 1,
+      "current_count": 5,
+      "acceleration_ratio": 5.36,
+      "description": "Sector 'Other': 5 deals in last 4 weeks (baseline avg: 1.0/month, ratio: 5.4x)"
+    },
+    {
+      "signal_type": "investment_surge",
+      "sector_name": "Real Estate/PropTech",
+      "detected_at": "2026-04-22 10:47:26",
+      "baseline_count": 1,
+      "current_count": 4,
+      "acceleration_ratio": 4.29,
+      "description": "Sector 'Real Estate/PropTech': 4 deals in last 4 weeks (baseline avg: 1.0/month, ratio: 4.3x)"
+    },
+    {
+      "signal_type": "investment_surge",
+      "sector_name": "AI/Machine Learning",
+      "detected_at": "2026-04-22 10:47:26",
+      "baseline_count": 9,
+      "current_count": 31,
+      "acceleration_ratio": 3.44,
+      "description": "Sector 'AI/Machine Learning': 31 deals in last 4 weeks (baseline avg: 9.7/month, ratio: 3.4x)"
+    },
+    {
+      "signal_type": "investment_surge",
+      "sector_name": "Climate/CleanTech",
+      "detected_at": "2026-04-22 10:47:26",
+      "baseline_count": 3,
+      "current_count": 10,
+      "acceleration_ratio": 3.21,
+      "description": "Sector 'Climate/CleanTech': 10 deals in last 4 weeks (baseline avg: 3.3/month, ratio: 3.2x)"
+    },
+    {
+      "signal_type": "investment_surge",
+      "sector_name": "Construction Tech",
+      "detected_at": "2026-04-22 10:47:26",
+      "baseline_count": 1,
+      "current_count": 3,
+      "acceleration_ratio": 3.21,
+      "description": "Sector 'Construction Tech': 3 deals in last 4 weeks (baseline avg: 1.0/month, ratio: 3.2x)"
+    },
+    {
+      "signal_type": "investment_surge",
+      "sector_name": "Media/Entertainment",
+      "detected_at": "2026-04-22 10:47:26",
+      "baseline_count": 1,
+      "current_count": 3,
+      "acceleration_ratio": 2.41,
+      "description": "Sector 'Media/Entertainment': 3 deals in last 4 weeks (baseline avg: 1.3/month, ratio: 2.4x)"
+    },
+    {
+      "signal_type": "investment_surge",
+      "sector_name": "Fintech",
+      "detected_at": "2026-04-22 10:47:26",
+      "baseline_count": 2,
+      "current_count": 4,
+      "acceleration_ratio": 1.61,
+      "description": "Sector 'Fintech': 4 deals in last 4 weeks (baseline avg: 2.7/month, ratio: 1.6x)"
+    },
+    {
+      "signal_type": "investment_surge",
+      "sector_name": "Food/AgTech",
+      "detected_at": "2026-04-22 10:47:26",
+      "baseline_count": 3,
+      "current_count": 5,
+      "acceleration_ratio": 1.61,
+      "description": "Sector 'Food/AgTech': 5 deals in last 4 weeks (baseline avg: 3.3/month, ratio: 1.6x)"
+    },
+    {
+      "signal_type": "event_surge",
+      "sector_name": "AI/Machine Learning",
+      "detected_at": "2026-04-22 10:47:26",
+      "baseline_count": 42,
+      "current_count": 1,
+      "acceleration_ratio": 10.25,
+      "description": "Manycore Tech Inc.（群核科技） (ipo): 1636.0億円 — sector avg 42.6億円, z-score 10.2"
+    },
+    {
+      "signal_type": "event_surge",
+      "sector_name": "AI/Machine Learning",
+      "detected_at": "2026-04-22 10:47:26",
+      "baseline_count": 42,
+      "current_count": 1,
+      "acceleration_ratio": 4.74,
+      "description": "ElevenLabs（イレブンラボ） (series_d): 780.0億円 — sector avg 42.6億円, z-score 4.7"
+    },
+    {
+      "signal_type": "event_surge",
+      "sector_name": "Real Estate/PropTech",
+      "detected_at": "2026-04-22 10:47:26",
+      "baseline_count": 7,
+      "current_count": 1,
+      "acceleration_ratio": 3.58,
+      "description": "株式会社LivEQuality大家さん (strategic): 40.0億円 — sector avg 7.7億円, z-score 3.6"
+    },
+    {
+      "signal_type": "event_surge",
+      "sector_name": "Food/AgTech",
+      "detected_at": "2026-04-22 10:47:26",
+      "baseline_count": 9,
+      "current_count": 1,
+      "acceleration_ratio": 2.32,
+      "description": "株式会社CRISP (corporate_round): 37.0億円 — sector avg 9.7億円, z-score 2.3"
+    },
+    {
+      "signal_type": "event_surge",
+      "sector_name": "Healthcare/Biotech",
+      "detected_at": "2026-04-22 10:47:26",
+      "baseline_count": 9,
+      "current_count": 1,
+      "acceleration_ratio": 2.04,
+      "description": "メタジェンセラピューティクス株式会社 (series_b): 35.2億円 — sector avg 9.7億円, z-score 2.0"
+    },
+    {
+      "signal_type": "event_surge",
+      "sector_name": "Real Estate/PropTech",
+      "detected_at": "2026-04-22 10:47:26",
+      "baseline_count": 7,
+      "current_count": 1,
+      "acceleration_ratio": 2.02,
+      "description": "NOT A HOTEL株式会社 (series_c): 26.0億円 — sector avg 7.7億円, z-score 2.0"
+    },
+    {
+      "signal_type": "network_shift",
+      "sector_name": "Retail Tech",
+      "detected_at": "2026-04-22 10:47:26",
+      "baseline_count": 0,
+      "current_count": 2,
+      "acceleration_ratio": null,
+      "description": "三菱UFJキャピタル (total 128 deals) entered 'Retail Tech' for the first time on 2026-02-03"
+    },
+    {
+      "signal_type": "network_shift",
+      "sector_name": "Retail Tech",
+      "detected_at": "2026-04-22 10:47:26",
+      "baseline_count": 0,
+      "current_count": 1,
+      "acceleration_ratio": null,
+      "description": "みずほキャピタル株式会社 (total 98 deals) entered 'Retail Tech' for the first time on 2026-02-04"
+    },
+    {
+      "signal_type": "network_shift",
+      "sector_name": "Semiconductor",
+      "detected_at": "2026-04-22 10:47:26",
+      "baseline_count": 0,
+      "current_count": 1,
+      "acceleration_ratio": null,
+      "description": "SMBCベンチャーキャピタル株式会社 (total 92 deals) entered 'Semiconductor' for the first time on 2026-03-09"
+    },
+    {
+      "signal_type": "network_shift",
+      "sector_name": "Retail Tech",
+      "detected_at": "2026-04-22 10:47:26",
+      "baseline_count": 0,
+      "current_count": 1,
+      "acceleration_ratio": null,
+      "description": "SMBCベンチャーキャピタル株式会社 (total 92 deals) entered 'Retail Tech' for the first time on 2026-02-04"
+    },
+    {
+      "signal_type": "network_shift",
+      "sector_name": "Construction Tech",
+      "detected_at": "2026-04-22 10:47:26",
+      "baseline_count": 0,
+      "current_count": 1,
+      "acceleration_ratio": null,
+      "description": "グローバル・ブレイン株式会社 (total 80 deals) entered 'Construction Tech' for the first time on 2026-04-15"
+    },
+    {
+      "signal_type": "network_shift",
+      "sector_name": "Fintech",
+      "detected_at": "2026-04-22 10:47:26",
+      "baseline_count": 0,
+      "current_count": 1,
+      "acceleration_ratio": null,
+      "description": "株式会社ジェネシア・ベンチャーズ (total 69 deals) entered 'Fintech' for the first time on 2026-04-16"
+    },
+    {
+      "signal_type": "network_shift",
+      "sector_name": "Cybersecurity",
+      "detected_at": "2026-04-22 10:47:26",
+      "baseline_count": 0,
+      "current_count": 1,
+      "acceleration_ratio": null,
+      "description": "株式会社ジェネシア・ベンチャーズ (total 69 deals) entered 'Cybersecurity' for the first time on 2026-04-15"
+    },
+    {
+      "signal_type": "network_shift",
+      "sector_name": "Construction Tech",
+      "detected_at": "2026-04-22 10:47:26",
+      "baseline_count": 0,
+      "current_count": 1,
+      "acceleration_ratio": null,
+      "description": "ANRI (total 69 deals) entered 'Construction Tech' for the first time on 2026-02-12"
+    },
+    {
+      "signal_type": "network_shift",
+      "sector_name": "Media/Entertainment",
+      "detected_at": "2026-04-22 10:47:26",
+      "baseline_count": 0,
+      "current_count": 1,
+      "acceleration_ratio": null,
+      "description": "ANRI (total 69 deals) entered 'Media/Entertainment' for the first time on 2026-03-17"
+    },
+    {
+      "signal_type": "network_shift",
+      "sector_name": "Other",
+      "detected_at": "2026-04-22 10:47:26",
+      "baseline_count": 0,
+      "current_count": 1,
+      "acceleration_ratio": null,
+      "description": "ANRI (total 69 deals) entered 'Other' for the first time on 2026-03-05"
+    },
+    {
+      "signal_type": "network_shift",
+      "sector_name": "Construction Tech",
+      "detected_at": "2026-04-22 10:47:26",
+      "baseline_count": 0,
+      "current_count": 1,
+      "acceleration_ratio": null,
+      "description": "三井住友海上キャピタル (total 56 deals) entered 'Construction Tech' for the first time on 2026-04-15"
+    },
+    {
+      "signal_type": "network_shift",
+      "sector_name": "Retail Tech",
+      "detected_at": "2026-04-22 10:47:26",
+      "baseline_count": 0,
+      "current_count": 1,
+      "acceleration_ratio": null,
+      "description": "ニッセイ・キャピタル株式会社 (total 56 deals) entered 'Retail Tech' for the first time on 2026-02-03"
+    },
+    {
+      "signal_type": "network_shift",
+      "sector_name": "Travel/Hospitality",
+      "detected_at": "2026-04-22 10:47:26",
+      "baseline_count": 0,
+      "current_count": 1,
+      "acceleration_ratio": null,
+      "description": "みずほ銀行 (total 54 deals) entered 'Travel/Hospitality' for the first time on 2026-02-27"
+    },
+    {
+      "signal_type": "network_shift",
+      "sector_name": "Marketing/AdTech",
+      "detected_at": "2026-04-22 10:47:26",
+      "baseline_count": 0,
+      "current_count": 1,
+      "acceleration_ratio": null,
+      "description": "DNX Ventures (total 50 deals) entered 'Marketing/AdTech' for the first time on 2026-04-15"
+    },
+    {
+      "signal_type": "network_shift",
+      "sector_name": "Other",
+      "detected_at": "2026-04-22 10:47:26",
+      "baseline_count": 0,
+      "current_count": 1,
+      "acceleration_ratio": null,
+      "description": "East Ventures (total 48 deals) entered 'Other' for the first time on 2026-03-05"
+    },
+    {
+      "signal_type": "network_shift",
+      "sector_name": "Climate/CleanTech",
+      "detected_at": "2026-04-22 10:47:26",
+      "baseline_count": 0,
+      "current_count": 1,
+      "acceleration_ratio": null,
+      "description": "グロービス・キャピタル・パートナーズ (total 45 deals) entered 'Climate/CleanTech' for the first time on 2026-04-02"
+    },
+    {
+      "signal_type": "network_shift",
+      "sector_name": "Other",
+      "detected_at": "2026-04-22 10:47:26",
+      "baseline_count": 0,
+      "current_count": 1,
+      "acceleration_ratio": null,
+      "description": "個人投資家 (total 36 deals) entered 'Other' for the first time on 2026-03-30"
+    },
+    {
+      "signal_type": "network_shift",
+      "sector_name": "Construction Tech",
+      "detected_at": "2026-04-22 10:47:26",
+      "baseline_count": 0,
+      "current_count": 1,
+      "acceleration_ratio": null,
+      "description": "株式会社商工組合中央金庫 (total 33 deals) entered 'Construction Tech' for the first time on 2026-04-15"
+    },
+    {
+      "signal_type": "network_shift",
+      "sector_name": "Food/AgTech",
+      "detected_at": "2026-04-22 10:47:26",
+      "baseline_count": 0,
+      "current_count": 1,
+      "acceleration_ratio": null,
+      "description": "株式会社商工組合中央金庫 (total 33 deals) entered 'Food/AgTech' for the first time on 2026-03-31"
+    },
+    {
+      "signal_type": "network_shift",
+      "sector_name": "Construction Tech",
+      "detected_at": "2026-04-22 10:47:26",
+      "baseline_count": 0,
+      "current_count": 1,
+      "acceleration_ratio": null,
+      "description": "Z Venture Capital株式会社 (total 29 deals) entered 'Construction Tech' for the first time on 2026-04-15"
+    },
+    {
+      "signal_type": "network_shift",
+      "sector_name": "Mobility/Transportation",
+      "detected_at": "2026-04-22 10:47:26",
+      "baseline_count": 0,
+      "current_count": 1,
+      "acceleration_ratio": null,
+      "description": "Angel Bridge (total 28 deals) entered 'Mobility/Transportation' for the first time on 2026-03-11"
+    },
+    {
+      "signal_type": "network_shift",
+      "sector_name": "Climate/CleanTech",
+      "detected_at": "2026-04-22 10:47:26",
+      "baseline_count": 0,
+      "current_count": 1,
+      "acceleration_ratio": null,
+      "description": "XTech Ventures株式会社 (total 27 deals) entered 'Climate/CleanTech' for the first time on 2026-02-25"
+    },
+    {
+      "signal_type": "network_shift",
+      "sector_name": "Mobility/Transportation",
+      "detected_at": "2026-04-22 10:47:26",
+      "baseline_count": 0,
+      "current_count": 1,
+      "acceleration_ratio": null,
+      "description": "あおぞら企業投資 (total 24 deals) entered 'Mobility/Transportation' for the first time on 2026-03-11"
+    },
+    {
+      "signal_type": "network_shift",
+      "sector_name": "Climate/CleanTech",
+      "detected_at": "2026-04-22 10:47:26",
+      "baseline_count": 0,
+      "current_count": 1,
+      "acceleration_ratio": null,
+      "description": "伊藤忠テクノロジーベンチャーズ株式会社 (total 24 deals) entered 'Climate/CleanTech' for the first time on 2026-02-27"
+    },
+    {
+      "signal_type": "network_shift",
+      "sector_name": "Food/AgTech",
+      "detected_at": "2026-04-22 10:47:26",
+      "baseline_count": 0,
+      "current_count": 1,
+      "acceleration_ratio": null,
+      "description": "株式会社ANOBAKA (total 20 deals) entered 'Food/AgTech' for the first time on 2026-04-02"
+    },
+    {
+      "signal_type": "network_shift",
+      "sector_name": "Real Estate/PropTech",
+      "detected_at": "2026-04-22 10:47:26",
+      "baseline_count": 0,
+      "current_count": 1,
+      "acceleration_ratio": null,
+      "description": "北國銀行 (total 18 deals) entered 'Real Estate/PropTech' for the first time on 2026-03-17"
+    },
+    {
+      "signal_type": "network_shift",
+      "sector_name": "Climate/CleanTech",
+      "detected_at": "2026-04-22 10:47:26",
+      "baseline_count": 0,
+      "current_count": 1,
+      "acceleration_ratio": null,
+      "description": "エンジェル投資家 (total 17 deals) entered 'Climate/CleanTech' for the first time on 2026-04-07"
+    },
+    {
+      "signal_type": "network_shift",
+      "sector_name": "Fintech",
+      "detected_at": "2026-04-22 10:47:26",
+      "baseline_count": 0,
+      "current_count": 1,
+      "acceleration_ratio": null,
+      "description": "ユナイテッド株式会社 (total 17 deals) entered 'Fintech' for the first time on 2026-02-04"
+    },
+    {
+      "signal_type": "network_shift",
+      "sector_name": "Construction Tech",
+      "detected_at": "2026-04-22 10:47:26",
+      "baseline_count": 0,
+      "current_count": 1,
+      "acceleration_ratio": null,
+      "description": "三菱電機株式会社 (total 17 deals) entered 'Construction Tech' for the first time on 2026-02-13"
+    },
+    {
+      "signal_type": "network_shift",
+      "sector_name": "HR/WorkTech",
+      "detected_at": "2026-04-22 10:47:26",
+      "baseline_count": 0,
+      "current_count": 1,
+      "acceleration_ratio": null,
+      "description": "DG Daiwa Ventures (total 16 deals) entered 'HR/WorkTech' for the first time on 2026-01-23"
+    },
+    {
+      "signal_type": "network_shift",
+      "sector_name": "Media/Entertainment",
+      "detected_at": "2026-04-22 10:47:26",
+      "baseline_count": 0,
+      "current_count": 1,
+      "acceleration_ratio": null,
+      "description": "mint (total 15 deals) entered 'Media/Entertainment' for the first time on 2026-03-17"
+    },
+    {
+      "signal_type": "network_shift",
+      "sector_name": "Healthcare/Biotech",
+      "detected_at": "2026-04-22 10:47:26",
+      "baseline_count": 0,
+      "current_count": 2,
+      "acceleration_ratio": null,
+      "description": "One Capital株式会社 (total 14 deals) entered 'Healthcare/Biotech' for the first time on 2026-02-26"
+    }
+  ],
+  "network_top_investors": [
+    {
+      "investor_name": "三菱UFJキャピタル",
+      "degree": 0.16729244889445138,
+      "betweenness": 0.06330980467896925,
+      "eigenvector": 0.4067829847791222,
+      "co_investments": 796.0,
+      "unique_partners": 401.0
+    },
+    {
+      "investor_name": "みずほキャピタル株式会社",
+      "degree": 0.1568627450980392,
+      "betweenness": 0.05186917223439005,
+      "eigenvector": 0.36279189789808697,
+      "co_investments": 706.0,
+      "unique_partners": 376.0
+    },
+    {
+      "investor_name": "SMBCベンチャーキャピタル株式会社",
+      "degree": 0.14643304130162704,
+      "betweenness": 0.039163280148362144,
+      "eigenvector": 0.3749164950016874,
+      "co_investments": 683.0,
+      "unique_partners": 351.0
+    },
+    {
+      "investor_name": "みずほ銀行",
+      "degree": 0.09887359198998748,
+      "betweenness": 0.029146852381562505,
+      "eigenvector": 0.15930861929175685,
+      "co_investments": 384.0,
+      "unique_partners": 237.0
+    },
+    {
+      "investor_name": "ANRI",
+      "degree": 0.09845640383813099,
+      "betweenness": 0.03485298185977896,
+      "eigenvector": 0.15538115176988554,
+      "co_investments": 352.0,
+      "unique_partners": 236.0
+    },
+    {
+      "investor_name": "三井住友銀行",
+      "degree": 0.0917813934084272,
+      "betweenness": 0.026041237989988097,
+      "eigenvector": 0.14329326348887023,
+      "co_investments": 331.0,
+      "unique_partners": 220.0
+    },
+    {
+      "investor_name": "ジャフコグループ株式会社",
+      "degree": 0.08969545264914476,
+      "betweenness": 0.021763807280841062,
+      "eigenvector": 0.19409498790127167,
+      "co_investments": 356.0,
+      "unique_partners": 215.0
+    },
+    {
+      "investor_name": "グローバル・ブレイン株式会社",
+      "degree": 0.08886107634543179,
+      "betweenness": 0.03252961028659626,
+      "eigenvector": 0.13813477980529038,
+      "co_investments": 342.0,
+      "unique_partners": 213.0
+    },
+    {
+      "investor_name": "三井住友海上キャピタル",
+      "degree": 0.08468919482686692,
+      "betweenness": 0.032816504045826575,
+      "eigenvector": 0.13130986816563725,
+      "co_investments": 290.0,
+      "unique_partners": 203.0
+    },
+    {
+      "investor_name": "日本政策金融公庫",
+      "degree": 0.08302044221944097,
+      "betweenness": 0.034275149241601244,
+      "eigenvector": 0.12622603588694403,
+      "co_investments": 304.0,
+      "unique_partners": 199.0
+    },
+    {
+      "investor_name": "DBJキャピタル",
+      "degree": 0.07926574885273258,
+      "betweenness": 0.017675090455917326,
+      "eigenvector": 0.1668848276047143,
+      "co_investments": 296.0,
+      "unique_partners": 190.0
+    },
+    {
+      "investor_name": "ニッセイ・キャピタル株式会社",
+      "degree": 0.07676261994159365,
+      "betweenness": 0.025059162472763345,
+      "eigenvector": 0.1083036258472356,
+      "co_investments": 252.0,
+      "unique_partners": 184.0
+    },
+    {
+      "investor_name": "SBIインベストメント株式会社",
+      "degree": 0.07592824363788069,
+      "betweenness": 0.0334702964787798,
+      "eigenvector": 0.11642844502904372,
+      "co_investments": 255.0,
+      "unique_partners": 182.0
+    },
+    {
+      "investor_name": "インキュベイトファンド株式会社",
+      "degree": 0.0750938673341677,
+      "betweenness": 0.026172917931583935,
+      "eigenvector": 0.10399500821038922,
+      "co_investments": 256.0,
+      "unique_partners": 180.0
+    },
+    {
+      "investor_name": "株式会社商工組合中央金庫",
+      "degree": 0.07384230287859825,
+      "betweenness": 0.01737733550100915,
+      "eigenvector": 0.11275816217329114,
+      "co_investments": 266.0,
+      "unique_partners": 177.0
+    },
+    {
+      "investor_name": "株式会社三菱UFJ銀行",
+      "degree": 0.07259073842302878,
+      "betweenness": 0.012897181674858527,
+      "eigenvector": 0.14384543022704338,
+      "co_investments": 283.0,
+      "unique_partners": 174.0
+    },
+    {
+      "investor_name": "JICベンチャー・グロース・インベストメンツ",
+      "degree": 0.0721735502711723,
+      "betweenness": 0.013754346699573284,
+      "eigenvector": 0.15231986066019237,
+      "co_investments": 268.0,
+      "unique_partners": 173.0
+    },
+    {
+      "investor_name": "グロービス・キャピタル・パートナーズ",
+      "degree": 0.0654985398414685,
+      "betweenness": 0.015485132073419613,
+      "eigenvector": 0.11161074882225697,
+      "co_investments": 247.0,
+      "unique_partners": 157.0
+    },
+    {
+      "investor_name": "株式会社ジェネシア・ベンチャーズ",
+      "degree": 0.05965790571547768,
+      "betweenness": 0.019905384172598833,
+      "eigenvector": 0.09800525141037734,
+      "co_investments": 199.0,
+      "unique_partners": 143.0
+    },
+    {
+      "investor_name": "DNX Ventures",
+      "degree": 0.058823529411764705,
+      "betweenness": 0.016905491970863794,
+      "eigenvector": 0.11214599736006312,
+      "co_investments": 214.0,
+      "unique_partners": 141.0
+    },
+    {
+      "investor_name": "個人投資家",
+      "degree": 0.05590321234876929,
+      "betweenness": 0.02982705578842079,
+      "eigenvector": 0.048557520304056793,
+      "co_investments": 159.0,
+      "unique_partners": 134.0
+    },
+    {
+      "investor_name": "三井住友信託銀行株式会社",
+      "degree": 0.05465164789319983,
+      "betweenness": 0.012491052772023703,
+      "eigenvector": 0.062121471963399455,
+      "co_investments": 166.0,
+      "unique_partners": 131.0
+    },
+    {
+      "investor_name": "株式会社FFGベンチャービジネスパートナーズ",
+      "degree": 0.05423445974134335,
+      "betweenness": 0.008316646533198082,
+      "eigenvector": 0.09365511600278541,
+      "co_investments": 184.0,
+      "unique_partners": 130.0
+    },
+    {
+      "investor_name": "りそな銀行",
+      "degree": 0.053817271589486855,
+      "betweenness": 0.007014093549988259,
+      "eigenvector": 0.11355520964442498,
+      "co_investments": 221.0,
+      "unique_partners": 129.0
+    },
+    {
+      "investor_name": "B Dash Ventures株式会社",
+      "degree": 0.05173133083020442,
+      "betweenness": 0.027135119609379005,
+      "eigenvector": 0.03671420512082508,
+      "co_investments": 145.0,
+      "unique_partners": 124.0
+    },
+    {
+      "investor_name": "伊藤忠テクノロジーベンチャーズ株式会社",
+      "degree": 0.05131414267834793,
+      "betweenness": 0.006946896018202581,
+      "eigenvector": 0.10217548467968814,
+      "co_investments": 178.0,
+      "unique_partners": 123.0
+    },
+    {
+      "investor_name": "あおぞら企業投資",
+      "degree": 0.05047976637463496,
+      "betweenness": 0.008661457273530323,
+      "eigenvector": 0.0831361263370277,
+      "co_investments": 176.0,
+      "unique_partners": 121.0
+    },
+    {
+      "investor_name": "デライト・ベンチャーズ",
+      "degree": 0.047976637463496036,
+      "betweenness": 0.005721755222848142,
+      "eigenvector": 0.10681921266987895,
+      "co_investments": 192.0,
+      "unique_partners": 115.0
+    },
+    {
+      "investor_name": "East Ventures",
+      "degree": 0.047976637463496036,
+      "betweenness": 0.025598059040855124,
+      "eigenvector": 0.021727363011765675,
+      "co_investments": 149.0,
+      "unique_partners": 115.0
+    },
+    {
+      "investor_name": "Headline Asia",
+      "degree": 0.047976637463496036,
+      "betweenness": 0.021162111925667526,
+      "eigenvector": 0.04101520183795234,
+      "co_investments": 131.0,
+      "unique_partners": 115.0
     }
   ]
 }

@@ -517,6 +517,107 @@ tr:hover td {
   .filters select { min-width: 0; width: 100%; }
 }
 
+/* 2-column grid layout */
+.grid-2col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-lg);
+}
+
+/* 3-column grid layout */
+.grid-3col {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: var(--space-md);
+}
+
+/* Score bar */
+.score-bar-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.score-bar {
+  flex: 1;
+  height: 16px;
+  background: var(--bg);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+.score-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--miratuku-sand-gold), var(--miratuku-terracotta));
+  border-radius: var(--radius-sm);
+  transition: width 0.3s ease;
+}
+.score-bar-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--accent);
+  min-width: 48px;
+}
+
+/* Signal badges */
+.badge-signal-investment_surge { background: #DC8766; color: #fff; }
+.badge-signal-new_sector { background: #CEA26F; color: #fff; }
+.badge-signal-event_surge { background: #B07256; color: #fff; }
+.badge-signal-network_shift { background: #966D5E; color: #fff; }
+.badge-signal-round_escalation { background: #7A4033; color: #fff; }
+.badge-signal-funding_drought { background: #5F322A; color: #fff; }
+
+/* Tag cloud */
+.tag-category-card {
+  background: var(--bg);
+  border-radius: var(--radius-lg);
+  padding: var(--space-md);
+}
+.tag-category-card h3 {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--accent);
+  margin-bottom: var(--space-sm);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.tag-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.tag-pill {
+  display: inline-block;
+  padding: 3px 10px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  color: var(--text);
+  white-space: nowrap;
+}
+.tag-pill small {
+  color: var(--text-muted);
+  font-size: 10px;
+  margin-left: 3px;
+}
+
+/* Table scroll */
+.table-scroll {
+  max-height: 500px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.text-wrap {
+  white-space: normal;
+  max-width: 300px;
+  word-break: break-word;
+}
+
+@media (max-width: 768px) {
+  .grid-2col { grid-template-columns: 1fr; }
+  .grid-3col { grid-template-columns: 1fr; }
+}
+
 @media (max-width: 480px) {
   .stats-grid { grid-template-columns: 1fr 1fr; }
   header h1 { font-size: 18px; }
