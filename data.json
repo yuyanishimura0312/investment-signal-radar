@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-04-23T01:50:00.122365",
+  "generated_at": "2026-04-23T07:21:27.795522",
   "schema_version": "v2.0",
   "stats": {
-    "organizations": 3462,
-    "funding_rounds": 1465,
-    "round_participants": 6124,
-    "events": 1592,
+    "organizations": 3470,
+    "funding_rounds": 1469,
+    "round_participants": 6156,
+    "events": 1596,
     "sectors": 33,
     "tags": 46,
     "signals": 160,
     "signal_scores": 13080,
-    "companies": 1092,
-    "investors": 2398,
+    "companies": 1096,
+    "investors": 2403,
     "press_releases": 12476
   },
   "sector_trends": [
@@ -152,6 +152,12 @@
       "sector": "エンタープライズ/SaaS",
       "count": 1,
       "total_amount_jpy": 400000000
+    },
+    {
+      "month": "2025-05",
+      "sector": "その他",
+      "count": 1,
+      "total_amount_jpy": 0
     },
     {
       "month": "2025-06",
@@ -1093,8 +1099,8 @@
   "round_distribution": [
     {
       "round_type": "series_a",
-      "count": 396,
-      "total_amount_jpy": 257501473061
+      "count": 398,
+      "total_amount_jpy": 267701473061
     },
     {
       "round_type": "seed",
@@ -1108,7 +1114,7 @@
     },
     {
       "round_type": "corporate_round",
-      "count": 142,
+      "count": 143,
       "total_amount_jpy": 151119968800
     },
     {
@@ -1128,8 +1134,8 @@
     },
     {
       "round_type": "unknown",
-      "count": 59,
-      "total_amount_jpy": 151754191000
+      "count": 60,
+      "total_amount_jpy": 153754191000
     },
     {
       "round_type": "series_d",
@@ -1202,20 +1208,26 @@
     {
       "investor_name": "みずほキャピタル株式会社",
       "investor_type": "vc",
-      "deal_count": 98,
+      "deal_count": 99,
       "lead_count": 16
     },
     {
       "investor_name": "SMBCベンチャーキャピタル株式会社",
       "investor_type": "vc",
-      "deal_count": 92,
+      "deal_count": 93,
       "lead_count": 14
     },
     {
       "investor_name": "グローバル・ブレイン株式会社",
       "investor_type": "vc",
-      "deal_count": 80,
+      "deal_count": 81,
       "lead_count": 47
+    },
+    {
+      "investor_name": "ANRI",
+      "investor_type": "vc",
+      "deal_count": 70,
+      "lead_count": 32
     },
     {
       "investor_name": "株式会社ジェネシア・ベンチャーズ",
@@ -1224,15 +1236,9 @@
       "lead_count": 58
     },
     {
-      "investor_name": "ANRI",
-      "investor_type": "vc",
-      "deal_count": 69,
-      "lead_count": 32
-    },
-    {
       "investor_name": "ジャフコグループ株式会社",
       "investor_type": "vc",
-      "deal_count": 65,
+      "deal_count": 66,
       "lead_count": 38
     },
     {
@@ -1266,16 +1272,16 @@
       "lead_count": 9
     },
     {
+      "investor_name": "SBIインベストメント株式会社",
+      "investor_type": "corporate",
+      "deal_count": 51,
+      "lead_count": 26
+    },
+    {
       "investor_name": "DNX Ventures",
       "investor_type": "vc",
       "deal_count": 50,
       "lead_count": 31
-    },
-    {
-      "investor_name": "SBIインベストメント株式会社",
-      "investor_type": "corporate",
-      "deal_count": 50,
-      "lead_count": 26
     },
     {
       "investor_name": "East Ventures",
@@ -1296,6 +1302,12 @@
       "lead_count": 14
     },
     {
+      "investor_name": "Coral Capital",
+      "investor_type": "vc",
+      "deal_count": 39,
+      "lead_count": 20
+    },
+    {
       "investor_name": "三井住友銀行",
       "investor_type": "bank",
       "deal_count": 39,
@@ -1306,12 +1318,6 @@
       "investor_type": "vc",
       "deal_count": 38,
       "lead_count": 22
-    },
-    {
-      "investor_name": "Coral Capital",
-      "investor_type": "vc",
-      "deal_count": 38,
-      "lead_count": 20
     }
   ],
   "co_investment_pairs": [
@@ -1321,13 +1327,13 @@
       "shared_deals": 39
     },
     {
-      "investor_a": "三菱UFJキャピタル",
-      "investor_b": "みずほキャピタル株式会社",
-      "shared_deals": 32
-    },
-    {
       "investor_a": "みずほキャピタル株式会社",
       "investor_b": "SMBCベンチャーキャピタル株式会社",
+      "shared_deals": 33
+    },
+    {
+      "investor_a": "三菱UFJキャピタル",
+      "investor_b": "みずほキャピタル株式会社",
       "shared_deals": 32
     },
     {
@@ -1343,7 +1349,7 @@
     {
       "investor_a": "みずほキャピタル株式会社",
       "investor_b": "ジャフコグループ株式会社",
-      "shared_deals": 15
+      "shared_deals": 16
     },
     {
       "investor_a": "三菱UFJキャピタル",
@@ -1401,6 +1407,11 @@
       "shared_deals": 12
     },
     {
+      "investor_a": "ジャフコグループ株式会社",
+      "investor_b": "SMBCベンチャーキャピタル株式会社",
+      "shared_deals": 12
+    },
+    {
       "investor_a": "りそなキャピタル株式会社",
       "investor_b": "ジャフコグループ株式会社",
       "shared_deals": 11
@@ -1416,11 +1427,6 @@
       "shared_deals": 11
     },
     {
-      "investor_a": "ジャフコグループ株式会社",
-      "investor_b": "SMBCベンチャーキャピタル株式会社",
-      "shared_deals": 11
-    },
-    {
       "investor_a": "北國銀行",
       "investor_b": "みずほ銀行",
       "shared_deals": 10
@@ -1433,6 +1439,16 @@
     {
       "investor_a": "三菱UFJキャピタル",
       "investor_b": "Angel Bridge",
+      "shared_deals": 10
+    },
+    {
+      "investor_a": "グローバル・ブレイン株式会社",
+      "investor_b": "みずほキャピタル株式会社",
+      "shared_deals": 10
+    },
+    {
+      "investor_a": "グローバル・ブレイン株式会社",
+      "investor_b": "ANRI",
       "shared_deals": 10
     },
     {
@@ -1476,13 +1492,8 @@
       "shared_deals": 9
     },
     {
-      "investor_a": "グローバル・ブレイン株式会社",
-      "investor_b": "みずほキャピタル株式会社",
-      "shared_deals": 9
-    },
-    {
-      "investor_a": "グローバル・ブレイン株式会社",
-      "investor_b": "ANRI",
+      "investor_a": "SBIインベストメント株式会社",
+      "investor_b": "SMBCベンチャーキャピタル株式会社",
       "shared_deals": 9
     },
     {
@@ -1526,11 +1537,6 @@
       "shared_deals": 8
     },
     {
-      "investor_a": "SBIインベストメント株式会社",
-      "investor_b": "SMBCベンチャーキャピタル株式会社",
-      "shared_deals": 8
-    },
-    {
       "investor_a": "株式会社商工組合中央金庫",
       "investor_b": "三井住友銀行",
       "shared_deals": 8
@@ -1547,12 +1553,22 @@
     },
     {
       "investor_a": "みずほキャピタル株式会社",
+      "investor_b": "ANRI",
+      "shared_deals": 8
+    },
+    {
+      "investor_a": "みずほキャピタル株式会社",
       "investor_b": "伊藤忠テクノロジーベンチャーズ株式会社",
       "shared_deals": 8
     },
     {
       "investor_a": "みずほキャピタル株式会社",
       "investor_b": "株式会社FFGベンチャービジネスパートナーズ",
+      "shared_deals": 8
+    },
+    {
+      "investor_a": "SMBCベンチャーキャピタル株式会社",
+      "investor_b": "Coral Capital",
       "shared_deals": 8
     },
     {
@@ -1573,6 +1589,11 @@
     {
       "investor_a": "三菱UFJキャピタル",
       "investor_b": "株式会社慶應イノベーション・イニシアティブ",
+      "shared_deals": 7
+    },
+    {
+      "investor_a": "SBIインベストメント株式会社",
+      "investor_b": "みずほキャピタル株式会社",
       "shared_deals": 7
     },
     {
@@ -1597,17 +1618,17 @@
     },
     {
       "investor_a": "みずほキャピタル株式会社",
-      "investor_b": "ANRI",
-      "shared_deals": 7
-    },
-    {
-      "investor_a": "みずほキャピタル株式会社",
       "investor_b": "XTech Ventures株式会社",
       "shared_deals": 7
     },
     {
       "investor_a": "みずほキャピタル株式会社",
       "investor_b": "ALL STAR SAAS FUND",
+      "shared_deals": 7
+    },
+    {
+      "investor_a": "みずほキャピタル株式会社",
+      "investor_b": "静岡キャピタル株式会社",
       "shared_deals": 7
     },
     {
@@ -1642,7 +1663,12 @@
     },
     {
       "investor_a": "SMBCベンチャーキャピタル株式会社",
-      "investor_b": "Coral Capital",
+      "investor_b": "ANRI",
+      "shared_deals": 7
+    },
+    {
+      "investor_a": "SMBCベンチャーキャピタル株式会社",
+      "investor_b": "静岡キャピタル株式会社",
       "shared_deals": 7
     },
     {
@@ -1696,13 +1722,13 @@
       "shared_deals": 6
     },
     {
-      "investor_a": "SBIインベストメント株式会社",
-      "investor_b": "みずほキャピタル株式会社",
+      "investor_a": "グローバル・ブレイン株式会社",
+      "investor_b": "Shinhan Venture Investment Co.,Ltd.",
       "shared_deals": 6
     },
     {
       "investor_a": "グローバル・ブレイン株式会社",
-      "investor_b": "Shinhan Venture Investment Co.,Ltd.",
+      "investor_b": "B Dash Ventures株式会社",
       "shared_deals": 6
     },
     {
@@ -1712,7 +1738,7 @@
     },
     {
       "investor_a": "みずほキャピタル株式会社",
-      "investor_b": "静岡キャピタル株式会社",
+      "investor_b": "Coral Capital",
       "shared_deals": 6
     },
     {
@@ -1743,16 +1769,6 @@
     {
       "investor_a": "ジャフコグループ株式会社",
       "investor_b": "株式会社慶應イノベーション・イニシアティブ",
-      "shared_deals": 6
-    },
-    {
-      "investor_a": "SMBCベンチャーキャピタル株式会社",
-      "investor_b": "ANRI",
-      "shared_deals": 6
-    },
-    {
-      "investor_a": "SMBCベンチャーキャピタル株式会社",
-      "investor_b": "静岡キャピタル株式会社",
       "shared_deals": 6
     },
     {
@@ -1882,6 +1898,11 @@
     },
     {
       "investor_a": "SBIインベストメント株式会社",
+      "investor_b": "ANRI",
+      "shared_deals": 5
+    },
+    {
+      "investor_a": "SBIインベストメント株式会社",
       "investor_b": "千葉道場ファンド",
       "shared_deals": 5
     },
@@ -1892,7 +1913,7 @@
     },
     {
       "investor_a": "グローバル・ブレイン株式会社",
-      "investor_b": "B Dash Ventures株式会社",
+      "investor_b": "Spiral Capital",
       "shared_deals": 5
     },
     {
@@ -1908,11 +1929,6 @@
     {
       "investor_a": "みずほキャピタル株式会社",
       "investor_b": "ニッセイ・キャピタル株式会社",
-      "shared_deals": 5
-    },
-    {
-      "investor_a": "みずほキャピタル株式会社",
-      "investor_b": "Coral Capital",
       "shared_deals": 5
     },
     {
@@ -1951,13 +1967,38 @@
       "shared_deals": 5
     },
     {
+      "investor_a": "ジャフコグループ株式会社",
+      "investor_b": "Coral Capital",
+      "shared_deals": 5
+    },
+    {
+      "investor_a": "Spiral Capital",
+      "investor_b": "SMBCベンチャーキャピタル株式会社",
+      "shared_deals": 5
+    },
+    {
+      "investor_a": "Spiral Capital",
+      "investor_b": "ANRI",
+      "shared_deals": 5
+    },
+    {
       "investor_a": "スパークス・アセット・マネジメント株式会社",
       "investor_b": "SMBCベンチャーキャピタル株式会社",
       "shared_deals": 5
     },
     {
+      "investor_a": "SMBCベンチャーキャピタル株式会社",
+      "investor_b": "Eight Roads Ventures Japan",
+      "shared_deals": 5
+    },
+    {
       "investor_a": "ANRI",
       "investor_b": "XTech Ventures株式会社",
+      "shared_deals": 5
+    },
+    {
+      "investor_a": "ANRI",
+      "investor_b": "Coral Capital",
       "shared_deals": 5
     },
     {
@@ -2157,17 +2198,17 @@
     },
     {
       "investor_a": "SBIインベストメント株式会社",
+      "investor_b": "グローバル・ブレイン株式会社",
+      "shared_deals": 4
+    },
+    {
+      "investor_a": "SBIインベストメント株式会社",
       "investor_b": "ニッセイ・キャピタル株式会社",
       "shared_deals": 4
     },
     {
       "investor_a": "SBIインベストメント株式会社",
       "investor_b": "グロービス・キャピタル・パートナーズ",
-      "shared_deals": 4
-    },
-    {
-      "investor_a": "SBIインベストメント株式会社",
-      "investor_b": "ANRI",
       "shared_deals": 4
     },
     {
@@ -2197,7 +2238,12 @@
     },
     {
       "investor_a": "グローバル・ブレイン株式会社",
-      "investor_b": "Spiral Capital",
+      "investor_b": "ジャフコグループ株式会社",
+      "shared_deals": 4
+    },
+    {
+      "investor_a": "グローバル・ブレイン株式会社",
+      "investor_b": "SMBCベンチャーキャピタル株式会社",
       "shared_deals": 4
     },
     {
@@ -2208,6 +2254,11 @@
     {
       "investor_a": "グローバル・ブレイン株式会社",
       "investor_b": "伊藤忠テクノロジーベンチャーズ株式会社",
+      "shared_deals": 4
+    },
+    {
+      "investor_a": "グローバル・ブレイン株式会社",
+      "investor_b": "Coral Capital",
       "shared_deals": 4
     },
     {
@@ -2228,6 +2279,11 @@
     {
       "investor_a": "みずほキャピタル株式会社",
       "investor_b": "株式会社NTTドコモ・ベンチャーズ",
+      "shared_deals": 4
+    },
+    {
+      "investor_a": "みずほキャピタル株式会社",
+      "investor_b": "Spiral Capital",
       "shared_deals": 4
     },
     {
@@ -2253,6 +2309,11 @@
     {
       "investor_a": "みずほキャピタル株式会社",
       "investor_b": "住商ベンチャー・パートナーズ",
+      "shared_deals": 4
+    },
+    {
+      "investor_a": "みずほキャピタル株式会社",
+      "investor_b": "DIMENSION株式会社",
       "shared_deals": 4
     },
     {
@@ -2337,27 +2398,12 @@
     },
     {
       "investor_a": "ジャフコグループ株式会社",
-      "investor_b": "Coral Capital",
-      "shared_deals": 4
-    },
-    {
-      "investor_a": "ジャフコグループ株式会社",
       "investor_b": "静岡銀行",
       "shared_deals": 4
     },
     {
       "investor_a": "East Ventures",
       "investor_b": "サイバーエージェント・キャピタル",
-      "shared_deals": 4
-    },
-    {
-      "investor_a": "Spiral Capital",
-      "investor_b": "SMBCベンチャーキャピタル株式会社",
-      "shared_deals": 4
-    },
-    {
-      "investor_a": "Spiral Capital",
-      "investor_b": "ANRI",
       "shared_deals": 4
     },
     {
@@ -2377,6 +2423,11 @@
     },
     {
       "investor_a": "SMBCベンチャーキャピタル株式会社",
+      "investor_b": "Headline Asia",
+      "shared_deals": 4
+    },
+    {
+      "investor_a": "SMBCベンチャーキャピタル株式会社",
       "investor_b": "住商ベンチャー・パートナーズ",
       "shared_deals": 4
     },
@@ -2392,22 +2443,12 @@
     },
     {
       "investor_a": "SMBCベンチャーキャピタル株式会社",
-      "investor_b": "Eight Roads Ventures Japan",
-      "shared_deals": 4
-    },
-    {
-      "investor_a": "SMBCベンチャーキャピタル株式会社",
       "investor_b": "三菱商事株式会社",
       "shared_deals": 4
     },
     {
       "investor_a": "ANRI",
       "investor_b": "千葉道場ファンド",
-      "shared_deals": 4
-    },
-    {
-      "investor_a": "ANRI",
-      "investor_b": "Coral Capital",
       "shared_deals": 4
     },
     {
@@ -2807,11 +2848,6 @@
     },
     {
       "investor_a": "SBIインベストメント株式会社",
-      "investor_b": "グローバル・ブレイン株式会社",
-      "shared_deals": 3
-    },
-    {
-      "investor_a": "SBIインベストメント株式会社",
       "investor_b": "株式会社NTTドコモ・ベンチャーズ",
       "shared_deals": 3
     },
@@ -2867,16 +2903,6 @@
     },
     {
       "investor_a": "グローバル・ブレイン株式会社",
-      "investor_b": "ジャフコグループ株式会社",
-      "shared_deals": 3
-    },
-    {
-      "investor_a": "グローバル・ブレイン株式会社",
-      "investor_b": "SMBCベンチャーキャピタル株式会社",
-      "shared_deals": 3
-    },
-    {
-      "investor_a": "グローバル・ブレイン株式会社",
       "investor_b": "東京大学協創プラットフォーム開発株式会社（AOI1号ファンド）",
       "shared_deals": 3
     },
@@ -2897,11 +2923,6 @@
     },
     {
       "investor_a": "グローバル・ブレイン株式会社",
-      "investor_b": "Coral Capital",
-      "shared_deals": 3
-    },
-    {
-      "investor_a": "グローバル・ブレイン株式会社",
       "investor_b": "KDDI Open Innovation Fund 3号",
       "shared_deals": 3
     },
@@ -2918,6 +2939,11 @@
     {
       "investor_a": "グローバル・ブレイン株式会社",
       "investor_b": "ヤマトホールディングス株式会社",
+      "shared_deals": 3
+    },
+    {
+      "investor_a": "グローバル・ブレイン株式会社",
+      "investor_b": "GMO VenturePartners株式会社",
       "shared_deals": 3
     },
     {
@@ -2952,17 +2978,27 @@
     },
     {
       "investor_a": "みずほキャピタル株式会社",
-      "investor_b": "Spiral Capital",
-      "shared_deals": 3
-    },
-    {
-      "investor_a": "みずほキャピタル株式会社",
       "investor_b": "紀陽キャピタルマネジメント株式会社",
       "shared_deals": 3
     },
     {
       "investor_a": "みずほキャピタル株式会社",
+      "investor_b": "B Dash Ventures株式会社",
+      "shared_deals": 3
+    },
+    {
+      "investor_a": "みずほキャピタル株式会社",
+      "investor_b": "Headline Asia",
+      "shared_deals": 3
+    },
+    {
+      "investor_a": "みずほキャピタル株式会社",
       "investor_b": "千葉道場ファンド",
+      "shared_deals": 3
+    },
+    {
+      "investor_a": "みずほキャピタル株式会社",
+      "investor_b": "南都キャピタルパートナーズ",
       "shared_deals": 3
     },
     {
@@ -2997,12 +3033,17 @@
     },
     {
       "investor_a": "みずほキャピタル株式会社",
+      "investor_b": "W fund",
+      "shared_deals": 3
+    },
+    {
+      "investor_a": "みずほキャピタル株式会社",
       "investor_b": "AGキャピタル",
       "shared_deals": 3
     },
     {
       "investor_a": "みずほキャピタル株式会社",
-      "investor_b": "DIMENSION株式会社",
+      "investor_b": "Eight Roads Ventures Japan",
       "shared_deals": 3
     },
     {
@@ -3307,6 +3348,11 @@
     },
     {
       "investor_a": "ジャフコグループ株式会社",
+      "investor_b": "ANRI",
+      "shared_deals": 3
+    },
+    {
+      "investor_a": "ジャフコグループ株式会社",
       "investor_b": "伊藤忠テクノロジーベンチャーズ株式会社",
       "shared_deals": 3
     },
@@ -3371,6 +3417,16 @@
       "shared_deals": 3
     },
     {
+      "investor_a": "Spiral Capital",
+      "investor_b": "Headline Asia",
+      "shared_deals": 3
+    },
+    {
+      "investor_a": "Spiral Capital",
+      "investor_b": "Coral Capital",
+      "shared_deals": 3
+    },
+    {
       "investor_a": "スパークス・アセット・マネジメント株式会社",
       "investor_b": "株式会社慶應イノベーション・イニシアティブ",
       "shared_deals": 3
@@ -3392,12 +3448,12 @@
     },
     {
       "investor_a": "SMBCベンチャーキャピタル株式会社",
-      "investor_b": "mint",
+      "investor_b": "慶應イノベーション・イニシアティブ（KII）",
       "shared_deals": 3
     },
     {
       "investor_a": "SMBCベンチャーキャピタル株式会社",
-      "investor_b": "Headline Asia",
+      "investor_b": "mint",
       "shared_deals": 3
     },
     {
@@ -3447,6 +3503,11 @@
     },
     {
       "investor_a": "SMBCベンチャーキャピタル株式会社",
+      "investor_b": "W fund",
+      "shared_deals": 3
+    },
+    {
+      "investor_a": "SMBCベンチャーキャピタル株式会社",
       "investor_b": "QBキャピタル合同会社",
       "shared_deals": 3
     },
@@ -3458,6 +3519,11 @@
     {
       "investor_a": "SMBCベンチャーキャピタル株式会社",
       "investor_b": "山口キャピタル",
+      "shared_deals": 3
+    },
+    {
+      "investor_a": "SMBCベンチャーキャピタル株式会社",
+      "investor_b": "DIMENSION株式会社",
       "shared_deals": 3
     },
     {
@@ -3477,7 +3543,22 @@
     },
     {
       "investor_a": "ANRI",
+      "investor_b": "B Dash Ventures株式会社",
+      "shared_deals": 3
+    },
+    {
+      "investor_a": "ANRI",
+      "investor_b": "X&KSK",
+      "shared_deals": 3
+    },
+    {
+      "investor_a": "ANRI",
       "investor_b": "DG Daiwa Ventures",
+      "shared_deals": 3
+    },
+    {
+      "investor_a": "ANRI",
+      "investor_b": "DIMENSION株式会社",
       "shared_deals": 3
     },
     {
@@ -3493,6 +3574,11 @@
     {
       "investor_a": "B Dash Ventures株式会社",
       "investor_b": "XTech Ventures株式会社",
+      "shared_deals": 3
+    },
+    {
+      "investor_a": "B Dash Ventures株式会社",
+      "investor_b": "Headline Asia",
       "shared_deals": 3
     },
     {
@@ -4792,7 +4878,27 @@
     },
     {
       "investor_a": "SBIインベストメント株式会社",
+      "investor_b": "ジャフコグループ株式会社",
+      "shared_deals": 2
+    },
+    {
+      "investor_a": "SBIインベストメント株式会社",
+      "investor_b": "Spiral Capital",
+      "shared_deals": 2
+    },
+    {
+      "investor_a": "SBIインベストメント株式会社",
       "investor_b": "大阪大学ベンチャーキャピタル株式会社",
+      "shared_deals": 2
+    },
+    {
+      "investor_a": "SBIインベストメント株式会社",
+      "investor_b": "静岡キャピタル株式会社",
+      "shared_deals": 2
+    },
+    {
+      "investor_a": "SBIインベストメント株式会社",
+      "investor_b": "Headline Asia",
       "shared_deals": 2
     },
     {
@@ -4833,6 +4939,11 @@
     {
       "investor_a": "SBIインベストメント株式会社",
       "investor_b": "tb innovations",
+      "shared_deals": 2
+    },
+    {
+      "investor_a": "SBIインベストメント株式会社",
+      "investor_b": "Bonds Investment Group株式会社",
       "shared_deals": 2
     },
     {
@@ -4982,12 +5093,22 @@
     },
     {
       "investor_a": "グローバル・ブレイン株式会社",
+      "investor_b": "Headline Asia",
+      "shared_deals": 2
+    },
+    {
+      "investor_a": "グローバル・ブレイン株式会社",
       "investor_b": "キヤノンマーケティングジャパン株式会社",
       "shared_deals": 2
     },
     {
       "investor_a": "グローバル・ブレイン株式会社",
       "investor_b": "博報堂ＤＹベンチャーズ",
+      "shared_deals": 2
+    },
+    {
+      "investor_a": "グローバル・ブレイン株式会社",
+      "investor_b": "X&KSK",
       "shared_deals": 2
     },
     {
@@ -5037,12 +5158,12 @@
     },
     {
       "investor_a": "グローバル・ブレイン株式会社",
-      "investor_b": "GMO VenturePartners株式会社",
+      "investor_b": "SMBC ベンチャーキャピタル・マネジメント株式会社",
       "shared_deals": 2
     },
     {
       "investor_a": "グローバル・ブレイン株式会社",
-      "investor_b": "SMBC ベンチャーキャピタル・マネジメント株式会社",
+      "investor_b": "DIMENSION株式会社",
       "shared_deals": 2
     },
     {
@@ -5053,6 +5174,11 @@
     {
       "investor_a": "グローバル・ブレイン株式会社",
       "investor_b": "ジェネシアベンチャーズ",
+      "shared_deals": 2
+    },
+    {
+      "investor_a": "グローバル・ブレイン株式会社",
+      "investor_b": "Bonds Investment Group株式会社",
       "shared_deals": 2
     },
     {
@@ -5097,7 +5223,7 @@
     },
     {
       "investor_a": "みずほキャピタル株式会社",
-      "investor_b": "B Dash Ventures株式会社",
+      "investor_b": "慶應イノベーション・イニシアティブ（KII）",
       "shared_deals": 2
     },
     {
@@ -5108,11 +5234,6 @@
     {
       "investor_a": "みずほキャピタル株式会社",
       "investor_b": "伊藤忠商事株式会社",
-      "shared_deals": 2
-    },
-    {
-      "investor_a": "みずほキャピタル株式会社",
-      "investor_b": "Headline Asia",
       "shared_deals": 2
     },
     {
@@ -5128,11 +5249,6 @@
     {
       "investor_a": "みずほキャピタル株式会社",
       "investor_b": "株式会社R6B",
-      "shared_deals": 2
-    },
-    {
-      "investor_a": "みずほキャピタル株式会社",
-      "investor_b": "南都キャピタルパートナーズ",
       "shared_deals": 2
     },
     {
@@ -5202,11 +5318,6 @@
     },
     {
       "investor_a": "みずほキャピタル株式会社",
-      "investor_b": "W fund",
-      "shared_deals": 2
-    },
-    {
-      "investor_a": "みずほキャピタル株式会社",
       "investor_b": "みらい創造インベストメンツ",
       "shared_deals": 2
     },
@@ -5247,12 +5358,12 @@
     },
     {
       "investor_a": "みずほキャピタル株式会社",
-      "investor_b": "東芝テック株式会社",
+      "investor_b": "HIRAC FUND",
       "shared_deals": 2
     },
     {
       "investor_a": "みずほキャピタル株式会社",
-      "investor_b": "Eight Roads Ventures Japan",
+      "investor_b": "東芝テック株式会社",
       "shared_deals": 2
     },
     {
@@ -5891,6 +6002,26 @@
       "shared_deals": 2
     },
     {
+      "investor_a": "NOBUNAGAキャピタルビレッジ株式会社",
+      "investor_b": "Spiral Capital",
+      "shared_deals": 2
+    },
+    {
+      "investor_a": "NOBUNAGAキャピタルビレッジ株式会社",
+      "investor_b": "SMBCベンチャーキャピタル株式会社",
+      "shared_deals": 2
+    },
+    {
+      "investor_a": "NOBUNAGAキャピタルビレッジ株式会社",
+      "investor_b": "静岡キャピタル株式会社",
+      "shared_deals": 2
+    },
+    {
+      "investor_a": "NOBUNAGAキャピタルビレッジ株式会社",
+      "investor_b": "Headline Asia",
+      "shared_deals": 2
+    },
+    {
       "investor_a": "グロービス・キャピタル・パートナーズ",
       "investor_b": "株式会社三菱UFJ銀行",
       "shared_deals": 2
@@ -6377,12 +6508,22 @@
     },
     {
       "investor_a": "ジャフコグループ株式会社",
-      "investor_b": "ANRI",
+      "investor_b": "静岡キャピタル株式会社",
+      "shared_deals": 2
+    },
+    {
+      "investor_a": "ジャフコグループ株式会社",
+      "investor_b": "南都キャピタルパートナーズ",
       "shared_deals": 2
     },
     {
       "investor_a": "ジャフコグループ株式会社",
       "investor_b": "JPインベストメント",
+      "shared_deals": 2
+    },
+    {
+      "investor_a": "ジャフコグループ株式会社",
+      "investor_b": "X&KSK",
       "shared_deals": 2
     },
     {
@@ -6443,6 +6584,21 @@
     {
       "investor_a": "ジャフコグループ株式会社",
       "investor_b": "ブーストキャピタル株式会社",
+      "shared_deals": 2
+    },
+    {
+      "investor_a": "ジャフコグループ株式会社",
+      "investor_b": "Eight Roads Ventures Japan",
+      "shared_deals": 2
+    },
+    {
+      "investor_a": "ジャフコグループ株式会社",
+      "investor_b": "MPower Partners Fund",
+      "shared_deals": 2
+    },
+    {
+      "investor_a": "ジャフコグループ株式会社",
+      "investor_b": "Axiom Asia Private Capital",
       "shared_deals": 2
     },
     {
@@ -6557,16 +6713,6 @@
     },
     {
       "investor_a": "Spiral Capital",
-      "investor_b": "Headline Asia",
-      "shared_deals": 2
-    },
-    {
-      "investor_a": "Spiral Capital",
-      "investor_b": "Coral Capital",
-      "shared_deals": 2
-    },
-    {
-      "investor_a": "Spiral Capital",
       "investor_b": "住商ベンチャー・パートナーズ",
       "shared_deals": 2
     },
@@ -6648,11 +6794,6 @@
     {
       "investor_a": "大阪大学ベンチャーキャピタル株式会社",
       "investor_b": "共立ホールディングス",
-      "shared_deals": 2
-    },
-    {
-      "investor_a": "SMBCベンチャーキャピタル株式会社",
-      "investor_b": "慶應イノベーション・イニシアティブ（KII）",
       "shared_deals": 2
     },
     {
@@ -6757,11 +6898,6 @@
     },
     {
       "investor_a": "SMBCベンチャーキャピタル株式会社",
-      "investor_b": "W fund",
-      "shared_deals": 2
-    },
-    {
-      "investor_a": "SMBCベンチャーキャピタル株式会社",
       "investor_b": "株式会社ファストトラックイニシアティブ",
       "shared_deals": 2
     },
@@ -6772,7 +6908,12 @@
     },
     {
       "investor_a": "SMBCベンチャーキャピタル株式会社",
-      "investor_b": "DIMENSION株式会社",
+      "investor_b": "HIRAC FUND",
+      "shared_deals": 2
+    },
+    {
+      "investor_a": "SMBCベンチャーキャピタル株式会社",
+      "investor_b": "GMO VenturePartners株式会社",
       "shared_deals": 2
     },
     {
@@ -6852,6 +6993,11 @@
     },
     {
       "investor_a": "慶應イノベーション・イニシアティブ（KII）",
+      "investor_b": "GMO VenturePartners株式会社",
+      "shared_deals": 2
+    },
+    {
+      "investor_a": "慶應イノベーション・イニシアティブ（KII）",
       "investor_b": "スクラムベンチャーズ",
       "shared_deals": 2
     },
@@ -6892,12 +7038,17 @@
     },
     {
       "investor_a": "ANRI",
-      "investor_b": "B Dash Ventures株式会社",
+      "investor_b": "静岡キャピタル株式会社",
       "shared_deals": 2
     },
     {
       "investor_a": "ANRI",
       "investor_b": "伊藤忠テクノロジーベンチャーズ株式会社",
+      "shared_deals": 2
+    },
+    {
+      "investor_a": "ANRI",
+      "investor_b": "Headline Asia",
       "shared_deals": 2
     },
     {
@@ -6912,12 +7063,12 @@
     },
     {
       "investor_a": "ANRI",
-      "investor_b": "株式会社環境エネルギー投資",
+      "investor_b": "南都キャピタルパートナーズ",
       "shared_deals": 2
     },
     {
       "investor_a": "ANRI",
-      "investor_b": "X&KSK",
+      "investor_b": "株式会社環境エネルギー投資",
       "shared_deals": 2
     },
     {
@@ -6948,6 +7099,11 @@
     {
       "investor_a": "ANRI",
       "investor_b": "サントリーホールディングス株式会社",
+      "shared_deals": 2
+    },
+    {
+      "investor_a": "ANRI",
+      "investor_b": "W fund",
       "shared_deals": 2
     },
     {
@@ -6992,7 +7148,7 @@
     },
     {
       "investor_a": "ANRI",
-      "investor_b": "DIMENSION株式会社",
+      "investor_b": "HIRAC FUND",
       "shared_deals": 2
     },
     {
@@ -7008,6 +7164,11 @@
     {
       "investor_a": "ANRI",
       "investor_b": "株式会社グロービス",
+      "shared_deals": 2
+    },
+    {
+      "investor_a": "ANRI",
+      "investor_b": "Bonds Investment Group株式会社",
       "shared_deals": 2
     },
     {
@@ -7097,7 +7258,7 @@
     },
     {
       "investor_a": "B Dash Ventures株式会社",
-      "investor_b": "Headline Asia",
+      "investor_b": "Coral Capital",
       "shared_deals": 2
     },
     {
@@ -7228,6 +7389,11 @@
     {
       "investor_a": "静岡キャピタル株式会社",
       "investor_b": "WiL",
+      "shared_deals": 2
+    },
+    {
+      "investor_a": "静岡キャピタル株式会社",
+      "investor_b": "Eight Roads Ventures Japan",
       "shared_deals": 2
     },
     {
@@ -7362,6 +7528,16 @@
     },
     {
       "investor_a": "Headline Asia",
+      "investor_b": "Coral Capital",
+      "shared_deals": 2
+    },
+    {
+      "investor_a": "Headline Asia",
+      "investor_b": "W fund",
+      "shared_deals": 2
+    },
+    {
+      "investor_a": "Headline Asia",
       "investor_b": "Skyland Ventures",
       "shared_deals": 2
     },
@@ -7458,6 +7634,11 @@
     {
       "investor_a": "Coreline Ventures",
       "investor_b": "JPインベストメント",
+      "shared_deals": 2
+    },
+    {
+      "investor_a": "南都キャピタルパートナーズ",
+      "investor_b": "W fund",
       "shared_deals": 2
     },
     {
@@ -7653,6 +7834,21 @@
     {
       "investor_a": "Coral Capital",
       "investor_b": "Carbide Ventures",
+      "shared_deals": 2
+    },
+    {
+      "investor_a": "Coral Capital",
+      "investor_b": "GMO VenturePartners株式会社",
+      "shared_deals": 2
+    },
+    {
+      "investor_a": "Coral Capital",
+      "investor_b": "Eight Roads Ventures Japan",
+      "shared_deals": 2
+    },
+    {
+      "investor_a": "Coral Capital",
+      "investor_b": "Globis Capital Partners",
       "shared_deals": 2
     },
     {
@@ -8248,6 +8444,11 @@
     {
       "investor_a": "山口キャピタル",
       "investor_b": "DIMENSION株式会社",
+      "shared_deals": 2
+    },
+    {
+      "investor_a": "HIRAC FUND",
+      "investor_b": "Eight Roads Ventures Japan",
       "shared_deals": 2
     },
     {
@@ -8924,15 +9125,15 @@
     },
     {
       "month": "2024-10",
-      "deal_count": 26,
-      "total_amount_jpy": 27700000000,
-      "unique_companies": 25
+      "deal_count": 27,
+      "total_amount_jpy": 34000000000,
+      "unique_companies": 26
     },
     {
       "month": "2024-11",
-      "deal_count": 30,
-      "total_amount_jpy": 40793000000,
-      "unique_companies": 28
+      "deal_count": 31,
+      "total_amount_jpy": 42793000000,
+      "unique_companies": 29
     },
     {
       "month": "2024-12",
@@ -8942,9 +9143,9 @@
     },
     {
       "month": "2025-01",
-      "deal_count": 27,
-      "total_amount_jpy": 65360000000,
-      "unique_companies": 25
+      "deal_count": 28,
+      "total_amount_jpy": 69260000000,
+      "unique_companies": 26
     },
     {
       "month": "2025-02",
@@ -8966,9 +9167,9 @@
     },
     {
       "month": "2025-05",
-      "deal_count": 32,
+      "deal_count": 33,
       "total_amount_jpy": 18845000000,
-      "unique_companies": 28
+      "unique_companies": 29
     },
     {
       "month": "2025-06",
@@ -9287,17 +9488,17 @@
     }
   ],
   "data_freshness": {
-    "total": 3462,
+    "total": 3470,
     "expired": 0,
     "stale": 0,
-    "fresh": 3462
+    "fresh": 3470
   },
   "data_source_breakdown": [
     {
       "source": "claude_extracted",
       "source_type": "ml_inferred",
-      "org_count": 3417,
-      "round_count": 1449
+      "org_count": 3425,
+      "round_count": 1453
     },
     {
       "source": "migrated_v1",
@@ -9470,7 +9671,7 @@
   ],
   "corporate_enrichment": {
     "enriched_count": 0,
-    "total_organizations": 1092,
+    "total_organizations": 1096,
     "enrichment_rate": 0.0,
     "capital_distribution": [
       {
@@ -9493,7 +9694,7 @@
   },
   "press_releases": {
     "total_count": 12476,
-    "funding_related_count": 1600,
+    "funding_related_count": 1596,
     "by_source": {
       "frontier_detector": 72,
       "prtimes": 200,
@@ -9556,7 +9757,7 @@
       {
         "month": "2025-08",
         "count": 303,
-        "funding_count": 47
+        "funding_count": 46
       },
       {
         "month": "2025-07",
@@ -9566,17 +9767,17 @@
       {
         "month": "2025-06",
         "count": 285,
-        "funding_count": 43
+        "funding_count": 42
       },
       {
         "month": "2025-05",
         "count": 261,
-        "funding_count": 34
+        "funding_count": 35
       },
       {
         "month": "2025-04",
         "count": 263,
-        "funding_count": 35
+        "funding_count": 34
       },
       {
         "month": "2025-03",
@@ -9601,12 +9802,12 @@
       {
         "month": "2024-11",
         "count": 191,
-        "funding_count": 31
+        "funding_count": 32
       },
       {
         "month": "2024-10",
         "count": 221,
-        "funding_count": 28
+        "funding_count": 27
       },
       {
         "month": "2024-09",
@@ -9621,7 +9822,7 @@
       {
         "month": "2024-07",
         "count": 159,
-        "funding_count": 21
+        "funding_count": 20
       },
       {
         "month": "2024-06",
@@ -10137,10 +10338,10 @@
       "id": 131,
       "investor_name": "みずほキャピタル株式会社",
       "investor_type": "vc",
-      "deal_count": 98,
-      "portfolio_count": 91,
-      "total_invested_jpy": 184175000000,
-      "avg_deal_size_jpy": 2069382022.47191,
+      "deal_count": 99,
+      "portfolio_count": 92,
+      "total_invested_jpy": 190475000000,
+      "avg_deal_size_jpy": 2116388888.8888888,
       "first_deal": "2018-02-26",
       "last_deal": "2026-04-13",
       "lead_count": 16,
@@ -10150,10 +10351,10 @@
       "id": 315,
       "investor_name": "SMBCベンチャーキャピタル株式会社",
       "investor_type": "vc",
-      "deal_count": 92,
-      "portfolio_count": 87,
-      "total_invested_jpy": 158808000000,
-      "avg_deal_size_jpy": 1936682926.8292682,
+      "deal_count": 93,
+      "portfolio_count": 88,
+      "total_invested_jpy": 165108000000,
+      "avg_deal_size_jpy": 1989253012.0481927,
       "first_deal": "2021-07-28",
       "last_deal": "2026-03-19",
       "lead_count": 14,
@@ -10163,14 +10364,27 @@
       "id": 115,
       "investor_name": "グローバル・ブレイン株式会社",
       "investor_type": "vc",
-      "deal_count": 80,
-      "portfolio_count": 62,
-      "total_invested_jpy": 115585000000,
-      "avg_deal_size_jpy": 2963717948.717949,
+      "deal_count": 81,
+      "portfolio_count": 63,
+      "total_invested_jpy": 121885000000,
+      "avg_deal_size_jpy": 3047125000.0,
       "first_deal": "2019-11-25",
       "last_deal": "2026-04-15",
       "lead_count": 47,
       "round_types": "corporate_round,series_a,unknown,pre_seed,strategic,seed,secondary,series_b,series_c,series_d"
+    },
+    {
+      "id": 347,
+      "investor_name": "ANRI",
+      "investor_type": "vc",
+      "deal_count": 70,
+      "portfolio_count": 59,
+      "total_invested_jpy": 90929000000,
+      "avg_deal_size_jpy": 1595245614.0350878,
+      "first_deal": "2019-11-25",
+      "last_deal": "2026-03-17",
+      "lead_count": 32,
+      "round_types": "seed,series_a,series_b,pre_seed,angel,series_d,series_c,j_kiss"
     },
     {
       "id": 57,
@@ -10186,26 +10400,13 @@
       "round_types": "seed,series_a,pre_seed,unknown,corporate_round,series_c"
     },
     {
-      "id": 347,
-      "investor_name": "ANRI",
-      "investor_type": "vc",
-      "deal_count": 69,
-      "portfolio_count": 58,
-      "total_invested_jpy": 84629000000,
-      "avg_deal_size_jpy": 1511232142.857143,
-      "first_deal": "2019-11-25",
-      "last_deal": "2026-03-17",
-      "lead_count": 32,
-      "round_types": "seed,series_a,series_b,pre_seed,angel,series_d,series_c,j_kiss"
-    },
-    {
       "id": 278,
       "investor_name": "ジャフコグループ株式会社",
       "investor_type": "vc",
-      "deal_count": 65,
-      "portfolio_count": 55,
-      "total_invested_jpy": 221640000000,
-      "avg_deal_size_jpy": 3756610169.4915257,
+      "deal_count": 66,
+      "portfolio_count": 56,
+      "total_invested_jpy": 227940000000,
+      "avg_deal_size_jpy": 3799000000.0,
       "first_deal": "2021-07-21",
       "last_deal": "2026-03-26",
       "lead_count": 38,
@@ -10277,6 +10478,19 @@
       "round_types": "debt,series_a,corporate_round,series_b,series_c,strategic,seed,series_d,unknown"
     },
     {
+      "id": 93,
+      "investor_name": "SBIインベストメント株式会社",
+      "investor_type": "corporate",
+      "deal_count": 51,
+      "portfolio_count": 46,
+      "total_invested_jpy": 99835000000,
+      "avg_deal_size_jpy": 2495875000.0,
+      "first_deal": "2022-06-28",
+      "last_deal": "2026-04-15",
+      "lead_count": 26,
+      "round_types": "series_b,series_a,corporate_round,series_d,series_c,seed,pre_seed"
+    },
+    {
       "id": 43,
       "investor_name": "DNX Ventures",
       "investor_type": "vc",
@@ -10288,19 +10502,6 @@
       "last_deal": "2026-04-15",
       "lead_count": 31,
       "round_types": "series_a,seed,series_b,series_c,pre_seed,series_d,corporate_round"
-    },
-    {
-      "id": 93,
-      "investor_name": "SBIインベストメント株式会社",
-      "investor_type": "corporate",
-      "deal_count": 50,
-      "portfolio_count": 45,
-      "total_invested_jpy": 93535000000,
-      "avg_deal_size_jpy": 2398333333.3333335,
-      "first_deal": "2022-06-28",
-      "last_deal": "2026-04-15",
-      "lead_count": 26,
-      "round_types": "series_b,series_a,corporate_round,series_d,series_c,seed,pre_seed"
     },
     {
       "id": 296,
@@ -10355,6 +10556,19 @@
       "round_types": "series_a,debt,series_b,strategic,seed,series_c,series_d,unknown"
     },
     {
+      "id": 678,
+      "investor_name": "Coral Capital",
+      "investor_type": "vc",
+      "deal_count": 39,
+      "portfolio_count": 33,
+      "total_invested_jpy": 51284000000,
+      "avg_deal_size_jpy": 1554060606.060606,
+      "first_deal": "2021-04-21",
+      "last_deal": "2026-01-16",
+      "lead_count": 20,
+      "round_types": "series_b,series_d,series_a,pre_seed,seed,series_c"
+    },
+    {
       "id": 77,
       "investor_name": "JICベンチャー・グロース・インベストメンツ",
       "investor_type": "vc",
@@ -10366,19 +10580,6 @@
       "last_deal": "2026-04-15",
       "lead_count": 22,
       "round_types": "j_kiss,series_a,series_c,series_d,series_b,pre_seed,strategic"
-    },
-    {
-      "id": 678,
-      "investor_name": "Coral Capital",
-      "investor_type": "vc",
-      "deal_count": 38,
-      "portfolio_count": 32,
-      "total_invested_jpy": 44984000000,
-      "avg_deal_size_jpy": 1405750000.0,
-      "first_deal": "2021-04-21",
-      "last_deal": "2026-01-16",
-      "lead_count": 20,
-      "round_types": "series_b,series_d,series_a,pre_seed,seed,series_c"
     },
     {
       "id": 135,
@@ -10410,10 +10611,10 @@
       "id": 479,
       "investor_name": "Headline Asia",
       "investor_type": "vc",
-      "deal_count": 32,
-      "portfolio_count": 27,
-      "total_invested_jpy": 22620004760,
-      "avg_deal_size_jpy": 1508000317.3333333,
+      "deal_count": 33,
+      "portfolio_count": 28,
+      "total_invested_jpy": 28920004760,
+      "avg_deal_size_jpy": 1807500297.5,
       "first_deal": "2021-07-28",
       "last_deal": "2026-02-26",
       "lead_count": 19,
@@ -10501,10 +10702,10 @@
       "id": 377,
       "investor_name": "B Dash Ventures株式会社",
       "investor_type": "vc",
-      "deal_count": 25,
-      "portfolio_count": 24,
-      "total_invested_jpy": 21154000000,
-      "avg_deal_size_jpy": 919739130.4347826,
+      "deal_count": 26,
+      "portfolio_count": 25,
+      "total_invested_jpy": 27454000000,
+      "avg_deal_size_jpy": 1143916666.6666667,
       "first_deal": "2021-05-01",
       "last_deal": "2026-03-11",
       "lead_count": 13,
@@ -10566,10 +10767,10 @@
       "id": 299,
       "investor_name": "Spiral Capital",
       "investor_type": "vc",
-      "deal_count": 21,
-      "portfolio_count": 19,
-      "total_invested_jpy": 23395000000,
-      "avg_deal_size_jpy": 1559666666.6666667,
+      "deal_count": 22,
+      "portfolio_count": 20,
+      "total_invested_jpy": 29695000000,
+      "avg_deal_size_jpy": 1855937500.0,
       "first_deal": "2022-10-12",
       "last_deal": "2026-03-24",
       "lead_count": 8,
@@ -11019,6 +11220,12 @@
       "total_invested_jpy": 853500000
     },
     {
+      "investor_name": "SMBCベンチャーキャピタル株式会社",
+      "sector_name": "モビリティ/交通",
+      "deal_count": 9,
+      "total_invested_jpy": 20925000000
+    },
+    {
       "investor_name": "株式会社ジェネシア・ベンチャーズ",
       "sector_name": "教育/エドテック",
       "deal_count": 8,
@@ -11083,12 +11290,6 @@
       "sector_name": "フィンテック",
       "deal_count": 8,
       "total_invested_jpy": 19813000000
-    },
-    {
-      "investor_name": "SMBCベンチャーキャピタル株式会社",
-      "sector_name": "モビリティ/交通",
-      "deal_count": 8,
-      "total_invested_jpy": 14625000000
     },
     {
       "investor_name": "ANRI",
@@ -11229,6 +11430,12 @@
       "total_invested_jpy": 38500000000
     },
     {
+      "investor_name": "ANRI",
+      "sector_name": "モビリティ/交通",
+      "deal_count": 7,
+      "total_invested_jpy": 16350000000
+    },
+    {
       "investor_name": "XTech Ventures株式会社",
       "sector_name": "エンタープライズ/SaaS",
       "deal_count": 7,
@@ -11343,12 +11550,6 @@
       "total_invested_jpy": 200000000
     },
     {
-      "investor_name": "ANRI",
-      "sector_name": "モビリティ/交通",
-      "deal_count": 6,
-      "total_invested_jpy": 10050000000
-    },
-    {
       "investor_name": "B Dash Ventures株式会社",
       "sector_name": "ブロックチェーン/Web3",
       "deal_count": 6,
@@ -11422,9 +11623,21 @@
     },
     {
       "investor_name": "グローバル・ブレイン株式会社",
+      "sector_name": "モビリティ/交通",
+      "deal_count": 5,
+      "total_invested_jpy": 7300000000
+    },
+    {
+      "investor_name": "グローバル・ブレイン株式会社",
       "sector_name": "教育/エドテック",
       "deal_count": 5,
       "total_invested_jpy": 700000000
+    },
+    {
+      "investor_name": "みずほキャピタル株式会社",
+      "sector_name": "モビリティ/交通",
+      "deal_count": 5,
+      "total_invested_jpy": 11750000000
     },
     {
       "investor_name": "みずほキャピタル株式会社",
@@ -11740,6 +11953,12 @@
     },
     {
       "investor_name": "SBIインベストメント株式会社",
+      "sector_name": "モビリティ/交通",
+      "deal_count": 4,
+      "total_invested_jpy": 8465000000
+    },
+    {
+      "investor_name": "SBIインベストメント株式会社",
       "sector_name": "不動産/プロップテック",
       "deal_count": 4,
       "total_invested_jpy": 4700000000
@@ -11752,21 +11971,9 @@
     },
     {
       "investor_name": "グローバル・ブレイン株式会社",
-      "sector_name": "モビリティ/交通",
-      "deal_count": 4,
-      "total_invested_jpy": 1000000000
-    },
-    {
-      "investor_name": "グローバル・ブレイン株式会社",
       "sector_name": "不動産/プロップテック",
       "deal_count": 4,
       "total_invested_jpy": 500000000
-    },
-    {
-      "investor_name": "みずほキャピタル株式会社",
-      "sector_name": "モビリティ/交通",
-      "deal_count": 4,
-      "total_invested_jpy": 5450000000
     },
     {
       "investor_name": "個人投資家",
@@ -12135,12 +12342,6 @@
       "total_invested_jpy": 16860000000
     },
     {
-      "investor_name": "SBIインベストメント株式会社",
-      "sector_name": "モビリティ/交通",
-      "deal_count": 3,
-      "total_invested_jpy": 2165000000
-    },
-    {
       "investor_name": "京都キャピタルパートナーズ株式会社",
       "sector_name": "ヘルスケア/バイオ",
       "deal_count": 3,
@@ -12316,6 +12517,12 @@
     },
     {
       "investor_name": "ジャフコグループ株式会社",
+      "sector_name": "モビリティ/交通",
+      "deal_count": 3,
+      "total_invested_jpy": 8300000000
+    },
+    {
+      "investor_name": "ジャフコグループ株式会社",
       "sector_name": "人事/ワークテック",
       "deal_count": 3,
       "total_invested_jpy": 3400000000
@@ -12457,6 +12664,12 @@
       "sector_name": "気候/クリーンテック",
       "deal_count": 3,
       "total_invested_jpy": 5480000000
+    },
+    {
+      "investor_name": "B Dash Ventures株式会社",
+      "sector_name": "モビリティ/交通",
+      "deal_count": 3,
+      "total_invested_jpy": 9600000000
     },
     {
       "investor_name": "XTech Ventures株式会社",
@@ -12874,6 +13087,12 @@
     },
     {
       "investor_name": "Eight Roads Ventures Japan",
+      "sector_name": "モビリティ/交通",
+      "deal_count": 3,
+      "total_invested_jpy": 9700000000
+    },
+    {
+      "investor_name": "Eight Roads Ventures Japan",
       "sector_name": "エンタープライズ/SaaS",
       "deal_count": 3,
       "total_invested_jpy": 10700000000
@@ -12889,6 +13108,12 @@
       "sector_name": "ヘルスケア/バイオ",
       "deal_count": 3,
       "total_invested_jpy": 1800000000
+    },
+    {
+      "investor_name": "DIMENSION株式会社",
+      "sector_name": "モビリティ/交通",
+      "deal_count": 3,
+      "total_invested_jpy": 10300000000
     },
     {
       "investor_name": "DIMENSION株式会社",
@@ -13546,6 +13771,12 @@
     },
     {
       "investor_name": "NOBUNAGAキャピタルビレッジ株式会社",
+      "sector_name": "モビリティ/交通",
+      "deal_count": 2,
+      "total_invested_jpy": 7210000000
+    },
+    {
+      "investor_name": "NOBUNAGAキャピタルビレッジ株式会社",
       "sector_name": "エンタープライズ/SaaS",
       "deal_count": 2,
       "total_invested_jpy": 260000000
@@ -13714,12 +13945,6 @@
     },
     {
       "investor_name": "ジャフコグループ株式会社",
-      "sector_name": "モビリティ/交通",
-      "deal_count": 2,
-      "total_invested_jpy": 2000000000
-    },
-    {
-      "investor_name": "ジャフコグループ株式会社",
       "sector_name": "不動産/プロップテック",
       "deal_count": 2,
       "total_invested_jpy": 1800000000
@@ -13825,6 +14050,12 @@
       "sector_name": "ヘルスケア/バイオ",
       "deal_count": 2,
       "total_invested_jpy": 200000000
+    },
+    {
+      "investor_name": "Spiral Capital",
+      "sector_name": "モビリティ/交通",
+      "deal_count": 2,
+      "total_invested_jpy": 10800000000
     },
     {
       "investor_name": "Spiral Capital",
@@ -13996,12 +14227,6 @@
     },
     {
       "investor_name": "B Dash Ventures株式会社",
-      "sector_name": "モビリティ/交通",
-      "deal_count": 2,
-      "total_invested_jpy": 3300000000
-    },
-    {
-      "investor_name": "B Dash Ventures株式会社",
       "sector_name": "エンタープライズ/SaaS",
       "deal_count": 2,
       "total_invested_jpy": 270000000
@@ -14071,6 +14296,12 @@
       "sector_name": "人事/ワークテック",
       "deal_count": 2,
       "total_invested_jpy": 6700000000
+    },
+    {
+      "investor_name": "静岡キャピタル株式会社",
+      "sector_name": "モビリティ/交通",
+      "deal_count": 2,
+      "total_invested_jpy": 6900000000
     },
     {
       "investor_name": "静岡キャピタル株式会社",
@@ -14449,6 +14680,12 @@
       "sector_name": "ヘルスケア/バイオ",
       "deal_count": 2,
       "total_invested_jpy": 950000000
+    },
+    {
+      "investor_name": "Coral Capital",
+      "sector_name": "モビリティ/交通",
+      "deal_count": 2,
+      "total_invested_jpy": 8300000000
     },
     {
       "investor_name": "Coral Capital",
@@ -14944,6 +15181,12 @@
     },
     {
       "investor_name": "W fund",
+      "sector_name": "モビリティ/交通",
+      "deal_count": 2,
+      "total_invested_jpy": 6410000000
+    },
+    {
+      "investor_name": "W fund",
       "sector_name": "フード/アグリテック",
       "deal_count": 2,
       "total_invested_jpy": 350000000
@@ -15339,12 +15582,6 @@
       "total_invested_jpy": 4862000000
     },
     {
-      "investor_name": "Eight Roads Ventures Japan",
-      "sector_name": "モビリティ/交通",
-      "deal_count": 2,
-      "total_invested_jpy": 3400000000
-    },
-    {
       "investor_name": "アクシル・キャピタル・パートナーズ２号LLP",
       "sector_name": "ヘルスケア/バイオ",
       "deal_count": 2,
@@ -15391,12 +15628,6 @@
       "sector_name": "サイバーセキュリティ",
       "deal_count": 2,
       "total_invested_jpy": 220000000
-    },
-    {
-      "investor_name": "DIMENSION株式会社",
-      "sector_name": "モビリティ/交通",
-      "deal_count": 2,
-      "total_invested_jpy": 4000000000
     },
     {
       "investor_name": "グリーベンチャーズ",
@@ -15811,6 +16042,12 @@
       "sector_name": "AI/機械学習",
       "deal_count": 2,
       "total_invested_jpy": 1870000000
+    },
+    {
+      "investor_name": "Axiom Asia Private Capital",
+      "sector_name": "モビリティ/交通",
+      "deal_count": 2,
+      "total_invested_jpy": 7500000000
     },
     {
       "investor_name": "Axiom Asia Private Capital",
@@ -17542,12 +17779,6 @@
     },
     {
       "investor_name": "NOBUNAGAキャピタルビレッジ株式会社",
-      "sector_name": "モビリティ/交通",
-      "deal_count": 1,
-      "total_invested_jpy": 910000000
-    },
-    {
-      "investor_name": "NOBUNAGAキャピタルビレッジ株式会社",
       "sector_name": "コンシューマー/EC",
       "deal_count": 1,
       "total_invested_jpy": 4600000000
@@ -18310,12 +18541,6 @@
     },
     {
       "investor_name": "Spiral Capital",
-      "sector_name": "モビリティ/交通",
-      "deal_count": 1,
-      "total_invested_jpy": 4500000000
-    },
-    {
-      "investor_name": "Spiral Capital",
       "sector_name": "ロボティクス",
       "deal_count": 1,
       "total_invested_jpy": 570000000
@@ -18529,6 +18754,12 @@
       "sector_name": "AI/機械学習",
       "deal_count": 1,
       "total_invested_jpy": 3020000000
+    },
+    {
+      "investor_name": "慶應イノベーション・イニシアティブ（KII）",
+      "sector_name": "モビリティ/交通",
+      "deal_count": 1,
+      "total_invested_jpy": 6300000000
     },
     {
       "investor_name": "慶應イノベーション・イニシアティブ（KII）",
@@ -19294,12 +19525,6 @@
     },
     {
       "investor_name": "静岡キャピタル株式会社",
-      "sector_name": "モビリティ/交通",
-      "deal_count": 1,
-      "total_invested_jpy": 600000000
-    },
-    {
-      "investor_name": "静岡キャピタル株式会社",
       "sector_name": "不動産/プロップテック",
       "deal_count": 1,
       "total_invested_jpy": 3100000000
@@ -19783,6 +20008,12 @@
       "sector_name": "気候/クリーンテック",
       "deal_count": 1,
       "total_invested_jpy": null
+    },
+    {
+      "investor_name": "Headline Asia",
+      "sector_name": "モビリティ/交通",
+      "deal_count": 1,
+      "total_invested_jpy": 6300000000
     },
     {
       "investor_name": "Headline Asia",
@@ -20596,6 +20827,12 @@
     },
     {
       "investor_name": "南都キャピタルパートナーズ",
+      "sector_name": "モビリティ/交通",
+      "deal_count": 1,
+      "total_invested_jpy": 6300000000
+    },
+    {
+      "investor_name": "南都キャピタルパートナーズ",
       "sector_name": "エンタープライズ/SaaS",
       "deal_count": 1,
       "total_invested_jpy": null
@@ -21124,12 +21361,6 @@
     },
     {
       "investor_name": "Coral Capital",
-      "sector_name": "モビリティ/交通",
-      "deal_count": 1,
-      "total_invested_jpy": 2000000000
-    },
-    {
-      "investor_name": "Coral Capital",
       "sector_name": "サイバーセキュリティ",
       "deal_count": 1,
       "total_invested_jpy": 844000000
@@ -21223,6 +21454,12 @@
       "sector_name": "ヘルスケア/バイオ",
       "deal_count": 1,
       "total_invested_jpy": 2000000000
+    },
+    {
+      "investor_name": "X&KSK",
+      "sector_name": "モビリティ/交通",
+      "deal_count": 1,
+      "total_invested_jpy": 6300000000
     },
     {
       "investor_name": "X&KSK",
@@ -23968,12 +24205,6 @@
     },
     {
       "investor_name": "W fund",
-      "sector_name": "モビリティ/交通",
-      "deal_count": 1,
-      "total_invested_jpy": 110000000
-    },
-    {
-      "investor_name": "W fund",
       "sector_name": "人事/ワークテック",
       "deal_count": 1,
       "total_invested_jpy": null
@@ -26254,6 +26485,12 @@
     },
     {
       "investor_name": "HIRAC FUND",
+      "sector_name": "モビリティ/交通",
+      "deal_count": 1,
+      "total_invested_jpy": 6300000000
+    },
+    {
+      "investor_name": "HIRAC FUND",
       "sector_name": "教育/エドテック",
       "deal_count": 1,
       "total_invested_jpy": 430000000
@@ -26317,6 +26554,12 @@
       "sector_name": "ヘルスケア/バイオ",
       "deal_count": 1,
       "total_invested_jpy": 900000000
+    },
+    {
+      "investor_name": "GMO VenturePartners株式会社",
+      "sector_name": "モビリティ/交通",
+      "deal_count": 1,
+      "total_invested_jpy": 6300000000
     },
     {
       "investor_name": "GMO VenturePartners株式会社",
@@ -29367,6 +29610,12 @@
       "total_invested_jpy": 1150000000
     },
     {
+      "investor_name": "MPower Partners Fund",
+      "sector_name": "モビリティ/交通",
+      "deal_count": 1,
+      "total_invested_jpy": 6300000000
+    },
+    {
       "investor_name": "World Innovation Lab（WiL）",
       "sector_name": "エンタープライズ/SaaS",
       "deal_count": 1,
@@ -30531,6 +30780,12 @@
       "total_invested_jpy": 140000000
     },
     {
+      "investor_name": "Globis Capital Partners",
+      "sector_name": "モビリティ/交通",
+      "deal_count": 1,
+      "total_invested_jpy": 6300000000
+    },
+    {
       "investor_name": "日本インパクト投資2号投資事業有限責任組合",
       "sector_name": "ヘルスケア/バイオ",
       "deal_count": 1,
@@ -30679,6 +30934,12 @@
       "sector_name": "建設テック",
       "deal_count": 1,
       "total_invested_jpy": 840000000
+    },
+    {
+      "investor_name": "株式会社ゼロワンブースターキャピタル",
+      "sector_name": "その他",
+      "deal_count": 1,
+      "total_invested_jpy": null
     },
     {
       "investor_name": "株式会社INPEX",
@@ -31617,6 +31878,12 @@
       "total_invested_jpy": null
     },
     {
+      "investor_name": "Coinbase Ventures",
+      "sector_name": "ブロックチェーン/Web3",
+      "deal_count": 1,
+      "total_invested_jpy": 3900000000
+    },
+    {
       "investor_name": "HYPER",
       "sector_name": "フィンテック",
       "deal_count": 1,
@@ -32425,6 +32692,12 @@
       "sector_name": "AI/機械学習",
       "deal_count": 1,
       "total_invested_jpy": 1100000000
+    },
+    {
+      "investor_name": "Bonds Investment Group株式会社",
+      "sector_name": "モビリティ/交通",
+      "deal_count": 1,
+      "total_invested_jpy": 6300000000
     },
     {
       "investor_name": "Bonds Investment Group株式会社",
@@ -34083,12 +34356,6 @@
       "total_invested_jpy": 4000000000
     },
     {
-      "investor_name": "Axiom Asia Private Capital",
-      "sector_name": "モビリティ/交通",
-      "deal_count": 1,
-      "total_invested_jpy": 1200000000
-    },
-    {
       "investor_name": "Klima（Alantraのエネルギー転換ファンド）",
       "sector_name": "気候/クリーンテック",
       "deal_count": 1,
@@ -34429,6 +34696,12 @@
       "sector_name": "ヘルスケア/バイオ",
       "deal_count": 1,
       "total_invested_jpy": 140000000
+    },
+    {
+      "investor_name": "DCM Ventures",
+      "sector_name": "モビリティ/交通",
+      "deal_count": 1,
+      "total_invested_jpy": 6300000000
     },
     {
       "investor_name": "DCM Ventures",
@@ -35401,6 +35674,36 @@
       "sector_name": "教育/エドテック",
       "deal_count": 1,
       "total_invested_jpy": 130000000
+    },
+    {
+      "investor_name": "Paradigm",
+      "sector_name": "ブロックチェーン/Web3",
+      "deal_count": 1,
+      "total_invested_jpy": 3900000000
+    },
+    {
+      "investor_name": "Dharmesh Shah",
+      "sector_name": "ブロックチェーン/Web3",
+      "deal_count": 1,
+      "total_invested_jpy": 3900000000
+    },
+    {
+      "investor_name": "Sandeep Nailwal",
+      "sector_name": "ブロックチェーン/Web3",
+      "deal_count": 1,
+      "total_invested_jpy": 3900000000
+    },
+    {
+      "investor_name": "日本産業アドバイザーズ",
+      "sector_name": "モビリティ/交通",
+      "deal_count": 1,
+      "total_invested_jpy": 6300000000
+    },
+    {
+      "investor_name": "三菱UFJ イノベーション・パートナーズ",
+      "sector_name": "モビリティ/交通",
+      "deal_count": 1,
+      "total_invested_jpy": 6300000000
     }
   ],
   "sector_summary": [
@@ -35456,11 +35759,11 @@
     },
     {
       "sector_name": "モビリティ/交通",
-      "deal_count": 88,
-      "company_count": 56,
-      "investor_count": 317,
-      "total_raised_jpy": 698483000000,
-      "avg_deal_size_jpy": 1809541450.7772021,
+      "deal_count": 89,
+      "company_count": 57,
+      "investor_count": 329,
+      "total_raised_jpy": 868583000000,
+      "avg_deal_size_jpy": 2103106537.5302663,
       "first_deal": "2018-07-01",
       "last_deal": "2026-04-16"
     },
@@ -35516,21 +35819,21 @@
     },
     {
       "sector_name": "その他",
-      "deal_count": 41,
-      "company_count": 40,
-      "investor_count": 104,
-      "total_raised_jpy": 479707800000,
-      "avg_deal_size_jpy": 5451225000.0,
+      "deal_count": 43,
+      "company_count": 42,
+      "investor_count": 105,
+      "total_raised_jpy": 481707800000,
+      "avg_deal_size_jpy": 5412447191.011236,
       "first_deal": "2019-10-25",
       "last_deal": "2026-04-15"
     },
     {
       "sector_name": "ブロックチェーン/Web3",
-      "deal_count": 30,
-      "company_count": 26,
-      "investor_count": 101,
-      "total_raised_jpy": 50210000000,
-      "avg_deal_size_jpy": 517628865.97938144,
+      "deal_count": 31,
+      "company_count": 27,
+      "investor_count": 105,
+      "total_raised_jpy": 65810000000,
+      "avg_deal_size_jpy": 651584158.4158416,
       "first_deal": "2020-07-25",
       "last_deal": "2025-02-21"
     },
