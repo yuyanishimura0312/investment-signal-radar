@@ -110,6 +110,26 @@ def call_claude(api_key: str, title: str, body: str) -> dict | None:
             lines = [l for l in lines if not l.strip().startswith("```")]
             raw = "\n".join(lines)
 
+        # Extract only the JSON object portion (handles trailing explanation text)
+        brace_start = raw.find("{")
+        if brace_start == -1:
+            brace_start = raw.find("[")
+        if brace_start != -1:
+            # Find the matching closing brace
+            depth = 0
+            end = brace_start
+            open_ch = raw[brace_start]
+            close_ch = "}" if open_ch == "{" else "]"
+            for k, ch in enumerate(raw[brace_start:], brace_start):
+                if ch == open_ch:
+                    depth += 1
+                elif ch == close_ch:
+                    depth -= 1
+                    if depth == 0:
+                        end = k
+                        break
+            raw = raw[brace_start:end + 1]
+
         return json.loads(raw)
     except json.JSONDecodeError as e:
         log.warning(f"JSON parse error: {e} — raw: {raw[:200]}")
@@ -212,7 +232,10 @@ def main():
             log.info(f"  -> NOT FUNDING (skipped)")
             continue
 
-        company_name = (data.get("company_name") or "").strip()
+        raw_company = data.get("company_name") or ""
+        if isinstance(raw_company, list):
+            raw_company = raw_company[0] if raw_company else ""
+        company_name = str(raw_company).strip()
         if not company_name:
             failed += 1
             log.warning(f"  -> No company_name extracted")
