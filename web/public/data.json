@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-04-22T20:01:07.662889",
+  "generated_at": "2026-04-23T01:25:10.797184",
   "schema_version": "v2.0",
   "stats": {
-    "organizations": 3461,
-    "funding_rounds": 1461,
-    "round_participants": 6122,
-    "events": 1588,
+    "organizations": 3462,
+    "funding_rounds": 1463,
+    "round_participants": 6123,
+    "events": 1590,
     "sectors": 33,
-    "tags": 36,
+    "tags": 46,
     "signals": 160,
-    "signal_scores": 4352,
-    "companies": 1088,
+    "signal_scores": 8712,
+    "companies": 1090,
     "investors": 2398,
     "press_releases": 12476
   },
@@ -888,7 +888,7 @@
     {
       "month": "2026-03",
       "sector": "AI/機械学習",
-      "count": 12,
+      "count": 13,
       "total_amount_jpy": 15005000000
     },
     {
@@ -1025,6 +1025,12 @@
     },
     {
       "month": "2026-04",
+      "sector": "サイバーセキュリティ",
+      "count": 3,
+      "total_amount_jpy": 2750000000
+    },
+    {
+      "month": "2026-04",
       "sector": "その他",
       "count": 3,
       "total_amount_jpy": 130000000
@@ -1040,12 +1046,6 @@
       "sector": "マーケティング/アドテック",
       "count": 2,
       "total_amount_jpy": 100000
-    },
-    {
-      "month": "2026-04",
-      "sector": "サイバーセキュリティ",
-      "count": 2,
-      "total_amount_jpy": 400000000
     },
     {
       "month": "2026-04",
@@ -1113,7 +1113,7 @@
     },
     {
       "round_type": "strategic",
-      "count": 108,
+      "count": 109,
       "total_amount_jpy": 386667500000
     },
     {
@@ -1128,8 +1128,8 @@
     },
     {
       "round_type": "unknown",
-      "count": 57,
-      "total_amount_jpy": 146934191000
+      "count": 58,
+      "total_amount_jpy": 149284191000
     },
     {
       "round_type": "series_d",
@@ -9026,22 +9026,22 @@
     },
     {
       "month": "2026-03",
-      "deal_count": 62,
+      "deal_count": 63,
       "total_amount_jpy": 51688000000,
-      "unique_companies": 53
+      "unique_companies": 54
     },
     {
       "month": "2026-04",
-      "deal_count": 77,
-      "total_amount_jpy": 205754903800,
-      "unique_companies": 76
+      "deal_count": 78,
+      "total_amount_jpy": 208104903800,
+      "unique_companies": 77
     }
   ],
   "event_momentum": [
     {
       "event_type": "funding",
       "count": 227,
-      "avg_significance": 0.7823788546255507
+      "avg_significance": 0.7797356828193832
     },
     {
       "event_type": "partnership",
@@ -9055,8 +9055,8 @@
     },
     {
       "event_type": "accelerator",
-      "count": 12,
-      "avg_significance": 0.4000000000000001
+      "count": 11,
+      "avg_significance": 0.4
     },
     {
       "event_type": "hiring",
@@ -9068,77 +9068,92 @@
     {
       "tag_category": "business_model",
       "tag_name": "プラットフォーム",
-      "org_count": 342
+      "org_count": 353
     },
     {
       "tag_category": "technology",
       "tag_name": "AI・人工知能",
-      "org_count": 282
+      "org_count": 320
+    },
+    {
+      "tag_category": "business_model",
+      "tag_name": "multi_sector",
+      "org_count": 184
     },
     {
       "tag_category": "technology",
       "tag_name": "クラウド",
-      "org_count": 156
-    },
-    {
-      "tag_category": "market",
-      "tag_name": "DX・デジタル変革",
-      "org_count": 126
-    },
-    {
-      "tag_category": "business_model",
-      "tag_name": "SaaS",
-      "org_count": 99
-    },
-    {
-      "tag_category": "technology",
-      "tag_name": "ロボティクス",
-      "org_count": 91
+      "org_count": 172
     },
     {
       "tag_category": "technology",
       "tag_name": "AR/VR",
-      "org_count": 78
+      "org_count": 145
+    },
+    {
+      "tag_category": "market",
+      "tag_name": "DX・デジタル変革",
+      "org_count": 140
+    },
+    {
+      "tag_category": "business_model",
+      "tag_name": "SaaS",
+      "org_count": 106
+    },
+    {
+      "tag_category": "technology",
+      "tag_name": "ロボティクス",
+      "org_count": 92
+    },
+    {
+      "tag_category": "market",
+      "tag_name": "active_investor",
+      "org_count": 76
     },
     {
       "tag_category": "market",
       "tag_name": "SDGs",
-      "org_count": 52
+      "org_count": 61
     },
     {
       "tag_category": "business_model",
       "tag_name": "B2B",
-      "org_count": 50
+      "org_count": 59
     },
     {
       "tag_category": "technology",
       "tag_name": "ブロックチェーン",
-      "org_count": 40
+      "org_count": 44
     },
     {
       "tag_category": "market",
       "tag_name": "ESG",
-      "org_count": 37
+      "org_count": 43
+    },
+    {
+      "tag_category": "market",
+      "tag_name": "オープンイノベーション",
+      "org_count": 41
     },
     {
       "tag_category": "technology",
       "tag_name": "ビッグデータ",
-      "org_count": 31
+      "org_count": 33
     },
     {
       "tag_category": "market",
       "tag_name": "エイジングテック",
-      "org_count": 24
+      "org_count": 26
     },
     {
       "tag_category": "market",
       "tag_name": "クリエイターエコノミー",
-      "org_count": 23
+      "org_count": 25
     },
     {
       "tag_category": "technology",
       "tag_name": "サイバーセキュリティ",
-      "org_count": 19
+      "org_count": 21
     },
     {
       "tag_category": "technology",
@@ -9146,19 +9161,19 @@
       "org_count": 18
     },
     {
-      "tag_category": "market",
-      "tag_name": "オープンイノベーション",
-      "org_count": 15
+      "tag_category": "technology",
+      "tag_name": "自然言語処理",
+      "org_count": 14
+    },
+    {
+      "tag_category": "technology",
+      "tag_name": "API",
+      "org_count": 14
     },
     {
       "tag_category": "business_model",
       "tag_name": "D2C",
       "org_count": 14
-    },
-    {
-      "tag_category": "technology",
-      "tag_name": "自然言語処理",
-      "org_count": 12
     },
     {
       "tag_category": "technology",
@@ -9168,16 +9183,16 @@
     {
       "tag_category": "business_model",
       "tag_name": "マーケットプレイス",
-      "org_count": 11
-    },
-    {
-      "tag_category": "technology",
-      "tag_name": "API",
-      "org_count": 10
+      "org_count": 12
     },
     {
       "tag_category": "business_model",
       "tag_name": "サブスクリプション",
+      "org_count": 9
+    },
+    {
+      "tag_category": "technology",
+      "tag_name": "機械学習",
       "org_count": 8
     },
     {
@@ -9186,9 +9201,19 @@
       "org_count": 8
     },
     {
+      "tag_category": "market",
+      "tag_name": "リモートワーク",
+      "org_count": 6
+    },
+    {
       "tag_category": "technology",
-      "tag_name": "機械学習",
-      "org_count": 7
+      "tag_name": "AI/Machine Learning",
+      "org_count": 6
+    },
+    {
+      "tag_category": "technology",
+      "tag_name": "Healthcare/Biotech",
+      "org_count": 6
     },
     {
       "tag_category": "business_model",
@@ -9197,12 +9222,12 @@
     },
     {
       "tag_category": "market",
-      "tag_name": "リモートワーク",
+      "tag_name": "ペットテック",
       "org_count": 5
     },
     {
-      "tag_category": "market",
-      "tag_name": "ペットテック",
+      "tag_category": "technology",
+      "tag_name": "Enterprise Software/SaaS",
       "org_count": 5
     },
     {
@@ -9214,6 +9239,21 @@
       "tag_category": "market",
       "tag_name": "スマートシティ",
       "org_count": 4
+    },
+    {
+      "tag_category": "technology",
+      "tag_name": "Climate/CleanTech",
+      "org_count": 4
+    },
+    {
+      "tag_category": "market",
+      "tag_name": "フェムテック",
+      "org_count": 2
+    },
+    {
+      "tag_category": "technology",
+      "tag_name": "Food/AgTech",
+      "org_count": 2
     },
     {
       "tag_category": "technology",
@@ -9231,23 +9271,33 @@
       "org_count": 1
     },
     {
-      "tag_category": "market",
-      "tag_name": "フェムテック",
+      "tag_category": "technology",
+      "tag_name": "HR/WorkTech",
+      "org_count": 1
+    },
+    {
+      "tag_category": "technology",
+      "tag_name": "Mobility/Transportation",
+      "org_count": 1
+    },
+    {
+      "tag_category": "technology",
+      "tag_name": "Education/EdTech",
       "org_count": 1
     }
   ],
   "data_freshness": {
-    "total": 3461,
+    "total": 3462,
     "expired": 0,
     "stale": 0,
-    "fresh": 3461
+    "fresh": 3462
   },
   "data_source_breakdown": [
     {
       "source": "claude_extracted",
       "source_type": "ml_inferred",
-      "org_count": 3416,
-      "round_count": 1445
+      "org_count": 3417,
+      "round_count": 1447
     },
     {
       "source": "migrated_v1",
@@ -9261,166 +9311,166 @@
       "id": 770,
       "name": "株式会社シェアリングエネルギー",
       "primary_role": "company",
-      "composite_score": 0.8371,
-      "calculated_at": "2026-04-22T19:47:32.289829",
+      "composite_score": 0.8365,
+      "calculated_at": "2026-04-23T01:24:34.280195",
       "model_version": "v1.0"
     },
     {
       "id": 86,
       "name": "株式会社BALLAS",
       "primary_role": "company",
-      "composite_score": 0.8152,
-      "calculated_at": "2026-04-22T19:47:32.289829",
+      "composite_score": 0.8147,
+      "calculated_at": "2026-04-23T01:24:34.280195",
       "model_version": "v1.0"
     },
     {
       "id": 457,
       "name": "株式会社MiRESSO",
       "primary_role": "company",
-      "composite_score": 0.8103,
-      "calculated_at": "2026-04-22T19:47:32.289829",
+      "composite_score": 0.8098,
+      "calculated_at": "2026-04-23T01:24:34.280195",
       "model_version": "v1.0"
     },
     {
       "id": 585,
       "name": "AstroX株式会社",
       "primary_role": "company",
-      "composite_score": 0.7889,
-      "calculated_at": "2026-04-22T19:47:32.289829",
+      "composite_score": 0.7896,
+      "calculated_at": "2026-04-23T01:24:34.280195",
       "model_version": "v1.0"
     },
     {
       "id": 260,
       "name": "株式会社3DC",
       "primary_role": "company",
-      "composite_score": 0.7883,
-      "calculated_at": "2026-04-22T19:47:32.289829",
+      "composite_score": 0.7877,
+      "calculated_at": "2026-04-23T01:24:34.280195",
       "model_version": "v1.0"
     },
     {
       "id": 463,
       "name": "メタジェンセラピューティクス株式会社",
       "primary_role": "company",
-      "composite_score": 0.781,
-      "calculated_at": "2026-04-22T19:47:32.289829",
+      "composite_score": 0.7805,
+      "calculated_at": "2026-04-23T01:24:34.280195",
       "model_version": "v1.0"
     },
     {
       "id": 116,
       "name": "EdgeCortix株式会社",
       "primary_role": "company",
-      "composite_score": 0.7788,
-      "calculated_at": "2026-04-22T19:47:32.289829",
+      "composite_score": 0.7794,
+      "calculated_at": "2026-04-23T01:24:34.280195",
       "model_version": "v1.0"
     },
     {
       "id": 277,
       "name": "株式会社TORIHADA",
       "primary_role": "company",
-      "composite_score": 0.7721,
-      "calculated_at": "2026-04-22T19:47:32.289829",
+      "composite_score": 0.7716,
+      "calculated_at": "2026-04-23T01:24:34.280195",
       "model_version": "v1.0"
     },
     {
       "id": 146,
       "name": "株式会社マイクロニティ",
       "primary_role": "company",
-      "composite_score": 0.77,
-      "calculated_at": "2026-04-22T19:47:32.289829",
+      "composite_score": 0.7706,
+      "calculated_at": "2026-04-23T01:24:34.280195",
+      "model_version": "v1.0"
+    },
+    {
+      "id": 3761,
+      "name": "株式会社AIセキュリティソリューションズ",
+      "primary_role": "company",
+      "composite_score": 0.7678,
+      "calculated_at": "2026-04-23T01:24:34.280195",
       "model_version": "v1.0"
     },
     {
       "id": 531,
       "name": "燈",
       "primary_role": "company",
-      "composite_score": 0.7666,
-      "calculated_at": "2026-04-22T19:47:32.289829",
+      "composite_score": 0.7661,
+      "calculated_at": "2026-04-23T01:24:34.280195",
       "model_version": "v1.0"
     },
     {
       "id": 262,
       "name": "株式会社Spectee",
       "primary_role": "company",
-      "composite_score": 0.7633,
-      "calculated_at": "2026-04-22T19:47:32.289829",
+      "composite_score": 0.7639,
+      "calculated_at": "2026-04-23T01:24:34.280195",
       "model_version": "v1.0"
     },
     {
       "id": 375,
       "name": "エレファンテック株式会社",
       "primary_role": "company",
-      "composite_score": 0.7594,
-      "calculated_at": "2026-04-22T19:47:32.289829",
+      "composite_score": 0.7601,
+      "calculated_at": "2026-04-23T01:24:34.280195",
       "model_version": "v1.0"
     },
     {
       "id": 148,
       "name": "JFEエンジニアリング株式会社",
       "primary_role": "company",
-      "composite_score": 0.7589,
-      "calculated_at": "2026-04-22T19:47:32.289829",
+      "composite_score": 0.7583,
+      "calculated_at": "2026-04-23T01:24:34.280195",
       "model_version": "v1.0"
     },
     {
       "id": 3660,
       "name": "CANDEX JAPAN株式会社",
       "primary_role": "company",
-      "composite_score": 0.7569,
-      "calculated_at": "2026-04-22T19:47:32.289829",
+      "composite_score": 0.7564,
+      "calculated_at": "2026-04-23T01:24:34.280195",
       "model_version": "v1.0"
     },
     {
       "id": 1210,
       "name": "京都フュージョニアリング株式会社",
       "primary_role": "company",
-      "composite_score": 0.7547,
-      "calculated_at": "2026-04-22T19:47:32.289829",
+      "composite_score": 0.7545,
+      "calculated_at": "2026-04-23T01:24:34.280195",
       "model_version": "v1.0"
     },
     {
       "id": 3636,
       "name": "Manycore Tech Inc.（群核科技）",
       "primary_role": "company",
-      "composite_score": 0.7539,
-      "calculated_at": "2026-04-22T19:47:32.289829",
+      "composite_score": 0.7545,
+      "calculated_at": "2026-04-23T01:24:34.280195",
       "model_version": "v1.0"
     },
     {
       "id": 118,
       "name": "Upstage AI 株式会社",
       "primary_role": "company",
-      "composite_score": 0.7522,
-      "calculated_at": "2026-04-22T19:47:32.289829",
+      "composite_score": 0.7528,
+      "calculated_at": "2026-04-23T01:24:34.280195",
       "model_version": "v1.0"
     },
     {
       "id": 323,
       "name": "将来宇宙輸送システム株式会社",
       "primary_role": "company",
-      "composite_score": 0.7519,
-      "calculated_at": "2026-04-22T19:47:32.289829",
+      "composite_score": 0.7514,
+      "calculated_at": "2026-04-23T01:24:34.280195",
       "model_version": "v1.0"
     },
     {
       "id": 643,
       "name": "株式会社enechain",
       "primary_role": "company",
-      "composite_score": 0.7489,
-      "calculated_at": "2026-04-22T19:47:32.289829",
-      "model_version": "v1.0"
-    },
-    {
-      "id": 923,
-      "name": "株式会社IVRy",
-      "primary_role": "company",
-      "composite_score": 0.7489,
-      "calculated_at": "2026-04-22T19:47:32.289829",
+      "composite_score": 0.7485,
+      "calculated_at": "2026-04-23T01:24:34.280195",
       "model_version": "v1.0"
     }
   ],
   "corporate_enrichment": {
     "enriched_count": 0,
-    "total_organizations": 1088,
+    "total_organizations": 1090,
     "enrichment_rate": 0.0,
     "capital_distribution": [
       {
@@ -9443,7 +9493,7 @@
   },
   "press_releases": {
     "total_count": 12476,
-    "funding_related_count": 1597,
+    "funding_related_count": 1599,
     "by_source": {
       "frontier_detector": 72,
       "prtimes": 200,
@@ -9466,12 +9516,12 @@
       {
         "month": "2026-04",
         "count": 814,
-        "funding_count": 76
+        "funding_count": 77
       },
       {
         "month": "2026-03",
         "count": 841,
-        "funding_count": 69
+        "funding_count": 70
       },
       {
         "month": "2026-02",
@@ -12901,6 +12951,12 @@
       "total_invested_jpy": 1100000000
     },
     {
+      "investor_name": "東京大学協創プラットフォーム開発株式会社（東大IPC）",
+      "sector_name": "AI/機械学習",
+      "deal_count": 3,
+      "total_invested_jpy": 250000000
+    },
+    {
       "investor_name": "りそなキャピタル株式会社",
       "sector_name": "ヘルスケア/バイオ",
       "deal_count": 2,
@@ -15755,12 +15811,6 @@
       "sector_name": "AI/機械学習",
       "deal_count": 2,
       "total_invested_jpy": 1870000000
-    },
-    {
-      "investor_name": "東京大学協創プラットフォーム開発株式会社（東大IPC）",
-      "sector_name": "AI/機械学習",
-      "deal_count": 2,
-      "total_invested_jpy": 250000000
     },
     {
       "investor_name": "Axiom Asia Private Capital",
@@ -35350,8 +35400,8 @@
   "sector_summary": [
     {
       "sector_name": "AI/機械学習",
-      "deal_count": 231,
-      "company_count": 178,
+      "deal_count": 232,
+      "company_count": 179,
       "investor_count": 592,
       "total_raised_jpy": 4825578651300,
       "avg_deal_size_jpy": 5906461017.50306,
@@ -35499,6 +35549,16 @@
       "last_deal": "2026-04-15"
     },
     {
+      "sector_name": "サイバーセキュリティ",
+      "deal_count": 17,
+      "company_count": 16,
+      "investor_count": 59,
+      "total_raised_jpy": 170996000000,
+      "avg_deal_size_jpy": 2803213114.7540984,
+      "first_deal": "2022-05-11",
+      "last_deal": "2026-04-16"
+    },
+    {
       "sector_name": "建設テック",
       "deal_count": 16,
       "company_count": 13,
@@ -35507,16 +35567,6 @@
       "avg_deal_size_jpy": 1464510745.4545455,
       "first_deal": "2021-08-25",
       "last_deal": "2026-04-15"
-    },
-    {
-      "sector_name": "サイバーセキュリティ",
-      "deal_count": 16,
-      "company_count": 15,
-      "investor_count": 59,
-      "total_raised_jpy": 168646000000,
-      "avg_deal_size_jpy": 2810766666.6666665,
-      "first_deal": "2022-05-11",
-      "last_deal": "2026-04-16"
     },
     {
       "sector_name": "マーケティング/アドテック",
