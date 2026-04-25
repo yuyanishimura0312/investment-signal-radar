@@ -20,7 +20,6 @@ Usage:
 import argparse
 import json
 import sqlite3
-import statistics
 from collections import defaultdict
 from datetime import datetime
 from pathlib import Path

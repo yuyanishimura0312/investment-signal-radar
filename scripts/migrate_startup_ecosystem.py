@@ -485,16 +485,18 @@ def backfill_milestones_from_existing(conn: sqlite3.Connection) -> int:
         'series_a': 'series_a',
     }
     for round_type, milestone_type in round_type_map.items():
-        cursor = conn.execute(f"""
+        cursor = conn.execute("""
             INSERT OR IGNORE INTO startup_milestones
                 (organization_id, milestone_type, milestone_date, milestone_year,
                  funding_round_id, valuation_usd, cumulative_funding_usd,
                  data_source_id, confidence_score)
             SELECT
                 fr.organization_id,
-                '{milestone_type}',
+                ?,
                 fr.announced_date,
-                CAST(SUBSTR(fr.announced_date, 1, 4) AS INTEGER),
+                CASE WHEN fr.announced_date GLOB '[0-9][0-9][0-9][0-9]-*'
+                     THEN CAST(SUBSTR(fr.announced_date, 1, 4) AS INTEGER)
+                END,
                 fr.id,
                 fr.post_valuation_usd,
                 (SELECT SUM(fr2.amount_usd) FROM funding_rounds fr2
@@ -503,15 +505,15 @@ def backfill_milestones_from_existing(conn: sqlite3.Connection) -> int:
                 fr.data_source_id,
                 COALESCE(fr.confidence_score, 0.5)
             FROM funding_rounds fr
-            WHERE fr.round_type = '{round_type}'
+            WHERE fr.round_type = ?
               AND fr.announced_date IS NOT NULL
               AND NOT EXISTS (
                   SELECT 1 FROM startup_milestones sm
                   WHERE sm.organization_id = fr.organization_id
-                    AND sm.milestone_type = '{milestone_type}'
+                    AND sm.milestone_type = ?
                     AND sm.funding_round_id = fr.id
               )
-        """)
+        """, (milestone_type, round_type, milestone_type))
         count += cursor.rowcount
 
     # 3. Series B+ milestones
@@ -575,25 +577,26 @@ def backfill_milestones_from_existing(conn: sqlite3.Connection) -> int:
     # 5. Status-based milestones
     status_map = {'acquired': 'acquisition', 'ipo': 'ipo', 'closed': 'shutdown'}
     for status, milestone_type in status_map.items():
-        cursor = conn.execute(f"""
+        desc = f'Inferred from organization status: {status}'
+        cursor = conn.execute("""
             INSERT OR IGNORE INTO startup_milestones
                 (organization_id, milestone_type, description,
                  data_source_id, confidence_score)
             SELECT
                 o.id,
-                '{milestone_type}',
-                'Inferred from organization status: {status}',
+                ?,
+                ?,
                 o.data_source_id,
                 0.3
             FROM organizations o
             WHERE o.is_company = 1
-              AND o.status = '{status}'
+              AND o.status = ?
               AND NOT EXISTS (
                   SELECT 1 FROM startup_milestones sm
                   WHERE sm.organization_id = o.id
-                    AND sm.milestone_type = '{milestone_type}'
+                    AND sm.milestone_type = ?
               )
-        """)
+        """, (milestone_type, desc, status, milestone_type))
         count += cursor.rowcount
 
     return count
