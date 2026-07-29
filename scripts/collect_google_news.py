@@ -107,10 +107,7 @@ SEARCH_QUERIES = [
     "仙台 スタートアップ 調達",
 ]
 
-USER_AGENT = (
-    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
-    "AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36"
-)
+USER_AGENT = ("MiratukuResearchBot/1.0 (research data collection; contact: info@emerging-future.org)")
 RATE_LIMIT = 5.0  # seconds between RSS fetches
 EXTRACT_RATE_LIMIT = 0.3
 
@@ -203,8 +200,14 @@ def _parse_date(date_str: str | None) -> str | None:
     return None
 
 
-def process_article(conn, article: dict, dry_run: bool = False) -> bool:
-    """Process a single article. Returns True if new round stored."""
+def process_article(conn, article: dict, dry_run: bool = False,
+                    skip_non_funding_pr: bool = False) -> bool:
+    """Process a single article. Returns True if new round stored.
+
+    When skip_non_funding_pr is True, articles that turn out to be non-funding
+    are dropped entirely (not saved as press_releases). Reduces write contention
+    when other teams are simultaneously writing to the DB.
+    """
     url = article.get("url", "")
     if not url:
         return False
@@ -234,20 +237,23 @@ def process_article(conn, article: dict, dry_run: bool = False) -> bool:
     time.sleep(EXTRACT_RATE_LIMIT)
 
     if data is None or data.get("is_funding") is False:
-        # Save as non-funding press release
-        if not dry_run:
-            insert_press_release(conn, {
-                "title": title,
-                "body_text": summary,
-                "source": "google_news",
-                "source_url": url,
-                "published_at": _parse_date(article.get("date")),
-                "company_name": None,
-                "category": "other",
-                "is_funding_related": 0,
-                "confidence_score": 0.3,
-                "data_source_name": "claude_extracted",
-            })
+        # Save as non-funding press release (unless caller asked to skip)
+        if not dry_run and not skip_non_funding_pr:
+            try:
+                insert_press_release(conn, {
+                    "title": title,
+                    "body_text": summary,
+                    "source": "google_news",
+                    "source_url": url,
+                    "published_at": _parse_date(article.get("date")),
+                    "company_name": None,
+                    "category": "other",
+                    "is_funding_related": 0,
+                    "confidence_score": 0.3,
+                    "data_source_name": "claude_extracted",
+                })
+            except Exception as e:
+                logger.warning(f"non-funding PR insert failed (continuing): {e}")
         return False
 
     amount_jpy = data.get("amount_jpy")
@@ -270,22 +276,47 @@ def process_article(conn, article: dict, dry_run: bool = False) -> bool:
         )
         return True
 
-    round_id = insert_funding_round(
-        conn=conn,
-        company_name=data.get("company_name") or "Unknown",
-        investors=investors,
-        amount_jpy=amount_jpy,
-        amount_raw=data.get("amount_raw") or "",
-        round_type=data.get("round_type") or "unknown",
-        announced_date=announced or "",
-        source_url=url,
-        source_title=title,
-        sector=data.get("sector") or "",
-        pestle_category=data.get("pestle_category") or "",
-        confidence=data.get("confidence") or "medium",
-        description=data.get("company_description") or "",
-        data_source_name="claude_extracted",
-    )
+    # Retry insert_funding_round on transient SQLite locks (other teams writing)
+    import sqlite3 as _sqlite3
+    round_id = None
+    for attempt in range(4):
+        try:
+            round_id = insert_funding_round(
+                conn=conn,
+                company_name=data.get("company_name") or "Unknown",
+                investors=investors,
+                amount_jpy=amount_jpy,
+                amount_raw=data.get("amount_raw") or "",
+                round_type=data.get("round_type") or "unknown",
+                announced_date=announced or "",
+                source_url=url,
+                source_title=title,
+                sector=data.get("sector") or "",
+                pestle_category=data.get("pestle_category") or "",
+                confidence=data.get("confidence") or "medium",
+                description=data.get("company_description") or "",
+                data_source_name="claude_extracted",
+            )
+            break
+        except _sqlite3.OperationalError as e:
+            if "locked" in str(e).lower() and attempt < 3:
+                wait = 5 * (attempt + 1)
+                logger.warning(f"DB locked, retry {attempt+1}/3 in {wait}s")
+                try:
+                    conn.rollback()
+                except Exception:
+                    pass
+                time.sleep(wait)
+                continue
+            logger.error(f"insert_funding_round failed: {e}")
+            return False
+        except Exception as e:
+            logger.error(f"insert_funding_round error: {e}")
+            try:
+                conn.rollback()
+            except Exception:
+                pass
+            return False
 
     if round_id:
         logger.info(
@@ -342,13 +373,19 @@ def run_backfill(args, conn):
             month_articles += len(articles)
 
             for article in articles:
-                stored = process_article(conn, article, dry_run=args.dry_run)
+                stored = process_article(
+                    conn, article, dry_run=args.dry_run,
+                    skip_non_funding_pr=getattr(args, "skip_non_funding_pr", False),
+                )
                 if stored:
                     month_new += 1
                     total_new += 1
 
             if not args.dry_run:
-                conn.commit()
+                try:
+                    conn.commit()
+                except Exception as e:
+                    logger.warning(f"commit failed (continuing): {e}")
 
             time.sleep(args.rate_limit)
 
@@ -411,6 +448,9 @@ def main():
                         help="Skip months with >= N articles already (default: 5)")
     parser.add_argument("--rate-limit", type=float, default=RATE_LIMIT,
                         help=f"Seconds between RSS fetches (default: {RATE_LIMIT})")
+    parser.add_argument("--skip-non-funding-pr", action="store_true",
+                        help="Don't save non-funding articles as press_releases "
+                             "(reduces write contention)")
     args = parser.parse_args()
 
     conn = get_conn()
