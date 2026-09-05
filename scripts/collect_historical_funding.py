@@ -36,11 +36,7 @@ PRTIMES_SEARCH_URL = "https://prtimes.jp/main/action.php?run=html&page=searchkey
 
 REQUEST_TIMEOUT = 20
 RATE_LIMIT = 2.0
-USER_AGENT = (
-    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
-    "AppleWebKit/537.36 (KHTML, like Gecko) "
-    "Chrome/120.0.0.0 Safari/537.36"
-)
+USER_AGENT = ("MiratukuResearchBot/1.0 (research data collection; contact: info@emerging-future.org)")
 
 # ================================================================
 # Search keyword matrix for historical collection

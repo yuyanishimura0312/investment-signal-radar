@@ -44,11 +44,7 @@ PRTIMES_SEARCH_PAGED = "https://prtimes.jp/main/action.php?run=html&page=searchk
 RATE_LIMIT = 2.0
 REQUEST_TIMEOUT = 30
 
-USER_AGENT = (
-    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
-    "AppleWebKit/537.36 (KHTML, like Gecko) "
-    "Chrome/120.0.0.0 Safari/537.36"
-)
+USER_AGENT = ("MiratukuResearchBot/1.0 (research data collection; contact: info@emerging-future.org)")
 
 # ================================================================
 # Funding/VC-focused search keywords

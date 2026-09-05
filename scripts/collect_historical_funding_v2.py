@@ -25,11 +25,7 @@ PRTIMES_SEARCH_URL = "https://prtimes.jp/main/action.php?run=html&page=searchkey
 
 REQUEST_TIMEOUT = 20
 RATE_LIMIT = 2.5  # slightly longer to avoid rate limiting
-USER_AGENT = (
-    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
-    "AppleWebKit/537.36 (KHTML, like Gecko) "
-    "Chrome/120.0.0.0 Safari/537.36"
-)
+USER_AGENT = ("MiratukuResearchBot/1.0 (research data collection; contact: info@emerging-future.org)")
 
 # ================================================================
 # NEW keywords not in the original script
@@ -277,6 +273,8 @@ def fetch_article_detail(url: str) -> dict | None:
 
 def get_existing_urls(db_path: Path) -> set[str]:
     conn = sqlite3.connect(db_path, timeout=60)
+    conn.execute("PRAGMA journal_mode=WAL")
+    conn.execute("PRAGMA busy_timeout=60000")
     urls = set(r[0] for r in conn.execute("SELECT source_url FROM press_releases").fetchall())
     conn.close()
     return urls
@@ -284,6 +282,9 @@ def get_existing_urls(db_path: Path) -> set[str]:
 
 def store_releases(db_path: Path, releases: list[dict]) -> dict:
     conn = sqlite3.connect(db_path, timeout=60)  # wait up to 60s for DB lock
+    conn.execute("PRAGMA journal_mode=WAL")
+    conn.execute("PRAGMA busy_timeout=60000")
+    conn.execute("PRAGMA synchronous=NORMAL")
     existing = set(r[0] for r in conn.execute("SELECT source_url FROM press_releases").fetchall())
     stored = 0
     skipped = 0
@@ -309,7 +310,7 @@ def store_releases(db_path: Path, releases: list[dict]) -> dict:
             extracted["search_keyword"] = pr["search_keyword"]
 
         conn.execute("""
-            INSERT INTO press_releases
+            INSERT OR IGNORE INTO press_releases
                 (title, body_text, source, source_url, url_hash, published_at,
                  company_name, organization_id, category, is_funding_related,
                  extracted_data, confidence_score, collected_at)
